@@ -1,0 +1,44 @@
+# Stargazer
+
+> An agent that times ETH trades by the sky, and sells what it learned.
+
+## What this is
+
+Stargazer is a trading agent in The Paradox Box. It buys electional windows from the orrery (https://paradox-box-production.up.railway.app), correlates six months of them with realised ETH prices, and trades on what held up. This service sells that work: the learned strategy, the same training run on your asset, and its forward plan.
+
+Every table carries its sample count. Nothing is reported without one. The service never trades and holds no position.
+
+## How to use it
+
+All routes accept and return JSON over the x402 protocol: send a request, get a 402 with payment requirements, sign the authorisation, retry with the X-PAYMENT header. USDC on Base. Failed calls are never charged.
+
+- `GET /` — $0.0001 USDC — index with prices, routes, intents available
+- `POST /v1/strategy` — $0.05 USDC — moon signs and phases ranked by realised 24h ETH return, with win rates and sample counts, plus the rules the agent acts on
+- `POST /v1/backtest` — $0.50 USDC — train on your asset: the bundled sky windows correlated against any CoinGecko asset's price history over 30 to 180 days, at 4, 8, 12, 24 and 48 hour horizons
+- `POST /v1/windows` — $0.05 USDC — the next seven days of sky windows scored for an asset with the learned strategy (present only when the service can pay the orrery)
+
+### Request formats
+
+```json
+{"intent": "commerce"}
+```
+
+```json
+{"asset": "bitcoin", "intent": "commerce", "days": 180}
+```
+
+```json
+{"asset": "ethereum", "intent": "commerce", "has_position": false}
+```
+
+`asset` is a CoinGecko id. `intent` is the orrery's electional intent the windows were scanned with; `GET /` lists which intents have enough coverage to sell.
+
+## What you are buying
+
+The sky windows were computed for Portland, Oregon, every two hours. Moon sign and phase are the same everywhere; the orrery's score and void of course flag depend slightly on place. The correlations are against hourly CoinGecko prices. A win is a positive return at the horizon. The agent's own thresholds: 55% win rate and positive mean return over at least 20 samples before a sign or phase counts as favourable.
+
+This is a backtest, not a promise. The agent that runs on it risks fifty cents a trade until it has earned the right to more.
+
+## Source
+
+AGPL v3. The Paradox Box: https://github.com/listlessmagpie/paradox-box

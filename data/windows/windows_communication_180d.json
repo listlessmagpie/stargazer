@@ -1,0 +1,5154 @@
+[
+  {
+    "when_utc": "2026-03-17T19:59Z",
+    "score": 28,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction mars (orb 0.4\u00c2\u00b0, constructive)",
+      "Moon trine jupiter (orb 3.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-17T22:00Z",
+    "score": 28,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction mars (orb 0.7\u00c2\u00b0, constructive)",
+      "Moon trine jupiter (orb 2.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-18T00:00Z",
+    "score": 28,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction mars (orb 1.7\u00c2\u00b0, constructive)",
+      "Moon trine jupiter (orb 1.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T07:59Z",
+    "score": 25,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile venus (orb 2.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T10:00Z",
+    "score": 25,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile venus (orb 1.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T12:00Z",
+    "score": 25,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile venus (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T13:59Z",
+    "score": 25,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile venus (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T16:00Z",
+    "score": 25,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile venus (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T18:00Z",
+    "score": 25,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile venus (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-15T00:00Z",
+    "score": 20,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Mercury retrograde (penalty -30)",
+      "Moon sextile saturn (orb 1.2\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T19:59Z",
+    "score": 55,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T13:59Z",
+    "score": 33,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T16:00Z",
+    "score": 33,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 3.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T18:00Z",
+    "score": 33,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 4.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T01:59Z",
+    "score": 31,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 4.0\u00c2\u00b0)",
+      "Moon square jupiter (orb 2.3\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T04:00Z",
+    "score": 31,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 2.9\u00c2\u00b0)",
+      "Moon square jupiter (orb 1.1\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T06:00Z",
+    "score": 31,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 1.8\u00c2\u00b0)",
+      "Moon square jupiter (orb 0.1\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T07:59Z",
+    "score": 31,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 0.8\u00c2\u00b0)",
+      "Moon square jupiter (orb 1.3\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T10:00Z",
+    "score": 31,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 0.3\u00c2\u00b0)",
+      "Moon square jupiter (orb 2.4\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-20T12:00Z",
+    "score": 31,
+    "moon_sign": "Aries",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "mercury"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Aries",
+      "Mercury retrograde (penalty -30)",
+      "Moon conjunction venus (orb 1.4\u00c2\u00b0)",
+      "Moon square jupiter (orb 3.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-22T04:00Z",
+    "score": 66,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile mars (orb 2.5\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 2.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-22T06:00Z",
+    "score": 66,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile mars (orb 1.4\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 1.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-22T07:59Z",
+    "score": 66,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile mars (orb 0.2\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 0.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-22T10:00Z",
+    "score": 66,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile mars (orb 0.9\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 1.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-22T12:00Z",
+    "score": 66,
+    "moon_sign": "Taurus",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Taurus",
+      "Moon sextile mars (orb 2.1\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 2.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-23T12:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 2.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-23T13:59Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 1.1\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-23T16:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 0.1\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-23T18:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 1.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-23T19:59Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 2.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-26T12:00Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Cancer",
+      "Moon trine mars (orb 3.9\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-26T13:59Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Cancer",
+      "Moon trine mars (orb 2.8\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-26T16:00Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Cancer",
+      "Moon trine mars (orb 1.7\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 1.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-26T18:00Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Cancer",
+      "Moon trine mars (orb 0.6\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 2.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-26T19:59Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Cancer",
+      "Moon trine mars (orb 0.5\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 4.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-24T22:00Z",
+    "score": 63,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-25T00:00Z",
+    "score": 63,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-25T01:59Z",
+    "score": 63,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 1.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-25T04:00Z",
+    "score": 63,
+    "moon_sign": "Gemini",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 2.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-26T06:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 4.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T10:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Leo",
+      "Moon trine venus (orb 3.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T12:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Leo",
+      "Moon trine venus (orb 2.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T13:59Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Leo",
+      "Moon trine venus (orb 1.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T16:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Leo",
+      "Moon trine venus (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T18:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Leo",
+      "Moon trine venus (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T19:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon trine venus (orb 1.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-29T22:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon trine venus (orb 2.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T00:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon trine venus (orb 3.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-27T16:00Z",
+    "score": 58,
+    "moon_sign": "Leo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Leo",
+      "Moon trine saturn (orb 4.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-27T18:00Z",
+    "score": 58,
+    "moon_sign": "Leo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Leo",
+      "Moon trine saturn (orb 2.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T00:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon trine venus (orb 3.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T19:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 2.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T22:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 1.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-31T00:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 0.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-31T01:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 0.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T01:59Z",
+    "score": 55,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T04:00Z",
+    "score": 55,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T06:00Z",
+    "score": 55,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T07:59Z",
+    "score": 55,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo"
+    ]
+  },
+  {
+    "when_utc": "2026-03-30T10:00Z",
+    "score": 55,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Virgo"
+    ]
+  },
+  {
+    "when_utc": "2026-04-02T00:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-04-04T12:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 3.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-04T13:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 2.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-04T16:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 1.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-04T18:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 0.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-04T19:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 0.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-04T22:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 1.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T00:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 2.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-02T01:59Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra",
+      "Moon square jupiter (orb 3.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-02T18:00Z",
+    "score": 47,
+    "moon_sign": "Libra",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T00:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 2.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T01:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 3.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T04:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 4.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T10:00Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 3.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T12:00Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 2.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T13:59Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 1.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T16:00Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 0.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T18:00Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 0.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T19:59Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 1.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-05T22:00Z",
+    "score": 50,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine mars (orb 2.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-09T10:00Z",
+    "score": 55,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn",
+      "Moon trine venus (orb 1.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-09T12:00Z",
+    "score": 53,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn",
+      "Moon trine venus (orb 0.2\u00c2\u00b0)",
+      "Moon opposition jupiter (orb 4.5\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-09T13:59Z",
+    "score": 53,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn",
+      "Moon trine venus (orb 0.7\u00c2\u00b0)",
+      "Moon opposition jupiter (orb 3.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-09T16:00Z",
+    "score": 53,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn",
+      "Moon trine venus (orb 1.6\u00c2\u00b0)",
+      "Moon opposition jupiter (orb 2.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-09T18:00Z",
+    "score": 53,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn",
+      "Moon trine venus (orb 2.5\u00c2\u00b0)",
+      "Moon opposition jupiter (orb 1.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-09T19:59Z",
+    "score": 53,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn",
+      "Moon trine venus (orb 3.4\u00c2\u00b0)",
+      "Moon opposition jupiter (orb 0.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-10T19:59Z",
+    "score": 50,
+    "moon_sign": "Capricorn",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Capricorn",
+      "Moon sextile mars (orb 2.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-10T22:00Z",
+    "score": 50,
+    "moon_sign": "Capricorn",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Capricorn",
+      "Moon sextile mars (orb 1.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T00:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile mars (orb 0.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-08T00:00Z",
+    "score": 47,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Sagittarius"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T07:59Z",
+    "score": 53,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile mars (orb 3.0\u00c2\u00b0, constructive)",
+      "Moon sextile saturn (orb 2.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T00:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile mars (orb 0.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T01:59Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile mars (orb 0.1\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T04:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile mars (orb 1.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T06:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile mars (orb 2.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T10:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile saturn (orb 1.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T12:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile saturn (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T13:59Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile saturn (orb 0.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T16:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile saturn (orb 1.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-11T18:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon sextile saturn (orb 2.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T13:59Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon sextile venus (orb 2.2\u00c2\u00b0)",
+      "Moon trine jupiter (orb 0.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T16:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon sextile venus (orb 1.1\u00c2\u00b0)",
+      "Moon trine jupiter (orb 0.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T18:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon sextile venus (orb 0.1\u00c2\u00b0)",
+      "Moon trine jupiter (orb 1.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T19:59Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon sextile venus (orb 0.9\u00c2\u00b0)",
+      "Moon trine jupiter (orb 2.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T22:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon sextile venus (orb 2.0\u00c2\u00b0)",
+      "Moon trine jupiter (orb 3.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T07:59Z",
+    "score": 55,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon trine jupiter (orb 4.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T10:00Z",
+    "score": 55,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon trine jupiter (orb 3.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-14T12:00Z",
+    "score": 55,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Pisces",
+      "Moon trine jupiter (orb 1.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-15T19:59Z",
+    "score": 53,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon conjunction mars (orb 1.2\u00c2\u00b0, constructive)",
+      "Moon conjunction saturn (orb 3.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-15T22:00Z",
+    "score": 53,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon conjunction mars (orb 0.1\u00c2\u00b0, constructive)",
+      "Moon conjunction saturn (orb 2.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-19T00:00Z",
+    "score": 71,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon conjunction venus (orb 3.9\u00c2\u00b0)",
+      "Moon sextile jupiter (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-18T16:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-18T18:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 1.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-18T19:59Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 0.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-18T22:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 1.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-19T01:59Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon conjunction venus (orb 2.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-19T04:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon conjunction venus (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-19T06:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon conjunction venus (orb 0.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-19T07:59Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon conjunction venus (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-19T10:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Taurus",
+      "Moon conjunction venus (orb 1.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-22T18:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 2.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-22T19:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 1.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-22T22:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 0.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T00:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-20T01:59Z",
+    "score": 61,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile mars (orb 1.9\u00c2\u00b0, constructive)",
+      "Moon sextile saturn (orb 1.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-20T04:00Z",
+    "score": 61,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile mars (orb 0.8\u00c2\u00b0, constructive)",
+      "Moon sextile saturn (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-20T06:00Z",
+    "score": 61,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile mars (orb 0.4\u00c2\u00b0, constructive)",
+      "Moon sextile saturn (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-20T07:59Z",
+    "score": 61,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile mars (orb 1.6\u00c2\u00b0, constructive)",
+      "Moon sextile saturn (orb 1.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-20T10:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile mars (orb 2.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-20T00:00Z",
+    "score": 55,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T00:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T01:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 1.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T04:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 3.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T06:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 4.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T13:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon sextile venus (orb 2.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T16:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon sextile venus (orb 1.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T18:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon sextile venus (orb 0.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T19:59Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Leo",
+      "Moon sextile venus (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-23T22:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Leo",
+      "Moon sextile venus (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-24T00:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Leo",
+      "Moon sextile venus (orb 2.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-27T06:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 2.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-27T07:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 1.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-27T10:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-27T12:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 0.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-27T13:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 1.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-27T16:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-28T12:00Z",
+    "score": 63,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra",
+      "Moon trine venus (orb 3.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-28T13:59Z",
+    "score": 63,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra",
+      "Moon trine venus (orb 2.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-28T16:00Z",
+    "score": 63,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra",
+      "Moon trine venus (orb 1.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-04-26T16:00Z",
+    "score": 55,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo"
+    ]
+  },
+  {
+    "when_utc": "2026-04-30T06:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-04-30T07:59Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-04-30T10:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-04-30T12:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-04-30T19:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-04-30T22:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-01T00:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-01T01:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-01T04:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-01T06:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T01:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 3.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T04:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 2.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T06:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 1.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T07:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 0.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T10:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T12:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T13:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 2.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-02T16:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 3.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-03T18:00Z",
+    "score": 50,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius",
+      "Moon trine saturn (orb 3.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-03T19:59Z",
+    "score": 50,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius",
+      "Moon trine saturn (orb 2.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T00:00Z",
+    "score": 50,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius",
+      "Moon trine mars (orb 1.1\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T01:59Z",
+    "score": 50,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius",
+      "Moon trine mars (orb 2.1\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T04:00Z",
+    "score": 50,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius",
+      "Moon trine mars (orb 3.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T06:00Z",
+    "score": 50,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius",
+      "Moon trine mars (orb 3.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T07:59Z",
+    "score": 47,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T19:59Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-05-05T22:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-05-06T00:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-05-06T01:59Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-05-06T04:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-05-10T00:00Z",
+    "score": 58,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 1.6\u00c2\u00b0)",
+      "Moon sextile mars (orb 2.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-10T01:59Z",
+    "score": 58,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 2.5\u00c2\u00b0)",
+      "Moon sextile mars (orb 1.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-10T04:00Z",
+    "score": 58,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 3.5\u00c2\u00b0)",
+      "Moon sextile mars (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-09T12:00Z",
+    "score": 55,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 4.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-09T13:59Z",
+    "score": 55,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 3.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-09T16:00Z",
+    "score": 55,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 2.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-09T18:00Z",
+    "score": 55,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 1.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-09T19:59Z",
+    "score": 55,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-09T22:00Z",
+    "score": 55,
+    "moon_sign": "Aquarius",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aquarius",
+      "Moon trine venus (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-08T22:00Z",
+    "score": 50,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius",
+      "Moon sextile saturn (orb 2.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T00:00Z",
+    "score": 55,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine jupiter (orb 4.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T01:59Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 4.1\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 3.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T04:00Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 3.1\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 1.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T06:00Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 2.1\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 0.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T07:59Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 1.1\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T10:00Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 0.0\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 1.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T12:00Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 1.0\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-12T13:59Z",
+    "score": 53,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon square venus (orb 2.0\u00c2\u00b0, tense)",
+      "Moon trine jupiter (orb 3.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-13T10:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 4.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-13T12:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 3.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-14T19:59Z",
+    "score": 58,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon sextile venus (orb 1.1\u00c2\u00b0)",
+      "Moon conjunction mars (orb 0.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-14T22:00Z",
+    "score": 58,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon sextile venus (orb 2.2\u00c2\u00b0)",
+      "Moon conjunction mars (orb 0.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-14T13:59Z",
+    "score": 56,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon sextile venus (orb 2.3\u00c2\u00b0)",
+      "Moon conjunction mars (orb 4.3\u00c2\u00b0, constructive)",
+      "Moon square jupiter (orb 1.4\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-14T16:00Z",
+    "score": 56,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon sextile venus (orb 1.2\u00c2\u00b0)",
+      "Moon conjunction mars (orb 3.2\u00c2\u00b0, constructive)",
+      "Moon square jupiter (orb 2.6\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-14T18:00Z",
+    "score": 56,
+    "moon_sign": "Aries",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Aries",
+      "Moon sextile venus (orb 0.1\u00c2\u00b0)",
+      "Moon conjunction mars (orb 2.0\u00c2\u00b0, constructive)",
+      "Moon square jupiter (orb 3.8\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-16T07:59Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 2.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-16T10:00Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 1.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-16T12:00Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 0.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-16T13:59Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 0.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-16T16:00Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 2.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-19T01:59Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction venus (orb 0.1\u00c2\u00b0)",
+      "Moon sextile mars (orb 0.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-19T04:00Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction venus (orb 1.3\u00c2\u00b0)",
+      "Moon sextile mars (orb 1.2\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-19T06:00Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction venus (orb 2.4\u00c2\u00b0)",
+      "Moon sextile mars (orb 2.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-19T07:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction venus (orb 3.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-19T10:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction venus (orb 4.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-17T16:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 2.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-17T18:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 1.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-17T19:59Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 0.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-17T22:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 1.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-18T00:00Z",
+    "score": 58,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini",
+      "Moon sextile saturn (orb 2.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T06:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 4.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T07:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 3.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T10:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 2.1\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T12:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 0.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T13:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T16:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 1.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T18:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 2.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-20T19:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 3.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-21T16:00Z",
+    "score": 58,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Leo",
+      "Moon trine saturn (orb 3.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-21T18:00Z",
+    "score": 58,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Leo",
+      "Moon trine saturn (orb 2.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-23T12:00Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile venus (orb 2.5\u00c2\u00b0)",
+      "Moon trine mars (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-23T13:59Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile venus (orb 1.5\u00c2\u00b0)",
+      "Moon trine mars (orb 0.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-23T16:00Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile venus (orb 0.5\u00c2\u00b0)",
+      "Moon trine mars (orb 1.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-23T18:00Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile venus (orb 0.5\u00c2\u00b0)",
+      "Moon trine mars (orb 2.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-23T19:59Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile venus (orb 1.5\u00c2\u00b0)",
+      "Moon trine mars (orb 3.5\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-23T22:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile venus (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-24T19:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 2.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-24T22:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 1.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-25T00:00Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 0.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-25T01:59Z",
+    "score": 63,
+    "moon_sign": "Virgo",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Virgo",
+      "Moon sextile jupiter (orb 0.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-27T00:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-05-27T01:59Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-05-28T01:59Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-28T04:00Z",
+    "score": 55,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio"
+    ]
+  },
+  {
+    "when_utc": "2026-05-26T00:00Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra",
+      "Moon square venus (orb 3.4\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-26T01:59Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra",
+      "Moon square venus (orb 2.4\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-27T04:00Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra",
+      "Moon square jupiter (orb 3.8\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-27T06:00Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra",
+      "Moon square jupiter (orb 2.8\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-27T07:59Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra",
+      "Moon square jupiter (orb 1.8\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-27T10:00Z",
+    "score": 53,
+    "moon_sign": "Libra",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Libra",
+      "Moon square jupiter (orb 0.8\u00c2\u00b0, tense)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T01:59Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine venus (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T04:00Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine venus (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T06:00Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine venus (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T07:59Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine venus (orb 3.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T16:00Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 4.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T18:00Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 3.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T19:59Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 2.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-29T22:00Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 1.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-30T00:00Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 0.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-05-30T01:59Z",
+    "score": 63,
+    "moon_sign": "Scorpio",
+    "moon_phase": "waxing_gibbous",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing gibbous)",
+      "Moon in Scorpio",
+      "Moon trine jupiter (orb 0.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T16:00Z",
+    "score": 50,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn",
+      "Moon trine mars (orb 3.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-01T00:00Z",
+    "score": 47,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-01T01:59Z",
+    "score": 47,
+    "moon_sign": "Sagittarius",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Sagittarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T01:59Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T04:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T06:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T07:59Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T10:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T12:00Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-02T13:59Z",
+    "score": 47,
+    "moon_sign": "Capricorn",
+    "moon_phase": "full_moon",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (full moon)",
+      "Moon in Capricorn"
+    ]
+  },
+  {
+    "when_utc": "2026-06-04T13:59Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-04T16:00Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-04T18:00Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-04T19:59Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-04T22:00Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-05T00:00Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-05T01:59Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-05T04:00Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-05T06:00Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-06T01:59Z",
+    "score": 47,
+    "moon_sign": "Aquarius",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Aquarius"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T18:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 2.5\u00c2\u00b0)",
+      "Moon trine jupiter (orb 3.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T19:59Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 1.5\u00c2\u00b0)",
+      "Moon trine jupiter (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T22:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 0.5\u00c2\u00b0)",
+      "Moon trine jupiter (orb 1.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-09T00:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 0.5\u00c2\u00b0)",
+      "Moon trine jupiter (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-09T01:59Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 1.5\u00c2\u00b0)",
+      "Moon trine jupiter (orb 0.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-09T04:00Z",
+    "score": 63,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 2.5\u00c2\u00b0)",
+      "Moon trine jupiter (orb 1.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T16:00Z",
+    "score": 55,
+    "moon_sign": "Pisces",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Pisces",
+      "Moon trine venus (orb 3.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T00:00Z",
+    "score": 50,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Pisces",
+      "Moon sextile mars (orb 2.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T01:59Z",
+    "score": 50,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Pisces",
+      "Moon sextile mars (orb 1.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-08T04:00Z",
+    "score": 50,
+    "moon_sign": "Pisces",
+    "moon_phase": "waning_gibbous",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning gibbous)",
+      "Moon in Pisces",
+      "Moon sextile mars (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T00:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 4.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T01:59Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 3.1\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T04:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 2.0\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T06:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 0.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T07:59Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 0.3\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T10:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 1.4\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T12:00Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 2.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-10T13:59Z",
+    "score": 50,
+    "moon_sign": "Aries",
+    "moon_phase": "last_quarter",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (last quarter)",
+      "Moon in Aries",
+      "Moon conjunction saturn (orb 3.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-12T12:00Z",
+    "score": 50,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon conjunction mars (orb 3.9\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-12T13:59Z",
+    "score": 50,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon conjunction mars (orb 2.7\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T10:00Z",
+    "score": 63,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile venus (orb 1.9\u00c2\u00b0)",
+      "Moon sextile jupiter (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T04:00Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 2.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T06:00Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 0.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T07:59Z",
+    "score": 55,
+    "moon_sign": "Taurus",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Taurus",
+      "Moon sextile jupiter (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T13:59Z",
+    "score": 55,
+    "moon_sign": "Gemini",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 0.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T16:00Z",
+    "score": 55,
+    "moon_sign": "Gemini",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 1.6\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-13T18:00Z",
+    "score": 55,
+    "moon_sign": "Gemini",
+    "moon_phase": "waning_crescent",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waning Moon (waning crescent)",
+      "Moon in Gemini",
+      "Moon sextile venus (orb 2.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-15T04:00Z",
+    "score": 55,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini"
+    ]
+  },
+  {
+    "when_utc": "2026-06-15T06:00Z",
+    "score": 55,
+    "moon_sign": "Gemini",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Gemini"
+    ]
+  },
+  {
+    "when_utc": "2026-06-15T13:59Z",
+    "score": 55,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T13:59Z",
+    "score": 71,
+    "moon_sign": "Leo",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Leo",
+      "Moon conjunction venus (orb 3.6\u00c2\u00b0)",
+      "Moon conjunction jupiter (orb 3.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T00:00Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon sextile mars (orb 1.0\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 4.7\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T01:59Z",
+    "score": 66,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon sextile mars (orb 2.2\u00c2\u00b0, constructive)",
+      "Moon conjunction jupiter (orb 3.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-18T04:00Z",
+    "score": 66,
+    "moon_sign": "Leo",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Leo",
+      "Moon conjunction venus (orb 4.2\u00c2\u00b0)",
+      "Moon trine saturn (orb 3.8\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T04:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 2.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T06:00Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 1.0\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T07:59Z",
+    "score": 63,
+    "moon_sign": "Cancer",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Cancer",
+      "Moon conjunction jupiter (orb 0.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T16:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Leo",
+      "Moon conjunction venus (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T18:00Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Leo",
+      "Moon conjunction venus (orb 1.4\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-17T19:59Z",
+    "score": 63,
+    "moon_sign": "Leo",
+    "moon_phase": "new_moon",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (new moon)",
+      "Moon in Leo",
+      "Moon conjunction venus (orb 0.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T12:00Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 0.5\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 2.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T13:59Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 1.5\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 1.9\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T16:00Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 2.5\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 0.8\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T18:00Z",
+    "score": 66,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 3.5\u00c2\u00b0, constructive)",
+      "Moon sextile jupiter (orb 0.2\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T22:00Z",
+    "score": 63,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra",
+      "Moon sextile jupiter (orb 2.3\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T04:00Z",
+    "score": 58,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 3.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T06:00Z",
+    "score": 58,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 2.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T07:59Z",
+    "score": 58,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 1.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-21T10:00Z",
+    "score": 58,
+    "moon_sign": "Virgo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Virgo",
+      "Moon trine mars (orb 0.6\u00c2\u00b0, constructive)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-19T12:00Z",
+    "score": 55,
+    "moon_sign": "Leo",
+    "moon_phase": "waxing_crescent",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (waxing crescent)",
+      "Moon in Leo"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T12:00Z",
+    "score": 63,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra",
+      "Moon sextile venus (orb 2.5\u00c2\u00b0)"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T00:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T01:59Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T04:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T06:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T07:59Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-22T10:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-23T10:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-23T12:00Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  },
+  {
+    "when_utc": "2026-06-23T13:59Z",
+    "score": 55,
+    "moon_sign": "Libra",
+    "moon_phase": "first_quarter",
+    "waxing": true,
+    "void_of_course": false,
+    "retrogrades": [
+      "pluto"
+    ],
+    "factors": [
+      "Waxing Moon (first quarter)",
+      "Moon in Libra"
+    ]
+  }
+]

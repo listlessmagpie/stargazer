@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+httpx
+python-dotenv
+x402[evm]>=2.19.0
+cdp-sdk
+eth-account
