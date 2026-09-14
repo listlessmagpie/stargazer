@@ -16,6 +16,7 @@ STRATEGY_PATH = Path(__file__).parent / "strategy.json"
 
 MIN_SAMPLES = 10
 MIN_WIN_RATE = 55.0
+MIN_TRADE_USD = 0.50
 MIN_AVG_RETURN = 0.1
 
 
@@ -355,6 +356,11 @@ def get_trade_size(
 
     multiplier = SIGNAL_MULTIPLIERS.get(signal_strength, 0.7)
     amount = min(portfolio_usdc * tier["fraction"], tier["max_usd"]) * multiplier
+    # A swap under fifty cents is not worth its gas, and on a small wallet the
+    # first tier's 5% never reaches that, so the floor wins as long as the
+    # wallet can cover it. The tier cap still holds above it.
+    if portfolio_usdc >= MIN_TRADE_USD:
+        amount = max(amount, min(MIN_TRADE_USD, tier["max_usd"]))
     return round(amount, 2), tier
 
 

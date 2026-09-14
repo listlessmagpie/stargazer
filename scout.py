@@ -51,6 +51,7 @@ class Source:
     method: str = "GET"
     payload: dict | None = None
     note: str = ""
+    price_hint: Callable[[dict | list], float | None] | None = None
 
 
 def _eth_row(rows: list, key: str) -> dict | None:
@@ -88,6 +89,12 @@ def _mycelia(body) -> dict[str, float]:
     }
 
 
+def _mycelia_price(body) -> float | None:
+    """The exchanges' index prices are a fine ETH price when CoinGecko is sulking."""
+    idx = sorted(e["index_price"] for e in body.get("exchanges", []) if e.get("index_price"))
+    return idx[len(idx) // 2] if idx else None
+
+
 def _nansen(body) -> dict[str, float]:
     """Nansen's composite performance and risk scores for ETH among large caps."""
     row = _eth_row(body.get("data", []), "token_symbol")
@@ -106,6 +113,7 @@ SOURCES: list[Source] = [
         url="https://api.myceliasignal.com/oracle/basis/eth/usd",
         cost_usd=0.02,
         extract=_mycelia,
+        price_hint=_mycelia_price,
         note="ETH spot to futures basis, carry and funding across exchanges",
     ),
     Source(
@@ -192,6 +200,8 @@ async def sample_once(force: bool = False) -> dict:
         try:
             body = await oracle.ampersend_fetch(src.url, method=src.method, payload=src.payload)
             features = src.extract(body)
+            if price is None and src.price_hint:
+                price = src.price_hint(body)
             ok = bool(features)
             err = None
         except Exception as exc:
