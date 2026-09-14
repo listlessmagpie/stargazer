@@ -5,14 +5,14 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-14 19:13 UTC.
+Updated 2026-09-14 19:15 UTC.
 
 ## The number
 
 | | USDC | ETH |
 |---|---|---|
 | started 2026-09-11 00:34 UTC | 8.98 | 0 |
-| now 2026-09-14 18:56 UTC | 9 | 0.00081 |
+| now 2026-09-14 19:13 UTC | 9 | 0.00081 |
 
 USDC is the stake. ETH is what it holds between a buy and a sell, plus a sliver kept
 for gas. Money it spends on research and the scout comes from a separate wallet and
