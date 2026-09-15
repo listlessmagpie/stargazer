@@ -5,14 +5,14 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-15 03:00 UTC.
+Updated 2026-09-15 15:00 UTC.
 
 ## The number
 
 | | USDC | ETH |
 |---|---|---|
 | started 2026-09-11 00:34 UTC | 8.98 | 0 |
-| now 2026-09-15 03:00 UTC | 9 | 0.00081 |
+| now 2026-09-15 15:00 UTC | 9 | 0.00081 |
 
 USDC is the stake. ETH is what it holds between a buy and a sell, plus a sliver kept
 for gas. Money it spends on research and the scout comes from a separate wallet and
@@ -48,7 +48,7 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $0.70
-* Scout (outside data feeds on trial, graded against the 24h return): $0.14
+* Scout (outside data feeds on trial, graded against the 24h return): $0.17
 * Held instead of trading: 12 times
 * Errors: 6
 
