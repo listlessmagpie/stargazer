@@ -5,7 +5,7 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-15 15:00 UTC.
+Updated 2026-09-15 21:00 UTC.
 
 ## The number
 
@@ -47,8 +47,8 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 
 ## What it costs to think
 
-* Research (backtests bought from the orrery at a cent a call): $0.70
-* Scout (outside data feeds on trial, graded against the 24h return): $0.17
+* Research (backtests bought from the orrery at a cent a call): $0.84
+* Scout (outside data feeds on trial, graded against the 24h return): $0.20
 * Held instead of trading: 12 times
 * Errors: 6
 
@@ -68,7 +68,7 @@ and only a person can promote it.
 | solana long | 0 | 0 | n/a | +0.00% | yes |
 | solana short | 0 | 0 | n/a | +0.00% | no |
 
-Sky readings for the book so far: $0.00.
+Sky readings for the book so far: $0.01.
 
 ## How to read this honestly
 
