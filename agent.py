@@ -26,6 +26,7 @@ load_dotenv(_HERE / ".env")
 import experiment
 import ledger
 import oracle
+import paper
 import planner
 import positions
 import research
@@ -187,6 +188,9 @@ async def _do_idle_research():
     s = await scout.maybe_sample()
     if s.get("action") == "sampled":
         print(f"[stargazer] scout sampled: {', '.join(s['sources'])}")
+    pt = await paper.maybe_tick()
+    if pt.get("action") == "ticked":
+        print(f"[stargazer] paper book: {', '.join(pt['moves']) or 'no moves'}")
     try:
         pub = experiment.publish()
         if pub.get("action") == "published":
@@ -363,6 +367,11 @@ if __name__ == "__main__":
         print(f"  spent today: ${spent:.2f}")
         print(f"  remaining:   ${budget:.2f}")
         print(f"  total api spend (all time): ${ls['api_spend_usd']:.2f}")
+    elif "--paper" in sys.argv:
+        for r in paper.summary():
+            tag = " (live)" if r["live"] else ""
+            print(f"  {r['strategy']}{tag}: {r['closed']} closed, {r['wins']} won, "
+                  f"net {r['net_pct']:+.2f}%{', open' if r['open'] else ''}")
     elif "--scout" in sys.argv:
         print(asyncio.run(scout.report()))
     elif "--plan" in sys.argv:

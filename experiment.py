@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import ledger
+import paper
 
 HERE = Path(__file__).resolve().parent
 PAGE = HERE / "EXPERIMENT.md"
@@ -143,6 +144,25 @@ def build() -> str:
         f"* Errors: {len(errors)}",
         "",
     ]
+
+    lines += [
+        "## Paper book",
+        "",
+        "Every strategy the agent is not running, tracked as if it were: same sky, real",
+        "prices, pretend money. Short means being out ahead of an unfavourable window.",
+        "A paper strategy earns a live slot the same way the real one climbs its ladder,",
+        "and only a person can promote it.",
+        "",
+        "| strategy | closed | won | win rate | net return | open now |",
+        "|---|---|---|---|---|---|",
+    ]
+    for r in paper.summary():
+        name = f"{r['asset']} {r['direction']}" + (" (live)" if r["live"] else "")
+        wr = f"{r['win_rate']:.0f}%" if r["win_rate"] is not None else "n/a"
+        lines.append(f"| {name} | {r['closed']} | {r['wins']} | {wr} | {r['net_pct']:+.2f}% | "
+                     f"{'yes' if r['open'] else 'no'} |")
+    paper_spend = sum(e.get("cost_usd", 0) for e in entries if e["event"] == "paper_tick")
+    lines += ["", f"Sky readings for the book so far: ${paper_spend:.2f}.", ""]
 
     report = HERE / "scout_report.md"
     if report.exists():
