@@ -5,22 +5,30 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-18 07:00 UTC.
+Updated 2026-09-18 13:40 UTC.
 
 ## The number
 
-| | USDC | ETH |
-|---|---|---|
-| started 2026-09-11 00:34 UTC | 8.98 | 0 |
-| now 2026-09-18 07:00 UTC | 4.5 | 0.000802923342019418 |
+| | USDC | position (wrapped ETH) | gas (ETH) |
+|---|---|---|---|
+| started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
+| now 2026-09-18 13:40 UTC | 3.5 | 0.002257734281141307 | 0.000801457711123064 |
 
-USDC is the stake. ETH is what it holds between a buy and a sell, plus a sliver kept
-for gas. Money it spends on research and the scout comes from a separate wallet and
-is counted below, not here.
+Holding 11 lots bought for $5.50 at an average of $2434.79, worth $5.71 at $2529.62 (+3.89%, unrealised).
+
+USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
+sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
+separate wallet and is counted below, not here.
+
+Until 2026-09-18 the agent could not see its own wrapped ETH, so it believed it held
+nothing, bought again at every favourable window, and could never have sold. Eleven
+lots went in that way. It sees them now, holds to a ceiling set by each sign's measured
+edge (half the Kelly fraction, never more than 60% of the wallet), and sells the whole
+position when the sky turns against it.
 
 ## Trades
 
-9 trades, 0 closed, 0 won.
+11 trades, 0 closed, 0 won.
 
 | when | action | amount | sky | result |
 |---|---|---|---|---|
@@ -33,6 +41,8 @@ is counted below, not here.
 | 2026-09-17 21:59 UTC | usdc to eth | 0.5 USDC at $2446.52 | Moon in Sagittarius, waxing crescent | open |
 | 2026-09-17 23:59 UTC | usdc to eth | 0.5 USDC at $2447.05 | Moon in Sagittarius, waxing crescent | open |
 | 2026-09-18 01:59 UTC | usdc to eth | 0.5 USDC at $2455.45 | Moon in Sagittarius, waxing crescent | open |
+| 2026-09-18 08:07 UTC | usdc to eth | 0.5 USDC at $2491.77 | Moon in Sagittarius, waxing crescent | open |
+| 2026-09-18 09:59 UTC | usdc to eth | 0.5 USDC at $2505.83 | Moon in Sagittarius, waxing crescent | open |
 
 ## What it is betting on
 
@@ -59,8 +69,8 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 
 ## What it costs to think
 
-* Research (backtests bought from the orrery at a cent a call): $4.12
-* Scout (outside data feeds on trial, graded against the 24h return): $0.59
+* Research (backtests bought from the orrery at a cent a call): $7.12
+* Scout (outside data feeds on trial, graded against the 24h return): $0.65
 * Held instead of trading: 12 times
 * Errors: 18
 
@@ -79,8 +89,42 @@ and only a person can promote it.
 | bitcoin short | 0 | 0 | n/a | +0.00% | no |
 | solana long | 0 | 0 | n/a | +0.00% | yes |
 | solana short | 0 | 0 | n/a | +0.00% | no |
+| ethereum dip | 0 | 0 | n/a | +0.00% | no |
+| ethereum dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
+| bitcoin dip | 0 | 0 | n/a | +0.00% | no |
+| bitcoin dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
+| solana dip | 0 | 0 | n/a | +0.00% | no |
+| solana dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 
 Sky readings for the book so far: $0.03.
+
+## Scout
+
+Outside feeds being graded. A candidate is a proposal to a person, never adopted by the agent.
+
+Written 2026-09-18 13:34 UTC. Horizon 24h. Trial budget $0.25 a day, one round of 2 sources costs $0.03.
+
+## mycelia_basis
+ETH spot to futures basis, carry and funding across exchanges. $0.02 a call.
+Samples aged: 14. Spent so far: $0.40. Verdict: too early: 14 of 15 samples aged.
+
+| feature | corr with 24h return | direction hit |
+|---|---|---|
+| basis_pct | +0.04 | 0% |
+| carry_pct | -0.11 | 64% |
+| funding_mean | +0.14 | 43% |
+
+## nansen_score
+Nansen composite performance and risk scores for large caps. $0.01 a call.
+Samples aged: 14. Spent so far: $0.20. Verdict: too early: 14 of 15 samples aged.
+
+| feature | corr with 24h return | direction hit |
+|---|---|---|
+| performance | n/a | 71% |
+| risk_neg | -0.26 | 29% |
+| momentum | n/a | 71% |
+
+A candidate is a proposal. Adding it to the live signals, and to the Ampersend seller allowlist, is a decision for a person.
 
 ## How to read this honestly
 
