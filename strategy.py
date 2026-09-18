@@ -390,3 +390,45 @@ def get_summary() -> dict:
         "tier_fraction": tier["fraction"],
         "tier_min_wins": tier["min_wins"],
     }
+
+
+# How much to hold, judged from the record rather than from nerve.
+#
+# For each moon sign the backtest gives a win rate W and the size of the average
+# win against the average loss, R. The Kelly fraction W - (1 - W) / R is the share
+# of a bankroll that grows fastest on those odds. Estimates this rough deserve
+# half of that at most, and no sign ever gets more than MAX_EXPOSURE of the
+# wallet, because six months of two hour windows is not the law of large numbers.
+MAX_EXPOSURE = 0.60
+KELLY_SHARE = 0.5
+UNPROVEN_EXPOSURE = 0.10
+EDGE_MIN_SAMPLES = 20
+
+
+def edge_for(sign: str) -> dict:
+    """Win rate, win to loss ratio and Kelly fraction for one moon sign, 24h horizon."""
+    path = Path(__file__).parent / "results" / "backtest_commerce.json"
+    if not path.exists():
+        return {"sign": sign, "samples": 0, "kelly": None}
+    with open(path) as f:
+        rows = json.load(f).get("correlations", [])
+    rets = [r["return_24h"] for r in rows if r.get("moon_sign") == sign and r.get("return_24h") is not None]
+    wins = [x for x in rets if x > 0]
+    losses = [x for x in rets if x <= 0]
+    if len(rets) < EDGE_MIN_SAMPLES or not wins or not losses:
+        return {"sign": sign, "samples": len(rets), "kelly": None}
+    w = len(wins) / len(rets)
+    r = (sum(wins) / len(wins)) / abs(sum(losses) / len(losses))
+    return {
+        "sign": sign, "samples": len(rets), "win_rate": round(w * 100, 1),
+        "avg_win": round(sum(wins) / len(wins), 3), "avg_loss": round(sum(losses) / len(losses), 3),
+        "win_loss_ratio": round(r, 2), "kelly": round(w - (1 - w) / r, 3),
+    }
+
+
+def target_exposure(sign: str) -> tuple[float, dict]:
+    """The share of the wallet worth holding in ETH while the Moon is in this sign."""
+    edge = edge_for(sign)
+    if edge["kelly"] is None:
+        return UNPROVEN_EXPOSURE, edge
+    return round(max(0.0, min(MAX_EXPOSURE, edge["kelly"] * KELLY_SHARE)), 3), edge

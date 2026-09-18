@@ -37,6 +37,15 @@ WINDOWS_PATH = HERE / "cache" / "windows_commerce_180d.json"
 
 ASSETS = ["ethereum", "bitcoin", "solana"]
 DIRECTIONS = ["long", "short"]
+
+# Buy the dip, on paper. The six month backtest says dips in ETH kept dipping about
+# as often as they bounced, with losses twice the size of wins, so this does not get
+# real money. It gets a fair forward test instead: in when the asset is down DIP_PCT
+# over 24 hours, out DIP_HOLD_HOURS later. The second variant only takes dips that
+# arrive under a sky the asset's own tables call favourable.
+DIP_PCT = 3.0
+DIP_HOLD_HOURS = 48
+DIP_VARIANTS = ["dip", "dip_fair_sky"]
 INTENT = "commerce"
 TICK_HOURS = 4
 TABLES_TTL_DAYS = 7
@@ -64,7 +73,7 @@ def _save(path: Path, data) -> None:
 def _book() -> dict:
     book = _load(BOOK_PATH, {"last_tick": 0, "strategies": {}})
     for a in ASSETS:
-        for d in DIRECTIONS:
+        for d in DIRECTIONS + DIP_VARIANTS:
             book["strategies"].setdefault(_key(a, d), {
                 "asset": a, "direction": d, "intent": INTENT,
                 "position": None, "outcomes": [],
@@ -121,12 +130,18 @@ async def _sky() -> dict:
     }
 
 
+_CHANGE_24H: dict[str, float] = {}
+
+
 def _prices() -> dict[str, float]:
     ids = ",".join(ASSETS)
-    url = f"https://api.coingecko.com/api/v3/simple/price?ids={urllib.parse.quote(ids)}&vs_currencies=usd"
+    url = (f"https://api.coingecko.com/api/v3/simple/price?ids={urllib.parse.quote(ids)}"
+           "&vs_currencies=usd&include_24hr_change=true")
     req = urllib.request.Request(url, headers={"Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=15) as resp:
         data = json.loads(resp.read())
+    _CHANGE_24H.clear()
+    _CHANGE_24H.update({a: float(data[a].get("usd_24h_change") or 0.0) for a in ASSETS if a in data})
     return {a: float(data[a]["usd"]) for a in ASSETS if a in data}
 
 
@@ -146,7 +161,7 @@ def _decide(direction: str, confidence: float, has_position: bool) -> str:
 
 def _return_pct(direction: str, entry: float, exit_: float) -> float:
     pct = (exit_ - entry) / entry * 100
-    return round(pct if direction == "long" else -pct, 4)
+    return round(-pct if direction == "short" else pct, 4)
 
 
 async def tick(force: bool = False) -> dict:
@@ -172,11 +187,23 @@ async def tick(force: bool = False) -> dict:
         assessment = signals.assess_conditions(
             moon_sign=sky["moon_sign"], moon_phase=sky["moon_phase"], waxing=sky["waxing"],
             void_of_course=sky["void_of_course"], retrogrades=sky["retrogrades"], factors=[],
-            has_position=(has_position if direction == "long" else not has_position),
+            has_position=(has_position if direction == "long" else
+                          False if direction in DIP_VARIANTS else not has_position),
             signs_data=t.get("by_moon_sign", {}), phases_data=t.get("by_moon_phase", {}),
         )
         decision = _decide(direction, assessment.confidence, has_position)
         price = prices[asset]
+        if direction in DIP_VARIANTS:
+            decision = "hold"
+            if has_position:
+                held = (datetime.fromisoformat(now)
+                        - datetime.fromisoformat(strat["position"]["entry_time"])).total_seconds() / 3600
+                if held >= DIP_HOLD_HOURS:
+                    decision = "close"
+            elif _CHANGE_24H.get(asset, 0.0) <= -DIP_PCT:
+                fair = assessment.confidence > signals.BUY_THRESHOLD
+                if direction == "dip" or fair:
+                    decision = "open"
         if decision == "open":
             strat["position"] = {
                 "entry_price": price, "entry_time": now, "confidence": round(assessment.confidence, 3),

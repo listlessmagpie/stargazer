@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from dataclasses import dataclass
 from decimal import Decimal
 from pathlib import Path
@@ -20,6 +21,15 @@ WETH = Web3.to_checksum_address("0x4200000000000000000000000000000000000006")
 
 UNISWAP_ROUTER = Web3.to_checksum_address("0x2626664c2603336E57B271c5C0b26F421741e481")
 USDC_WETH_FEE = 500  # 0.05% pool
+USDC_WETH_POOL = Web3.to_checksum_address("0xd0b53D9277642d899DF5C87A3966A349A798F224")
+
+POOL_ABI = [
+    {"inputs": [], "name": "slot0", "outputs": [
+        {"type": "uint160", "name": "sqrtPriceX96"}, {"type": "int24", "name": "tick"},
+        {"type": "uint16", "name": "observationIndex"}, {"type": "uint16", "name": "observationCardinality"},
+        {"type": "uint16", "name": "observationCardinalityNext"}, {"type": "uint8", "name": "feeProtocol"},
+        {"type": "bool", "name": "unlocked"}], "stateMutability": "view", "type": "function"},
+]
 
 ERC20_ABI = [
     {"constant": True, "inputs": [{"name": "owner", "type": "address"}, {"name": "spender", "type": "address"}], "name": "allowance", "outputs": [{"name": "", "type": "uint256"}], "type": "function"},
@@ -58,20 +68,28 @@ def _connect() -> Web3:
 w3 = _connect()
 
 
-def _rpc(fn):
-    """Run a read against the node, reconnecting once if it hung up on us.
+def _rpc(fn, attempts: int = 4):
+    """Run a read against the node, surviving the two ways the free node fails.
 
-    The public node closes idle connections. After the agent sleeps for hours
-    the first request goes out on a dead socket and dies with a dropped
-    connection. Reads are safe to repeat, so rebuild the client and try once
-    more. Sends are never routed through here: repeating one could double send.
+    It hangs up on idle connections, so after hours asleep the first request
+    dies on a dead socket: rebuild the client and go again. And it rate limits,
+    so a 429 means wait and go again. Reads are safe to repeat. Sends are never
+    routed through here: repeating one could double send.
     """
     global w3
-    try:
-        return fn()
-    except requests.exceptions.ConnectionError:
-        w3 = _connect()
-        return fn()
+    delay = 1.5
+    for attempt in range(attempts):
+        try:
+            return fn()
+        except requests.exceptions.ConnectionError:
+            w3 = _connect()
+        except requests.exceptions.HTTPError as exc:
+            if exc.response is None or exc.response.status_code != 429:
+                raise
+        if attempt < attempts - 1:
+            time.sleep(delay)
+            delay *= 2
+    return fn()
 
 
 TRADE_KEY_PATH = Path(__file__).parent / ".trade_key"
@@ -111,10 +129,12 @@ def _load_agent_key() -> tuple[str, str]:
 @dataclass
 class Portfolio:
     usdc: Decimal
-    eth: Decimal
+    eth: Decimal       # native ETH: gas only, never the position
     usdc_raw: int
     eth_raw: int
     address: str
+    weth: Decimal = Decimal(0)   # wrapped ETH: what a buy pays out, and so the position
+    weth_raw: int = 0
 
     @property
     def total_usd_estimate(self) -> Decimal:
@@ -132,9 +152,12 @@ async def get_portfolio() -> Portfolio:
 
     def balances():
         usdc_contract = w3.eth.contract(address=USDC, abi=ERC20_ABI)
-        return usdc_contract.functions.balanceOf(addr).call(), w3.eth.get_balance(addr)
+        weth_contract = w3.eth.contract(address=WETH, abi=ERC20_ABI)
+        return (usdc_contract.functions.balanceOf(addr).call(),
+                w3.eth.get_balance(addr),
+                weth_contract.functions.balanceOf(addr).call())
 
-    usdc_raw, eth_raw = _rpc(balances)
+    usdc_raw, eth_raw, weth_raw = _rpc(balances)
 
     return Portfolio(
         usdc=Decimal(usdc_raw) / Decimal(10**6),
@@ -142,6 +165,8 @@ async def get_portfolio() -> Portfolio:
         usdc_raw=usdc_raw,
         eth_raw=eth_raw,
         address=address,
+        weth=Decimal(weth_raw) / Decimal(10**18),
+        weth_raw=weth_raw,
     )
 
 
@@ -199,9 +224,19 @@ def _swap(key: str, address: str, token_in: str, token_out: str,
     return tx_hash.hex()
 
 
+def eth_price() -> float:
+    """ETH in USDC, read from the pool the agent actually trades in.
+
+    No rate limit and no third party: the price is the pool's own square root
+    price. WETH is token0 and USDC token1, so it needs the 18 to 6 decimal shift.
+    """
+    pool = w3.eth.contract(address=USDC_WETH_POOL, abi=POOL_ABI)
+    sqrt_price = _rpc(lambda: pool.functions.slot0().call())[0]
+    return (sqrt_price / 2**96) ** 2 * 10**12
+
+
 def _eth_usd() -> Decimal:
-    from positions import _get_eth_price
-    return Decimal(str(_get_eth_price()))
+    return Decimal(str(eth_price()))
 
 
 async def swap_usdc_to_eth(usdc_amount: Decimal, slippage_bps: int = 100) -> str:

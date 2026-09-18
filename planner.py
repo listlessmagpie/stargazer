@@ -75,10 +75,16 @@ async def scan_ahead(
             void_of_course=w.void_of_course,
             retrogrades=w.retrogrades,
             factors=w.factors,
-            has_position=has_position,
+            has_position=False,
         )
-
-        if assessment.action == "hold":
+        # Holding does not stop it buying more: a favourable window is a buy window
+        # either way, and how much is settled at execution against the exposure
+        # target. An unfavourable window only matters if there is something to sell.
+        if assessment.confidence > signals.BUY_THRESHOLD:
+            assessment.action = "buy"
+        elif has_position and assessment.confidence < signals.SELL_THRESHOLD:
+            assessment.action = "sell"
+        else:
             continue
 
         confidence_abs = abs(assessment.confidence)

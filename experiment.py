@@ -75,14 +75,36 @@ def build() -> str:
     ]
     if first and latest:
         lines += [
-            "| | USDC | ETH |",
-            "|---|---|---|",
-            f"| started {_fmt_ts(first['ts'])} | {first['usdc']} | {first['eth']} |",
-            f"| now {_fmt_ts(latest['ts'])} | {latest['usdc']} | {latest['eth']} |",
+            "| | USDC | position (wrapped ETH) | gas (ETH) |",
+            "|---|---|---|---|",
+            f"| started {_fmt_ts(first['ts'])} | {first['usdc']} | {first.get('weth', '0')} | {first['eth']} |",
+            f"| now {_fmt_ts(latest['ts'])} | {latest['usdc']} | {latest.get('weth', 'not recorded')} | {latest['eth']} |",
             "",
-            "USDC is the stake. ETH is what it holds between a buy and a sell, plus a sliver kept",
-            "for gas. Money it spends on research and the scout comes from a separate wallet and",
-            "is counted below, not here.",
+        ]
+        try:
+            import positions
+            pos = positions.current_position()
+        except Exception:
+            pos = None
+        if pos:
+            held = pos["entry_usdc"] / pos["entry_price"]
+            worth = held * pos["current_price"]
+            lines += [
+                f"Holding {len(pos.get('lots', [1]))} lots bought for ${pos['entry_usdc']:.2f} at an average of "
+                f"${pos['entry_price']:.2f}, worth ${worth:.2f} at ${pos['current_price']:.2f} "
+                f"({pos['unrealized_pct']:+.2f}%, unrealised).",
+                "",
+            ]
+        lines += [
+            "USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a",
+            "sell. Plain ETH is only gas. Money it spends on research and the scout comes from a",
+            "separate wallet and is counted below, not here.",
+            "",
+            "Until 2026-09-18 the agent could not see its own wrapped ETH, so it believed it held",
+            "nothing, bought again at every favourable window, and could never have sold. Eleven",
+            "lots went in that way. It sees them now, holds to a ceiling set by each sign's measured",
+            "edge (half the Kelly fraction, never more than 60% of the wallet), and sells the whole",
+            "position when the sky turns against it.",
             "",
         ]
     else:

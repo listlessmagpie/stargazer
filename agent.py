@@ -51,13 +51,29 @@ async def _run_research():
     print("[stargazer] strategy rebuilt from new research")
 
 
+POSITION_DUST_USD = 0.25
+
+
+def _position_usd(portfolio, price: float) -> float:
+    return float(portfolio.weth) * price
+
+
+def _has_position(portfolio, price: float | None = None) -> bool:
+    """A position is wrapped ETH worth more than dust. Native ETH is gas, not a bet."""
+    return _position_usd(portfolio, price or trader.eth_price()) > POSITION_DUST_USD
+
+
 async def execute_trade(action: planner.PlannedAction) -> dict:
-    """Execute a planned buy or sell at the appointed time."""
+    """Decide at the appointed time: add to the position, sell it, or stand still."""
     if strategy.needs_research():
         await _run_research()
 
     portfolio = await trader.get_portfolio()
-    has_position = portfolio.eth > Decimal("0.002")
+    price = trader.eth_price()
+    position_usd = _position_usd(portfolio, price)
+    has_position = position_usd > POSITION_DUST_USD
+    wallet_usd = float(portfolio.usdc) + position_usd
+    exposure = position_usd / wallet_usd if wallet_usd else 0.0
 
     assessment = signals.assess_conditions(
         moon_sign=action.moon_sign,
@@ -66,8 +82,9 @@ async def execute_trade(action: planner.PlannedAction) -> dict:
         void_of_course=action.void_of_course,
         retrogrades=action.retrogrades,
         factors=action.factors,
-        has_position=has_position,
+        has_position=False,
     )
+    confidence = assessment.confidence
 
     result = {
         "moon_sign": action.moon_sign,
@@ -78,74 +95,20 @@ async def execute_trade(action: planner.PlannedAction) -> dict:
         "factors": action.factors,
         "orrery_score": action.orrery_score,
         "planned_confidence": action.confidence,
-        "live_confidence": assessment.confidence,
+        "live_confidence": confidence,
         "signal_count": len(assessment.signals),
+        "eth_price": round(price, 2),
+        "wallet_usd": round(wallet_usd, 2),
+        "exposure": round(exposure, 3),
     }
 
-    if assessment.action != action.action:
-        reason = (f"conditions changed since plan: planned {action.action} "
-                  f"(confidence {action.confidence:+.3f}) but live assessment "
-                  f"says {assessment.action} (confidence {assessment.confidence:+.3f})")
-        ledger.record("plan_aborted", reason=reason, **result)
-        print(f"[stargazer] plan aborted: {reason}")
-        return {"action": "plan_aborted", "reason": reason, **result}
-
-    if assessment.action == "buy" and not has_position:
-        confidence_abs = abs(assessment.confidence)
-        if confidence_abs > 0.3:
-            strength = "strong"
-        elif confidence_abs > 0.1:
-            strength = "moderate"
-        else:
-            strength = "weak"
-
-        sized, tier = strategy.get_trade_size(float(portfolio.usdc), strength)
-        trade_amount = Decimal(str(sized))
-        result["tier"] = tier
-        result["signal_strength"] = strength
-
-        if trade_amount < MIN_TRADE_USD:
-            ledger.record("hold", reason="insufficient USDC to trade", **result)
-            return {"action": "hold", "reason": "insufficient USDC", **result}
-
+    if has_position and confidence < signals.SELL_THRESHOLD:
         if not portfolio.has_gas:
             ledger.record("hold", reason="no ETH for gas fees", **result)
             return {"action": "hold", "reason": "no ETH for gas", **result}
-
         try:
-            tx = await trader.swap_usdc_to_eth(trade_amount)
-            pos = positions.open_position(
-                amount_usdc=str(trade_amount),
-                moon_sign=action.moon_sign,
-                moon_phase=action.moon_phase,
-                tx=tx,
-            )
-            ledger.record(
-                "swap_usdc_to_eth",
-                amount_usdc=str(trade_amount),
-                entry_price=pos["entry_price"],
-                tx=tx,
-                **result,
-            )
-            print(f"[stargazer] BOUGHT ${trade_amount} ETH @ ${pos['entry_price']:.2f}")
-            return {"action": "buy_eth", "amount": str(trade_amount), "tx": tx,
-                    "entry_price": pos["entry_price"], **result}
-        except Exception as exc:
-            ledger.record("error", reason=str(exc), **result)
-            return {"action": "error", "reason": str(exc), **result}
-
-    elif assessment.action == "sell" and has_position:
-        if not portfolio.has_gas:
-            ledger.record("hold", reason="no ETH for gas fees", **result)
-            return {"action": "hold", "reason": "no ETH for gas", **result}
-
-        try:
-            sell_eth = portfolio.eth - Decimal("0.0005")
-            if sell_eth <= 0:
-                ledger.record("hold", reason="position too small after gas reserve", **result)
-                return {"action": "hold", "reason": "position too small", **result}
+            sell_eth = portfolio.weth
             tx = await trader.swap_eth_to_usdc(sell_eth)
-
             outcome = positions.close_position(tx=tx)
             if outcome:
                 strategy.record_outcome(
@@ -163,22 +126,72 @@ async def execute_trade(action: planner.PlannedAction) -> dict:
                     return_pct=outcome["return_pct"],
                     won=outcome["won"],
                     held_hours=outcome["held_hours"],
+                    lots=outcome["lots"],
                     **result,
                 )
                 won_str = "WIN" if outcome["won"] else "LOSS"
-                print(f"[stargazer] SOLD: {won_str} "
-                      f"{outcome['return_pct']:+.2f}% "
-                      f"(held {outcome['held_hours']:.1f}h)")
+                print(f"[stargazer] SOLD {outcome['lots']} lots: {won_str} "
+                      f"{outcome['return_pct']:+.2f}% (held {outcome['held_hours']:.1f}h)")
             else:
                 ledger.record("swap_eth_to_usdc", amount_eth=str(sell_eth), tx=tx, **result)
-
             return {"action": "sell_eth", "amount": str(sell_eth), "tx": tx,
                     "outcome": outcome, **result}
         except Exception as exc:
             ledger.record("error", reason=str(exc), **result)
             return {"action": "error", "reason": str(exc), **result}
 
-    reason = f"nothing to do: action={assessment.action}, has_position={has_position}"
+    if confidence > signals.BUY_THRESHOLD:
+        target, edge = strategy.target_exposure(action.moon_sign)
+        result["target_exposure"] = target
+        result["edge"] = edge
+        room_usd = (target - exposure) * wallet_usd
+        if room_usd < float(MIN_TRADE_USD):
+            reason = (f"holding {exposure:.0%} of the wallet against a target of {target:.0%} "
+                      f"for {action.moon_sign}; no room to add")
+            ledger.record("hold", reason=reason, **result)
+            return {"action": "hold", "reason": reason, **result}
+
+        confidence_abs = abs(confidence)
+        strength = "strong" if confidence_abs > 0.3 else "moderate" if confidence_abs > 0.1 else "weak"
+        sized, tier = strategy.get_trade_size(float(portfolio.usdc), strength)
+        trade_amount = Decimal(str(round(min(sized, room_usd, float(portfolio.usdc)), 2)))
+        result["tier"] = tier
+        result["signal_strength"] = strength
+
+        if trade_amount < MIN_TRADE_USD:
+            ledger.record("hold", reason="insufficient USDC to trade", **result)
+            return {"action": "hold", "reason": "insufficient USDC", **result}
+        if not portfolio.has_gas:
+            ledger.record("hold", reason="no ETH for gas fees", **result)
+            return {"action": "hold", "reason": "no ETH for gas", **result}
+
+        try:
+            tx = await trader.swap_usdc_to_eth(trade_amount)
+            pos = positions.open_position(
+                amount_usdc=str(trade_amount),
+                moon_sign=action.moon_sign,
+                moon_phase=action.moon_phase,
+                tx=tx,
+                price=price,
+            )
+            ledger.record(
+                "swap_usdc_to_eth",
+                amount_usdc=str(trade_amount),
+                entry_price=pos["lot_price"],
+                average_entry=round(pos["entry_price"], 2),
+                lots=len(pos["lots"]),
+                tx=tx,
+                **result,
+            )
+            print(f"[stargazer] BOUGHT ${trade_amount} ETH @ ${pos['lot_price']:.2f} "
+                  f"(lot {len(pos['lots'])}, exposure {exposure:.0%} toward {target:.0%})")
+            return {"action": "buy_eth", "amount": str(trade_amount), "tx": tx,
+                    "entry_price": pos["lot_price"], **result}
+        except Exception as exc:
+            ledger.record("error", reason=str(exc), **result)
+            return {"action": "error", "reason": str(exc), **result}
+
+    reason = f"nothing to do: confidence {confidence:+.3f}, holding={has_position}"
     ledger.record("hold", reason=reason, **result)
     return {"action": "hold", "reason": reason, **result}
 
@@ -228,10 +241,10 @@ async def run_once() -> None:
               f"({pos['unrealized_pct']:+.2f}%)")
 
     portfolio = await trader.get_portfolio()
-    has_position = portfolio.eth > Decimal("0.002")
+    has_position = _has_position(portfolio)
 
     print(f"\n[stargazer] scanning ahead {planner.LOOKAHEAD_DAYS} days...")
-    ledger.record("check", usdc=str(portfolio.usdc), eth=str(portfolio.eth),
+    ledger.record("check", usdc=str(portfolio.usdc), eth=str(portfolio.eth), weth=str(portfolio.weth),
                   address=portfolio.address)
 
     planned = await planner.scan_ahead(
@@ -272,11 +285,11 @@ async def run_loop() -> None:
     while True:
         try:
             portfolio = await trader.get_portfolio()
-            has_position = portfolio.eth > Decimal("0.002")
+            has_position = _has_position(portfolio)
 
             print(f"\n[stargazer] scanning ahead {planner.LOOKAHEAD_DAYS} days "
-                  f"(portfolio: {portfolio.usdc} USDC, {portfolio.eth:.6f} ETH)")
-            ledger.record("check", usdc=str(portfolio.usdc), eth=str(portfolio.eth),
+                  f"(portfolio: {portfolio.usdc} USDC, {portfolio.weth:.6f} WETH held, {portfolio.eth:.6f} ETH gas)")
+            ledger.record("check", usdc=str(portfolio.usdc), eth=str(portfolio.eth), weth=str(portfolio.weth),
                           address=portfolio.address)
 
             planned = await planner.scan_ahead(
