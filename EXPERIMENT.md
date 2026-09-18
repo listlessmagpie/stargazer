@@ -5,16 +5,16 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-18 13:40 UTC.
+Updated 2026-09-18 19:43 UTC.
 
 ## The number
 
 | | USDC | position (wrapped ETH) | gas (ETH) |
 |---|---|---|---|
 | started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
-| now 2026-09-18 13:40 UTC | 3.5 | 0.002257734281141307 | 0.000801457711123064 |
+| now 2026-09-18 13:42 UTC | 3.5 | 0.002257734281141307 | 0.000801457711123064 |
 
-Holding 11 lots bought for $5.50 at an average of $2434.79, worth $5.71 at $2529.62 (+3.89%, unrealised).
+Holding 11 lots bought for $5.50 at an average of $2434.79, worth $5.96 at $2636.83 (+8.30%, unrealised).
 
 USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
 sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
@@ -70,7 +70,7 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $7.12
-* Scout (outside data feeds on trial, graded against the 24h return): $0.65
+* Scout (outside data feeds on trial, graded against the 24h return): $0.68
 * Held instead of trading: 12 times
 * Errors: 18
 
@@ -96,7 +96,7 @@ and only a person can promote it.
 | solana dip | 0 | 0 | n/a | +0.00% | no |
 | solana dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 
-Sky readings for the book so far: $0.03.
+Sky readings for the book so far: $0.04.
 
 ## Scout
 
