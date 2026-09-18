@@ -286,6 +286,16 @@ def analyze(correlations: list[dict]) -> dict:
                     entry[f"avg_{h}h"] = round(avg, 4)
                     entry[f"win_rate_{h}h"] = round(pos / len(vals) * 100, 1)
                     entry[f"n_{h}h"] = len(vals)
+                    # A win rate says nothing about what a loss costs. Kelly folds
+                    # both in: W - (1 - W) / R, where R is average win over average loss.
+                    wins = [v for v in vals if v > 0]
+                    losses = [v for v in vals if v <= 0]
+                    if wins and losses and sum(losses) != 0:
+                        w = len(wins) / len(vals)
+                        r = (sum(wins) / len(wins)) / abs(sum(losses) / len(losses))
+                        entry[f"avg_win_{h}h"] = round(sum(wins) / len(wins), 4)
+                        entry[f"avg_loss_{h}h"] = round(sum(losses) / len(losses), 4)
+                        entry[f"kelly_{h}h"] = round(w - (1 - w) / r, 4)
             summary[key] = entry
         return summary
 

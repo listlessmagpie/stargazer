@@ -39,56 +39,65 @@ class Assessment:
         return f"confidence={self.confidence:.3f} action={self.action}\n  " + "\n  ".join(parts)
 
 
-def _load_backtest_signs() -> dict:
-    """Load moon sign performance data from backtest results."""
-    if not RESULTS_PATH.exists():
+COMMERCE_PATH = Path(__file__).parent / "results" / "backtest_commerce.json"
+_TABLES: dict = {"mtime": None, "analysis": {}}
+
+
+def _analysis() -> dict:
+    """The backtest tables the agent trades on, recomputed from the raw correlations.
+
+    Until 2026-09-18 this read a file that held only a cross intent comparison, so
+    the tables came back empty and the research never reached a decision. The raw
+    correlations are the source of truth; analysing them on load means a change to
+    how groups are scored takes effect without paying for the windows again.
+    """
+    if not COMMERCE_PATH.exists():
         return {}
-    with open(RESULTS_PATH) as f:
-        data = json.load(f)
-    analysis = data.get("analysis", {})
-    return analysis.get("by_moon_sign", {})
+    mtime = COMMERCE_PATH.stat().st_mtime
+    if _TABLES["mtime"] != mtime:
+        import backtest
+        with open(COMMERCE_PATH) as f:
+            rows = json.load(f).get("correlations", [])
+        _TABLES["analysis"] = backtest.analyze(rows) if rows else {}
+        _TABLES["mtime"] = mtime
+    return _TABLES["analysis"]
+
+
+def _load_backtest_signs() -> dict:
+    return _analysis().get("by_moon_sign", {})
 
 
 def _load_backtest_phases() -> dict:
-    if not RESULTS_PATH.exists():
-        return {}
-    with open(RESULTS_PATH) as f:
-        data = json.load(f)
-    analysis = data.get("analysis", {})
-    return analysis.get("by_moon_phase", {})
+    return _analysis().get("by_moon_phase", {})
+
+
+def _edge_score(data: dict) -> tuple[float, str]:
+    """Score a group by what betting on it pays, not by how often it wins."""
+    win_rate = data.get("win_rate_24h", 50)
+    avg_return = data.get("avg_24h", 0)
+    kelly = data.get("kelly_24h")
+    if kelly is None:
+        score = (win_rate - 50) / 50
+        return max(-1.0, min(1.0, score)), f"{win_rate:.0f}% win rate, {avg_return:+.3f}% avg 24h"
+    ratio = abs(data["avg_win_24h"] / data["avg_loss_24h"]) if data.get("avg_loss_24h") else 0
+    return (max(-1.0, min(1.0, kelly)),
+            f"{win_rate:.0f}% win rate, wins {ratio:.2f}x losses, {avg_return:+.3f}% avg 24h")
 
 
 def _sign_score(sign: str, signs_data: dict) -> Signal | None:
-    """Convert backtest win rate to a -1 to +1 score."""
     data = signs_data.get(sign)
     if not data or data.get("n_24h", 0) < 10:
         return None
-    win_rate = data.get("win_rate_24h", 50)
-    avg_return = data.get("avg_24h", 0)
-    score = (win_rate - 50) / 50
-    score = max(-1.0, min(1.0, score))
-    return Signal(
-        name="moon_sign",
-        score=score,
-        weight=0.35,
-        reason=f"{sign} {win_rate:.0f}% win rate, {avg_return:+.3f}% avg 24h",
-    )
+    score, reason = _edge_score(data)
+    return Signal(name="moon_sign", score=score, weight=0.35, reason=f"{sign} {reason}")
 
 
 def _phase_score(phase: str, phases_data: dict) -> Signal | None:
     data = phases_data.get(phase)
     if not data or data.get("n_24h", 0) < 10:
         return None
-    win_rate = data.get("win_rate_24h", 50)
-    avg_return = data.get("avg_24h", 0)
-    score = (win_rate - 50) / 50
-    score = max(-1.0, min(1.0, score))
-    return Signal(
-        name="moon_phase",
-        score=score,
-        weight=0.15,
-        reason=f"{phase} {win_rate:.0f}% win rate, {avg_return:+.3f}% avg 24h",
-    )
+    score, reason = _edge_score(data)
+    return Signal(name="moon_phase", score=score, weight=0.15, reason=f"{phase} {reason}")
 
 
 def _tradition_signal(
