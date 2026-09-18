@@ -5,14 +5,14 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-17 17:02 UTC.
+Updated 2026-09-18 00:00 UTC.
 
 ## The number
 
 | | USDC | ETH |
 |---|---|---|
 | started 2026-09-11 00:34 UTC | 8.98 | 0 |
-| now 2026-09-16 09:59 UTC | 6.5 | 0.000805877244595402 |
+| now 2026-09-18 00:00 UTC | 5 | 0.000803661940960674 |
 
 USDC is the stake. ETH is what it holds between a buy and a sell, plus a sliver kept
 for gas. Money it spends on research and the scout comes from a separate wallet and
@@ -20,7 +20,7 @@ is counted below, not here.
 
 ## Trades
 
-5 trades, 0 closed, 0 won.
+8 trades, 0 closed, 0 won.
 
 | when | action | amount | sky | result |
 |---|---|---|---|---|
@@ -29,6 +29,9 @@ is counted below, not here.
 | 2026-09-16 05:59 UTC | usdc to eth | 0.5 USDC at $2404.75 | Moon in Scorpio, waxing crescent | open |
 | 2026-09-16 07:58 UTC | usdc to eth | 0.5 USDC at $2395.57 | Moon in Scorpio, waxing crescent | open |
 | 2026-09-16 09:59 UTC | usdc to eth | 0.5 USDC at $2403.91 | Moon in Scorpio, waxing crescent | open |
+| 2026-09-17 19:58 UTC | usdc to eth | 0.5 USDC at $2448.59 | Moon in Sagittarius, waxing crescent | open |
+| 2026-09-17 21:59 UTC | usdc to eth | 0.5 USDC at $2446.52 | Moon in Sagittarius, waxing crescent | open |
+| 2026-09-17 23:59 UTC | usdc to eth | 0.5 USDC at $2447.05 | Moon in Sagittarius, waxing crescent | open |
 
 ## What it is betting on
 
@@ -56,9 +59,9 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $1.12
-* Scout (outside data feeds on trial, graded against the 24h return): $0.53
+* Scout (outside data feeds on trial, graded against the 24h return): $0.56
 * Held instead of trading: 12 times
-* Errors: 14
+* Errors: 18
 
 ## Paper book
 
