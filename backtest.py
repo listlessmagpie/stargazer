@@ -28,6 +28,10 @@ PRICE_CHUNK_DAYS = 30
 
 HORIZONS_HOURS = [4, 8, 12, 24, 48]
 
+#: Orrery calls this process has actually paid for. A cached chunk costs nothing,
+#: so anything that reports spend reads the change in this, never a planned count.
+PAID_CALLS = 0
+
 
 def _cache_path(label: str) -> Path:
     CACHE_DIR.mkdir(exist_ok=True)
@@ -91,6 +95,8 @@ async def fetch_historical_windows(
                 )
                 chunk_data = data.get("windows", [])
                 _save_cache(chunk_cache_key, chunk_data)
+                global PAID_CALLS
+                PAID_CALLS += 1
             except oracle.BudgetExhausted:
                 print(f"    budget exhausted, stopping {intent} (got {len(all_windows)} windows so far)")
                 break

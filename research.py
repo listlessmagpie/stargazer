@@ -142,10 +142,11 @@ async def do_research() -> dict:
             print(f"[research] checking recent windows for {intent} "
                   f"(budget: ${remaining_budget():.2f})")
             try:
+                paid_before = backtest.PAID_CALLS
                 recent_results = await backtest.fetch_historical_windows(
                     intent=intent, days_back=7,
                 )
-                calls_used = max(1, 7 // backtest.QUERY_CHUNK_DAYS)
+                calls_used = backtest.PAID_CALLS - paid_before
                 record_spend(calls_used)
                 results["calls_spent"] += calls_used
                 results["intents_completed"].append(f"{intent} (recent)")
@@ -181,11 +182,9 @@ async def do_research() -> dict:
               f"(budget: ${remaining_budget():.2f} remaining)")
 
         try:
+            paid_before = backtest.PAID_CALLS
             bt_results = await backtest.run_backtest(intent=intent)
-
-            actual_calls = max(1, len([
-                w for w in range(0, backtest.LOOKBACK_DAYS, backtest.QUERY_CHUNK_DAYS)
-            ]))
+            actual_calls = backtest.PAID_CALLS - paid_before
             record_spend(actual_calls)
 
             results["intents_completed"].append(intent)
