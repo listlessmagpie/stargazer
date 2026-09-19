@@ -5,7 +5,7 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-19 02:00 UTC.
+Updated 2026-09-19 08:05 UTC.
 
 ## The number
 
@@ -14,7 +14,7 @@ Updated 2026-09-19 02:00 UTC.
 | started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
 | now 2026-09-18 23:00 UTC | 3.5 | 0.002257734281141307 | 0.000801457711123064 |
 
-Holding 11 lots bought for $5.50 at an average of $2434.79, worth $5.90 at $2613.02 (+7.32%, unrealised).
+Holding 11 lots bought for $5.50 at an average of $2434.79, worth $5.93 at $2624.71 (+7.80%, unrealised).
 
 USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
 sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
@@ -69,8 +69,8 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 
 ## What it costs to think
 
-* Research (backtests bought from the orrery at a cent a call): $7.12
-* Scout (outside data feeds on trial, graded against the 24h return): $0.71
+* Research (backtests bought from the orrery at a cent a call): $9.00
+* Scout (outside data feeds on trial, graded against the 24h return): $0.77
 * Held instead of trading: 12 times
 * Errors: 18
 
@@ -85,10 +85,10 @@ and only a person can promote it.
 |---|---|---|---|---|---|
 | ethereum long (live) | 0 | 0 | n/a | +0.00% | yes |
 | ethereum short | 0 | 0 | n/a | +0.00% | no |
-| bitcoin long | 0 | 0 | n/a | +0.00% | yes |
-| bitcoin short | 0 | 0 | n/a | +0.00% | no |
-| solana long | 0 | 0 | n/a | +0.00% | yes |
-| solana short | 0 | 0 | n/a | +0.00% | no |
+| bitcoin long | 1 | 1 | 100% | +3.80% | no |
+| bitcoin short | 0 | 0 | n/a | +0.00% | yes |
+| solana long | 1 | 1 | 100% | +10.47% | no |
+| solana short | 0 | 0 | n/a | +0.00% | yes |
 | ethereum dip | 0 | 0 | n/a | +0.00% | no |
 | ethereum dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | bitcoin dip | 0 | 0 | n/a | +0.00% | no |
