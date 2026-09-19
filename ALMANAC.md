@@ -4,7 +4,7 @@ What the sky was doing, and what actually happened. Every sky factor, against ev
 market, from 2005-01-01 to now. Learned on the years before 2021-01-01, then made to
 prove itself on the years after.
 
-Written 2026-09-19 13:13 UTC by `almanac.py`. Nothing here is typed by hand.
+Written 2026-09-19 13:29 UTC by `almanac.py`. Nothing here is typed by hand.
 
 ## The honest headline
 
@@ -110,8 +110,11 @@ well or better, which is the only honest measure of whether the real one did any
 | market | forecast vs outcome | called direction | timed | held | luck matched the forecast | luck matched the timing |
 |---|---|---|---|---|---|---|
 | bitcoin, the sky alone | +0.025 | 50% | +219% | +160% | 15% of runs | 5% of runs |
-| ethereum, the sky alone | +0.113 | 51% | +313% | +235% | 6% of runs | 28% of runs |
-| sp500, the sky alone | -0.052 | 52% | +17% | +105% | 82% of runs | 82% of runs |
+| bitcoin, sky plus its birth chart | +0.030 | 50% | +176% | +160% | 31% of runs | 17% of runs |
+| ethereum, the sky alone | +0.113 | 51% | +313% | +235% | 4% of runs | 22% of runs |
+| ethereum, sky plus its birth chart | +0.131 | 55% | +1703% | +235% | 3% of runs | 0% of runs |
+| sp500, the sky alone | -0.052 | 52% | +17% | +105% | 87% of runs | 85% of runs |
+| sp500, sky plus its birth chart | -0.052 | 53% | +40% | +105% | 85% of runs | 61% of runs |
 | gold, the sky alone | -0.019 | 52% | +58% | +126% | 60% of runs | 37% of runs |
 | oil, the sky alone | -0.071 | 50% | +6% | +100% | 93% of runs | 77% of runs |
 | vix, the sky alone | -0.027 | 53% | +57% | -45% | 64% of runs | 22% of runs |
