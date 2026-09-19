@@ -22,3 +22,5 @@ allocator_state.json
 position_*.json
 almanac_results.json
 almanac_whole_sky.json
+almanac_occasions.json
+almanac_whole.log

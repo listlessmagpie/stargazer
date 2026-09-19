@@ -67,7 +67,7 @@ DIFFICULT = ("mars", "saturn", "uranus", "neptune", "pluto")
 
 # ---------- the sky ----------
 
-def build_sky(days: list[date]) -> tuple[list[str], np.ndarray]:
+def build_sky(days: list[date]) -> tuple[list[str], np.ndarray, dict[str, np.ndarray]]:
     """One row per day, one boolean column per sky factor. Computed at noon UTC."""
     n = len(days)
     lon = {b: np.zeros(n) for b in BODIES}
@@ -124,7 +124,80 @@ def build_sky(days: list[date]) -> tuple[list[str], np.ndarray]:
         cols[f"{label}_window"] = win
 
     keys = sorted(cols)
+    return keys, np.column_stack([cols[k] for k in keys]).astype(np.float64), lon
+
+
+# ---------- birth charts ----------
+#
+# An astrologer does not only ask what the sky is doing. They ask what the sky is doing
+# to this thing's chart. Each market that has a real moment of birth gets one here, and
+# the transits to it become factors like any other.
+#
+# Bitcoin and Ethereum are exact to the second: the timestamps of their genesis blocks.
+# The stock market's chart is the Buttonwood Agreement, 17 May 1792 in New York, whose
+# hour nobody recorded, so its Moon could be six degrees either way and is left out.
+# Gold, oil and the VIX have no moment anyone agrees on, and get no chart rather than
+# an invented one.
+CHARTS = {
+    "bitcoin": {"label": "genesis block, 2009-01-03 18:15:05 UTC", "when": (2009, 1, 3, 18 + 15 / 60 + 5 / 3600),
+                "moon": True},
+    "ethereum": {"label": "genesis block, 2015-07-30 15:26:13 UTC", "when": (2015, 7, 30, 15 + 26 / 60 + 13 / 3600),
+                 "moon": True},
+    "sp500": {"label": "Buttonwood Agreement, 1792-05-17, New York, hour unknown (noon used)",
+              "when": (1792, 5, 17, 16 + 56 / 60), "moon": False},
+}
+TRANSIT_ORB = 2.0
+PERSONAL = ("sun", "moon", "mercury", "venus", "mars")
+BENEFIC = ("venus", "jupiter")
+
+
+def natal_longitudes(chart: dict) -> dict[str, float]:
+    y, m, d, hour = chart["when"]
+    jd = swe.julday(y, m, d, hour)
+    out = {}
+    for name, body in BODIES.items():
+        if name == "moon" and not chart["moon"]:
+            continue
+        out[name] = swe.calc_ut(jd, body, swe.FLG_MOSEPH)[0][0]
+    return out
+
+
+def natal_factors(lon: dict[str, np.ndarray], chart: dict) -> tuple[list[str], np.ndarray]:
+    """Transits to a birth chart: hard and soft contacts, plus how loaded the chart is today."""
+    natal = natal_longitudes(chart)
+    n = len(next(iter(lon.values())))
+    cols: dict[str, np.ndarray] = {}
+    stress = np.zeros(n, int)
+    ease = np.zeros(n, int)
+    for t in (b for b in BODIES if b != "moon"):
+        for nb, nlon in natal.items():
+            sep = np.abs((lon[t] - nlon + 180) % 360 - 180)
+            hard = np.zeros(n, bool)
+            soft = np.zeros(n, bool)
+            for asp, angle in ASPECTS.items():
+                hit = np.abs(sep - angle) <= TRANSIT_ORB
+                if asp in HARD:
+                    hard |= hit
+                else:
+                    soft |= hit
+            cols[f"t_{t}_hard_natal_{nb}"] = hard
+            cols[f"t_{t}_soft_natal_{nb}"] = soft
+            if t in DIFFICULT and nb in PERSONAL:
+                stress += hard
+            if t in BENEFIC and nb in PERSONAL:
+                ease += soft | (hard & (np.abs(sep) <= TRANSIT_ORB))
+    cols["natal_stress_1plus"] = stress >= 1
+    cols["natal_stress_2plus"] = stress >= 2
+    cols["natal_ease_1plus"] = ease >= 1
+    keys = sorted(cols)
     return keys, np.column_stack([cols[k] for k in keys]).astype(np.float64)
+
+
+def market_matrix(market: str, keys: list[str], sky: np.ndarray, lon: dict) -> tuple[list[str], np.ndarray]:
+    if market not in CHARTS:
+        return keys, sky
+    nk, nf = natal_factors(lon, CHARTS[market])
+    return keys + nk, np.hstack([sky, nf])
 
 
 # ---------- the markets ----------
@@ -175,7 +248,7 @@ def study() -> dict:
     today = datetime.now(timezone.utc).date()
     days = [START + timedelta(days=i) for i in range((today - START).days + 1)]
     print(f"computing the sky for {len(days)} days...")
-    keys, sky = build_sky(days)
+    keys, sky, lon = build_sky(days)
     day_index = {d: i for i, d in enumerate(days)}
     eligible_all = np.array([(sky[:, k].sum() >= MIN_DAYS) and (_episodes(sky[:, k]) >= MIN_EPISODES)
                              for k in range(len(keys))])
@@ -192,7 +265,10 @@ def study() -> dict:
         dates = [d for d, _ in px]
         close = np.array([c for _, c in px])
         rows = np.array([day_index[d] for d in dates])
-        F_full = sky[rows]
+        mkeys, msky = market_matrix(market, keys, sky, lon)
+        eligible_m = np.array([(msky[:, k].sum() >= MIN_DAYS) and (_episodes(msky[:, k]) >= MIN_EPISODES)
+                               for k in range(len(mkeys))])
+        F_full = msky[rows]
         for h in HORIZONS:
             r = close[h:] / close[:-h] - 1.0
             F = F_full[:-h]
@@ -200,7 +276,7 @@ def study() -> dict:
             train = np.array([d < SPLIT for d in dts])
             if train.sum() < 250 or (~train).sum() < 250:
                 continue
-            elig = eligible_all & (F[train].sum(0) >= 30) & (F[~train].sum(0) >= 20)
+            elig = eligible_m & (F[train].sum(0) >= 30) & (F[~train].sum(0) >= 20)
             tests += int(elig.sum())
 
             def passes(Fm):
@@ -214,13 +290,13 @@ def study() -> dict:
             for k in np.nonzero(ok)[0]:
                 act = F[~train][:, k] > 0
                 survivors.append({
-                    "market": market, "horizon_days": h, "factor": keys[k],
+                    "market": market, "horizon_days": h, "factor": mkeys[k],
                     "learned": {"days": int(n_tr[k]), "effect_pct": round(d_tr[k] * 100, 3), "z": round(z_tr[k], 2)},
                     "confirmed": {"days": int(n_te[k]), "effect_pct": round(d_te[k] * 100, 3), "z": round(z_te[k], 2),
                                   "up_rate_pct": round(float((r[~train][act] > 0).mean()) * 100, 1)},
                 })
             if market in ("bitcoin", "ethereum") and h == 1:
-                for k, name in enumerate(keys):
+                for k, name in enumerate(mkeys):
                     if name.startswith("moon_in_"):
                         moon_rows.append({"market": market, "factor": name,
                                           "learned_effect_pct": round(d_tr[k] * 100, 3), "learned_z": round(z_tr[k], 2),
@@ -261,19 +337,23 @@ def whole_sky() -> dict:
     """
     today = datetime.now(timezone.utc).date()
     days = [START + timedelta(days=i) for i in range((today - START).days + 1)]
-    keys, sky = build_sky(days)
-    keep = sky.sum(0) >= MIN_DAYS
-    sky = sky[:, keep]
+    keys, sky, lon = build_sky(days)
+    only = [a[len('--market='):] for a in sys.argv if a.startswith('--market=')]
     day_index = {d: i for i, d in enumerate(days)}
     rng = np.random.default_rng(20260918)
     h = 5
     out = {}
     for market, symbol in MARKETS.items():
+        if only and market not in only:
+            continue
         px = fetch_prices(symbol)
         dates = [d for d, _ in px][:-h]
         close = np.array([c for _, c in px])
         r = close[h:] / close[:-h] - 1.0
-        F = sky[np.array([day_index[d] for d in dates])]
+        rows = np.array([day_index[d] for d in dates])
+        variants = {"sky": sky}
+        if market in CHARTS:
+            variants["sky_and_chart"] = market_matrix(market, keys, sky, lon)[1]
         train = np.array([d < SPLIT for d in dates])
 
         def score(Fm: np.ndarray) -> dict:
@@ -294,21 +374,134 @@ def whole_sky() -> dict:
                     "hit": float(np.mean((pred > 0) == (real > 0))),
                     "timed": float(timed), "held": float(held), "in_market": float(up.mean())}
 
-        real_score = score(F)
-        null = [score(np.roll(F, int(rng.integers(90, len(F) - 90)), axis=0)) for _ in range(N_SHIFTS)]
-        nc = np.array([n["corr"] for n in null])
-        nt = np.array([n["timed"] for n in null])
-        out[market] = {
-            **{k: round(v, 4) for k, v in real_score.items()},
-            "luck_corr_mean": round(float(nc.mean()), 4), "luck_corr_p95": round(float(np.percentile(nc, 95)), 4),
-            "luck_beats_real_corr": round(float((nc >= real_score["corr"]).mean()), 3),
-            "luck_timed_mean": round(float(nt.mean()), 4),
-            "luck_beats_real_timed": round(float((nt >= real_score["timed"]).mean()), 3),
-        }
-        print(f"{market:9s} corr {real_score['corr']:+.3f} (luck p95 {np.percentile(nc, 95):+.3f}, beats real {100*(nc >= real_score['corr']).mean():.0f}%)"
-              f"  hit {real_score['hit']*100:.0f}%  timed {real_score['timed']*100:+.0f}% vs held {real_score['held']*100:+.0f}%"
-              f"  (luck beats timed {100*(nt >= real_score['timed']).mean():.0f}%)")
+        out[market] = {}
+        for variant, M in variants.items():
+            M = M[:, M.sum(0) >= MIN_DAYS]
+            F = M[rows]
+            real_score = score(F)
+            null = [score(np.roll(F, int(rng.integers(90, len(F) - 90)), axis=0)) for _ in range(N_SHIFTS)]
+            nc = np.array([n["corr"] for n in null])
+            nt = np.array([n["timed"] for n in null])
+            out[market][variant] = {
+                **{k: round(v, 4) for k, v in real_score.items()},
+                "factors": int(F.shape[1]),
+                "luck_corr_mean": round(float(nc.mean()), 4), "luck_corr_p95": round(float(np.percentile(nc, 95)), 4),
+                "luck_beats_real_corr": round(float((nc >= real_score["corr"]).mean()), 3),
+                "luck_timed_mean": round(float(nt.mean()), 4),
+                "luck_beats_real_timed": round(float((nt >= real_score["timed"]).mean()), 3),
+            }
+            print(f"{market:9s} {variant:14s} {F.shape[1]:3d} factors  corr {real_score['corr']:+.3f} "
+                  f"(luck p95 {np.percentile(nc, 95):+.3f}, luck beats it {100*(nc >= real_score['corr']).mean():.0f}%)"
+                  f"  hit {real_score['hit']*100:.0f}%  timed {real_score['timed']*100:+.0f}% vs held {real_score['held']*100:+.0f}%"
+                  f"  (luck beats timing {100*(nt >= real_score['timed']).mean():.0f}%)", flush=True)
     return out
+
+
+def _runs(active: np.ndarray) -> list[tuple[int, int]]:
+    """Start and end index of every unbroken stretch where a factor was on."""
+    out, start = [], None
+    for i, a in enumerate(active):
+        if a and start is None:
+            start = i
+        elif not a and start is not None:
+            out.append((start, i - 1))
+            start = None
+    if start is not None:
+        out.append((start, len(active) - 1))
+    return out
+
+
+def occasions() -> dict:
+    """Every time each surviving pattern actually happened, and when it happens next.
+
+    A pattern's average hides what matters: whether it showed up most times it
+    occurred, or whether two big moves are carrying ten that did nothing. Days
+    inside one occurrence move together, so the occurrence is the honest unit
+    of evidence, and this counts them. The sky is computable ahead, so each
+    pattern also gets the dates it comes round again: a prediction on the
+    record before the fact.
+    """
+    o = json.loads(RESULTS.read_text())
+    today = datetime.now(timezone.utc).date()
+    days = [START + timedelta(days=i) for i in range((today - START).days + 366)]
+    keys, sky, lon = build_sky(days)
+    day_index = {d: i for i, d in enumerate(days)}
+    today_i = day_index[today]
+    report = []
+    for market, symbol in MARKETS.items():
+        mine = [s for s in o["survivors"] if s["market"] == market]
+        if not mine:
+            continue
+        mkeys, msky = market_matrix(market, keys, sky, lon)
+        px = fetch_prices(symbol)
+        dates = [d for d, _ in px]
+        close = np.array([c for _, c in px])
+        rows = np.array([day_index[d] for d in dates])
+        for s in mine:
+            h = s["horizon_days"]
+            k = mkeys.index(s["factor"])
+            r = close[h:] / close[:-h] - 1.0
+            base = float(r.mean())
+            active = msky[rows, k][:-h] > 0
+            want = 1 if s["learned"]["effect_pct"] > 0 else -1
+            occ = []
+            for a, b in _runs(active):
+                move = float(r[a:b + 1].mean())
+                occ.append({"from": dates[a].isoformat(), "to": dates[b].isoformat(), "days": b - a + 1,
+                            "avg_move_pct": round(move * 100, 2),
+                            "as_predicted": (move - base) * want > 0})
+            ahead = [{"from": days[today_i + a].isoformat(), "to": days[today_i + b].isoformat()}
+                     for a, b in _runs(msky[today_i:, k] > 0)][:3]
+            hits = sum(1 for x in occ if x["as_predicted"])
+            since = [x for x in occ if x["from"] >= SPLIT.isoformat()]
+            report.append({
+                "market": market, "factor": s["factor"], "horizon_days": h,
+                "expects": "up" if want > 0 else "down",
+                "effect_pct": s["confirmed"]["effect_pct"],
+                "occasions": len(occ), "as_predicted": hits,
+                "as_predicted_since_split": sum(1 for x in since if x["as_predicted"]), "occasions_since_split": len(since),
+                "list": occ,
+                "next": ahead,
+            })
+    report.sort(key=lambda x: (-(x["as_predicted"] / max(1, x["occasions"])), -x["occasions"]))
+    (HERE / "almanac_occasions.json").write_text(json.dumps(report, indent=2))
+    return {"today": today.isoformat(), "patterns": report}
+
+
+def write_occasions(rep: dict) -> None:
+    pats = rep["patterns"]
+    L = ["# The almanac, occasion by occasion", "",
+         "Each pattern that passed the almanac's two tests, opened up: every separate time it actually",
+         "happened, and whether the market went the way the pattern says. Days inside one occurrence",
+         "move together, so the occurrence is the honest unit. Then the dates each one comes round",
+         "again, written down before they happen.", "",
+         f"Written {rep['today']} by `almanac.py --occasions`.", "",
+         "## How often each pattern showed up when it occurred", "",
+         "| market | sky factor | expects | times it happened | went as expected | of those since 2021 | next |",
+         "|---|---|---|---|---|---|---|"]
+    for p in pats:
+        nxt = p["next"][0]["from"] if p["next"] else "not within a year"
+        L.append(f"| {p['market']} | {p['factor'].replace('_', ' ')} | {p['expects']} {p['horizon_days']}d | {p['occasions']} | "
+                 f"{p['as_predicted']} ({p['as_predicted'] / max(1, p['occasions']) * 100:.0f}%) | "
+                 f"{p['as_predicted_since_split']} of {p['occasions_since_split']} | {nxt} |")
+    soon = sorted(((n["from"], n["to"], p) for p in pats for n in p["next"]), key=lambda x: x[0])
+    horizon = (date.fromisoformat(rep["today"]) + timedelta(days=90)).isoformat()
+    L += ["", "## On the record: the next ninety days", "",
+          "What the surviving patterns expect, dated in advance. Scored after the fact, in public.", "",
+          "| from | to | market | sky factor | expects | record |", "|---|---|---|---|---|---|"]
+    for f, t, p in soon:
+        if f <= horizon:
+            L.append(f"| {f} | {t} | {p['market']} | {p['factor'].replace('_', ' ')} | {p['expects']} over {p['horizon_days']}d | "
+                     f"{p['as_predicted']} of {p['occasions']} |")
+    L += ["", "## Every occasion", ""]
+    for p in pats:
+        L += [f"<details><summary>{p['market']}: {p['factor'].replace('_', ' ')}, expects {p['expects']} "
+              f"({p['as_predicted']} of {p['occasions']})</summary>", "",
+              "| from | to | days | average move | as expected |", "|---|---|---|---|---|"]
+        for x in p["list"]:
+            L.append(f"| {x['from']} | {x['to']} | {x['days']} | {x['avg_move_pct']:+.2f}% | {'yes' if x['as_predicted'] else 'no'} |")
+        L += ["", "</details>", ""]
+    (HERE / "ALMANAC_OCCASIONS.md").write_text("\n".join(L), encoding="utf-8")
 
 
 def write_page(o: dict) -> None:
@@ -370,9 +563,16 @@ def write_page(o: dict) -> None:
               "well or better, which is the only honest measure of whether the real one did anything.", "",
               "| market | forecast vs outcome | called direction | timed | held | luck matched the forecast | luck matched the timing |",
               "|---|---|---|---|---|---|---|"]
-        for m, v in ws.items():
-            L.append(f"| {m} | {v['corr']:+.3f} | {v['hit']*100:.0f}% | {v['timed']*100:+.0f}% | {v['held']*100:+.0f}% | "
-                     f"{v['luck_beats_real_corr']*100:.0f}% of runs | {v['luck_beats_real_timed']*100:.0f}% of runs |")
+        label = {"sky": "the sky alone", "sky_and_chart": "sky plus its birth chart"}
+        for m, variants in ws.items():
+            if "sky" not in variants:
+                variants = {"sky": variants}
+            for name, v in variants.items():
+                L.append(f"| {m}, {label.get(name, name)} | {v['corr']:+.3f} | {v['hit']*100:.0f}% | {v['timed']*100:+.0f}% | "
+                         f"{v['held']*100:+.0f}% | {v['luck_beats_real_corr']*100:.0f}% of runs | "
+                         f"{v['luck_beats_real_timed']*100:.0f}% of runs |")
+        L += ["", "Birth charts used: " + "; ".join(f"{k}: {c['label']}" for k, c in CHARTS.items()) + ".",
+              "Gold, oil and the VIX have no agreed moment of birth, so they get no chart rather than an invented one."]
         L += ["", "Read the last two columns first. Under about 5% would be evidence. Nothing here is clearly there.",
               "Bitcoin and Ethereum sit at the edge of it; stocks, gold, oil and the fear index show nothing.", ""]
     L += ["", "## How to read this", "",
@@ -387,9 +587,17 @@ def write_page(o: dict) -> None:
 
 if __name__ == "__main__":
     t0 = time.time()
+    if "--occasions" in sys.argv:
+        rep = occasions()
+        write_occasions(rep)
+        print(f"{len(rep['patterns'])} patterns opened up. {time.time() - t0:.0f}s")
+        sys.exit(0)
     if "--whole" in sys.argv:
-        ws = whole_sky()
-        (HERE / "almanac_whole_sky.json").write_text(json.dumps(ws, indent=2))
+        ws_path = HERE / "almanac_whole_sky.json"
+        merged = json.loads(ws_path.read_text()) if ws_path.exists() else {}
+        merged = {k: (v if "sky" in v else {"sky": v}) for k, v in merged.items()}
+        merged.update(whole_sky())
+        ws_path.write_text(json.dumps(merged, indent=2))
         print(f"{time.time() - t0:.0f}s")
         sys.exit(0)
     result = study()
