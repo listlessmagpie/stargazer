@@ -18,3 +18,6 @@ scout_report.md
 experiment_published.json
 paper_book.json
 paper_tables.json
+allocator_state.json
+position_*.json
+almanac_results.json

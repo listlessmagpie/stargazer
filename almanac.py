@@ -1,0 +1,311 @@
+"""The almanac: what the sky was doing, and what actually happened, over many years.
+
+Six months of Moon signs against one coin is a sliver. This computes the sky
+for every day back to 2005 (Moon, Sun and planets by sign, the Moon's phase,
+retrogrades and stations, every major aspect between the planets, a count of
+hard aspects among the difficult planets, eclipse windows) and sets each
+factor against what several markets did next: Bitcoin, Ethereum, the S&P 500,
+gold, oil, and the VIX, which is the market's own gauge of fear.
+
+Test a few thousand patterns and some will look brilliant by pure luck. Two
+guards against that. Every pattern is learned on the years before 2021 and
+must then show the same effect on the years after, which it never saw. And the
+whole study is rerun a hundred times with the sky slid out of step with the
+calendar, so the sky is real but belongs to the wrong days: however many
+patterns pass on those scrambled skies is what luck alone produces, and the
+real count only means something by how far it stands above that.
+
+Run with the orrery's Python, which has the ephemeris:
+    D:/git/paradox-box/.venv/Scripts/python.exe almanac.py
+"""
+
+from __future__ import annotations
+
+import json
+import sys
+import time
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+
+import httpx
+import numpy as np
+
+sys.path.insert(0, "D:/git/paradox-box")
+import orrery.moment  # noqa: F401,E402  (sets the ephemeris path)
+import swisseph as swe  # noqa: E402
+
+HERE = Path(__file__).resolve().parent
+CACHE = HERE / "cache"
+RESULTS = HERE / "almanac_results.json"
+PAGE = HERE / "ALMANAC.md"
+
+START = date(2005, 1, 1)
+SPLIT = date(2021, 1, 1)
+HORIZONS = (1, 5)
+ORB = 3.0
+N_SHIFTS = 100
+Z_TRAIN, Z_TEST = 2.5, 1.5
+MIN_DAYS, MIN_EPISODES = 60, 8
+
+MARKETS = {
+    "bitcoin": "BTC-USD", "ethereum": "ETH-USD", "sp500": "^GSPC",
+    "gold": "GC=F", "oil": "CL=F", "vix": "^VIX",
+}
+BODIES = {
+    "sun": swe.SUN, "moon": swe.MOON, "mercury": swe.MERCURY, "venus": swe.VENUS, "mars": swe.MARS,
+    "jupiter": swe.JUPITER, "saturn": swe.SATURN, "uranus": swe.URANUS, "neptune": swe.NEPTUNE,
+    "pluto": swe.PLUTO,
+}
+SIGNS = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio",
+         "sagittarius", "capricorn", "aquarius", "pisces"]
+PHASES = ["new_moon", "waxing_crescent", "first_quarter", "waxing_gibbous",
+          "full_moon", "waning_gibbous", "last_quarter", "waning_crescent"]
+ASPECTS = {"conj": 0, "sext": 60, "sq": 90, "tri": 120, "opp": 180}
+HARD = ("conj", "sq", "opp")
+DIFFICULT = ("mars", "saturn", "uranus", "neptune", "pluto")
+
+
+# ---------- the sky ----------
+
+def build_sky(days: list[date]) -> tuple[list[str], np.ndarray]:
+    """One row per day, one boolean column per sky factor. Computed at noon UTC."""
+    n = len(days)
+    lon = {b: np.zeros(n) for b in BODIES}
+    speed = {b: np.zeros(n) for b in BODIES}
+    for i, d in enumerate(days):
+        jd = swe.julday(d.year, d.month, d.day, 12.0)
+        for name, body in BODIES.items():
+            xx = swe.calc_ut(jd, body, swe.FLG_SWIEPH | swe.FLG_SPEED)[0]
+            lon[name][i], speed[name][i] = xx[0], xx[3]
+
+    cols: dict[str, np.ndarray] = {}
+    for b in ("moon", "sun", "mercury", "venus", "mars", "jupiter", "saturn"):
+        idx = (lon[b] // 30).astype(int)
+        for s, sign in enumerate(SIGNS):
+            cols[f"{b}_in_{sign}"] = idx == s
+    elong = (lon["moon"] - lon["sun"]) % 360
+    for p, phase in enumerate(PHASES):
+        cols[f"moon_{phase}"] = (elong // 45).astype(int) == p
+    for b in ("mercury", "venus", "mars", "jupiter", "saturn", "uranus", "neptune", "pluto"):
+        retro = speed[b] < 0
+        cols[f"{b}_retrograde"] = retro
+        if b in ("mercury", "venus", "mars"):
+            turn = np.zeros(n, bool)
+            flips = np.nonzero(retro[1:] != retro[:-1])[0] + 1
+            for f in flips:
+                turn[max(0, f - 2):f + 3] = True
+            cols[f"{b}_station"] = turn
+
+    names = [b for b in BODIES if b != "moon"]
+    tension = np.zeros(n, int)
+    for i, a in enumerate(names):
+        for b in names[i + 1:]:
+            sep = np.abs((lon[a] - lon[b] + 180) % 360 - 180)
+            for asp, angle in ASPECTS.items():
+                active = np.abs(sep - angle) <= ORB
+                cols[f"{a}_{asp}_{b}"] = active
+                if asp in HARD and a in DIFFICULT and b in DIFFICULT:
+                    tension += active
+    cols["tension_1plus"] = tension >= 1
+    cols["tension_2plus"] = tension >= 2
+
+    jd0 = swe.julday(days[0].year, days[0].month, days[0].day, 0.0)
+    jd1 = swe.julday(days[-1].year, days[-1].month, days[-1].day, 0.0)
+    for label, finder in (("solar_eclipse", lambda j: swe.sol_eclipse_when_glob(j, swe.FLG_SWIEPH, 0)),
+                          ("lunar_eclipse", lambda j: swe.lun_eclipse_when(j, swe.FLG_SWIEPH, 0))):
+        win = np.zeros(n, bool)
+        j = jd0
+        while j < jd1:
+            peak = finder(j)[1][0]
+            k = int(round(peak - jd0))
+            if 0 <= k < n:
+                win[max(0, k - 3):k + 4] = True
+            j = peak + 10
+        cols[f"{label}_window"] = win
+
+    keys = sorted(cols)
+    return keys, np.column_stack([cols[k] for k in keys]).astype(np.float64)
+
+
+# ---------- the markets ----------
+
+def fetch_prices(symbol: str) -> list[tuple[date, float]]:
+    path = CACHE / f"almanac_px_{symbol.replace('^', '').replace('=', '')}.json"
+    if path.exists() and time.time() - path.stat().st_mtime < 86400:
+        return [(date.fromisoformat(d), c) for d, c in json.loads(path.read_text())]
+    p1 = int(datetime(START.year, START.month, START.day, tzinfo=timezone.utc).timestamp())
+    r = httpx.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}",
+                  params={"period1": p1, "period2": int(time.time()), "interval": "1d"},
+                  headers={"User-Agent": "Mozilla/5.0"}, timeout=60)
+    r.raise_for_status()
+    res = r.json()["chart"]["result"][0]
+    closes = res["indicators"]["quote"][0]["close"]
+    out, seen = [], set()
+    for t, c in zip(res["timestamp"], closes):
+        d = datetime.fromtimestamp(t, timezone.utc).date()
+        if c and d not in seen:
+            seen.add(d)
+            out.append((d, float(c)))
+    CACHE.mkdir(exist_ok=True)
+    path.write_text(json.dumps([(d.isoformat(), c) for d, c in out]))
+    return out
+
+
+# ---------- the test ----------
+
+def _z(F: np.ndarray, r: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """For every factor at once: days active, mean return active minus inactive, and its z."""
+    T = len(r)
+    n1 = F.sum(0)
+    n0 = T - n1
+    s1 = F.T @ r
+    with np.errstate(divide="ignore", invalid="ignore"):
+        m1 = s1 / n1
+        m0 = (r.sum() - s1) / n0
+        z = (m1 - m0) / (r.std() * np.sqrt(1 / n1 + 1 / n0))
+    return n1, m1 - m0, np.nan_to_num(z)
+
+
+def _episodes(col: np.ndarray) -> int:
+    c = col.astype(bool)
+    return int(c[0]) + int(np.sum(c[1:] & ~c[:-1]))
+
+
+def study() -> dict:
+    today = datetime.now(timezone.utc).date()
+    days = [START + timedelta(days=i) for i in range((today - START).days + 1)]
+    print(f"computing the sky for {len(days)} days...")
+    keys, sky = build_sky(days)
+    day_index = {d: i for i, d in enumerate(days)}
+    eligible_all = np.array([(sky[:, k].sum() >= MIN_DAYS) and (_episodes(sky[:, k]) >= MIN_EPISODES)
+                             for k in range(len(keys))])
+    print(f"{len(keys)} sky factors, {int(eligible_all.sum())} seen often enough to judge")
+
+    rng = np.random.default_rng(20260918)
+    survivors, moon_rows, tests = [], [], 0
+    real_pass = 0
+    null_pass = np.zeros(N_SHIFTS)
+
+    for market, symbol in MARKETS.items():
+        px = fetch_prices(symbol)
+        print(f"{market}: {len(px)} trading days from {px[0][0]}")
+        dates = [d for d, _ in px]
+        close = np.array([c for _, c in px])
+        rows = np.array([day_index[d] for d in dates])
+        F_full = sky[rows]
+        for h in HORIZONS:
+            r = close[h:] / close[:-h] - 1.0
+            F = F_full[:-h]
+            dts = dates[:-h]
+            train = np.array([d < SPLIT for d in dts])
+            if train.sum() < 250 or (~train).sum() < 250:
+                continue
+            elig = eligible_all & (F[train].sum(0) >= 30) & (F[~train].sum(0) >= 20)
+            tests += int(elig.sum())
+
+            def passes(Fm):
+                n_tr, d_tr, z_tr = _z(Fm[train], r[train])
+                n_te, d_te, z_te = _z(Fm[~train], r[~train])
+                ok = elig & (np.abs(z_tr) >= Z_TRAIN) & (np.sign(z_tr) == np.sign(z_te)) & (np.abs(z_te) >= Z_TEST)
+                return ok, (n_tr, d_tr, z_tr, n_te, d_te, z_te)
+
+            ok, (n_tr, d_tr, z_tr, n_te, d_te, z_te) = passes(F)
+            real_pass += int(ok.sum())
+            for k in np.nonzero(ok)[0]:
+                act = F[~train][:, k] > 0
+                survivors.append({
+                    "market": market, "horizon_days": h, "factor": keys[k],
+                    "learned": {"days": int(n_tr[k]), "effect_pct": round(d_tr[k] * 100, 3), "z": round(z_tr[k], 2)},
+                    "confirmed": {"days": int(n_te[k]), "effect_pct": round(d_te[k] * 100, 3), "z": round(z_te[k], 2),
+                                  "up_rate_pct": round(float((r[~train][act] > 0).mean()) * 100, 1)},
+                })
+            if market in ("bitcoin", "ethereum") and h == 1:
+                for k, name in enumerate(keys):
+                    if name.startswith("moon_in_"):
+                        moon_rows.append({"market": market, "factor": name,
+                                          "learned_effect_pct": round(d_tr[k] * 100, 3), "learned_z": round(z_tr[k], 2),
+                                          "confirmed_effect_pct": round(d_te[k] * 100, 3), "confirmed_z": round(z_te[k], 2)})
+            for s in range(N_SHIFTS):
+                shift = int(rng.integers(90, len(F) - 90))
+                null_pass[s] += int(passes(np.roll(F, shift, axis=0))[0].sum())
+
+    survivors.sort(key=lambda x: -abs(x["confirmed"]["z"]))
+    out = {
+        "run_at": datetime.now(timezone.utc).isoformat(),
+        "from": START.isoformat(), "split": SPLIT.isoformat(),
+        "factors": len(keys), "tests": tests,
+        "passed": real_pass,
+        "luck": {"mean": round(float(null_pass.mean()), 1), "p95": float(np.percentile(null_pass, 95)),
+                 "max": float(null_pass.max()), "runs": N_SHIFTS,
+                 "share_of_runs_at_or_above_real": round(float((null_pass >= real_pass).mean()), 3)},
+        "survivors": survivors, "moon_signs_long_run": moon_rows,
+    }
+    RESULTS.write_text(json.dumps(out, indent=2))
+    return out
+
+
+def write_page(o: dict) -> None:
+    luck = o["luck"]
+    L = [
+        "# The almanac",
+        "",
+        "What the sky was doing, and what actually happened. Every sky factor, against every",
+        f"market, from {o['from']} to now. Learned on the years before {o['split']}, then made to",
+        "prove itself on the years after.",
+        "",
+        f"Written {o['run_at'][:16].replace('T', ' ')} UTC by `almanac.py`. Nothing here is typed by hand.",
+        "",
+        "## The honest headline",
+        "",
+        f"{o['factors']} sky factors, {o['tests']} tests across six markets and two horizons.",
+        f"**{o['passed']} patterns passed**: strong in the early years, same direction in the later years.",
+        "",
+        f"Luck's share: with the sky slid out of step with the calendar {luck['runs']} times, an average of",
+        f"**{luck['mean']}** patterns passed by chance, 95 runs in 100 gave {luck['p95']:.0f} or fewer, and the most",
+        f"any run gave was {luck['max']:.0f}. A scrambled sky did as well as the real one in",
+        f"{luck['share_of_runs_at_or_above_real'] * 100:.0f}% of runs.",
+        "",
+    ]
+    if o["passed"] > luck["p95"]:
+        L += ["The real sky passed more patterns than luck usually manages. That is evidence of something,",
+              "and it still does not say which of the survivors below are the real ones.", ""]
+    else:
+        L += ["That is inside what luck produces. On this evidence, taken as a whole, the survivors below",
+              "cannot be told apart from chance, and none of them has earned real money.", ""]
+    L += ["## What survived", "",
+          "| market | horizon | sky factor | learned: effect, z | confirmed: effect, z | up rate after |",
+          "|---|---|---|---|---|---|"]
+    for s in o["survivors"][:40]:
+        L.append(f"| {s['market']} | {s['horizon_days']}d | {s['factor'].replace('_', ' ')} | "
+                 f"{s['learned']['effect_pct']:+.2f}%, {s['learned']['z']:+.1f} | "
+                 f"{s['confirmed']['effect_pct']:+.2f}%, {s['confirmed']['z']:+.1f} | {s['confirmed']['up_rate_pct']:.0f}% |")
+    if not o["survivors"]:
+        L.append("| nothing | | | | | |")
+    L += ["", "Effect is the average move over the horizon on days the factor was active, minus the average on",
+          "days it was not. For the VIX an up move means fear rising.", "",
+          "## The Moon signs Stargazer trades on, over the long run", "",
+          "The live agent sizes its bets from six months of Moon signs. Here is each sign against",
+          "Bitcoin and Ethereum one day ahead, over the full history. A sign that matters should show the",
+          "same direction in both halves.", "",
+          "| market | Moon in | learned: effect, z | confirmed: effect, z | same direction |",
+          "|---|---|---|---|---|"]
+    for m in o["moon_signs_long_run"]:
+        same = "yes" if m["learned_effect_pct"] * m["confirmed_effect_pct"] > 0 else "no"
+        L.append(f"| {m['market']} | {m['factor'].replace('moon_in_', '')} | {m['learned_effect_pct']:+.2f}%, {m['learned_z']:+.1f} | "
+                 f"{m['confirmed_effect_pct']:+.2f}%, {m['confirmed_z']:+.1f} | {same} |")
+    L += ["", "## How to read this", "",
+          "* z is how far the effect stands from nothing, in units of its own noise. It is flattered here,",
+          "  because a planet sits in a sign for weeks and those days are not independent. The scrambled",
+          "  sky runs are the correction for that, which is why the headline leans on them and not on z.",
+          "* Passing twice is a filter, not proof. The point of the filter is to decide what deserves a",
+          "  forward test with pretend money, and then, if it keeps working, real money.",
+          ""]
+    PAGE.write_text("\n".join(L), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    t0 = time.time()
+    result = study()
+    write_page(result)
+    print(f"\n{result['tests']} tests, {result['passed']} passed; luck averages {result['luck']['mean']}, "
+          f"95th percentile {result['luck']['p95']:.0f}. {time.time() - t0:.0f}s. Page written to {PAGE.name}")
