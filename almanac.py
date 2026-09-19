@@ -244,6 +244,73 @@ def study() -> dict:
     return out
 
 
+def _ridge(X: np.ndarray, y: np.ndarray, lam: float) -> np.ndarray:
+    return np.linalg.solve(X.T @ X + lam * np.eye(X.shape[1]), X.T @ y)
+
+
+def whole_sky() -> dict:
+    """The entire sky at once: one model per market, learned before the split, judged after.
+
+    Each day is a row of every sky factor. A ridge regression learns, from the
+    early years, how the whole configuration went with the next five days. The
+    penalty is chosen inside the early years only. Then the model forecasts the
+    later years it never saw, and is scored three ways: does its forecast move
+    with what happened, how often does it call the direction, and what would
+    holding only when it says up have made against simply holding. The same
+    scrambled sky reruns say how much of that luck alone would give.
+    """
+    today = datetime.now(timezone.utc).date()
+    days = [START + timedelta(days=i) for i in range((today - START).days + 1)]
+    keys, sky = build_sky(days)
+    keep = sky.sum(0) >= MIN_DAYS
+    sky = sky[:, keep]
+    day_index = {d: i for i, d in enumerate(days)}
+    rng = np.random.default_rng(20260918)
+    h = 5
+    out = {}
+    for market, symbol in MARKETS.items():
+        px = fetch_prices(symbol)
+        dates = [d for d, _ in px][:-h]
+        close = np.array([c for _, c in px])
+        r = close[h:] / close[:-h] - 1.0
+        F = sky[np.array([day_index[d] for d in dates])]
+        train = np.array([d < SPLIT for d in dates])
+
+        def score(Fm: np.ndarray) -> dict:
+            mu, sd = Fm[train].mean(0), Fm[train].std(0) + 1e-9
+            X = (Fm - mu) / sd
+            Xtr, ytr = X[train], r[train] - r[train].mean()
+            cut = int(len(Xtr) * 0.7)
+            best = min((1e2, 1e3, 1e4, 1e5),
+                       key=lambda lam: np.mean((Xtr[cut:] @ _ridge(Xtr[:cut], ytr[:cut], lam) - ytr[cut:]) ** 2))
+            w = _ridge(Xtr, ytr, best)
+            pred = X[~train] @ w
+            real = r[~train]
+            up = pred > 0
+            step = slice(0, None, h)  # non overlapping five day steps
+            timed = np.prod(1 + np.where(up[step], real[step], 0.0)) - 1
+            held = np.prod(1 + real[step]) - 1
+            return {"corr": float(np.corrcoef(pred, real)[0, 1]),
+                    "hit": float(np.mean((pred > 0) == (real > 0))),
+                    "timed": float(timed), "held": float(held), "in_market": float(up.mean())}
+
+        real_score = score(F)
+        null = [score(np.roll(F, int(rng.integers(90, len(F) - 90)), axis=0)) for _ in range(N_SHIFTS)]
+        nc = np.array([n["corr"] for n in null])
+        nt = np.array([n["timed"] for n in null])
+        out[market] = {
+            **{k: round(v, 4) for k, v in real_score.items()},
+            "luck_corr_mean": round(float(nc.mean()), 4), "luck_corr_p95": round(float(np.percentile(nc, 95)), 4),
+            "luck_beats_real_corr": round(float((nc >= real_score["corr"]).mean()), 3),
+            "luck_timed_mean": round(float(nt.mean()), 4),
+            "luck_beats_real_timed": round(float((nt >= real_score["timed"]).mean()), 3),
+        }
+        print(f"{market:9s} corr {real_score['corr']:+.3f} (luck p95 {np.percentile(nc, 95):+.3f}, beats real {100*(nc >= real_score['corr']).mean():.0f}%)"
+              f"  hit {real_score['hit']*100:.0f}%  timed {real_score['timed']*100:+.0f}% vs held {real_score['held']*100:+.0f}%"
+              f"  (luck beats timed {100*(nt >= real_score['timed']).mean():.0f}%)")
+    return out
+
+
 def write_page(o: dict) -> None:
     luck = o["luck"]
     L = [
@@ -293,6 +360,21 @@ def write_page(o: dict) -> None:
         same = "yes" if m["learned_effect_pct"] * m["confirmed_effect_pct"] > 0 else "no"
         L.append(f"| {m['market']} | {m['factor'].replace('moon_in_', '')} | {m['learned_effect_pct']:+.2f}%, {m['learned_z']:+.1f} | "
                  f"{m['confirmed_effect_pct']:+.2f}%, {m['confirmed_z']:+.1f} | {same} |")
+    ws_path = HERE / "almanac_whole_sky.json"
+    if ws_path.exists():
+        ws = json.loads(ws_path.read_text())
+        L += ["", "## The whole sky at once", "",
+              "One model per market, fed every sky factor together, learned before the split and made to",
+              "forecast the years after. Forecast five days ahead. 'Timed' is holding only on days the model",
+              "said up; 'held' is simply holding. The last two columns say how often a scrambled sky did as",
+              "well or better, which is the only honest measure of whether the real one did anything.", "",
+              "| market | forecast vs outcome | called direction | timed | held | luck matched the forecast | luck matched the timing |",
+              "|---|---|---|---|---|---|---|"]
+        for m, v in ws.items():
+            L.append(f"| {m} | {v['corr']:+.3f} | {v['hit']*100:.0f}% | {v['timed']*100:+.0f}% | {v['held']*100:+.0f}% | "
+                     f"{v['luck_beats_real_corr']*100:.0f}% of runs | {v['luck_beats_real_timed']*100:.0f}% of runs |")
+        L += ["", "Read the last two columns first. Under about 5% would be evidence. Nothing here is clearly there.",
+              "Bitcoin and Ethereum sit at the edge of it; stocks, gold, oil and the fear index show nothing.", ""]
     L += ["", "## How to read this", "",
           "* z is how far the effect stands from nothing, in units of its own noise. It is flattered here,",
           "  because a planet sits in a sign for weeks and those days are not independent. The scrambled",
@@ -305,6 +387,11 @@ def write_page(o: dict) -> None:
 
 if __name__ == "__main__":
     t0 = time.time()
+    if "--whole" in sys.argv:
+        ws = whole_sky()
+        (HERE / "almanac_whole_sky.json").write_text(json.dumps(ws, indent=2))
+        print(f"{time.time() - t0:.0f}s")
+        sys.exit(0)
     result = study()
     write_page(result)
     print(f"\n{result['tests']} tests, {result['passed']} passed; luck averages {result['luck']['mean']}, "

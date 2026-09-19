@@ -4,7 +4,7 @@ What the sky was doing, and what actually happened. Every sky factor, against ev
 market, from 2005-01-01 to now. Learned on the years before 2021-01-01, then made to
 prove itself on the years after.
 
-Written 2026-09-19 03:40 UTC by `almanac.py`. Nothing here is typed by hand.
+Written 2026-09-19 04:07 UTC by `almanac.py`. Nothing here is typed by hand.
 
 ## The honest headline
 
@@ -99,6 +99,26 @@ same direction in both halves.
 | ethereum | scorpio | -0.37%, -0.7 | +0.12%, +0.4 | no |
 | ethereum | taurus | +0.12%, +0.2 | +0.04%, +0.1 | yes |
 | ethereum | virgo | +1.41%, +2.5 | -0.21%, -0.7 | no |
+
+## The whole sky at once
+
+One model per market, fed every sky factor together, learned before the split and made to
+forecast the years after. Forecast five days ahead. 'Timed' is holding only on days the model
+said up; 'held' is simply holding. The last two columns say how often a scrambled sky did as
+well or better, which is the only honest measure of whether the real one did anything.
+
+| market | forecast vs outcome | called direction | timed | held | luck matched the forecast | luck matched the timing |
+|---|---|---|---|---|---|---|
+| bitcoin | +0.025 | 50% | +219% | +160% | 15% of runs | 5% of runs |
+| ethereum | +0.113 | 51% | +313% | +235% | 6% of runs | 28% of runs |
+| sp500 | -0.052 | 52% | +17% | +105% | 82% of runs | 82% of runs |
+| gold | -0.019 | 52% | +58% | +126% | 60% of runs | 37% of runs |
+| oil | -0.071 | 50% | +6% | +100% | 93% of runs | 77% of runs |
+| vix | -0.027 | 53% | +57% | -45% | 64% of runs | 22% of runs |
+
+Read the last two columns first. Under about 5% would be evidence. Nothing here is clearly there.
+Bitcoin and Ethereum sit at the edge of it; stocks, gold, oil and the fear index show nothing.
+
 
 ## How to read this
 
