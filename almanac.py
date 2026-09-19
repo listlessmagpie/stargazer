@@ -504,6 +504,105 @@ def write_occasions(rep: dict) -> None:
     (HERE / "ALMANAC_OCCASIONS.md").write_text("\n".join(L), encoding="utf-8")
 
 
+FORECAST_PATH = HERE / "forecast.json"
+FORECAST_LOG = HERE / "forecasts.jsonl"
+FORECAST_PAGE = HERE / "FORECASTS.md"
+#: Which reading of the sky each market's forecast uses: whichever the long test favoured.
+FORECAST_VARIANT = {"ethereum": "sky_and_chart", "bitcoin": "sky"}
+
+
+def forecast() -> dict:
+    """Today's forecast, written down before the fact, and the old ones scored.
+
+    For each market the whole sky model is refit on everything known up to
+    today and asked about the next five trading days. The forecast goes into a
+    public log with its date. When five days have passed, the log entry gets
+    what actually happened beside it. Nothing is ever edited after the fact:
+    entries are appended, and scoring only fills in outcomes.
+    """
+    today = datetime.now(timezone.utc).date()
+    days = [START + timedelta(days=i) for i in range((today - START).days + 1)]
+    keys, sky, lon = build_sky(days)
+    day_index = {d: i for i, d in enumerate(days)}
+    h = 5
+    out = {"date": today.isoformat(), "horizon_trading_days": h, "markets": {}}
+    closes: dict[str, dict[str, float]] = {}
+    for market, variant in FORECAST_VARIANT.items():
+        px = fetch_prices(MARKETS[market])
+        closes[market] = {d.isoformat(): c for d, c in px}
+        M = market_matrix(market, keys, sky, lon)[1] if variant == "sky_and_chart" else sky
+        M = M[:, M.sum(0) >= MIN_DAYS]
+        dates = [d for d, _ in px]
+        close = np.array([c for _, c in px])
+        r = close[h:] / close[:-h] - 1.0
+        F = M[np.array([day_index[d] for d in dates[:-h]])]
+        mu, sd = F.mean(0), F.std(0) + 1e-9
+        X, y = (F - mu) / sd, r - r.mean()
+        cut = int(len(X) * 0.7)
+        lam = min((1e2, 1e3, 1e4, 1e5),
+                  key=lambda l: np.mean((X[cut:] @ _ridge(X[:cut], y[:cut], l) - y[cut:]) ** 2))
+        w = _ridge(X, y, lam)
+        x_today = (M[day_index[today]] - mu) / sd
+        pred = float(x_today @ w)
+        contrib = sorted(zip(x_today * w, [k for k, keep in zip(
+            market_matrix(market, keys, sky, lon)[0] if variant == "sky_and_chart" else keys,
+            (market_matrix(market, keys, sky, lon)[1] if variant == "sky_and_chart" else sky).sum(0) >= MIN_DAYS) if keep]),
+            key=lambda t: -abs(t[0]))[:5]
+        out["markets"][market] = {
+            "reading": variant, "expects": "up" if pred > 0 else "down",
+            "forecast_vs_usual_pct": round(pred * 100, 2),
+            "price_at_forecast": round(float(close[-1]), 2), "price_date": dates[-1].isoformat(),
+            "why": [{"factor": k, "pull_pct": round(float(c) * 100, 2)} for c, k in contrib],
+        }
+
+    occ_path = HERE / "almanac_occasions.json"
+    if occ_path.exists():
+        active = []
+        for p in json.loads(occ_path.read_text()):
+            for n in p["next"]:
+                if n["from"] <= today.isoformat() <= n["to"]:
+                    active.append({"market": p["market"], "factor": p["factor"], "expects": p["expects"],
+                                   "record": f"{p['as_predicted']} of {p['occasions']}"})
+        out["patterns_active_today"] = active
+
+    FORECAST_PATH.write_text(json.dumps(out, indent=2))
+    log = [json.loads(l) for l in FORECAST_LOG.read_text().splitlines() if l.strip()] if FORECAST_LOG.exists() else []
+    if not any(e["date"] == out["date"] for e in log):
+        log.append({"date": out["date"], "markets": {m: {k: v[k] for k in ("expects", "forecast_vs_usual_pct",
+                    "price_at_forecast", "price_date")} for m, v in out["markets"].items()}})
+    for e in log:
+        for m, f in e["markets"].items():
+            if "outcome" in f or m not in closes:
+                continue
+            ds = sorted(closes[m])
+            if f["price_date"] in ds and ds.index(f["price_date"]) + h < len(ds):
+                later = ds[ds.index(f["price_date"]) + h]
+                move = closes[m][later] / f["price_at_forecast"] - 1
+                f["outcome"] = {"date": later, "price": round(closes[m][later], 2), "move_pct": round(move * 100, 2),
+                                "right": (move > 0) == (f["expects"] == "up")}
+    FORECAST_LOG.write_text("\n".join(json.dumps(e) for e in log) + "\n")
+
+    scored = [(e["date"], m, f) for e in log for m, f in e["markets"].items() if "outcome" in f]
+    L = ["# Forecasts, written before the fact", "",
+         "Each day the whole sky model says what it expects over the next five trading days. The entry is",
+         "dated and appended here before anyone knows the answer, and scored once the days have passed.",
+         "Ethereum is read against its birth chart; Bitcoin against the sky alone, because that is what the",
+         "long test favoured for each. The live agent trades on the Ethereum line with real money.", ""]
+    if scored:
+        right = sum(1 for _, _, f in scored if f["outcome"]["right"])
+        L += [f"**Scored so far: {right} right of {len(scored)}.**", ""]
+    else:
+        L += ["**Nothing scored yet.** The first entries mature five trading days after they were written.", ""]
+    L += ["| written | market | expects | price then | five days on | move | right |", "|---|---|---|---|---|---|---|"]
+    for e in reversed(log[-60:]):
+        for m, f in e["markets"].items():
+            oc = f.get("outcome")
+            L.append(f"| {e['date']} | {m} | {f['expects']} ({f['forecast_vs_usual_pct']:+.2f}% vs usual) | {f['price_at_forecast']:,} | "
+                     + (f"{oc['price']:,} | {oc['move_pct']:+.2f}% | {'yes' if oc['right'] else 'no'} |" if oc else "pending | | |"))
+    FORECAST_PAGE.write_text("\n".join(L) + "\n", encoding="utf-8")
+    return out
+
+
 def write_page(o: dict) -> None:
     luck = o["luck"]
     L = [
@@ -587,6 +686,9 @@ def write_page(o: dict) -> None:
 
 if __name__ == "__main__":
     t0 = time.time()
+    if "--forecast" in sys.argv:
+        print(json.dumps(forecast(), indent=2))
+        sys.exit(0)
     if "--occasions" in sys.argv:
         rep = occasions()
         write_occasions(rep)

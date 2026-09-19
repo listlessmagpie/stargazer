@@ -24,3 +24,5 @@ almanac_results.json
 almanac_whole_sky.json
 almanac_occasions.json
 almanac_whole.log
+forecast.json
+forecast_daily.log
