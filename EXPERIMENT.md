@@ -5,7 +5,7 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-22 03:17 UTC.
+Updated 2026-09-22 09:18 UTC.
 
 ## The number
 
@@ -14,7 +14,7 @@ Updated 2026-09-22 03:17 UTC.
 | started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
 | now 2026-09-20 07:00 UTC | 8.5 | 0.002257734281141307 | 0.001801457711123064 |
 
-Holding 16 lots bought for $4.52 at an average of $2600.91, worth $4.74 at $2729.53 (+4.95%, unrealised).
+Holding 16 lots bought for $4.52 at an average of $2600.91, worth $4.76 at $2740.45 (+5.37%, unrealised).
 
 USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
 sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
@@ -70,7 +70,7 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $10.20
-* Scout (outside data feeds on trial, graded against the 24h return): $1.25
+* Scout (outside data feeds on trial, graded against the 24h return): $1.31
 * Held instead of trading: 12 times
 * Errors: 19
 
@@ -93,19 +93,19 @@ and only a person can promote it.
 | ethereum dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | bitcoin dip | 0 | 0 | n/a | +0.00% | no |
 | bitcoin dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
-| solana dip | 0 | 0 | n/a | +0.00% | yes |
+| solana dip | 1 | 1 | 100% | +6.87% | no |
 | solana dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | aerodrome-finance long | 0 | 0 | n/a | +0.00% | no |
 | aerodrome-finance short | 0 | 0 | n/a | +0.00% | no |
-| aerodrome-finance dip | 0 | 0 | n/a | +0.00% | yes |
+| aerodrome-finance dip | 1 | 1 | 100% | +9.65% | no |
 | aerodrome-finance dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | virtual-protocol long | 1 | 1 | 100% | +10.67% | no |
 | virtual-protocol short | 0 | 0 | n/a | +0.00% | yes |
-| virtual-protocol dip | 0 | 0 | n/a | +0.00% | yes |
-| virtual-protocol dip_fair_sky | 0 | 0 | n/a | +0.00% | yes |
+| virtual-protocol dip | 1 | 1 | 100% | +12.26% | no |
+| virtual-protocol dip_fair_sky | 1 | 1 | 100% | +12.26% | no |
 | chainlink long | 0 | 0 | n/a | +0.00% | no |
 | chainlink short | 0 | 0 | n/a | +0.00% | no |
-| chainlink dip | 0 | 0 | n/a | +0.00% | yes |
+| chainlink dip | 1 | 1 | 100% | +8.04% | no |
 | chainlink dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 
 Sky readings for the book so far: $0.08.
