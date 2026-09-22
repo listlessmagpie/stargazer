@@ -5,7 +5,7 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-21 21:16 UTC.
+Updated 2026-09-22 03:17 UTC.
 
 ## The number
 
@@ -14,7 +14,7 @@ Updated 2026-09-21 21:16 UTC.
 | started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
 | now 2026-09-20 07:00 UTC | 8.5 | 0.002257734281141307 | 0.001801457711123064 |
 
-Holding 15 lots bought for $4.02 at an average of $2579.93, worth $4.32 at $2769.42 (+7.34%, unrealised).
+Holding 16 lots bought for $4.52 at an average of $2600.91, worth $4.74 at $2729.53 (+4.95%, unrealised).
 
 USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
 sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
@@ -70,7 +70,7 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $10.20
-* Scout (outside data feeds on trial, graded against the 24h return): $1.22
+* Scout (outside data feeds on trial, graded against the 24h return): $1.25
 * Held instead of trading: 12 times
 * Errors: 19
 
@@ -108,7 +108,7 @@ and only a person can promote it.
 | chainlink dip | 0 | 0 | n/a | +0.00% | yes |
 | chainlink dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 
-Sky readings for the book so far: $0.07.
+Sky readings for the book so far: $0.08.
 
 ## Scout
 
