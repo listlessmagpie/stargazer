@@ -9,6 +9,8 @@ long test favoured for each. The live agent trades on the Ethereum line with rea
 
 | written | market | expects | price then | five days on | move | right |
 |---|---|---|---|---|---|---|
+| 2026-09-23 | ethereum | up (+2.20% vs usual) | 2,757.82 | pending | | |
+| 2026-09-23 | bitcoin | down (-0.12% vs usual) | 86,342.69 | pending | | |
 | 2026-09-22 | ethereum | up (+1.21% vs usual) | 2,678.06 | pending | | |
 | 2026-09-22 | bitcoin | down (-0.18% vs usual) | 81,669.86 | pending | | |
 | 2026-09-21 | ethereum | up (+1.86% vs usual) | 2,678.06 | pending | | |
