@@ -5,7 +5,7 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-23 22:49 UTC.
+Updated 2026-09-24 04:50 UTC.
 
 ## The number
 
@@ -14,7 +14,7 @@ Updated 2026-09-23 22:49 UTC.
 | started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
 | now 2026-09-22 18:00 UTC | 12.786854 | 0.001738012803555579 | 0.000595887378064716 |
 
-Holding 17 lots bought for $5.02 at an average of $2612.21, worth $5.17 at $2691.80 (+3.05%, unrealised).
+Holding 17 lots bought for $2.56 at an average of $2612.21, worth $2.62 at $2673.93 (+2.36%, unrealised).
 
 USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
 sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
@@ -70,7 +70,7 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $10.20
-* Scout (outside data feeds on trial, graded against the 24h return): $1.58
+* Scout (outside data feeds on trial, graded against the 24h return): $1.61
 * Held instead of trading: 12 times
 * Errors: 19
 
@@ -87,17 +87,17 @@ and only a person can promote it.
 | ethereum short | 0 | 0 | n/a | +0.00% | yes |
 | bitcoin long | 2 | 1 | 50% | +1.87% | no |
 | bitcoin short | 1 | 0 | 0% | -6.17% | yes |
-| solana long | 1 | 1 | 100% | +10.47% | yes |
-| solana short | 1 | 0 | 0% | -3.83% | no |
-| ethereum dip | 0 | 0 | n/a | +0.00% | no |
+| solana long | 2 | 1 | 50% | +8.00% | no |
+| solana short | 1 | 0 | 0% | -3.83% | yes |
+| ethereum dip | 0 | 0 | n/a | +0.00% | yes |
 | ethereum dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
-| bitcoin dip | 0 | 0 | n/a | +0.00% | no |
+| bitcoin dip | 0 | 0 | n/a | +0.00% | yes |
 | bitcoin dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | solana dip | 1 | 1 | 100% | +6.87% | yes |
 | solana dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | aerodrome-finance long | 1 | 0 | 0% | -0.49% | no |
 | aerodrome-finance short | 0 | 0 | n/a | +0.00% | yes |
-| aerodrome-finance dip | 1 | 1 | 100% | +9.65% | no |
+| aerodrome-finance dip | 1 | 1 | 100% | +9.65% | yes |
 | aerodrome-finance dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
 | virtual-protocol long | 1 | 1 | 100% | +10.67% | no |
 | virtual-protocol short | 0 | 0 | n/a | +0.00% | yes |
