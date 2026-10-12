@@ -23,6 +23,7 @@ from dotenv import load_dotenv
 
 load_dotenv(_HERE / ".env")
 
+import allocator
 import experiment
 import ledger
 import oracle
@@ -64,7 +65,18 @@ def _has_position(portfolio, price: float | None = None) -> bool:
 
 
 async def execute_trade(action: planner.PlannedAction) -> dict:
-    """Decide at the appointed time: add to the position, sell it, or stand still."""
+    """A planned window is now only an alarm clock: wake the allocator and let it decide.
+
+    The allocator weighs every holding against the share its record has earned
+    under the current sky. The single asset logic below is kept for reference
+    and is no longer reached.
+    """
+    al = await allocator.tick(force=True)
+    return {"action": "allocated", **{k: al.get(k) for k in ("done", "total", "targets", "reason")}}
+
+
+async def _execute_trade_single_asset(action: planner.PlannedAction) -> dict:
+    """Superseded 2026-09-18 by the allocator. Long ETH only, in or out."""
     if strategy.needs_research():
         await _run_research()
 
@@ -201,6 +213,12 @@ async def _do_idle_research():
     s = await scout.maybe_sample()
     if s.get("action") == "sampled":
         print(f"[stargazer] scout sampled: {', '.join(s['sources'])}")
+    al = await allocator.maybe_tick()
+    if al.get("action") == "ticked":
+        print(f"[stargazer] allocator under {al['sky']['moon_sign']}: "
+              f"{', '.join(al['done']) or 'everything within its band'} (wallet ${al['total']})")
+    elif al.get("action") == "error":
+        print(f"[stargazer] allocator error: {al['reason']}")
     pt = await paper.maybe_tick()
     if pt.get("action") == "ticked":
         print(f"[stargazer] paper book: {', '.join(pt['moves']) or 'no moves'}")
@@ -380,6 +398,10 @@ if __name__ == "__main__":
         print(f"  spent today: ${spent:.2f}")
         print(f"  remaining:   ${budget:.2f}")
         print(f"  total api spend (all time): ${ls['api_spend_usd']:.2f}")
+    elif "--allocate" in sys.argv:
+        import json as _json
+        print(_json.dumps(asyncio.run(allocator.tick(force=True, dry="--live" not in sys.argv)),
+                          indent=2, default=str))
     elif "--paper" in sys.argv:
         for r in paper.summary():
             tag = " (live)" if r["live"] else ""

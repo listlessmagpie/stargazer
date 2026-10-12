@@ -16,13 +16,11 @@ scout_samples.jsonl
 scout_budget.json
 scout_report.md
 experiment_published.json
-paper_book.json
 paper_tables.json
 allocator_state.json
 position_*.json
 almanac_results.json
 almanac_whole_sky.json
-almanac_occasions.json
 almanac_whole.log
-forecast.json
 forecast_daily.log
+restart_run.log

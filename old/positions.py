@@ -28,15 +28,21 @@ def _get_eth_price() -> float:
         return float(data["ethereum"]["usd"])
 
 
-def _load() -> dict | None:
-    if not POSITION_PATH.exists():
+def _path(asset: str) -> Path:
+    """ETH keeps the original file; every other asset gets its own beside it."""
+    return POSITION_PATH if asset == "ethereum" else POSITION_PATH.with_name(f"position_{asset}.json")
+
+
+def _load(asset: str = "ethereum") -> dict | None:
+    path = _path(asset)
+    if not path.exists():
         return None
-    with open(POSITION_PATH) as f:
+    with open(path) as f:
         return json.load(f)
 
 
-def _save(position: dict) -> None:
-    with open(POSITION_PATH, "w") as f:
+def _save(position: dict, asset: str = "ethereum") -> None:
+    with open(_path(asset), "w") as f:
         json.dump(position, f, indent=2)
 
 
@@ -60,6 +66,7 @@ def open_position(
     moon_phase: str,
     tx: str,
     price: float | None = None,
+    asset: str = "ethereum",
 ) -> dict:
     """Record a buy. Buys add to an open position; the entry price is the average."""
     eth_price = price or _get_eth_price()
@@ -71,12 +78,56 @@ def open_position(
         "moon_sign": moon_sign,
         "moon_phase": moon_phase,
     }
-    position = _load()
+    position = _load(asset)
     if not position or position.get("status") != "open" or "lots" not in position:
-        position = {"status": "open", "lots": [], "entry_time": lot["time"]}
+        position = {"status": "open", "lots": [], "entry_time": lot["time"], "asset": asset}
     position["lots"].append(lot)
-    _save(_summarise(position))
+    _save(_summarise(position), asset)
     return position | {"lot_price": eth_price}
+
+
+def reduce_position(fraction: float, tx: str, price: float, asset: str = "ethereum") -> dict | None:
+    """Sell part of a position. The outcome is that part, judged against the average entry.
+
+    Every lot shrinks by the same fraction, so the average entry of what is left
+    does not move: selling some does not rewrite what the rest cost.
+    """
+    position = _load(asset)
+    if not position or position.get("status") != "open":
+        return None
+    fraction = max(0.0, min(1.0, fraction))
+    entry_price = position["entry_price"]
+    return_pct = (price - entry_price) / entry_price * 100
+    outcome = {
+        "asset": asset, "fraction": round(fraction, 4),
+        "entry_price": entry_price, "exit_price": price,
+        "return_pct": round(return_pct, 4), "won": return_pct > 0,
+        "usdc_cost_sold": round(position["entry_usdc"] * fraction, 4),
+        "entry_time": position["entry_time"],
+        "exit_time": datetime.now(timezone.utc).isoformat(),
+        "exit_tx": tx, "held_hours": _hours_between(position["entry_time"]),
+        "moon_sign": position.get("moon_sign", ""), "moon_phase": position.get("moon_phase", ""),
+    }
+    position.setdefault("sales", []).append(outcome)
+    if fraction >= 0.999:
+        position["status"] = "closed"
+        position["outcome"] = outcome
+        _save(position, asset)
+        return outcome
+    for lot in position["lots"]:
+        lot["usdc"] = lot["usdc"] * (1 - fraction)
+    _save(_summarise(position), asset)
+    return outcome
+
+
+def current(asset: str, price: float) -> dict | None:
+    """The open position in one asset, marked to a price the caller already has."""
+    position = _load(asset)
+    if not position or position.get("status") != "open":
+        return None
+    position["current_price"] = price
+    position["unrealized_pct"] = round((price - position["entry_price"]) / position["entry_price"] * 100, 4)
+    return position
 
 
 def close_position(tx: str) -> dict | None:

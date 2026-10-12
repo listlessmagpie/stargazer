@@ -5,16 +5,16 @@ orrery, correlates six months of them with what the price did next, and bets fif
 cents at a time on what held up. It earns bigger bets only by winning. Everything
 below is generated from its own ledger; nothing is typed by hand.
 
-Updated 2026-09-27 08:04 UTC.
+Updated 2026-10-12 21:10 UTC.
 
 ## The number
 
 | | USDC | position (wrapped ETH) | gas (ETH) |
 |---|---|---|---|
 | started 2026-09-11 00:34 UTC | 8.98 | 0 | 0 |
-| now 2026-09-26 07:59 UTC | 14.805593 | 0.000979377459293489 | 0.000594449277913247 |
+| now 2026-10-11 03:59 UTC | 10.773221 | 0.001017801852743475 | 0.000542448775426805 |
 
-Holding 17 lots bought for $2.56 at an average of $2612.21, worth $2.66 at $2716.53 (+3.99%, unrealised).
+Holding 28 lots bought for $5.12 at an average of $2613.44, worth $4.91 at $2509.65 (-3.97%, unrealised).
 
 USDC is the stake. Wrapped ETH is the position, what it holds between a buy and a
 sell. Plain ETH is only gas. Money it spends on research and the scout comes from a
@@ -70,9 +70,9 @@ Trade size tier: 0 wins so far. The ladder is 0 wins for $0.50, 3 for $1, 6 for 
 ## What it costs to think
 
 * Research (backtests bought from the orrery at a cent a call): $10.20
-* Scout (outside data feeds on trial, graded against the 24h return): $2.00
+* Scout (outside data feeds on trial, graded against the 24h return): $4.19
 * Held instead of trading: 12 times
-* Errors: 19
+* Errors: 154
 
 ## Paper book
 
@@ -83,32 +83,32 @@ and only a person can promote it.
 
 | strategy | closed | won | win rate | net return | open now |
 |---|---|---|---|---|---|
-| ethereum long (live) | 1 | 1 | 100% | +6.51% | no |
-| ethereum short | 0 | 0 | n/a | +0.00% | yes |
-| bitcoin long | 2 | 1 | 50% | +1.87% | yes |
-| bitcoin short | 2 | 1 | 50% | -5.82% | no |
-| solana long | 2 | 1 | 50% | +8.00% | yes |
-| solana short | 2 | 0 | 0% | -9.64% | no |
-| ethereum dip | 1 | 1 | 100% | +0.42% | no |
-| ethereum dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
-| bitcoin dip | 1 | 0 | 0% | -0.05% | no |
+| ethereum long (live) | 3 | 1 | 33% | +3.56% | no |
+| ethereum short | 2 | 2 | 100% | +3.43% | yes |
+| bitcoin long | 4 | 1 | 25% | -0.04% | no |
+| bitcoin short | 3 | 2 | 67% | -5.64% | yes |
+| solana long | 4 | 1 | 25% | +4.85% | no |
+| solana short | 3 | 1 | 33% | -3.70% | yes |
+| ethereum dip | 2 | 1 | 50% | -4.28% | no |
+| ethereum dip_fair_sky | 1 | 0 | 0% | -4.70% | no |
+| bitcoin dip | 2 | 0 | 0% | -0.50% | no |
 | bitcoin dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
-| solana dip | 2 | 2 | 100% | +13.16% | no |
+| solana dip | 4 | 3 | 75% | +9.24% | yes |
 | solana dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
-| aerodrome-finance long | 1 | 0 | 0% | -0.49% | yes |
-| aerodrome-finance short | 1 | 0 | 0% | -35.97% | no |
-| aerodrome-finance dip | 2 | 2 | 100% | +35.31% | no |
-| aerodrome-finance dip_fair_sky | 0 | 0 | n/a | +0.00% | no |
-| virtual-protocol long | 1 | 1 | 100% | +10.67% | no |
-| virtual-protocol short | 0 | 0 | n/a | +0.00% | yes |
-| virtual-protocol dip | 2 | 2 | 100% | +24.20% | no |
+| aerodrome-finance long | 3 | 0 | 0% | -13.62% | no |
+| aerodrome-finance short | 2 | 1 | 50% | -35.18% | yes |
+| aerodrome-finance dip | 4 | 3 | 75% | +35.04% | yes |
+| aerodrome-finance dip_fair_sky | 1 | 1 | 100% | +7.10% | no |
+| virtual-protocol long | 2 | 2 | 100% | +11.98% | no |
+| virtual-protocol short | 1 | 0 | 0% | -10.69% | yes |
+| virtual-protocol dip | 5 | 3 | 60% | +15.58% | yes |
 | virtual-protocol dip_fair_sky | 1 | 1 | 100% | +12.26% | no |
-| chainlink long | 1 | 0 | 0% | -5.54% | no |
-| chainlink short | 0 | 0 | n/a | +0.00% | yes |
-| chainlink dip | 2 | 2 | 100% | +20.54% | no |
-| chainlink dip_fair_sky | 1 | 1 | 100% | +12.50% | no |
+| chainlink long | 3 | 0 | 0% | -7.48% | no |
+| chainlink short | 2 | 1 | 50% | -11.28% | yes |
+| chainlink dip | 5 | 4 | 80% | +21.74% | yes |
+| chainlink dip_fair_sky | 2 | 2 | 100% | +13.89% | no |
 
-Sky readings for the book so far: $0.12.
+Sky readings for the book so far: $0.26.
 
 ## Scout
 

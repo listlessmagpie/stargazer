@@ -1,0 +1,159 @@
+{
+  "_about": "The chart library: every node in the web that has a real moment of birth. Times in UTC unless a zone is given. A node with time_known false gets no Moon sign, no angles and no houses; its planets are computed at noon local and the Moon is left out. Ratings follow Astro Databank's Rodden scale where the entry exists; 'none' means no databank entry was found and the date rests on the source named. Edges say who acts on what. Nothing here is private: public figures, public records.",
+  "nodes": {
+    "bitcoin": {
+      "kind": "instrument", "label": "Bitcoin, genesis block",
+      "date": "2009-01-03", "time": "18:15:05", "zone": "UTC", "time_known": true,
+      "place": null, "lat": null, "lon": null,
+      "rating": "exact", "source": "genesis block timestamp, block 0",
+      "symbol": "BTC-USD"
+    },
+    "ethereum": {
+      "kind": "instrument", "label": "Ethereum, genesis block",
+      "date": "2015-07-30", "time": "15:26:13", "zone": "UTC", "time_known": true,
+      "place": null, "lat": null, "lon": null,
+      "rating": "exact", "source": "genesis block timestamp, block 0",
+      "symbol": "ETH-USD"
+    },
+    "sp500": {
+      "kind": "instrument", "label": "New York stock market, Buttonwood Agreement",
+      "date": "1792-05-17", "time": null, "zone": "LMT", "time_known": false,
+      "place": "New York", "lat": 40.7069, "lon": -74.0113,
+      "rating": "none", "source": "Buttonwood Agreement, 17 May 1792; hour unrecorded",
+      "symbol": "^GSPC"
+    },
+    "gold": {"kind": "instrument", "label": "Gold futures", "date": null, "time_known": false, "rating": "no birth", "source": "no agreed moment of birth; no chart", "symbol": "GC=F"},
+    "oil": {"kind": "instrument", "label": "WTI crude futures", "date": null, "time_known": false, "rating": "no birth", "source": "no agreed moment of birth; no chart", "symbol": "CL=F"},
+    "vix": {"kind": "instrument", "label": "CBOE volatility index", "date": null, "time_known": false, "rating": "no birth", "source": "no agreed moment of birth; no chart", "symbol": "^VIX"},
+    "federal_reserve": {
+      "kind": "institution", "label": "Federal Reserve, act signed",
+      "date": "1913-12-23", "time": "18:02", "zone": "America/New_York", "time_known": false,
+      "place": "Washington DC", "lat": 38.8977, "lon": -77.0365,
+      "rating": "to confirm", "source": "Federal Reserve Act signed by Wilson 23 Dec 1913; the 6:02 pm time is repeated in mundane astrology sources and not yet checked against a primary record; treat as time_known false until it is"
+    },
+    "coinbase": {
+      "kind": "company", "label": "Coinbase, Nasdaq direct listing",
+      "date": "2021-04-14", "time": "13:25", "zone": "America/New_York", "time_known": false,
+      "place": "New York", "lat": 40.7069, "lon": -74.0113,
+      "rating": "to confirm", "source": "first trade on Nasdaq 14 Apr 2021, early afternoon ET; exact minute to confirm from Nasdaq",
+      "symbol": "COIN"
+    },
+    "tesla": {
+      "kind": "company", "label": "Tesla, Nasdaq IPO",
+      "date": "2010-06-29", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "New York", "lat": 40.7069, "lon": -74.0113,
+      "rating": "to confirm", "source": "IPO 29 Jun 2010; first trade minute to confirm",
+      "symbol": "TSLA"
+    },
+    "nvidia": {
+      "kind": "company", "label": "Nvidia, Nasdaq IPO",
+      "date": "1999-01-22", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "New York", "lat": 40.7069, "lon": -74.0113,
+      "rating": "to confirm", "source": "IPO 22 Jan 1999; first trade minute to confirm",
+      "symbol": "NVDA"
+    },
+    "strategy": {
+      "kind": "company", "label": "Strategy (MicroStrategy), first Bitcoin purchase announced",
+      "date": "2020-08-11", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "Tysons Corner, Virginia", "lat": 38.9187, "lon": -77.2311,
+      "rating": "to confirm", "source": "press release 11 Aug 2020; company IPO 1998-06-11 is the alternative birth and is kept as strategy_ipo",
+      "symbol": "MSTR"
+    },
+    "trump_donald": {
+      "kind": "person", "label": "Donald Trump", "role": "president",
+      "date": "1946-06-14", "time": "10:54", "zone": "America/New_York", "time_known": true,
+      "place": "Jamaica, Queens, New York", "lat": 40.7, "lon": -73.8164,
+      "rating": "AA", "source": "Astro Databank, birth certificate in hand, collector Rodden; read 2026-10-12"
+    },
+    "musk_elon": {
+      "kind": "person", "label": "Elon Musk", "role": "runs Tesla, SpaceX, X",
+      "date": "1971-06-28", "time": "07:30", "zone": "Africa/Johannesburg", "time_known": true,
+      "place": "Pretoria, South Africa", "lat": -25.75, "lon": 28.1667,
+      "rating": "B", "source": "Astro Databank, biography (Isaacson), collector Gallagher; read 2026-10-12"
+    },
+    "powell_jerome": {
+      "kind": "person", "label": "Jerome Powell", "role": "Fed chair",
+      "date": "1953-02-04", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "Washington DC", "lat": 38.8951, "lon": -77.0364,
+      "rating": "none", "source": "date from Wikipedia; no databank entry found; time unknown"
+    },
+    "bessent_scott": {
+      "kind": "person", "label": "Scott Bessent", "role": "Treasury secretary",
+      "date": "1962-08-21", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "Conway, South Carolina", "lat": 33.836, "lon": -79.0478,
+      "rating": "none", "source": "date from CNN fast facts and Wikipedia; time unknown"
+    },
+    "saylor_michael": {
+      "kind": "person", "label": "Michael Saylor", "role": "runs Strategy",
+      "date": "1965-02-04", "time": null, "zone": "America/Chicago", "time_known": false,
+      "place": "Lincoln, Nebraska", "lat": 40.8136, "lon": -96.7026,
+      "rating": "none", "source": "date from Wikipedia; time unknown"
+    },
+    "buffett_warren": {
+      "kind": "person", "label": "Warren Buffett", "role": "runs Berkshire Hathaway",
+      "date": "1930-08-30", "time": null, "zone": "America/Chicago", "time_known": false,
+      "place": "Omaha, Nebraska", "lat": 41.2565, "lon": -95.9345,
+      "rating": "none", "source": "date from Wikipedia; a 3 pm time circulates on horoscope sites without a source and is not used"
+    },
+    "dalio_ray": {
+      "kind": "person", "label": "Ray Dalio", "role": "founded Bridgewater",
+      "date": "1949-08-08", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "Queens, New York", "lat": 40.7282, "lon": -73.7949,
+      "rating": "none", "source": "date from Wikipedia and Astrotheme (time unknown there too)"
+    },
+    "buterin_vitalik": {
+      "kind": "person", "label": "Vitalik Buterin", "role": "co founded Ethereum",
+      "date": "1994-01-31", "time": null, "zone": "Europe/Moscow", "time_known": false,
+      "place": "Kolomna, Russia", "lat": 55.0794, "lon": 38.7783,
+      "rating": "none", "source": "date from Wikipedia; time unknown"
+    },
+    "zhao_changpeng": {
+      "kind": "person", "label": "Changpeng Zhao", "role": "founded Binance",
+      "date": null, "time": null, "time_known": false,
+      "place": "Ganyu, Jiangsu, China",
+      "rating": "none", "source": "Wikipedia gives only the year 1977; the 10 Sep 1977 date circulates on celebrity sites without a source; no chart until a source exists"
+    },
+    "fink_larry": {
+      "kind": "person", "label": "Larry Fink", "role": "runs BlackRock",
+      "date": "1952-11-02", "time": null, "zone": "America/Los_Angeles", "time_known": false,
+      "place": "Van Nuys, California", "lat": 34.1899, "lon": -118.4514,
+      "rating": "none", "source": "date from Wikipedia and DBpedia; time unknown"
+    },
+    "dimon_jamie": {
+      "kind": "person", "label": "Jamie Dimon", "role": "runs JPMorgan",
+      "date": "1956-03-13", "time": null, "zone": "America/New_York", "time_known": false,
+      "place": "New York", "lat": 40.7128, "lon": -74.006,
+      "rating": "none", "source": "date from CNN fast facts; time unknown"
+    },
+    "fomc": {
+      "kind": "body", "label": "Federal Open Market Committee",
+      "date": null, "time_known": false, "rating": "no birth",
+      "source": "acts are dated in library/events_fomc.jsonl; its chart is the Federal Reserve's"
+    }
+  },
+  "edges": [
+    {"from": "powell_jerome", "acts": "chairs", "on": "fomc"},
+    {"from": "fomc", "acts": "decides for", "on": "federal_reserve"},
+    {"from": "federal_reserve", "acts": "moves", "on": "sp500"},
+    {"from": "federal_reserve", "acts": "moves", "on": "gold"},
+    {"from": "federal_reserve", "acts": "moves", "on": "vix"},
+    {"from": "federal_reserve", "acts": "moves", "on": "bitcoin"},
+    {"from": "bessent_scott", "acts": "runs Treasury, moves", "on": "sp500"},
+    {"from": "trump_donald", "acts": "policy posts, moves", "on": "sp500"},
+    {"from": "trump_donald", "acts": "policy posts, moves", "on": "oil"},
+    {"from": "trump_donald", "acts": "policy posts, moves", "on": "bitcoin"},
+    {"from": "musk_elon", "acts": "runs", "on": "tesla"},
+    {"from": "musk_elon", "acts": "posts about, moves", "on": "bitcoin"},
+    {"from": "saylor_michael", "acts": "runs", "on": "strategy"},
+    {"from": "strategy", "acts": "buys", "on": "bitcoin"},
+    {"from": "buterin_vitalik", "acts": "co founded", "on": "ethereum"},
+    {"from": "zhao_changpeng", "acts": "founded Binance, moves", "on": "bitcoin"},
+    {"from": "fink_larry", "acts": "runs BlackRock, issues the spot ETF", "on": "bitcoin"},
+    {"from": "fink_larry", "acts": "runs BlackRock", "on": "sp500"},
+    {"from": "dimon_jamie", "acts": "runs JPMorgan", "on": "sp500"},
+    {"from": "buffett_warren", "acts": "runs Berkshire", "on": "sp500"},
+    {"from": "dalio_ray", "acts": "founded Bridgewater", "on": "sp500"},
+    {"from": "coinbase", "acts": "lists", "on": "bitcoin"},
+    {"from": "coinbase", "acts": "lists", "on": "ethereum"}
+  ]
+}

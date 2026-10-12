@@ -1,0 +1,1037 @@
+{
+  "last_tick": 1791828593.3906858,
+  "strategies": {
+    "ethereum:long": {
+      "asset": "ethereum",
+      "direction": "long",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 2512.38,
+          "exit_price": 2676.06,
+          "return_pct": 6.5149,
+          "won": true,
+          "entry_time": "2026-09-15T00:07:51.574185+00:00",
+          "exit_time": "2026-09-23T19:48:44.123226+00:00",
+          "held_hours": 211.7,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "waxing_crescent",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 2610.91,
+          "exit_price": 2561.08,
+          "return_pct": -1.9085,
+          "won": false,
+          "entry_time": "2026-10-07T05:03:44.240566+00:00",
+          "exit_time": "2026-10-08T05:02:01.342065+00:00",
+          "held_hours": 24.0,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Virgo",
+          "moon_phase_out": "waning_crescent"
+        },
+        {
+          "entry_price": 2535.51,
+          "exit_price": 2509.03,
+          "return_pct": -1.0444,
+          "won": false,
+          "entry_time": "2026-10-11T18:03:40.457683+00:00",
+          "exit_time": "2026-10-12T18:09:49.154131+00:00",
+          "held_hours": 24.1,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "new_moon",
+          "moon_sign_out": "",
+          "moon_phase_out": ""
+        }
+      ]
+    },
+    "ethereum:short": {
+      "asset": "ethereum",
+      "direction": "short",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 2509.03,
+        "entry_time": "2026-10-12T18:09:49.154131+00:00",
+        "confidence": -0.134,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 2676.06,
+          "exit_price": 2610.91,
+          "return_pct": 2.4345,
+          "won": true,
+          "entry_time": "2026-09-23T19:48:44.123226+00:00",
+          "exit_time": "2026-10-07T05:03:44.240566+00:00",
+          "held_hours": 321.3,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Virgo",
+          "moon_phase_out": "waning_crescent"
+        },
+        {
+          "entry_price": 2561.08,
+          "exit_price": 2535.51,
+          "return_pct": 0.9984,
+          "won": true,
+          "entry_time": "2026-10-08T05:02:01.342065+00:00",
+          "exit_time": "2026-10-11T18:03:40.457683+00:00",
+          "held_hours": 85.0,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Scorpio",
+          "moon_phase_out": "new_moon"
+        }
+      ]
+    },
+    "bitcoin:long": {
+      "asset": "bitcoin",
+      "direction": "long",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 78146.0,
+          "exit_price": 81118.0,
+          "return_pct": 3.8031,
+          "won": true,
+          "entry_time": "2026-09-15T00:07:51.574185+00:00",
+          "exit_time": "2026-09-19T04:01:28.255443+00:00",
+          "held_hours": 99.9,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "waxing_crescent",
+          "moon_sign_out": "Sagittarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 86121.0,
+          "exit_price": 84458.0,
+          "return_pct": -1.931,
+          "won": false,
+          "entry_time": "2026-09-22T23:01:09.498108+00:00",
+          "exit_time": "2026-09-23T19:48:44.123226+00:00",
+          "held_hours": 20.8,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 84162.0,
+          "exit_price": 83867.0,
+          "return_pct": -0.3505,
+          "won": false,
+          "entry_time": "2026-09-26T12:00:04.761448+00:00",
+          "exit_time": "2026-09-30T14:26:50.253850+00:00",
+          "held_hours": 98.4,
+          "moon_sign_in": "Aries",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "waning_gibbous"
+        },
+        {
+          "entry_price": 83722.0,
+          "exit_price": 82416.0,
+          "return_pct": -1.5599,
+          "won": false,
+          "entry_time": "2026-10-11T18:03:40.457683+00:00",
+          "exit_time": "2026-10-12T18:09:49.154131+00:00",
+          "held_hours": 24.1,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "new_moon",
+          "moon_sign_out": "",
+          "moon_phase_out": ""
+        }
+      ]
+    },
+    "bitcoin:short": {
+      "asset": "bitcoin",
+      "direction": "short",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 82416.0,
+        "entry_time": "2026-10-12T18:09:49.154131+00:00",
+        "confidence": -0.134,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 81118.0,
+          "exit_price": 86121.0,
+          "return_pct": -6.1676,
+          "won": false,
+          "entry_time": "2026-09-19T04:01:28.255443+00:00",
+          "exit_time": "2026-09-22T23:01:09.498108+00:00",
+          "held_hours": 91.0,
+          "moon_sign_in": "Sagittarius",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 84458.0,
+          "exit_price": 84162.0,
+          "return_pct": 0.3505,
+          "won": true,
+          "entry_time": "2026-09-23T19:48:44.123226+00:00",
+          "exit_time": "2026-09-26T12:00:04.761448+00:00",
+          "held_hours": 64.2,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Aries",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 83867.0,
+          "exit_price": 83722.0,
+          "return_pct": 0.1729,
+          "won": true,
+          "entry_time": "2026-09-30T14:26:50.253850+00:00",
+          "exit_time": "2026-10-11T18:03:40.457683+00:00",
+          "held_hours": 267.6,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Scorpio",
+          "moon_phase_out": "new_moon"
+        }
+      ]
+    },
+    "solana:long": {
+      "asset": "solana",
+      "direction": "long",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 102.54,
+          "exit_price": 113.28,
+          "return_pct": 10.474,
+          "won": true,
+          "entry_time": "2026-09-15T00:07:51.574185+00:00",
+          "exit_time": "2026-09-19T04:01:28.255443+00:00",
+          "held_hours": 99.9,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "waxing_crescent",
+          "moon_sign_out": "Sagittarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 117.62,
+          "exit_price": 114.71,
+          "return_pct": -2.4741,
+          "won": false,
+          "entry_time": "2026-09-21T17:15:43.767307+00:00",
+          "exit_time": "2026-09-24T03:50:09.405021+00:00",
+          "held_hours": 58.6,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 121.37,
+          "exit_price": 119.08,
+          "return_pct": -1.8868,
+          "won": false,
+          "entry_time": "2026-09-26T12:00:04.761448+00:00",
+          "exit_time": "2026-09-30T14:26:50.253850+00:00",
+          "held_hours": 98.4,
+          "moon_sign_in": "Aries",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "waning_gibbous"
+        },
+        {
+          "entry_price": 112.01,
+          "exit_price": 110.59,
+          "return_pct": -1.2677,
+          "won": false,
+          "entry_time": "2026-10-11T18:03:40.457683+00:00",
+          "exit_time": "2026-10-11T22:04:40.669761+00:00",
+          "held_hours": 4.0,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "new_moon",
+          "moon_sign_out": "",
+          "moon_phase_out": ""
+        }
+      ]
+    },
+    "solana:short": {
+      "asset": "solana",
+      "direction": "short",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 110.59,
+        "entry_time": "2026-10-11T22:04:40.669761+00:00",
+        "confidence": -0.14,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 113.28,
+          "exit_price": 117.62,
+          "return_pct": -3.8312,
+          "won": false,
+          "entry_time": "2026-09-19T04:01:28.255443+00:00",
+          "exit_time": "2026-09-21T17:15:43.767307+00:00",
+          "held_hours": 61.2,
+          "moon_sign_in": "Sagittarius",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 114.71,
+          "exit_price": 121.37,
+          "return_pct": -5.8059,
+          "won": false,
+          "entry_time": "2026-09-24T03:50:09.405021+00:00",
+          "exit_time": "2026-09-26T12:00:04.761448+00:00",
+          "held_hours": 56.2,
+          "moon_sign_in": "Pisces",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Aries",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 119.08,
+          "exit_price": 112.01,
+          "return_pct": 5.9372,
+          "won": true,
+          "entry_time": "2026-09-30T14:26:50.253850+00:00",
+          "exit_time": "2026-10-11T18:03:40.457683+00:00",
+          "held_hours": 267.6,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Scorpio",
+          "moon_phase_out": "new_moon"
+        }
+      ]
+    },
+    "ethereum:dip": {
+      "asset": "ethereum",
+      "direction": "dip",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 2674.53,
+          "exit_price": 2685.79,
+          "return_pct": 0.421,
+          "won": true,
+          "entry_time": "2026-09-24T03:50:09.405021+00:00",
+          "exit_time": "2026-09-26T07:00:14.384169+00:00",
+          "held_hours": 51.2,
+          "moon_sign_in": "Pisces",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 2610.91,
+          "exit_price": 2488.26,
+          "return_pct": -4.6976,
+          "won": false,
+          "entry_time": "2026-10-07T05:03:44.240566+00:00",
+          "exit_time": "2026-10-09T05:08:11.496319+00:00",
+          "held_hours": 48.1,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Virgo",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "ethereum:dip_fair_sky": {
+      "asset": "ethereum",
+      "direction": "dip_fair_sky",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 2610.91,
+          "exit_price": 2488.26,
+          "return_pct": -4.6976,
+          "won": false,
+          "entry_time": "2026-10-07T05:03:44.240566+00:00",
+          "exit_time": "2026-10-09T05:08:11.496319+00:00",
+          "held_hours": 48.1,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Virgo",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "bitcoin:dip": {
+      "asset": "bitcoin",
+      "direction": "dip",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 83952.0,
+          "exit_price": 83907.0,
+          "return_pct": -0.0536,
+          "won": false,
+          "entry_time": "2026-09-24T03:50:09.405021+00:00",
+          "exit_time": "2026-09-26T07:00:14.384169+00:00",
+          "held_hours": 51.2,
+          "moon_sign_in": "Pisces",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 83449.0,
+          "exit_price": 83073.0,
+          "return_pct": -0.4506,
+          "won": false,
+          "entry_time": "2026-10-07T13:05:52.490497+00:00",
+          "exit_time": "2026-10-09T13:10:45.333372+00:00",
+          "held_hours": 48.1,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Libra",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "bitcoin:dip_fair_sky": {
+      "asset": "bitcoin",
+      "direction": "dip_fair_sky",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": []
+    },
+    "solana:dip": {
+      "asset": "solana",
+      "direction": "dip",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 107.69,
+        "entry_time": "2026-10-12T18:09:49.154131+00:00",
+        "confidence": -0.14,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 108.86,
+          "exit_price": 116.34,
+          "return_pct": 6.8712,
+          "won": true,
+          "entry_time": "2026-09-20T04:08:37.349728+00:00",
+          "exit_time": "2026-09-22T05:17:45.629158+00:00",
+          "held_hours": 49.2,
+          "moon_sign_in": "Capricorn",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 114.43,
+          "exit_price": 121.63,
+          "return_pct": 6.2921,
+          "won": true,
+          "entry_time": "2026-09-23T19:48:44.123226+00:00",
+          "exit_time": "2026-09-25T20:59:24.472881+00:00",
+          "held_hours": 49.2,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 119.17,
+          "exit_price": 120.49,
+          "return_pct": 1.1077,
+          "won": true,
+          "entry_time": "2026-10-03T05:00:34.579760+00:00",
+          "exit_time": "2026-10-05T05:01:54.688476+00:00",
+          "held_hours": 48.0,
+          "moon_sign_in": "Cancer",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Leo",
+          "moon_phase_out": "last_quarter"
+        },
+        {
+          "entry_price": 116.38,
+          "exit_price": 110.52,
+          "return_pct": -5.0352,
+          "won": false,
+          "entry_time": "2026-10-07T13:05:52.490497+00:00",
+          "exit_time": "2026-10-09T13:10:45.333372+00:00",
+          "held_hours": 48.1,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Libra",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "solana:dip_fair_sky": {
+      "asset": "solana",
+      "direction": "dip_fair_sky",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": []
+    },
+    "aerodrome-finance:long": {
+      "asset": "aerodrome-finance",
+      "direction": "long",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 0.684234,
+          "exit_price": 0.680889,
+          "return_pct": -0.4889,
+          "won": false,
+          "entry_time": "2026-09-22T23:01:09.498108+00:00",
+          "exit_time": "2026-09-23T19:48:44.123226+00:00",
+          "held_hours": 20.8,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 0.925805,
+          "exit_price": 0.80617,
+          "return_pct": -12.9223,
+          "won": false,
+          "entry_time": "2026-09-26T12:00:04.761448+00:00",
+          "exit_time": "2026-09-30T14:26:50.253850+00:00",
+          "held_hours": 98.4,
+          "moon_sign_in": "Aries",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "waning_gibbous"
+        },
+        {
+          "entry_price": 0.799788,
+          "exit_price": 0.79813,
+          "return_pct": -0.2073,
+          "won": false,
+          "entry_time": "2026-09-30T18:28:24.347628+00:00",
+          "exit_time": "2026-10-02T13:02:33.343679+00:00",
+          "held_hours": 42.6,
+          "moon_sign_in": "Gemini",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Gemini",
+          "moon_phase_out": "waning_gibbous"
+        }
+      ]
+    },
+    "aerodrome-finance:short": {
+      "asset": "aerodrome-finance",
+      "direction": "short",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 0.79813,
+        "entry_time": "2026-10-02T13:02:33.343679+00:00",
+        "confidence": -0.205,
+        "moon_sign": "Gemini",
+        "moon_phase": "waning_gibbous"
+      },
+      "outcomes": [
+        {
+          "entry_price": 0.680889,
+          "exit_price": 0.925805,
+          "return_pct": -35.97,
+          "won": false,
+          "entry_time": "2026-09-23T19:48:44.123226+00:00",
+          "exit_time": "2026-09-26T12:00:04.761448+00:00",
+          "held_hours": 64.2,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Aries",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 0.80617,
+          "exit_price": 0.799788,
+          "return_pct": 0.7916,
+          "won": true,
+          "entry_time": "2026-09-30T14:26:50.253850+00:00",
+          "exit_time": "2026-09-30T18:28:24.347628+00:00",
+          "held_hours": 4.0,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Gemini",
+          "moon_phase_out": "waning_gibbous"
+        }
+      ]
+    },
+    "aerodrome-finance:dip": {
+      "asset": "aerodrome-finance",
+      "direction": "dip",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 0.915106,
+        "entry_time": "2026-10-12T10:07:54.923905+00:00",
+        "confidence": -0.14,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 0.646618,
+          "exit_price": 0.709014,
+          "return_pct": 9.6496,
+          "won": true,
+          "entry_time": "2026-09-20T09:01:44.770604+00:00",
+          "exit_time": "2026-09-22T09:18:30.694245+00:00",
+          "held_hours": 48.3,
+          "moon_sign_in": "Capricorn",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 0.662224,
+          "exit_price": 0.832139,
+          "return_pct": 25.6582,
+          "won": true,
+          "entry_time": "2026-09-23T23:49:29.012648+00:00",
+          "exit_time": "2026-09-26T01:00:30.031564+00:00",
+          "held_hours": 49.2,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 0.797637,
+          "exit_price": 0.854264,
+          "return_pct": 7.0993,
+          "won": true,
+          "entry_time": "2026-10-02T05:00:22.670947+00:00",
+          "exit_time": "2026-10-04T08:02:52.767639+00:00",
+          "held_hours": 51.0,
+          "moon_sign_in": "Gemini",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Cancer",
+          "moon_phase_out": "last_quarter"
+        },
+        {
+          "entry_price": 0.839908,
+          "exit_price": 0.778027,
+          "return_pct": -7.3676,
+          "won": false,
+          "entry_time": "2026-10-06T02:59:27.178916+00:00",
+          "exit_time": "2026-10-08T05:02:01.342065+00:00",
+          "held_hours": 50.0,
+          "moon_sign_in": "Leo",
+          "moon_phase_in": "last_quarter",
+          "moon_sign_out": "Virgo",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "aerodrome-finance:dip_fair_sky": {
+      "asset": "aerodrome-finance",
+      "direction": "dip_fair_sky",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 0.797637,
+          "exit_price": 0.854264,
+          "return_pct": 7.0993,
+          "won": true,
+          "entry_time": "2026-10-02T05:00:22.670947+00:00",
+          "exit_time": "2026-10-04T08:02:52.767639+00:00",
+          "held_hours": 51.0,
+          "moon_sign_in": "Gemini",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Cancer",
+          "moon_phase_out": "last_quarter"
+        }
+      ]
+    },
+    "virtual-protocol:long": {
+      "asset": "virtual-protocol",
+      "direction": "long",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 0.638713,
+          "exit_price": 0.706867,
+          "return_pct": 10.6705,
+          "won": true,
+          "entry_time": "2026-09-20T09:01:44.770604+00:00",
+          "exit_time": "2026-09-21T17:15:43.767307+00:00",
+          "held_hours": 32.2,
+          "moon_sign_in": "Capricorn",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 0.782408,
+          "exit_price": 0.79265,
+          "return_pct": 1.309,
+          "won": true,
+          "entry_time": "2026-09-30T02:01:24.750700+00:00",
+          "exit_time": "2026-09-30T14:26:50.253850+00:00",
+          "held_hours": 12.4,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "full_moon",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "waning_gibbous"
+        }
+      ]
+    },
+    "virtual-protocol:short": {
+      "asset": "virtual-protocol",
+      "direction": "short",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 0.79265,
+        "entry_time": "2026-09-30T14:26:50.253850+00:00",
+        "confidence": -0.361,
+        "moon_sign": "Taurus",
+        "moon_phase": "waning_gibbous"
+      },
+      "outcomes": [
+        {
+          "entry_price": 0.706867,
+          "exit_price": 0.782408,
+          "return_pct": -10.6867,
+          "won": false,
+          "entry_time": "2026-09-21T17:15:43.767307+00:00",
+          "exit_time": "2026-09-30T02:01:24.750700+00:00",
+          "held_hours": 200.8,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "full_moon"
+        }
+      ]
+    },
+    "virtual-protocol:dip": {
+      "asset": "virtual-protocol",
+      "direction": "dip",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 0.711399,
+        "entry_time": "2026-10-12T18:09:49.154131+00:00",
+        "confidence": -0.14,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 0.638713,
+          "exit_price": 0.717019,
+          "return_pct": 12.26,
+          "won": true,
+          "entry_time": "2026-09-20T09:01:44.770604+00:00",
+          "exit_time": "2026-09-22T09:18:30.694245+00:00",
+          "held_hours": 48.3,
+          "moon_sign_in": "Capricorn",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 0.699388,
+          "exit_price": 0.782866,
+          "return_pct": 11.9359,
+          "won": true,
+          "entry_time": "2026-09-23T19:48:44.123226+00:00",
+          "exit_time": "2026-09-25T20:59:24.472881+00:00",
+          "held_hours": 49.2,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 0.782543,
+          "exit_price": 0.798404,
+          "return_pct": 2.0269,
+          "won": true,
+          "entry_time": "2026-10-01T23:00:37.434016+00:00",
+          "exit_time": "2026-10-04T00:00:43.078822+00:00",
+          "held_hours": 49.0,
+          "moon_sign_in": "Gemini",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Cancer",
+          "moon_phase_out": "last_quarter"
+        },
+        {
+          "entry_price": 0.842561,
+          "exit_price": 0.760591,
+          "return_pct": -9.7287,
+          "won": false,
+          "entry_time": "2026-10-06T07:00:35.984536+00:00",
+          "exit_time": "2026-10-08T09:03:01.031604+00:00",
+          "held_hours": 50.0,
+          "moon_sign_in": "Leo",
+          "moon_phase_in": "last_quarter",
+          "moon_sign_out": "Virgo",
+          "moon_phase_out": "waning_crescent"
+        },
+        {
+          "entry_price": 0.740058,
+          "exit_price": 0.733318,
+          "return_pct": -0.9107,
+          "won": false,
+          "entry_time": "2026-10-08T13:04:01.578820+00:00",
+          "exit_time": "2026-10-10T14:07:34.140562+00:00",
+          "held_hours": 49.1,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Libra",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "virtual-protocol:dip_fair_sky": {
+      "asset": "virtual-protocol",
+      "direction": "dip_fair_sky",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 0.638713,
+          "exit_price": 0.717019,
+          "return_pct": 12.26,
+          "won": true,
+          "entry_time": "2026-09-20T09:01:44.770604+00:00",
+          "exit_time": "2026-09-22T09:18:30.694245+00:00",
+          "held_hours": 48.3,
+          "moon_sign_in": "Capricorn",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        }
+      ]
+    },
+    "chainlink:long": {
+      "asset": "chainlink",
+      "direction": "long",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 13.0,
+          "exit_price": 12.28,
+          "return_pct": -5.5385,
+          "won": false,
+          "entry_time": "2026-09-22T23:01:09.498108+00:00",
+          "exit_time": "2026-09-23T19:48:44.123226+00:00",
+          "held_hours": 20.8,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 14.43,
+          "exit_price": 14.3,
+          "return_pct": -0.9009,
+          "won": false,
+          "entry_time": "2026-09-30T02:01:24.750700+00:00",
+          "exit_time": "2026-09-30T14:26:50.253850+00:00",
+          "held_hours": 12.4,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "full_moon",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "waning_gibbous"
+        },
+        {
+          "entry_price": 13.41,
+          "exit_price": 13.27,
+          "return_pct": -1.044,
+          "won": false,
+          "entry_time": "2026-10-11T18:03:40.457683+00:00",
+          "exit_time": "2026-10-11T22:04:40.669761+00:00",
+          "held_hours": 4.0,
+          "moon_sign_in": "Scorpio",
+          "moon_phase_in": "new_moon",
+          "moon_sign_out": "",
+          "moon_phase_out": ""
+        }
+      ]
+    },
+    "chainlink:short": {
+      "asset": "chainlink",
+      "direction": "short",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 13.27,
+        "entry_time": "2026-10-11T22:04:40.669761+00:00",
+        "confidence": -0.14,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 12.28,
+          "exit_price": 14.43,
+          "return_pct": -17.5081,
+          "won": false,
+          "entry_time": "2026-09-23T19:48:44.123226+00:00",
+          "exit_time": "2026-09-30T02:01:24.750700+00:00",
+          "held_hours": 150.2,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Taurus",
+          "moon_phase_out": "full_moon"
+        },
+        {
+          "entry_price": 14.3,
+          "exit_price": 13.41,
+          "return_pct": 6.2238,
+          "won": true,
+          "entry_time": "2026-09-30T14:26:50.253850+00:00",
+          "exit_time": "2026-10-11T18:03:40.457683+00:00",
+          "held_hours": 267.6,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Scorpio",
+          "moon_phase_out": "new_moon"
+        }
+      ]
+    },
+    "chainlink:dip": {
+      "asset": "chainlink",
+      "direction": "dip",
+      "intent": "commerce",
+      "position": {
+        "entry_price": 12.89,
+        "entry_time": "2026-10-12T18:09:49.154131+00:00",
+        "confidence": -0.14,
+        "moon_sign": "",
+        "moon_phase": ""
+      },
+      "outcomes": [
+        {
+          "entry_price": 11.94,
+          "exit_price": 12.9,
+          "return_pct": 8.0402,
+          "won": true,
+          "entry_time": "2026-09-20T09:01:44.770604+00:00",
+          "exit_time": "2026-09-22T09:18:30.694245+00:00",
+          "held_hours": 48.3,
+          "moon_sign_in": "Capricorn",
+          "moon_phase_in": "first_quarter",
+          "moon_sign_out": "Aquarius",
+          "moon_phase_out": "first_quarter"
+        },
+        {
+          "entry_price": 12.32,
+          "exit_price": 13.86,
+          "return_pct": 12.5,
+          "won": true,
+          "entry_time": "2026-09-23T15:03:27.262205+00:00",
+          "exit_time": "2026-09-25T20:59:24.472881+00:00",
+          "held_hours": 53.9,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 14.43,
+          "exit_price": 14.63,
+          "return_pct": 1.386,
+          "won": true,
+          "entry_time": "2026-09-30T02:01:24.750700+00:00",
+          "exit_time": "2026-10-02T05:00:22.670947+00:00",
+          "held_hours": 51.0,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "full_moon",
+          "moon_sign_out": "Gemini",
+          "moon_phase_out": "waning_gibbous"
+        },
+        {
+          "entry_price": 13.74,
+          "exit_price": 14.24,
+          "return_pct": 3.639,
+          "won": true,
+          "entry_time": "2026-10-02T23:00:26.666307+00:00",
+          "exit_time": "2026-10-05T01:00:38.802295+00:00",
+          "held_hours": 50.0,
+          "moon_sign_in": "Cancer",
+          "moon_phase_in": "waning_gibbous",
+          "moon_sign_out": "Leo",
+          "moon_phase_out": "last_quarter"
+        },
+        {
+          "entry_price": 13.34,
+          "exit_price": 12.83,
+          "return_pct": -3.8231,
+          "won": false,
+          "entry_time": "2026-10-07T13:05:52.490497+00:00",
+          "exit_time": "2026-10-09T13:10:45.333372+00:00",
+          "held_hours": 48.1,
+          "moon_sign_in": "Virgo",
+          "moon_phase_in": "waning_crescent",
+          "moon_sign_out": "Libra",
+          "moon_phase_out": "waning_crescent"
+        }
+      ]
+    },
+    "chainlink:dip_fair_sky": {
+      "asset": "chainlink",
+      "direction": "dip_fair_sky",
+      "intent": "commerce",
+      "position": null,
+      "outcomes": [
+        {
+          "entry_price": 12.32,
+          "exit_price": 13.86,
+          "return_pct": 12.5,
+          "won": true,
+          "entry_time": "2026-09-23T15:03:27.262205+00:00",
+          "exit_time": "2026-09-25T20:59:24.472881+00:00",
+          "held_hours": 53.9,
+          "moon_sign_in": "Aquarius",
+          "moon_phase_in": "waxing_gibbous",
+          "moon_sign_out": "Pisces",
+          "moon_phase_out": "waxing_gibbous"
+        },
+        {
+          "entry_price": 14.43,
+          "exit_price": 14.63,
+          "return_pct": 1.386,
+          "won": true,
+          "entry_time": "2026-09-30T02:01:24.750700+00:00",
+          "exit_time": "2026-10-02T05:00:22.670947+00:00",
+          "held_hours": 51.0,
+          "moon_sign_in": "Taurus",
+          "moon_phase_in": "full_moon",
+          "moon_sign_out": "Gemini",
+          "moon_phase_out": "waning_gibbous"
+        }
+      ]
+    }
+  },
+  "last_sky": {
+    "moon_sign": "",
+    "moon_phase": "",
+    "waxing": false,
+    "void_of_course": false,
+    "retrogrades": []
+  },
+  "last_prices": {
+    "ethereum": 2509.03,
+    "bitcoin": 82416.0,
+    "aerodrome-finance": 0.894542,
+    "virtual-protocol": 0.711399,
+    "chainlink": 12.89,
+    "solana": 107.69
+  }
+}

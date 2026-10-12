@@ -1,28 +1,48 @@
 # Stargazer
 
-An agent that trades ETH by the sky, in public, with real money, fifty cents at a time.
-
-The running results are in [EXPERIMENT.md](EXPERIMENT.md). That page is written by the agent from its own ledger and pushed every few hours. If the idea works, the number goes up. If it doesn't, you will watch it not.
+What the sky was doing, and what actually happened, across everything, with the record left
+to judge. Restarted 2026-10-12; the design is in [RESTART.md](RESTART.md), the diagnosis of the
+first attempt in [RETHINK.md](RETHINK.md).
 
 ## What it does
 
-1. Buys electional windows from [the orrery](https://github.com/listlessmagpie/paradox-box), the astrology service in The Paradox Box, at a cent a call over x402.
-2. Correlates six months of those windows with what ETH actually did over the next 4 to 48 hours (`backtest.py`).
-3. Turns what held up into a strategy: which moon signs and phases have paid, at what win rate, over how many samples (`strategy.py`, `signals.py`).
-4. Plans a week ahead and sleeps until a favourable window, then buys or sells on Uniswap on Base (`planner.py`, `trader.py`, `agent.py`).
-5. Earns bigger bets only by winning. It starts at fifty cents and climbs a ladder of tiers; two losses in a row drop it a rung.
-6. Spends idle time on research, and runs a scout that tries outside data feeds on a small trial budget and grades them against the return that followed (`research.py`, `scout.py`). The scout proposes; a person decides.
+1. Computes the sky for every day since 2005 and, for every chart in the
+   [library](library/charts.json) connected to a market (the market's own birth, and every
+   person or body that acts on it), every transit of every body to every point of that chart,
+   each aspect its own factor, the Moon included, angles when the birth time is recorded,
+   antiscia and midpoints too. Nothing is pre selected as mattering (`charts.py`, `almanac.py`).
+2. Sets each factor against Bitcoin, Ethereum, the S&P 500, gold, oil and the VIX, learned on
+   the years before 2021 and confirmed after, with the whole study rerun a hundred times on a
+   sky slid out of step with the calendar so luck's share is measured, not assumed
+   ([ALMANAC.md](ALMANAC.md)).
+3. Opens each survivor occasion by occasion, since days inside one occurrence move together
+   ([ALMANAC_OCCASIONS.md](ALMANAC_OCCASIONS.md)), and dates the next occurrences in advance.
+4. Writes a forecast for every market every day, before the fact, and scores it after
+   ([FORECASTS.md](FORECASTS.md)).
+5. Puts pretend money on the occasions that meet the registered rule (`paper.py`), mirrored to
+   an Alpaca paper account when keys exist (`alpaca_paper.py`).
+6. Writes the whole record as one file, `record.json`, for the live show on
+   catshapedparadox.com and for agents over x402 through the orrery.
 
-It also sells what it learned over x402 (`service.py`): the strategy, the same training run on any asset, and the forward plan.
-
-## What this is not
-
-Advice. A promise. A large sample. Read the caveats at the bottom of the experiment page.
+Every rule was written down in [registry/](registry/) before the test that answers it ran.
+Nothing moves real money unless a rule here, a historical pass, and ten forward occasions on
+the paper book say so, and then only by Magpie's hand. The trading code for Base from the first
+attempt (`trader.py`, `x402pay.py`) is kept for that day and is not run.
 
 ## Running it
 
-Python 3.12. `pip install -r requirements.txt` for the agent, `requirements-service.txt` for the service. Copy `.env.example` to `.env`. Payments go through the [Ampersend](https://ampersend.ai) CLI; trading uses a plain key the agent creates in `.trade_key` on first run, which you fund with a little USDC and a sliver of ETH for gas on Base.
+Everything runs with the orrery's Python, which has the ephemeris:
 
-`python agent.py` plans once. `python agent.py --loop` runs. `--plan`, `--strategy`, `--budget`, `--position`, `--scout` show state. `python experiment.py` writes the page.
+    D:/git/paradox-box/.venv/Scripts/python.exe almanac.py              # the study
+    D:/git/paradox-box/.venv/Scripts/python.exe almanac.py --whole      # the whole sky forecaster, judged
+    D:/git/paradox-box/.venv/Scripts/python.exe almanac.py --occasions  # occasion by occasion
+    D:/git/paradox-box/.venv/Scripts/python.exe almanac.py --daily      # the daily step
 
-Part of [The Paradox Box](https://github.com/listlessmagpie/paradox-box). AGPL v3.
+A Windows task runs `forecast_daily.bat` once a day and publishes the record.
+
+## What this is not
+
+Advice. A promise. A large sample. Read the luck columns before anything else.
+
+Part of [The Paradox Box](https://github.com/listlessmagpie/paradox-box). AGPL v3. The first
+attempt, a Moon sign trader, is kept in [old/](old/) for the record.

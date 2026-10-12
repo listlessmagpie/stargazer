@@ -193,7 +193,7 @@ def _ensure_approval(key: str, address: str, token: str, spender: str, amount: i
 
 
 def _swap(key: str, address: str, token_in: str, token_out: str,
-          amount_in: int, min_out: int) -> str:
+          amount_in: int, min_out: int, fee: int = USDC_WETH_FEE) -> str:
     """Swap exactly amount_in of token_in for at least min_out of token_out."""
     addr = Web3.to_checksum_address(address)
     _ensure_approval(key, address, token_in, UNISWAP_ROUTER, amount_in)
@@ -202,7 +202,7 @@ def _swap(key: str, address: str, token_in: str, token_out: str,
     tx = _rpc(lambda: router.functions.exactInputSingle((
         token_in,
         token_out,
-        USDC_WETH_FEE,
+        fee,
         addr,          # recipient
         amount_in,
         min_out,       # the floor: below this the swap reverts instead of filling badly
@@ -263,3 +263,46 @@ async def swap_eth_to_usdc(eth_amount: Decimal, slippage_bps: int = 100) -> str:
     expected_usdc = eth_amount * _eth_usd()
     min_out = int(expected_usdc * (1 - Decimal(slippage_bps) / 10_000) * Decimal(10**6))
     return _swap(key, address, WETH, USDC, amount_in, min_out)
+
+
+WETH_DEPOSIT_ABI = [{"inputs": [], "name": "deposit", "outputs": [], "stateMutability": "payable", "type": "function"}]
+
+
+def wrap_eth(amount_eth: Decimal) -> str:
+    """Turn plain ETH into wrapped ETH, one for one, so it can be held as a position."""
+    key, address = _load_trade_key()
+    addr = Web3.to_checksum_address(address)
+    weth = w3.eth.contract(address=WETH, abi=WETH_DEPOSIT_ABI)
+    tx = _rpc(lambda: weth.functions.deposit().build_transaction({
+        "from": addr,
+        "nonce": w3.eth.get_transaction_count(addr),
+        "gas": 60_000,
+        "maxFeePerGas": w3.eth.gas_price * 2,
+        "maxPriorityFeePerGas": w3.eth.max_priority_fee,
+        "chainId": 8453,
+        "value": int(amount_eth * Decimal(10**18)),
+    }))
+    signed = w3.eth.account.sign_transaction(tx, key)
+    tx_hash = w3.eth.send_raw_transaction(signed.raw_transaction)
+    receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+    if receipt["status"] != 1:
+        raise RuntimeError(f"wrap failed, tx: {tx_hash.hex()}")
+    return tx_hash.hex()
+
+
+async def buy_asset(asset, usdc_amount: Decimal, price_usd: float, slippage_bps: int = 100) -> str:
+    """Swap dollars for any registered asset through its own pool, with a floor on what comes out."""
+    key, address = _load_trade_key()
+    amount_in = int(usdc_amount * Decimal(10**6))
+    expected = float(usdc_amount) / price_usd
+    min_out = int(expected * (1 - slippage_bps / 10_000) * 10**asset.decimals)
+    return _swap(key, address, USDC, asset.token, amount_in, min_out, fee=asset.fee)
+
+
+async def sell_asset(asset, amount: float, price_usd: float, slippage_bps: int = 100) -> str:
+    """Swap any registered asset back to dollars, with a floor on what comes out."""
+    key, address = _load_trade_key()
+    amount_in = int(Decimal(str(amount)) * Decimal(10**asset.decimals))
+    expected_usdc = amount * price_usd
+    min_out = int(expected_usdc * (1 - slippage_bps / 10_000) * 10**6)
+    return _swap(key, address, asset.token, USDC, amount_in, min_out, fee=asset.fee)

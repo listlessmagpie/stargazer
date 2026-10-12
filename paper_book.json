@@ -1,0 +1,27 @@
+{
+ "stake_per_position": 100.0,
+ "registered": "2026-10-12",
+ "positions": [
+  {
+   "market": "bitcoin",
+   "alpaca_symbol": "BTC/USD",
+   "factor": "venus_retrograde",
+   "horizon_days": 5,
+   "side": "short",
+   "from": "2026-10-12",
+   "to": "2026-11-13",
+   "record_at_entry": "8 of 8",
+   "entry_date": "2026-10-12",
+   "entry_price": 83657.6015625,
+   "stake": 100.0,
+   "opened_at": "2026-10-12T23:17:08+00:00"
+  }
+ ],
+ "summary": {
+  "open": 1,
+  "closed": 0,
+  "right": 0,
+  "pnl": 0,
+  "as_of": "2026-10-12"
+ }
+}

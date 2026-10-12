@@ -1,275 +1,139 @@
-"""The paper book: every strategy the agent is not running, tracked as if it were.
+"""The paper book: pretend money on the family 2 occasions, by the registered rule.
 
-The live agent does one thing: long ETH, in on a favourable window, out on an
-unfavourable one. That is the right amount of risk for nine dollars. But the
-question the experiment asks is wider than one asset and one direction, so the
-rest is answered on paper. Every four hours the book reads the current sky
-from the orrery, prices every asset, and for each strategy decides what it
-would do, opening and closing pretend positions at real prices. Wins and
-losses accumulate the same way the live ledger's do, and the experiment page
-shows them side by side.
+Stage 2 of the gate. A pattern reaches here only if the occasions report marks it
+paper eligible (at least 7 occurrences, 70% as expected, half of those since 2021; see
+registry/2026-10-12-family-2-occasions.md). From the day it is marked, every new
+occurrence opens one pretend position at the close of its first active day: long if the
+pattern expects up, short if it expects down. It closes at the later of the horizon or
+the last active day. Every position is appended the day it opens, with the price and the
+reason; the close is filled in afterwards and nothing is edited.
 
-A strategy is an asset, a direction, and the intent whose windows it was
-trained on. Long is the live logic. Short is its mirror: out (or, with real
-leverage, short) ahead of an unfavourable window, back in on a favourable one.
-Nothing here spends a cent beyond the sky reading, and nothing here can be
-promoted to live by code; that is a person's decision, made on this evidence.
+Prices are the daily closes the almanac already fetches. When Alpaca paper keys are set
+(ALPACA_KEY, ALPACA_SECRET), the same orders are also sent to the Alpaca paper account
+through alpaca_paper.py, so the record has fills from a real simulator for stocks, ETFs
+and crypto, and shorting exists. Without keys, the local book is the record.
+
+    python paper.py            # open and close what the day calls for
+    python paper.py --show
 """
 
 from __future__ import annotations
 
 import json
-import time
-import urllib.parse
-import urllib.request
-from datetime import datetime, timezone
+import sys
+from datetime import date, datetime, timezone
 from pathlib import Path
 
-import backtest
-import ledger
-import oracle
-import signals
-
 HERE = Path(__file__).resolve().parent
-BOOK_PATH = HERE / "paper_book.json"
-TABLES_PATH = HERE / "paper_tables.json"
-WINDOWS_PATH = HERE / "cache" / "windows_commerce_180d.json"
+BOOK = HERE / "paper_book.json"
+OCC = HERE / "almanac_occasions.json"
+STAKE = 100.0  # pretend dollars per position; equal size by rule
+REGISTERED = date(2026, 10, 12)
 
-ASSETS = ["ethereum", "bitcoin", "solana"]
-DIRECTIONS = ["long", "short"]
-
-# Buy the dip, on paper. The six month backtest says dips in ETH kept dipping about
-# as often as they bounced, with losses twice the size of wins, so this does not get
-# real money. It gets a fair forward test instead: in when the asset is down DIP_PCT
-# over 24 hours, out DIP_HOLD_HOURS later. The second variant only takes dips that
-# arrive under a sky the asset's own tables call favourable.
-DIP_PCT = 3.0
-DIP_HOLD_HOURS = 48
-DIP_VARIANTS = ["dip", "dip_fair_sky"]
-INTENT = "commerce"
-TICK_HOURS = 4
-TABLES_TTL_DAYS = 7
-SKY_COST_USD = 0.002
-
-LIVE = ("ethereum", "long")  # what the real wallet runs; kept on paper too, for the gap
+#: What each market trades as on Alpaca paper. Oil and the VIX trade through their funds.
+ALPACA_SYMBOLS = {"bitcoin": "BTC/USD", "ethereum": "ETH/USD", "sp500": "SPY", "gold": "GLD", "oil": "USO", "vix": "VIXY"}
 
 
-def _key(asset: str, direction: str) -> str:
-    return f"{asset}:{direction}"
+def _closes(market: str) -> list[tuple[date, float]]:
+    import almanac
+    return almanac.fetch_prices(almanac.MARKETS[market])
 
 
-def _load(path: Path, default):
-    if path.exists():
-        with open(path) as f:
-            return json.load(f)
-    return default
+def load() -> dict:
+    if BOOK.exists():
+        return json.loads(BOOK.read_text(encoding="utf-8"))
+    return {"stake_per_position": STAKE, "registered": REGISTERED.isoformat(), "positions": []}
 
 
-def _save(path: Path, data) -> None:
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2)
+def save(book: dict) -> None:
+    BOOK.write_text(json.dumps(book, indent=1), encoding="utf-8")
 
 
-def _book() -> dict:
-    book = _load(BOOK_PATH, {"last_tick": 0, "strategies": {}})
-    for a in ASSETS:
-        for d in DIRECTIONS + DIP_VARIANTS:
-            book["strategies"].setdefault(_key(a, d), {
-                "asset": a, "direction": d, "intent": INTENT,
-                "position": None, "outcomes": [],
+def step(today: date | None = None) -> dict:
+    today = today or datetime.now(timezone.utc).date()
+    book = load()
+    pats = json.loads(OCC.read_text(encoding="utf-8")) if OCC.exists() else []
+    opened, closed = 0, 0
+    key = lambda p: (p["market"], p["factor"], p["horizon_days"])
+    have = {(x["market"], x["factor"], x["horizon_days"], x["from"]) for x in book["positions"]}
+
+    for p in pats:
+        if not p.get("paper_eligible"):
+            continue
+        px = _closes(p["market"])
+        bydate = {d.isoformat(): c for d, c in px}
+        dates = sorted(bydate)
+        for n in p["next"]:
+            if n["from"] < REGISTERED.isoformat() or n["from"] > today.isoformat():
+                continue
+            k = key(p) + (n["from"],)
+            if k in have:
+                continue
+            # entry: first close on or after the window opens
+            entry_dates = [d for d in dates if d >= n["from"]]
+            if not entry_dates:
+                continue
+            ed = entry_dates[0]
+            book["positions"].append({
+                "market": p["market"], "alpaca_symbol": ALPACA_SYMBOLS.get(p["market"]),
+                "factor": p["factor"], "horizon_days": p["horizon_days"],
+                "side": "long" if p["expects"] == "up" else "short",
+                "from": n["from"], "to": n["to"], "record_at_entry": f"{p['as_predicted']} of {p['occasions']}",
+                "entry_date": ed, "entry_price": bydate[ed], "stake": STAKE,
+                "opened_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             })
-    return book
+            have.add(k)
+            opened += 1
 
-
-# tables: the same backtest the live strategy uses, per asset
-
-
-async def _tables() -> dict:
-    """Moon sign and phase tables per asset, rebuilt weekly from bundled windows."""
-    tables = _load(TABLES_PATH, {})
-    windows = _load(WINDOWS_PATH, [])
-    if not windows:
-        return tables
-    for asset in ASSETS:
-        entry = tables.get(asset)
-        if entry and time.time() - entry.get("built", 0) < TABLES_TTL_DAYS * 86400:
+    for x in book["positions"]:
+        if "exit_price" in x:
             continue
-        try:
-            prices = await backtest.fetch_price_history(days_back=backtest.LOOKBACK_DAYS, asset=asset)
-        except Exception as exc:
-            ledger.record("paper_error", asset=asset, reason=f"prices: {exc}"[:200])
+        px = _closes(x["market"])
+        bydate = {d.isoformat(): c for d, c in px}
+        dates = sorted(bydate)
+        if x["entry_date"] not in dates:
             continue
-        analysis = backtest.analyze(backtest.correlate(windows, prices))
-        tables[asset] = {
-            "built": time.time(),
-            "by_moon_sign": analysis.get("by_moon_sign", {}),
-            "by_moon_phase": analysis.get("by_moon_phase", {}),
-            "windows": analysis.get("total_windows", 0),
-        }
-        _save(TABLES_PATH, tables)
-    return tables
+        i = dates.index(x["entry_date"])
+        horizon_exit = dates[i + x["horizon_days"]] if i + x["horizon_days"] < len(dates) else None
+        after_window = [d for d in dates if d > x["to"]]
+        window_exit = after_window[0] if after_window else None
+        if horizon_exit and window_exit:
+            ex = max(horizon_exit, window_exit)
+        else:
+            continue  # not closable yet
+        if ex > today.isoformat():
+            continue
+        move = bydate[ex] / x["entry_price"] - 1
+        pnl = STAKE * (move if x["side"] == "long" else -move)
+        x.update({"exit_date": ex, "exit_price": bydate[ex], "move_pct": round(move * 100, 2),
+                  "pnl": round(pnl, 2), "right": pnl > 0,
+                  "closed_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+        closed += 1
 
-
-# the sky and the prices
-
-
-async def _sky() -> dict:
-    """Current moon sign, phase, void of course, and retrogrades, from the orrery."""
-    data = await oracle._ampersend_post(f"{oracle.API_BASE}/v1/aspects", {
-        "when": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "where": [45.52, -122.68],
-    })
-    moon = data.get("moon", {})
-    phase = moon.get("phase", "")
-    return {
-        "moon_sign": moon.get("sign", ""),
-        "moon_phase": phase,
-        "waxing": phase in ("new_moon", "waxing_crescent", "first_quarter", "waxing_gibbous"),
-        "void_of_course": bool(moon.get("void_of_course", False)),
-        "retrogrades": [r.title() for r in data.get("retrogrades", [])],
+    done = [x for x in book["positions"] if "pnl" in x]
+    book["summary"] = {
+        "open": len(book["positions"]) - len(done), "closed": len(done),
+        "right": sum(1 for x in done if x["right"]),
+        "pnl": round(sum(x["pnl"] for x in done), 2),
+        "as_of": today.isoformat(),
     }
+    save(book)
 
-
-_CHANGE_24H: dict[str, float] = {}
-
-
-def _prices() -> dict[str, float]:
-    ids = ",".join(ASSETS)
-    url = (f"https://api.coingecko.com/api/v3/simple/price?ids={urllib.parse.quote(ids)}"
-           "&vs_currencies=usd&include_24hr_change=true")
-    req = urllib.request.Request(url, headers={"Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        data = json.loads(resp.read())
-    _CHANGE_24H.clear()
-    _CHANGE_24H.update({a: float(data[a].get("usd_24h_change") or 0.0) for a in ASSETS if a in data})
-    return {a: float(data[a]["usd"]) for a in ASSETS if a in data}
-
-
-# the tick
-
-
-def _decide(direction: str, confidence: float, has_position: bool) -> str:
-    """Long mirrors the live thresholds. Short is the same thresholds, reflected."""
-    if direction == "long":
-        if has_position:
-            return "close" if confidence < signals.SELL_THRESHOLD else "hold"
-        return "open" if confidence > signals.BUY_THRESHOLD else "hold"
-    if has_position:
-        return "close" if confidence > signals.BUY_THRESHOLD else "hold"
-    return "open" if confidence < signals.SELL_THRESHOLD else "hold"
-
-
-def _return_pct(direction: str, entry: float, exit_: float) -> float:
-    pct = (exit_ - entry) / entry * 100
-    return round(-pct if direction == "short" else pct, 4)
-
-
-async def tick(force: bool = False) -> dict:
-    book = _book()
-    if not force and time.time() - book.get("last_tick", 0) < TICK_HOURS * 3600:
-        return {"action": "skip", "reason": "ticked recently"}
-
-    tables = await _tables()
     try:
-        prices = _prices()
-    except Exception as exc:
-        return {"action": "error", "reason": f"prices: {exc}"}
-    sky = await _sky()
-    now = datetime.now(timezone.utc).isoformat()
-    moves = []
-
-    for key, strat in book["strategies"].items():
-        asset, direction = strat["asset"], strat["direction"]
-        if asset not in prices:
-            continue
-        t = tables.get(asset, {})
-        has_position = strat["position"] is not None
-        assessment = signals.assess_conditions(
-            moon_sign=sky["moon_sign"], moon_phase=sky["moon_phase"], waxing=sky["waxing"],
-            void_of_course=sky["void_of_course"], retrogrades=sky["retrogrades"], factors=[],
-            has_position=(has_position if direction == "long" else
-                          False if direction in DIP_VARIANTS else not has_position),
-            signs_data=t.get("by_moon_sign", {}), phases_data=t.get("by_moon_phase", {}),
-        )
-        decision = _decide(direction, assessment.confidence, has_position)
-        price = prices[asset]
-        if direction in DIP_VARIANTS:
-            decision = "hold"
-            if has_position:
-                held = (datetime.fromisoformat(now)
-                        - datetime.fromisoformat(strat["position"]["entry_time"])).total_seconds() / 3600
-                if held >= DIP_HOLD_HOURS:
-                    decision = "close"
-            elif _CHANGE_24H.get(asset, 0.0) <= -DIP_PCT:
-                fair = assessment.confidence > signals.BUY_THRESHOLD
-                if direction == "dip" or fair:
-                    decision = "open"
-        if decision == "open":
-            strat["position"] = {
-                "entry_price": price, "entry_time": now, "confidence": round(assessment.confidence, 3),
-                "moon_sign": sky["moon_sign"], "moon_phase": sky["moon_phase"],
-            }
-            moves.append(f"{key} open @ {price:.2f}")
-            ledger.record("paper_open", strategy=key, price=price, confidence=round(assessment.confidence, 3),
-                          moon_sign=sky["moon_sign"], moon_phase=sky["moon_phase"])
-        elif decision == "close":
-            pos = strat["position"]
-            pct = _return_pct(direction, pos["entry_price"], price)
-            held = round((datetime.fromisoformat(now) - datetime.fromisoformat(pos["entry_time"])).total_seconds() / 3600, 1)
-            outcome = {
-                "entry_price": pos["entry_price"], "exit_price": price, "return_pct": pct,
-                "won": pct > 0, "entry_time": pos["entry_time"], "exit_time": now, "held_hours": held,
-                "moon_sign_in": pos["moon_sign"], "moon_phase_in": pos["moon_phase"],
-                "moon_sign_out": sky["moon_sign"], "moon_phase_out": sky["moon_phase"],
-            }
-            strat["outcomes"].append(outcome)
-            strat["position"] = None
-            moves.append(f"{key} close {pct:+.2f}%")
-            ledger.record("paper_close", strategy=key, price=price, return_pct=pct, won=pct > 0, held_hours=held)
-
-    book["last_tick"] = time.time()
-    book["last_sky"] = sky
-    book["last_prices"] = prices
-    _save(BOOK_PATH, book)
-    ledger.record("paper_tick", cost_usd=SKY_COST_USD, moves=moves, moon_sign=sky["moon_sign"],
-                  moon_phase=sky["moon_phase"])
-    return {"action": "ticked", "moves": moves, "sky": sky}
-
-
-def summary() -> list[dict]:
-    """One row per strategy for the experiment page."""
-    book = _book()
-    rows = []
-    for key, strat in book["strategies"].items():
-        outs = strat["outcomes"]
-        wins = sum(1 for o in outs if o["won"])
-        net = sum(o["return_pct"] for o in outs)
-        rows.append({
-            "strategy": key, "asset": strat["asset"], "direction": strat["direction"],
-            "live": (strat["asset"], strat["direction"]) == LIVE,
-            "closed": len(outs), "wins": wins,
-            "win_rate": round(wins / len(outs) * 100, 1) if outs else None,
-            "net_pct": round(net, 2),
-            "open": strat["position"] is not None,
-        })
-    return rows
-
-
-async def maybe_tick() -> dict:
-    try:
-        return await tick()
-    except Exception as exc:
-        ledger.record("paper_error", reason=str(exc)[:200])
-        return {"action": "error", "reason": str(exc)}
+        import alpaca_paper
+        alpaca_paper.mirror(book)
+    except Exception as e:  # the local book is the record; Alpaca is a mirror
+        book.setdefault("alpaca", {})["last_error"] = str(e)[:200]
+        save(book)
+    return {"opened": opened, "closed": closed, **book["summary"]}
 
 
 if __name__ == "__main__":
-    import asyncio
-    import sys
-    if "--tick" in sys.argv:
-        print(asyncio.run(tick(force="--force" in sys.argv)))
-    else:
-        for r in summary():
-            tag = " (live)" if r["live"] else ""
-            print(f"{r['strategy']}{tag}: {r['closed']} closed, {r['wins']} won, net {r['net_pct']:+.2f}%"
-                  f"{', open' if r['open'] else ''}")
+    if "--show" in sys.argv:
+        b = load()
+        print(json.dumps(b.get("summary", {}), indent=1))
+        for x in b["positions"][-20:]:
+            print(f"{x['entry_date']} {x['market']:9s} {x['side']:5s} {x['factor'][:40]:40s} "
+                  + (f"{x['pnl']:+.2f}" if "pnl" in x else "open"))
+        sys.exit(0)
+    print(step())

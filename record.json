@@ -1,0 +1,3867 @@
+{
+ "written": "2026-10-12T23:18:19+00:00",
+ "about": "Stargazer's record: forecasts dated before the fact and scored after, the sky factors that survived a luck test, what is active now, pretend money on the paper book, and the charts the study reads. Rules in registry/ were written before each test ran.",
+ "forecasts": {
+  "latest": {
+   "bitcoin": {
+    "reading": "sky",
+    "expects": "down",
+    "forecast_vs_usual_pct": -0.28,
+    "price_at_forecast": 83657.6,
+    "price_date": "2026-10-12",
+    "why": [
+     {
+      "factor": "venus_retrograde",
+      "pull_pct": -0.1
+     },
+     {
+      "factor": "mars_sext_uranus",
+      "pull_pct": -0.09
+     },
+     {
+      "factor": "venus_sq_mars",
+      "pull_pct": -0.05
+     }
+    ]
+   },
+   "ethereum": {
+    "reading": "sky",
+    "expects": "down",
+    "forecast_vs_usual_pct": -1.99,
+    "price_at_forecast": 2535.56,
+    "price_date": "2026-10-12",
+    "why": [
+     {
+      "factor": "mars_sext_uranus",
+      "pull_pct": -1.13
+     },
+     {
+      "factor": "venus_retrograde",
+      "pull_pct": -0.68
+     },
+     {
+      "factor": "venus_sq_mars",
+      "pull_pct": -0.63
+     }
+    ]
+   },
+   "sp500": {
+    "reading": "sky_and_chart",
+    "expects": "down",
+    "forecast_vs_usual_pct": -0.04,
+    "price_at_forecast": 7807.24,
+    "price_date": "2026-10-12",
+    "why": [
+     {
+      "factor": "t_sp500_venus_conj_anti_pluto",
+      "pull_pct": -0.05
+     },
+     {
+      "factor": "t_sp500_venus_quadnovile_sun",
+      "pull_pct": -0.04
+     },
+     {
+      "factor": "t_sp500_mars_biseptile_saturn",
+      "pull_pct": 0.04
+     }
+    ]
+   },
+   "gold": {
+    "reading": "sky",
+    "expects": "up",
+    "forecast_vs_usual_pct": 0.01,
+    "price_at_forecast": 4196.9,
+    "price_date": "2026-10-12",
+    "why": [
+     {
+      "factor": "mars_tri_saturn",
+      "pull_pct": 0.04
+     },
+     {
+      "factor": "uranus_tri_pluto",
+      "pull_pct": 0.02
+     },
+     {
+      "factor": "jupiter_in_leo",
+      "pull_pct": -0.02
+     }
+    ]
+   },
+   "oil": {
+    "reading": "sky",
+    "expects": "down",
+    "forecast_vs_usual_pct": -0.18,
+    "price_at_forecast": 93.27,
+    "price_date": "2026-10-12",
+    "why": [
+     {
+      "factor": "saturn_in_aries",
+      "pull_pct": 0.05
+     },
+     {
+      "factor": "mars_sext_uranus",
+      "pull_pct": -0.04
+     },
+     {
+      "factor": "jupiter_in_leo",
+      "pull_pct": -0.04
+     }
+    ]
+   },
+   "vix": {
+    "reading": "sky",
+    "expects": "up",
+    "forecast_vs_usual_pct": 0.58,
+    "price_at_forecast": 15.21,
+    "price_date": "2026-10-12",
+    "why": [
+     {
+      "factor": "mars_tri_saturn",
+      "pull_pct": 0.18
+     },
+     {
+      "factor": "venus_retrograde",
+      "pull_pct": 0.16
+     },
+     {
+      "factor": "venus_sq_mars",
+      "pull_pct": 0.1
+     }
+    ]
+   }
+  },
+  "date": "2026-10-12",
+  "scored": {
+   "right": 19,
+   "of": 34,
+   "by_market": {
+    "ethereum": {
+     "right": 9,
+     "of": 17
+    },
+    "bitcoin": {
+     "right": 10,
+     "of": 17
+    }
+   }
+  },
+  "log": [
+   {
+    "date": "2026-09-19",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.52,
+      "price_at_forecast": 2619.45,
+      "price_date": "2026-09-19",
+      "outcome": {
+       "date": "2026-09-24",
+       "price": 2687.3,
+       "move_pct": 2.59,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.02,
+      "price_at_forecast": 81104.14,
+      "price_date": "2026-09-19",
+      "outcome": {
+       "date": "2026-09-24",
+       "price": 84379.06,
+       "move_pct": 4.04,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-20",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.09,
+      "price_at_forecast": 2619.45,
+      "price_date": "2026-09-19",
+      "outcome": {
+       "date": "2026-09-24",
+       "price": 2687.3,
+       "move_pct": 2.59,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.06,
+      "price_at_forecast": 81104.14,
+      "price_date": "2026-09-19",
+      "outcome": {
+       "date": "2026-09-24",
+       "price": 84379.06,
+       "move_pct": 4.04,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-21",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.86,
+      "price_at_forecast": 2678.06,
+      "price_date": "2026-09-21",
+      "outcome": {
+       "date": "2026-09-26",
+       "price": 2695.21,
+       "move_pct": 0.64,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.04,
+      "price_at_forecast": 81669.86,
+      "price_date": "2026-09-21",
+      "outcome": {
+       "date": "2026-09-26",
+       "price": 84406.45,
+       "move_pct": 3.35,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-22",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.21,
+      "price_at_forecast": 2678.06,
+      "price_date": "2026-09-21",
+      "outcome": {
+       "date": "2026-09-26",
+       "price": 2695.21,
+       "move_pct": 0.64,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.18,
+      "price_at_forecast": 81669.86,
+      "price_date": "2026-09-21",
+      "outcome": {
+       "date": "2026-09-26",
+       "price": 84406.45,
+       "move_pct": 3.35,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-23",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 2.2,
+      "price_at_forecast": 2757.82,
+      "price_date": "2026-09-23",
+      "outcome": {
+       "date": "2026-09-28",
+       "price": 2688.67,
+       "move_pct": -2.51,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.12,
+      "price_at_forecast": 86342.69,
+      "price_date": "2026-09-23",
+      "outcome": {
+       "date": "2026-09-28",
+       "price": 83502.61,
+       "move_pct": -3.29,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-24",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.25,
+      "price_at_forecast": 2757.82,
+      "price_date": "2026-09-23",
+      "outcome": {
+       "date": "2026-09-28",
+       "price": 2688.67,
+       "move_pct": -2.51,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.14,
+      "price_at_forecast": 86342.69,
+      "price_date": "2026-09-23",
+      "outcome": {
+       "date": "2026-09-28",
+       "price": 83502.61,
+       "move_pct": -3.29,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-26",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 2.53,
+      "price_at_forecast": 2691.11,
+      "price_date": "2026-09-26",
+      "outcome": {
+       "date": "2026-10-02",
+       "price": 2705.04,
+       "move_pct": 0.52,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.2,
+      "price_at_forecast": 84059.55,
+      "price_date": "2026-09-26",
+      "outcome": {
+       "date": "2026-10-02",
+       "price": 84854.32,
+       "move_pct": 0.95,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-27",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 2.92,
+      "price_at_forecast": 2691.11,
+      "price_date": "2026-09-26",
+      "outcome": {
+       "date": "2026-10-02",
+       "price": 2705.04,
+       "move_pct": 0.52,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.19,
+      "price_at_forecast": 84059.55,
+      "price_date": "2026-09-26",
+      "outcome": {
+       "date": "2026-10-02",
+       "price": 84854.32,
+       "move_pct": 0.95,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-28",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 3.93,
+      "price_at_forecast": 2686.18,
+      "price_date": "2026-09-28",
+      "outcome": {
+       "date": "2026-10-04",
+       "price": 2687.08,
+       "move_pct": 0.03,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.04,
+      "price_at_forecast": 84420.19,
+      "price_date": "2026-09-28",
+      "outcome": {
+       "date": "2026-10-04",
+       "price": 84803.78,
+       "move_pct": 0.45,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-09-30",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 3.4,
+      "price_at_forecast": 2671.16,
+      "price_date": "2026-09-30",
+      "outcome": {
+       "date": "2026-10-06",
+       "price": 2712.81,
+       "move_pct": 1.56,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.01,
+      "price_at_forecast": 83507.19,
+      "price_date": "2026-09-30",
+      "outcome": {
+       "date": "2026-10-06",
+       "price": 85812.48,
+       "move_pct": 2.76,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-01",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 3.72,
+      "price_at_forecast": 2671.16,
+      "price_date": "2026-09-30",
+      "outcome": {
+       "date": "2026-10-06",
+       "price": 2712.81,
+       "move_pct": 1.56,
+       "right": true
+      }
+     },
+     "bitcoin": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.09,
+      "price_at_forecast": 83507.19,
+      "price_date": "2026-09-30",
+      "outcome": {
+       "date": "2026-10-06",
+       "price": 85812.48,
+       "move_pct": 2.76,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-02",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 2.55,
+      "price_at_forecast": 2705.04,
+      "price_date": "2026-10-02",
+      "outcome": {
+       "date": "2026-10-08",
+       "price": 2569.98,
+       "move_pct": -4.99,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.05,
+      "price_at_forecast": 84854.32,
+      "price_date": "2026-10-02",
+      "outcome": {
+       "date": "2026-10-08",
+       "price": 83208.66,
+       "move_pct": -1.94,
+       "right": false
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-03",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.62,
+      "price_at_forecast": 2705.04,
+      "price_date": "2026-10-02",
+      "outcome": {
+       "date": "2026-10-08",
+       "price": 2569.98,
+       "move_pct": -4.99,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.1,
+      "price_at_forecast": 84854.32,
+      "price_date": "2026-10-02",
+      "outcome": {
+       "date": "2026-10-08",
+       "price": 83208.66,
+       "move_pct": -1.94,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-04",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.52,
+      "price_at_forecast": 2687.08,
+      "price_date": "2026-10-04",
+      "outcome": {
+       "date": "2026-10-10",
+       "price": 2486.81,
+       "move_pct": -7.45,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.1,
+      "price_at_forecast": 84803.78,
+      "price_date": "2026-10-04",
+      "outcome": {
+       "date": "2026-10-10",
+       "price": 82562.97,
+       "move_pct": -2.64,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-05",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.48,
+      "price_at_forecast": 2687.08,
+      "price_date": "2026-10-04",
+      "outcome": {
+       "date": "2026-10-10",
+       "price": 2486.81,
+       "move_pct": -7.45,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.26,
+      "price_at_forecast": 84803.78,
+      "price_date": "2026-10-04",
+      "outcome": {
+       "date": "2026-10-10",
+       "price": 82562.97,
+       "move_pct": -2.64,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-06",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 1.75,
+      "price_at_forecast": 2712.81,
+      "price_date": "2026-10-06",
+      "outcome": {
+       "date": "2026-10-12",
+       "price": 2535.56,
+       "move_pct": -6.53,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.17,
+      "price_at_forecast": 85812.48,
+      "price_date": "2026-10-06",
+      "outcome": {
+       "date": "2026-10-12",
+       "price": 83657.6,
+       "move_pct": -2.51,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-07",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.96,
+      "price_at_forecast": 2712.81,
+      "price_date": "2026-10-06",
+      "outcome": {
+       "date": "2026-10-12",
+       "price": 2535.56,
+       "move_pct": -6.53,
+       "right": false
+      }
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.26,
+      "price_at_forecast": 85812.48,
+      "price_date": "2026-10-06",
+      "outcome": {
+       "date": "2026-10-12",
+       "price": 83657.6,
+       "move_pct": -2.51,
+       "right": true
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-08",
+    "markets": {
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.01,
+      "price_at_forecast": 2569.98,
+      "price_date": "2026-10-08"
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.29,
+      "price_at_forecast": 83208.66,
+      "price_date": "2026-10-08"
+     }
+    }
+   },
+   {
+    "date": "2026-10-09",
+    "markets": {
+     "ethereum": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.55,
+      "price_at_forecast": 2569.98,
+      "price_date": "2026-10-08"
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.29,
+      "price_at_forecast": 83208.66,
+      "price_date": "2026-10-08"
+     }
+    }
+   },
+   {
+    "date": "2026-10-10",
+    "markets": {
+     "ethereum": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.7,
+      "price_at_forecast": 2486.81,
+      "price_date": "2026-10-10"
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.3,
+      "price_at_forecast": 82562.97,
+      "price_date": "2026-10-10"
+     }
+    }
+   },
+   {
+    "date": "2026-10-11",
+    "markets": {
+     "ethereum": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.73,
+      "price_at_forecast": 2486.81,
+      "price_date": "2026-10-10"
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.27,
+      "price_at_forecast": 82562.97,
+      "price_date": "2026-10-10"
+     }
+    }
+   },
+   {
+    "date": "2026-10-12",
+    "markets": {
+     "ethereum": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.42,
+      "price_at_forecast": 2535.56,
+      "price_date": "2026-10-12"
+     },
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.28,
+      "price_at_forecast": 83657.6,
+      "price_date": "2026-10-12"
+     },
+     "sp500": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.04,
+      "price_at_forecast": 7807.24,
+      "price_date": "2026-10-12"
+     },
+     "gold": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.01,
+      "price_at_forecast": 4196.9,
+      "price_date": "2026-10-12"
+     },
+     "oil": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.18,
+      "price_at_forecast": 93.27,
+      "price_date": "2026-10-12"
+     },
+     "vix": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.58,
+      "price_at_forecast": 15.21,
+      "price_date": "2026-10-12"
+     }
+    }
+   }
+  ]
+ },
+ "study": {
+  "run_at": "2026-10-12T22:36:39.560341+00:00",
+  "factors": 47202,
+  "tests": 18860,
+  "passed": 127,
+  "luck": {
+   "mean": 119.8,
+   "p95": 148.05,
+   "max": 167.0,
+   "runs": 100,
+   "share_of_runs_at_or_above_real": 0.37
+  },
+  "blocks": {
+   "bitcoin": [
+    "sky (287)",
+    "bitcoin (2250)",
+    "federal_reserve (1980)",
+    "trump_donald (2820)",
+    "musk_elon (2820)",
+    "strategy (1980)",
+    "fink_larry (1980)",
+    "coinbase (1980)"
+   ],
+   "ethereum": [
+    "sky (287)",
+    "ethereum (2250)",
+    "buterin_vitalik (1980)",
+    "coinbase (1980)"
+   ],
+   "sp500": [
+    "sky (287)",
+    "sp500 (1980)",
+    "federal_reserve (1980)",
+    "bessent_scott (1980)",
+    "trump_donald (2820)",
+    "fink_larry (1980)",
+    "dimon_jamie (1980)",
+    "buffett_warren (1980)",
+    "dalio_ray (1980)"
+   ],
+   "gold": [
+    "sky (287)",
+    "federal_reserve (1980)"
+   ],
+   "oil": [
+    "sky (287)",
+    "trump_donald (2820)"
+   ],
+   "vix": [
+    "sky (287)",
+    "federal_reserve (1980)"
+   ]
+  },
+  "survivors": [
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "venus_opp_jupiter",
+    "block": "sky",
+    "confirmed": {
+     "days": 23,
+     "effect_pct": 7.309,
+     "z": 5.29,
+     "up_rate_pct": 78.3
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_jupiter_binovile_neptune",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 50,
+     "effect_pct": 4.847,
+     "z": 5.14,
+     "up_rate_pct": 80.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_strategy_mars_binovile_mars",
+    "block": "strategy",
+    "confirmed": {
+     "days": 24,
+     "effect_pct": -6.043,
+     "z": -4.47,
+     "up_rate_pct": 25.0
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "sun_opp_uranus",
+    "block": "sky",
+    "confirmed": {
+     "days": 20,
+     "effect_pct": 2.351,
+     "z": 4.15,
+     "up_rate_pct": 90.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_strategy_mars_sext_uranus",
+    "block": "strategy",
+    "confirmed": {
+     "days": 41,
+     "effect_pct": -4.071,
+     "z": -3.92,
+     "up_rate_pct": 29.3
+    }
+   },
+   {
+    "market": "vix",
+    "horizon_days": 1,
+    "factor": "moon_in_cancer",
+    "block": "sky",
+    "confirmed": {
+     "days": 125,
+     "effect_pct": 2.978,
+     "z": 3.92,
+     "up_rate_pct": 48.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_fink_larry_mars_tri_sun",
+    "block": "fink_larry",
+    "confirmed": {
+     "days": 43,
+     "effect_pct": -3.921,
+     "z": -3.86,
+     "up_rate_pct": 34.9
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "mercury_sext_uranus",
+    "block": "sky",
+    "confirmed": {
+     "days": 40,
+     "effect_pct": 1.552,
+     "z": 3.84,
+     "up_rate_pct": 70.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_strategy_jupiter_sext_sun",
+    "block": "strategy",
+    "confirmed": {
+     "days": 123,
+     "effect_pct": 2.266,
+     "z": 3.7,
+     "up_rate_pct": 66.7
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "venus_retrograde",
+    "block": "sky",
+    "confirmed": {
+     "days": 130,
+     "effect_pct": -2.178,
+     "z": -3.65,
+     "up_rate_pct": 40.8
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_musk_elon_mercury_binovile_moon",
+    "block": "musk_elon",
+    "confirmed": {
+     "days": 23,
+     "effect_pct": -4.861,
+     "z": -3.52,
+     "up_rate_pct": 30.4
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_jupiter_quintile_jupiter",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 30,
+     "effect_pct": -1.622,
+     "z": -3.49,
+     "up_rate_pct": 20.0
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_buffett_warren_mercury_triseptile_sun",
+    "block": "buffett_warren",
+    "confirmed": {
+     "days": 23,
+     "effect_pct": -1.601,
+     "z": -3.48,
+     "up_rate_pct": 39.1
+    }
+   },
+   {
+    "market": "vix",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_sext_jupiter",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 25,
+     "effect_pct": -10.754,
+     "z": -3.28,
+     "up_rate_pct": 24.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_bitcoin_jupiter_biseptile_jupiter",
+    "block": "bitcoin",
+    "confirmed": {
+     "days": 43,
+     "effect_pct": 3.18,
+     "z": 3.13,
+     "up_rate_pct": 65.1
+    }
+   },
+   {
+    "market": "vix",
+    "horizon_days": 5,
+    "factor": "venus_retrograde",
+    "block": "sky",
+    "confirmed": {
+     "days": 89,
+     "effect_pct": 5.503,
+     "z": 3.1,
+     "up_rate_pct": 48.3
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_mercury_sext_jupiter",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 42,
+     "effect_pct": 3.177,
+     "z": 3.09,
+     "up_rate_pct": 69.0
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "mercury_sext_uranus",
+    "block": "sky",
+    "confirmed": {
+     "days": 40,
+     "effect_pct": 1.085,
+     "z": 3.09,
+     "up_rate_pct": 72.5
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "mercury_in_capricorn",
+    "block": "sky",
+    "confirmed": {
+     "days": 130,
+     "effect_pct": 0.711,
+     "z": 3.07,
+     "up_rate_pct": 72.3
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_tri_saturn",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 35,
+     "effect_pct": 3.378,
+     "z": 3.01,
+     "up_rate_pct": 68.6
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_tri_pluto",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 21,
+     "effect_pct": 1.658,
+     "z": 3.0,
+     "up_rate_pct": 81.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_coinbase_jupiter_sq_saturn",
+    "block": "coinbase",
+    "confirmed": {
+     "days": 88,
+     "effect_pct": 2.138,
+     "z": 2.98,
+     "up_rate_pct": 62.5
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_dalio_ray_venus_sq_mars",
+    "block": "dalio_ray",
+    "confirmed": {
+     "days": 40,
+     "effect_pct": -1.039,
+     "z": -2.96,
+     "up_rate_pct": 35.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_coinbase_mercury_sq_pluto",
+    "block": "coinbase",
+    "confirmed": {
+     "days": 49,
+     "effect_pct": 2.78,
+     "z": 2.92,
+     "up_rate_pct": 67.3
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_mercury_sq_saturn",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 55,
+     "effect_pct": 2.607,
+     "z": 2.89,
+     "up_rate_pct": 63.6
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "mercury_in_aquarius",
+    "block": "sky",
+    "confirmed": {
+     "days": 130,
+     "effect_pct": -0.582,
+     "z": -2.89,
+     "up_rate_pct": 50.8
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_mercury_sq_venus",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 56,
+     "effect_pct": 2.575,
+     "z": 2.88,
+     "up_rate_pct": 64.3
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_venus_sq_mercury",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 49,
+     "effect_pct": -0.912,
+     "z": -2.87,
+     "up_rate_pct": 46.9
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_mars_sq_jupiter",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 59,
+     "effect_pct": -0.811,
+     "z": -2.79,
+     "up_rate_pct": 55.9
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_dimon_jamie_venus_sq_mars",
+    "block": "dimon_jamie",
+    "confirmed": {
+     "days": 52,
+     "effect_pct": -0.856,
+     "z": -2.77,
+     "up_rate_pct": 48.1
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_strategy_mars_sext_neptune",
+    "block": "strategy",
+    "confirmed": {
+     "days": 41,
+     "effect_pct": 2.8,
+     "z": 2.69,
+     "up_rate_pct": 68.3
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_coinbase_mercury_biquintile_neptune",
+    "block": "coinbase",
+    "confirmed": {
+     "days": 23,
+     "effect_pct": 3.656,
+     "z": 2.65,
+     "up_rate_pct": 69.6
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_dalio_ray_mercury_sesq_mars",
+    "block": "dalio_ray",
+    "confirmed": {
+     "days": 20,
+     "effect_pct": 1.302,
+     "z": 2.64,
+     "up_rate_pct": 75.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_strategy_jupiter_biseptile_saturn",
+    "block": "strategy",
+    "confirmed": {
+     "days": 40,
+     "effect_pct": 2.766,
+     "z": 2.63,
+     "up_rate_pct": 62.5
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_strategy_mercury_sq_saturn",
+    "block": "strategy",
+    "confirmed": {
+     "days": 46,
+     "effect_pct": 2.587,
+     "z": 2.63,
+     "up_rate_pct": 67.4
+    }
+   },
+   {
+    "market": "ethereum",
+    "horizon_days": 5,
+    "factor": "t_coinbase_jupiter_tri_neptune",
+    "block": "coinbase",
+    "confirmed": {
+     "days": 89,
+     "effect_pct": -2.466,
+     "z": -2.56,
+     "up_rate_pct": 31.5
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_dalio_ray_sun_sq_mercury",
+    "block": "dalio_ray",
+    "confirmed": {
+     "days": 33,
+     "effect_pct": 0.967,
+     "z": 2.51,
+     "up_rate_pct": 81.8
+    }
+   },
+   {
+    "market": "ethereum",
+    "horizon_days": 5,
+    "factor": "venus_sext_saturn",
+    "block": "sky",
+    "confirmed": {
+     "days": 58,
+     "effect_pct": 2.951,
+     "z": 2.5,
+     "up_rate_pct": 65.5
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "venus_conj_uranus",
+    "block": "sky",
+    "confirmed": {
+     "days": 33,
+     "effect_pct": -2.851,
+     "z": -2.47,
+     "up_rate_pct": 42.4
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_sq_mercury",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 26,
+     "effect_pct": -1.219,
+     "z": -2.45,
+     "up_rate_pct": 46.2
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_sext_mercury",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 35,
+     "effect_pct": 2.74,
+     "z": 2.44,
+     "up_rate_pct": 65.7
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_coinbase_mercury_sq_venus",
+    "block": "coinbase",
+    "confirmed": {
+     "days": 38,
+     "effect_pct": -2.62,
+     "z": -2.43,
+     "up_rate_pct": 26.3
+    }
+   },
+   {
+    "market": "ethereum",
+    "horizon_days": 5,
+    "factor": "venus_sq_neptune",
+    "block": "sky",
+    "confirmed": {
+     "days": 58,
+     "effect_pct": 2.875,
+     "z": 2.43,
+     "up_rate_pct": 41.4
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_fink_larry_jupiter_biquintile_pluto",
+    "block": "fink_larry",
+    "confirmed": {
+     "days": 47,
+     "effect_pct": -0.776,
+     "z": -2.39,
+     "up_rate_pct": 38.3
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 1,
+    "factor": "t_musk_elon_mercury_sesq_mercury",
+    "block": "musk_elon",
+    "confirmed": {
+     "days": 20,
+     "effect_pct": -1.594,
+     "z": -2.38,
+     "up_rate_pct": 35.0
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_venus_sq_uranus",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 34,
+     "effect_pct": -0.89,
+     "z": -2.34,
+     "up_rate_pct": 38.2
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_opp_sun",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 20,
+     "effect_pct": 1.326,
+     "z": 2.34,
+     "up_rate_pct": 75.0
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "sun_in_cancer",
+    "block": "sky",
+    "confirmed": {
+     "days": 130,
+     "effect_pct": 0.466,
+     "z": 2.32,
+     "up_rate_pct": 70.8
+    }
+   },
+   {
+    "market": "vix",
+    "horizon_days": 5,
+    "factor": "mars_sext_jupiter",
+    "block": "sky",
+    "confirmed": {
+     "days": 42,
+     "effect_pct": -5.896,
+     "z": -2.32,
+     "up_rate_pct": 23.8
+    }
+   },
+   {
+    "market": "ethereum",
+    "horizon_days": 5,
+    "factor": "sun_tri_saturn",
+    "block": "sky",
+    "confirmed": {
+     "days": 67,
+     "effect_pct": 2.546,
+     "z": 2.31,
+     "up_rate_pct": 58.2
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "sun_conj_pluto",
+    "block": "sky",
+    "confirmed": {
+     "days": 37,
+     "effect_pct": -2.515,
+     "z": -2.3,
+     "up_rate_pct": 32.4
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_sq_mars",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 33,
+     "effect_pct": 2.655,
+     "z": 2.3,
+     "up_rate_pct": 81.8
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "sun_in_capricorn",
+    "block": "sky",
+    "confirmed": {
+     "days": 102,
+     "effect_pct": 0.589,
+     "z": 2.28,
+     "up_rate_pct": 70.6
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "venus_sq_pluto",
+    "block": "sky",
+    "confirmed": {
+     "days": 67,
+     "effect_pct": 1.856,
+     "z": 2.27,
+     "up_rate_pct": 67.2
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_venus_semisext_venus",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 20,
+     "effect_pct": 1.119,
+     "z": 2.27,
+     "up_rate_pct": 75.0
+    }
+   },
+   {
+    "market": "bitcoin",
+    "horizon_days": 5,
+    "factor": "t_trump_donald_mercury_triseptile_venus",
+    "block": "trump_donald",
+    "confirmed": {
+     "days": 21,
+     "effect_pct": 3.233,
+     "z": 2.24,
+     "up_rate_pct": 66.7
+    }
+   },
+   {
+    "market": "ethereum",
+    "horizon_days": 5,
+    "factor": "venus_sext_neptune",
+    "block": "sky",
+    "confirmed": {
+     "days": 85,
+     "effect_pct": 2.173,
+     "z": 2.21,
+     "up_rate_pct": 61.2
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "sun_in_pisces",
+    "block": "sky",
+    "confirmed": {
+     "days": 126,
+     "effect_pct": -0.446,
+     "z": -2.19,
+     "up_rate_pct": 47.6
+    }
+   },
+   {
+    "market": "gold",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_mars_semisext_pluto",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 20,
+     "effect_pct": -1.243,
+     "z": -2.19,
+     "up_rate_pct": 50.0
+    }
+   },
+   {
+    "market": "sp500",
+    "horizon_days": 5,
+    "factor": "t_federal_reserve_jupiter_biquintile_mercury",
+    "block": "federal_reserve",
+    "confirmed": {
+     "days": 56,
+     "effect_pct": 0.652,
+     "z": 2.18,
+     "up_rate_pct": 82.1
+    }
+   }
+  ]
+ },
+ "whole_sky": {
+  "bitcoin": {
+   "sky": {
+    "corr": 0.026,
+    "hit": 0.5055,
+    "timed": 2.5948,
+    "held": 1.835,
+    "in_market": 0.581,
+    "factors": 257,
+    "luck_corr_mean": -0.0211,
+    "luck_corr_p95": 0.033,
+    "luck_beats_real_corr": 0.09,
+    "luck_timed_mean": 0.4305,
+    "luck_beats_real_timed": 0.04
+   },
+   "sky_and_chart": {
+    "corr": 0.0121,
+    "hit": 0.4698,
+    "timed": -0.1239,
+    "held": 1.835,
+    "in_market": 0.6109,
+    "factors": 1667,
+    "luck_corr_mean": 0.0069,
+    "luck_corr_p95": 0.0642,
+    "luck_beats_real_corr": 0.42,
+    "luck_timed_mean": 0.7275,
+    "luck_beats_real_timed": 0.82
+   }
+  },
+  "ethereum": {
+   "sky": {
+    "corr": 0.1138,
+    "hit": 0.5121,
+    "timed": 3.3485,
+    "held": 2.5236,
+    "in_market": 0.7492,
+    "factors": 257,
+    "luck_corr_mean": 0.039,
+    "luck_corr_p95": 0.1063,
+    "luck_beats_real_corr": 0.04,
+    "luck_timed_mean": 2.9138,
+    "luck_beats_real_timed": 0.26
+   },
+   "sky_and_chart": {
+    "corr": 0.052,
+    "hit": 0.5007,
+    "timed": 0.5463,
+    "held": 2.5236,
+    "in_market": 0.6912,
+    "factors": 1651,
+    "luck_corr_mean": 0.0531,
+    "luck_corr_p95": 0.1079,
+    "luck_beats_real_corr": 0.48,
+    "luck_timed_mean": 3.1044,
+    "luck_beats_real_timed": 0.82
+   }
+  },
+  "sp500": {
+   "sky": {
+    "corr": -0.0571,
+    "hit": 0.5197,
+    "timed": 0.158,
+    "held": 1.1129,
+    "in_market": 0.7066,
+    "factors": 257,
+    "luck_corr_mean": -0.0043,
+    "luck_corr_p95": 0.0635,
+    "luck_beats_real_corr": 0.87,
+    "luck_timed_mean": 0.5292,
+    "luck_beats_real_timed": 0.91
+   },
+   "sky_and_chart": {
+    "corr": -0.0025,
+    "hit": 0.5301,
+    "timed": 0.6371,
+    "held": 1.1129,
+    "in_market": 0.7128,
+    "factors": 1489,
+    "luck_corr_mean": -0.0042,
+    "luck_corr_p95": 0.0658,
+    "luck_beats_real_corr": 0.53,
+    "luck_timed_mean": 0.4693,
+    "luck_beats_real_timed": 0.23
+   }
+  },
+  "gold": {
+   "sky": {
+    "corr": -0.0104,
+    "hit": 0.5228,
+    "timed": 0.5651,
+    "held": 1.1355,
+    "in_market": 0.6733,
+    "factors": 257,
+    "luck_corr_mean": -0.0062,
+    "luck_corr_p95": 0.0707,
+    "luck_beats_real_corr": 0.51,
+    "luck_timed_mean": 0.444,
+    "luck_beats_real_timed": 0.3
+   }
+  },
+  "oil": {
+   "sky": {
+    "corr": -0.0591,
+    "hit": 0.5038,
+    "timed": 0.0679,
+    "held": 0.9288,
+    "in_market": 0.584,
+    "factors": 257,
+    "luck_corr_mean": 0.0036,
+    "luck_corr_p95": 0.0726,
+    "luck_beats_real_corr": 0.92,
+    "luck_timed_mean": 0.5429,
+    "luck_beats_real_timed": 0.82
+   }
+  },
+  "vix": {
+   "sky": {
+    "corr": -0.0303,
+    "hit": 0.5308,
+    "timed": 0.5775,
+    "held": -0.4498,
+    "in_market": 0.3905,
+    "factors": 257,
+    "luck_corr_mean": -0.0133,
+    "luck_corr_p95": 0.038,
+    "luck_beats_real_corr": 0.66,
+    "luck_timed_mean": -0.2192,
+    "luck_beats_real_timed": 0.13
+   }
+  }
+ },
+ "occasions": {
+  "active_today": [
+   {
+    "market": "bitcoin",
+    "factor": "venus_retrograde",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "8 of 8",
+    "paper_eligible": true,
+    "from": "2026-10-12",
+    "to": "2026-11-13"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_federal_reserve_venus_sq_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "27 of 47",
+    "paper_eligible": false,
+    "from": "2026-10-12",
+    "to": "2026-10-18"
+   },
+   {
+    "market": "vix",
+    "factor": "venus_retrograde",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "8 of 14",
+    "paper_eligible": false,
+    "from": "2026-10-12",
+    "to": "2026-11-13"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_moon_quintile_moon",
+    "expects": "down",
+    "horizon_days": 1,
+    "record": "346 of 644",
+    "paper_eligible": false,
+    "from": "2026-10-12",
+    "to": "2026-10-12"
+   },
+   {
+    "market": "sp500",
+    "factor": "moon_new_moon",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "134 of 268",
+    "paper_eligible": false,
+    "from": "2026-10-12",
+    "to": "2026-10-14"
+   }
+  ],
+  "upcoming": [
+   {
+    "market": "bitcoin",
+    "factor": "venus_sq_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "18 of 25",
+    "paper_eligible": true,
+    "from": "2026-10-14",
+    "to": "2026-10-24"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_moon_quintile_moon",
+    "expects": "down",
+    "horizon_days": 1,
+    "record": "346 of 644",
+    "paper_eligible": false,
+    "from": "2026-10-15",
+    "to": "2026-10-15"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_mercury_tri_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "18 of 29",
+    "paper_eligible": false,
+    "from": "2026-10-20",
+    "to": "2026-10-27"
+   },
+   {
+    "market": "vix",
+    "factor": "sun_in_scorpio",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "16 of 21",
+    "paper_eligible": true,
+    "from": "2026-10-23",
+    "to": "2026-11-21"
+   },
+   {
+    "market": "oil",
+    "factor": "sun_sq_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "24 of 43",
+    "paper_eligible": false,
+    "from": "2026-10-23",
+    "to": "2026-10-29"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_moon_quintile_moon",
+    "expects": "down",
+    "horizon_days": 1,
+    "record": "346 of 644",
+    "paper_eligible": false,
+    "from": "2026-10-26",
+    "to": "2026-10-26"
+   },
+   {
+    "market": "vix",
+    "factor": "moon_in_cancer",
+    "expects": "up",
+    "horizon_days": 1,
+    "record": "135 of 254",
+    "paper_eligible": false,
+    "from": "2026-10-30",
+    "to": "2026-10-31"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_venus_quintile_mercury",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "14 of 26",
+    "paper_eligible": false,
+    "from": "2026-11-01",
+    "to": "2026-11-05"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_venus_sq_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "27 of 44",
+    "paper_eligible": false,
+    "from": "2026-11-02",
+    "to": "2026-11-26"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_federal_reserve_venus_sq_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "27 of 45",
+    "paper_eligible": false,
+    "from": "2026-11-03",
+    "to": "2026-11-24"
+   },
+   {
+    "market": "sp500",
+    "factor": "moon_new_moon",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "134 of 268",
+    "paper_eligible": false,
+    "from": "2026-11-09",
+    "to": "2026-11-12"
+   },
+   {
+    "market": "oil",
+    "factor": "sun_sq_jupiter",
+    "expects": "down",
+    "horizon_days": 1,
+    "record": "21 of 40",
+    "paper_eligible": false,
+    "from": "2026-11-15",
+    "to": "2026-11-21"
+   },
+   {
+    "market": "oil",
+    "factor": "sun_sq_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "18 of 40",
+    "paper_eligible": false,
+    "from": "2026-11-15",
+    "to": "2026-11-21"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_sun_sq_mercury",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "25 of 43",
+    "paper_eligible": false,
+    "from": "2026-11-19",
+    "to": "2026-11-22"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_sun_sq_asc",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "27 of 43",
+    "paper_eligible": false,
+    "from": "2026-11-20",
+    "to": "2026-11-23"
+   },
+   {
+    "market": "vix",
+    "factor": "t_federal_reserve_mars_sext_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "18 of 24",
+    "paper_eligible": true,
+    "from": "2026-11-21",
+    "to": "2026-11-30"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_venus_quintile_mercury",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "14 of 26",
+    "paper_eligible": false,
+    "from": "2026-11-22",
+    "to": "2026-11-26"
+   },
+   {
+    "market": "gold",
+    "factor": "sun_opp_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "16 of 21",
+    "paper_eligible": true,
+    "from": "2026-11-23",
+    "to": "2026-11-28"
+   },
+   {
+    "market": "vix",
+    "factor": "t_federal_reserve_mars_tri_sun",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "17 of 23",
+    "paper_eligible": true,
+    "from": "2026-11-24",
+    "to": "2026-12-04"
+   },
+   {
+    "market": "vix",
+    "factor": "moon_in_cancer",
+    "expects": "up",
+    "horizon_days": 1,
+    "record": "135 of 254",
+    "paper_eligible": false,
+    "from": "2026-11-26",
+    "to": "2026-11-27"
+   },
+   {
+    "market": "vix",
+    "factor": "sun_tri_saturn",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "28 of 42",
+    "paper_eligible": false,
+    "from": "2026-11-27",
+    "to": "2026-12-02"
+   },
+   {
+    "market": "ethereum",
+    "factor": "sun_tri_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "10 of 17",
+    "paper_eligible": false,
+    "from": "2026-11-27",
+    "to": "2026-12-02"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_mercury_tri_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "18 of 29",
+    "paper_eligible": false,
+    "from": "2026-11-30",
+    "to": "2026-12-01"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_mercury_sesq_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "29 of 45",
+    "paper_eligible": false,
+    "from": "2026-12-03",
+    "to": "2026-12-03"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_binovile_moon",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "24 of 28",
+    "paper_eligible": true,
+    "from": "2026-12-05",
+    "to": "2026-12-05"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_sesq_mercury",
+    "expects": "down",
+    "horizon_days": 1,
+    "record": "22 of 29",
+    "paper_eligible": true,
+    "from": "2026-12-05",
+    "to": "2026-12-05"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "venus_sq_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "18 of 25",
+    "paper_eligible": true,
+    "from": "2026-12-05",
+    "to": "2026-12-13"
+   },
+   {
+    "market": "sp500",
+    "factor": "moon_new_moon",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "134 of 268",
+    "paper_eligible": false,
+    "from": "2026-12-09",
+    "to": "2026-12-12"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_federal_reserve_venus_sq_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "27 of 47",
+    "paper_eligible": false,
+    "from": "2026-12-10",
+    "to": "2026-12-14"
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mercury_semisq_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "27 of 44",
+    "paper_eligible": false,
+    "from": "2026-12-11",
+    "to": "2026-12-11"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_sext_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "15 of 31",
+    "paper_eligible": false,
+    "from": "2026-12-16",
+    "to": "2026-12-18"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_triseptile_mc",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "21 of 33",
+    "paper_eligible": false,
+    "from": "2026-12-19",
+    "to": "2026-12-19"
+   },
+   {
+    "market": "gold",
+    "factor": "sun_in_capricorn",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "16 of 22",
+    "paper_eligible": true,
+    "from": "2026-12-22",
+    "to": "2027-01-19"
+   },
+   {
+    "market": "vix",
+    "factor": "moon_in_cancer",
+    "expects": "up",
+    "horizon_days": 1,
+    "record": "135 of 254",
+    "paper_eligible": false,
+    "from": "2026-12-24",
+    "to": "2026-12-25"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_binovile_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "16 of 28",
+    "paper_eligible": false,
+    "from": "2026-12-25",
+    "to": "2026-12-25"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_triseptile_venus",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "17 of 31",
+    "paper_eligible": false,
+    "from": "2026-12-25",
+    "to": "2026-12-25"
+   },
+   {
+    "market": "gold",
+    "factor": "mercury_in_capricorn",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "20 of 28",
+    "paper_eligible": true,
+    "from": "2026-12-26",
+    "to": "2027-01-12"
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_venus_tri_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "12 of 24",
+    "paper_eligible": false,
+    "from": "2026-12-26",
+    "to": "2026-12-29"
+   },
+   {
+    "market": "ethereum",
+    "factor": "venus_tri_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "11 of 18",
+    "paper_eligible": false,
+    "from": "2027-01-06",
+    "to": "2027-01-11"
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mercury_conj_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "record": "20 of 26",
+    "paper_eligible": true,
+    "from": "2027-01-08",
+    "to": "2027-01-09"
+   }
+  ],
+  "table": [
+   {
+    "market": "bitcoin",
+    "factor": "venus_retrograde",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 8,
+    "as_predicted": 8,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 4,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_jupiter_binovile_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 6,
+    "as_predicted": 6,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 3,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_bitcoin_jupiter_tri_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 6,
+    "as_predicted": 6,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 3,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "t_coinbase_jupiter_tri_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 5,
+    "as_predicted": 5,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 3,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_jupiter_tri_venus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 8,
+    "as_predicted": 7,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 2,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_binovile_moon",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 28,
+    "as_predicted": 24,
+    "as_predicted_since_split": 13,
+    "occasions_since_split": 14,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_mars_sext_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 12,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "venus_in_leo",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 13,
+    "as_predicted": 11,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_bitcoin_mars_sext_sun",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 13,
+    "as_predicted": 11,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mars_tri_asc",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 13,
+    "as_predicted": 11,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_bitcoin_jupiter_biseptile_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 6,
+    "as_predicted": 5,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 3,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "venus_opp_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 11,
+    "as_predicted": 9,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 5,
+    "paper_eligible": true
+   },
+   {
+    "market": "sp500",
+    "factor": "t_federal_reserve_jupiter_biquintile_mercury",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 11,
+    "as_predicted": 9,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_mars_binovile_mars",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 16,
+    "as_predicted": 13,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_jupiter_sext_sun",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 5,
+    "as_predicted": 4,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 2,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_jupiter_semisext_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 5,
+    "as_predicted": 4,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 2,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_mars_sext_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 11,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "sp500",
+    "factor": "sun_in_cancer",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 22,
+    "as_predicted": 17,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mercury_conj_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 26,
+    "as_predicted": 20,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 8,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "mars_tri_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 13,
+    "as_predicted": 10,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "sun_opp_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 21,
+    "as_predicted": 16,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 5,
+    "paper_eligible": true
+   },
+   {
+    "market": "vix",
+    "factor": "sun_in_scorpio",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 21,
+    "as_predicted": 16,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 5,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_sq_mercury",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 25,
+    "as_predicted": 19,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_sq_saturn",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 25,
+    "as_predicted": 19,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_sesq_mercury",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 29,
+    "as_predicted": 22,
+    "as_predicted_since_split": 11,
+    "occasions_since_split": 13,
+    "paper_eligible": true
+   },
+   {
+    "market": "vix",
+    "factor": "t_federal_reserve_mars_sext_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 24,
+    "as_predicted": 18,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "vix",
+    "factor": "mars_sext_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 20,
+    "as_predicted": 15,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 5,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "sun_conj_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 12,
+    "as_predicted": 9,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_jupiter_sesq_sun",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 8,
+    "as_predicted": 6,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 3,
+    "paper_eligible": true
+   },
+   {
+    "market": "sp500",
+    "factor": "t_buffett_warren_jupiter_biseptile_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 8,
+    "as_predicted": 6,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 3,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_jupiter_quintile_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 8,
+    "as_predicted": 6,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 3,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_tri_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 23,
+    "as_predicted": 17,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "vix",
+    "factor": "t_federal_reserve_mars_tri_sun",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 23,
+    "as_predicted": 17,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "sun_in_capricorn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 22,
+    "as_predicted": 16,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 5,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "venus_opp_jupiter",
+    "expects": "up",
+    "horizon_days": 1,
+    "occasions": 11,
+    "as_predicted": 8,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 5,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "venus_sq_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 25,
+    "as_predicted": 18,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 12,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_sq_mercury",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 25,
+    "as_predicted": 18,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "oil",
+    "factor": "t_trump_donald_mars_sext_saturn",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 25,
+    "as_predicted": 18,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "mercury_in_capricorn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 28,
+    "as_predicted": 20,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "gold",
+    "factor": "sun_conj_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 21,
+    "as_predicted": 15,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_fink_larry_mars_tri_sun",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 10,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_bitcoin_mars_sext_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 10,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 7,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "venus_tri_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 27,
+    "as_predicted": 19,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 7,
+    "paper_eligible": true
+   },
+   {
+    "market": "ethereum",
+    "factor": "t_buterin_vitalik_venus_tri_venus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 20,
+    "as_predicted": 14,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 12,
+    "paper_eligible": true
+   },
+   {
+    "market": "sp500",
+    "factor": "t_fink_larry_jupiter_biquintile_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 10,
+    "as_predicted": 7,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 2,
+    "paper_eligible": true
+   },
+   {
+    "market": "sp500",
+    "factor": "t_sp500_venus_tri_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 49,
+    "as_predicted": 34,
+    "as_predicted_since_split": 10,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "t_coinbase_mercury_sext_venus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 19,
+    "as_predicted": 13,
+    "as_predicted_since_split": 9,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "vix",
+    "factor": "sun_tri_saturn",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 42,
+    "as_predicted": 28,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_mercury_sq_venus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 30,
+    "as_predicted": 20,
+    "as_predicted_since_split": 11,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "vix",
+    "factor": "t_federal_reserve_mars_sext_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 24,
+    "as_predicted": 16,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_mars_sq_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 15,
+    "as_predicted": 10,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_jupiter_biseptile_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 6,
+    "as_predicted": 4,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 3,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_venus_semisext_venus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 38,
+    "as_predicted": 25,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "venus_sext_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 20,
+    "as_predicted": 13,
+    "as_predicted_since_split": 10,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "t_ethereum_venus_sext_mercury",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 20,
+    "as_predicted": 13,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "mercury_sext_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 54,
+    "as_predicted": 35,
+    "as_predicted_since_split": 11,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_mercury_sesq_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 45,
+    "as_predicted": 29,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_quincunx_sun",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 28,
+    "as_predicted": 18,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 10,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_bitcoin_mercury_opp_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 9,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 7,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_opp_sun",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 9,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 4,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_conj_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 9,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 4,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_venus_tri_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 25,
+    "as_predicted": 16,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_sq_saturn",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 25,
+    "as_predicted": 16,
+    "as_predicted_since_split": 1,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_sun_sext_venus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 44,
+    "as_predicted": 28,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_triseptile_mc",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 33,
+    "as_predicted": 21,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "venus_in_gemini",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 22,
+    "as_predicted": 14,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "vix",
+    "factor": "mars_tri_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 22,
+    "as_predicted": 14,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_sq_mc",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 30,
+    "as_predicted": 19,
+    "as_predicted_since_split": 10,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_sun_sq_asc",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 43,
+    "as_predicted": 27,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mercury_sesq_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 40,
+    "as_predicted": 25,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_mercury_tri_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 45,
+    "as_predicted": 28,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 10,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_mercury_tri_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 29,
+    "as_predicted": 18,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_venus_sext_saturn",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 47,
+    "as_predicted": 29,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_mars_tri_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 13,
+    "as_predicted": 8,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_mars_sext_mercury",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 13,
+    "as_predicted": 8,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_fink_larry_mars_sext_venus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 13,
+    "as_predicted": 8,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_mars_sext_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 13,
+    "as_predicted": 8,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 7,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_sp500_sun_sext_saturn",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 44,
+    "as_predicted": 27,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_venus_sq_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 44,
+    "as_predicted": 27,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mercury_semisq_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 44,
+    "as_predicted": 27,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_sun_sext_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 44,
+    "as_predicted": 27,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_fink_larry_mercury_sext_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 49,
+    "as_predicted": 30,
+    "as_predicted_since_split": 10,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "venus_tri_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 18,
+    "as_predicted": 11,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_venus_tri_mercury",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 48,
+    "as_predicted": 29,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_federal_reserve_venus_sq_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 45,
+    "as_predicted": 27,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mars_sext_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 15,
+    "as_predicted": 9,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_jupiter_sq_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 5,
+    "as_predicted": 3,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 3,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_mercury_sq_pluto",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 32,
+    "as_predicted": 19,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_mercury_sq_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 32,
+    "as_predicted": 19,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 16,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "mercury_sext_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 54,
+    "as_predicted": 32,
+    "as_predicted_since_split": 9,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_venus_sext_mercury",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 27,
+    "as_predicted": 16,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "sun_tri_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 17,
+    "as_predicted": 10,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_sun_sq_mercury",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 43,
+    "as_predicted": 25,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "venus_sext_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 19,
+    "as_predicted": 11,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "gold",
+    "factor": "t_federal_reserve_mars_semisext_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 26,
+    "as_predicted": 15,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 9,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_federal_reserve_venus_sq_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 47,
+    "as_predicted": 27,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dimon_jamie_venus_sq_mars",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 49,
+    "as_predicted": 28,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_mercury_binovile_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 28,
+    "as_predicted": 16,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "vix",
+    "factor": "venus_retrograde",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 14,
+    "as_predicted": 8,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 4,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_coinbase_mercury_biquintile_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 32,
+    "as_predicted": 18,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_mercury_sq_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 32,
+    "as_predicted": 18,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_mars_sq_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 25,
+    "as_predicted": 14,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 8,
+    "paper_eligible": false
+   },
+   {
+    "market": "oil",
+    "factor": "sun_sq_pluto",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 43,
+    "as_predicted": 24,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_sq_saturn",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 31,
+    "as_predicted": 17,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 15,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_sq_venus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 31,
+    "as_predicted": 17,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_triseptile_venus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 31,
+    "as_predicted": 17,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 15,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "sun_in_pisces",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 22,
+    "as_predicted": 12,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_strategy_venus_quintile_mercury",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 26,
+    "as_predicted": 14,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 12,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_musk_elon_moon_quintile_moon",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 644,
+    "as_predicted": 346,
+    "as_predicted_since_split": 172,
+    "occasions_since_split": 308,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "mercury_in_aquarius",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 28,
+    "as_predicted": 15,
+    "as_predicted_since_split": 4,
+    "occasions_since_split": 7,
+    "paper_eligible": false
+   },
+   {
+    "market": "vix",
+    "factor": "moon_in_cancer",
+    "expects": "up",
+    "horizon_days": 1,
+    "occasions": 254,
+    "as_predicted": 135,
+    "as_predicted_since_split": 34,
+    "occasions_since_split": 68,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_dalio_ray_venus_sq_mars",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 49,
+    "as_predicted": 26,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_venus_sq_mercury",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 49,
+    "as_predicted": 26,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "mercury_sext_venus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 49,
+    "as_predicted": 26,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "oil",
+    "factor": "sun_sq_jupiter",
+    "expects": "down",
+    "horizon_days": 1,
+    "occasions": 40,
+    "as_predicted": 21,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 10,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "moon_new_moon",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 268,
+    "as_predicted": 134,
+    "as_predicted_since_split": 34,
+    "occasions_since_split": 71,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "mercury_conj_venus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 52,
+    "as_predicted": 26,
+    "as_predicted_since_split": 9,
+    "occasions_since_split": 17,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_buffett_warren_mercury_triseptile_sun",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 46,
+    "as_predicted": 23,
+    "as_predicted_since_split": 7,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_mercury_tri_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 44,
+    "as_predicted": 22,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_federal_reserve_venus_tri_mars",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 24,
+    "as_predicted": 12,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "t_trump_donald_mercury_sext_jupiter",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 31,
+    "as_predicted": 15,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 14,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "mercury_opp_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 27,
+    "as_predicted": 13,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 7,
+    "paper_eligible": false
+   },
+   {
+    "market": "vix",
+    "factor": "venus_tri_uranus",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 46,
+    "as_predicted": 22,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 13,
+    "paper_eligible": false
+   },
+   {
+    "market": "ethereum",
+    "factor": "venus_sq_neptune",
+    "expects": "up",
+    "horizon_days": 5,
+    "occasions": 19,
+    "as_predicted": 9,
+    "as_predicted_since_split": 5,
+    "occasions_since_split": 11,
+    "paper_eligible": false
+   },
+   {
+    "market": "oil",
+    "factor": "sun_sq_jupiter",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 40,
+    "as_predicted": 18,
+    "as_predicted_since_split": 6,
+    "occasions_since_split": 10,
+    "paper_eligible": false
+   },
+   {
+    "market": "sp500",
+    "factor": "sun_sext_mars",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 21,
+    "as_predicted": 9,
+    "as_predicted_since_split": 2,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   },
+   {
+    "market": "bitcoin",
+    "factor": "venus_conj_uranus",
+    "expects": "down",
+    "horizon_days": 5,
+    "occasions": 12,
+    "as_predicted": 5,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 6,
+    "paper_eligible": false
+   }
+  ]
+ },
+ "paper": {
+  "stake_per_position": 100.0,
+  "registered": "2026-10-12",
+  "positions": [
+   {
+    "market": "bitcoin",
+    "alpaca_symbol": "BTC/USD",
+    "factor": "venus_retrograde",
+    "horizon_days": 5,
+    "side": "short",
+    "from": "2026-10-12",
+    "to": "2026-11-13",
+    "record_at_entry": "8 of 8",
+    "entry_date": "2026-10-12",
+    "entry_price": 83657.6015625,
+    "stake": 100.0,
+    "opened_at": "2026-10-12T23:17:08+00:00"
+   }
+  ],
+  "summary": {
+   "open": 1,
+   "closed": 0,
+   "right": 0,
+   "pnl": 0,
+   "as_of": "2026-10-12"
+  }
+ },
+ "library": {
+  "nodes": [
+   {
+    "key": "bitcoin",
+    "label": "Bitcoin, genesis block",
+    "kind": "instrument",
+    "date": "2009-01-03",
+    "time_known": true,
+    "rating": "exact",
+    "acts_on": []
+   },
+   {
+    "key": "ethereum",
+    "label": "Ethereum, genesis block",
+    "kind": "instrument",
+    "date": "2015-07-30",
+    "time_known": true,
+    "rating": "exact",
+    "acts_on": []
+   },
+   {
+    "key": "sp500",
+    "label": "New York stock market, Buttonwood Agreement",
+    "kind": "instrument",
+    "date": "1792-05-17",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": []
+   },
+   {
+    "key": "federal_reserve",
+    "label": "Federal Reserve, act signed",
+    "kind": "institution",
+    "date": "1913-12-23",
+    "time_known": false,
+    "rating": "to confirm",
+    "acts_on": [
+     "bitcoin",
+     "gold",
+     "sp500",
+     "vix"
+    ]
+   },
+   {
+    "key": "coinbase",
+    "label": "Coinbase, Nasdaq direct listing",
+    "kind": "company",
+    "date": "2021-04-14",
+    "time_known": false,
+    "rating": "to confirm",
+    "acts_on": [
+     "bitcoin",
+     "ethereum"
+    ]
+   },
+   {
+    "key": "tesla",
+    "label": "Tesla, Nasdaq IPO",
+    "kind": "company",
+    "date": "2010-06-29",
+    "time_known": false,
+    "rating": "to confirm",
+    "acts_on": []
+   },
+   {
+    "key": "nvidia",
+    "label": "Nvidia, Nasdaq IPO",
+    "kind": "company",
+    "date": "1999-01-22",
+    "time_known": false,
+    "rating": "to confirm",
+    "acts_on": []
+   },
+   {
+    "key": "strategy",
+    "label": "Strategy (MicroStrategy), first Bitcoin purchase announced",
+    "kind": "company",
+    "date": "2020-08-11",
+    "time_known": false,
+    "rating": "to confirm",
+    "acts_on": [
+     "bitcoin"
+    ]
+   },
+   {
+    "key": "trump_donald",
+    "label": "Donald Trump",
+    "kind": "person",
+    "date": "1946-06-14",
+    "time_known": true,
+    "rating": "AA",
+    "acts_on": [
+     "bitcoin",
+     "oil",
+     "sp500"
+    ]
+   },
+   {
+    "key": "musk_elon",
+    "label": "Elon Musk",
+    "kind": "person",
+    "date": "1971-06-28",
+    "time_known": true,
+    "rating": "B",
+    "acts_on": [
+     "bitcoin",
+     "tesla"
+    ]
+   },
+   {
+    "key": "powell_jerome",
+    "label": "Jerome Powell",
+    "kind": "person",
+    "date": "1953-02-04",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "fomc"
+    ]
+   },
+   {
+    "key": "bessent_scott",
+    "label": "Scott Bessent",
+    "kind": "person",
+    "date": "1962-08-21",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "sp500"
+    ]
+   },
+   {
+    "key": "saylor_michael",
+    "label": "Michael Saylor",
+    "kind": "person",
+    "date": "1965-02-04",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "strategy"
+    ]
+   },
+   {
+    "key": "buffett_warren",
+    "label": "Warren Buffett",
+    "kind": "person",
+    "date": "1930-08-30",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "sp500"
+    ]
+   },
+   {
+    "key": "dalio_ray",
+    "label": "Ray Dalio",
+    "kind": "person",
+    "date": "1949-08-08",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "sp500"
+    ]
+   },
+   {
+    "key": "buterin_vitalik",
+    "label": "Vitalik Buterin",
+    "kind": "person",
+    "date": "1994-01-31",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "ethereum"
+    ]
+   },
+   {
+    "key": "fink_larry",
+    "label": "Larry Fink",
+    "kind": "person",
+    "date": "1952-11-02",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "bitcoin",
+     "sp500"
+    ]
+   },
+   {
+    "key": "dimon_jamie",
+    "label": "Jamie Dimon",
+    "kind": "person",
+    "date": "1956-03-13",
+    "time_known": false,
+    "rating": "none",
+    "acts_on": [
+     "sp500"
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "from": "powell_jerome",
+    "acts": "chairs",
+    "on": "fomc"
+   },
+   {
+    "from": "fomc",
+    "acts": "decides for",
+    "on": "federal_reserve"
+   },
+   {
+    "from": "federal_reserve",
+    "acts": "moves",
+    "on": "sp500"
+   },
+   {
+    "from": "federal_reserve",
+    "acts": "moves",
+    "on": "gold"
+   },
+   {
+    "from": "federal_reserve",
+    "acts": "moves",
+    "on": "vix"
+   },
+   {
+    "from": "federal_reserve",
+    "acts": "moves",
+    "on": "bitcoin"
+   },
+   {
+    "from": "bessent_scott",
+    "acts": "runs Treasury, moves",
+    "on": "sp500"
+   },
+   {
+    "from": "trump_donald",
+    "acts": "policy posts, moves",
+    "on": "sp500"
+   },
+   {
+    "from": "trump_donald",
+    "acts": "policy posts, moves",
+    "on": "oil"
+   },
+   {
+    "from": "trump_donald",
+    "acts": "policy posts, moves",
+    "on": "bitcoin"
+   },
+   {
+    "from": "musk_elon",
+    "acts": "runs",
+    "on": "tesla"
+   },
+   {
+    "from": "musk_elon",
+    "acts": "posts about, moves",
+    "on": "bitcoin"
+   },
+   {
+    "from": "saylor_michael",
+    "acts": "runs",
+    "on": "strategy"
+   },
+   {
+    "from": "strategy",
+    "acts": "buys",
+    "on": "bitcoin"
+   },
+   {
+    "from": "buterin_vitalik",
+    "acts": "co founded",
+    "on": "ethereum"
+   },
+   {
+    "from": "zhao_changpeng",
+    "acts": "founded Binance, moves",
+    "on": "bitcoin"
+   },
+   {
+    "from": "fink_larry",
+    "acts": "runs BlackRock, issues the spot ETF",
+    "on": "bitcoin"
+   },
+   {
+    "from": "fink_larry",
+    "acts": "runs BlackRock",
+    "on": "sp500"
+   },
+   {
+    "from": "dimon_jamie",
+    "acts": "runs JPMorgan",
+    "on": "sp500"
+   },
+   {
+    "from": "buffett_warren",
+    "acts": "runs Berkshire",
+    "on": "sp500"
+   },
+   {
+    "from": "dalio_ray",
+    "acts": "founded Bridgewater",
+    "on": "sp500"
+   },
+   {
+    "from": "coinbase",
+    "acts": "lists",
+    "on": "bitcoin"
+   },
+   {
+    "from": "coinbase",
+    "acts": "lists",
+    "on": "ethereum"
+   }
+  ]
+ },
+ "registry": [
+  "2026-10-12-attention.md",
+  "2026-10-12-family-1-timing-windows.md",
+  "2026-10-12-family-2-occasions.md",
+  "2026-10-12-family-3-connected-charts.md",
+  "2026-10-12-family-4-fortune.md"
+ ],
+ "tally": null
+}
