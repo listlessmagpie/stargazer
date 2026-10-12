@@ -1,5 +1,5 @@
 {
- "written": "2026-10-12T23:18:19+00:00",
+ "written": "2026-10-12T23:25:58+00:00",
  "about": "Stargazer's record: forecasts dated before the fact and scored after, the sky factors that survived a luck test, what is active now, pretend money on the paper book, and the charts the study reads. Rules in registry/ were written before each test ran.",
  "forecasts": {
   "latest": {
@@ -134,14 +134,21 @@
   "scored": {
    "right": 19,
    "of": 34,
+   "if_followed": -18.96,
+   "stake_per_forecast": 100.0,
+   "no_real_money": true,
    "by_market": {
     "ethereum": {
      "right": 9,
-     "of": 17
+     "of": 17,
+     "if_followed": -32.31,
+     "trust": "not earned"
     },
     "bitcoin": {
      "right": 10,
-     "of": 17
+     "of": 17,
+     "if_followed": 13.35,
+     "trust": "earning"
     }
    }
   },

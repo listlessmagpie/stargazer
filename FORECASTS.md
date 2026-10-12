@@ -9,10 +9,14 @@ Until 2026-10-12 only Bitcoin and Ethereum were forecast. From that date all six
 
 **Scored so far: 19 right of 34.**
 
-| market | right | of |
-|---|---|---|
-| bitcoin | 10 | 17 |
-| ethereum | 9 | 17 |
+No real money follows these. The last column is what 100 pretend dollars would have made
+following each forecast for five days, long on up and short on down, fees ignored.
+
+| market | right | of | if followed, pretend dollars | standing |
+|---|---|---|---|---|
+| bitcoin | 10 | 17 | +13.35 | earning trust |
+| ethereum | 9 | 17 | -32.31 | not earned |
+| all | 19 | 34 | -18.96 | |
 
 | written | market | expects | price then | five days on | move | right |
 |---|---|---|---|---|---|---|

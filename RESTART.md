@@ -268,6 +268,22 @@ piece, when it comes, is built on the person's side from the start.
 6. `/v1/chart`, `/v1/transits`, `/v1/record` on the orrery. The record becomes something sold.
 7. Live money only where stage 2 is passed, and only by her hand.
 
+## No trades for now (her rule, 2026-10-12, evening)
+
+"Maybe for a little while, they don't need to make any trades at all. They need to keep track of
+predictions and see how much would have been made if they did." So stage 3 is parked without a
+date. The record keeps two counterfactuals, both in pretend dollars with fees ignored: what
+following every scored forecast would have made, and the paper book on the occasions. Real
+money returns only when she says, and then by her hand.
+
+"And learn from that. Then we'll add some money in, when we have like a week of data, or more."
+How it learns: the forecaster refits every day on everything scored so far, the occasions table
+rereads the whole history weekly, and the record states each line's standing in plain words
+(still learning under 10 scored calls; earning trust when more right than wrong and the pretend
+dollars are above zero; not earned otherwise). Honest note on the week: a week scores about five
+calls per market, which cannot be told from luck. The registered gate for real money stays ten
+forward occasions on the paper book; a week is when she looks, not when the gate opens.
+
 ## Her decisions, open
 
 * Hosting: PC and tunnel (recommended) or Railway Hobby.

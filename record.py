@@ -58,9 +58,20 @@ def write() -> dict:
     scored = [(e["date"], m, f) for e in log for m, f in e["markets"].items() if "outcome" in f]
     by_market: dict[str, dict] = {}
     for _, m, f in scored:
-        d = by_market.setdefault(m, {"right": 0, "of": 0})
+        d = by_market.setdefault(m, {"right": 0, "of": 0, "if_followed": 0.0})
         d["of"] += 1
         d["right"] += int(f["outcome"]["right"])
+        move = f["outcome"]["move_pct"] / 100
+        d["if_followed"] = round(d["if_followed"] + 100.0 * (move if f["expects"] == "up" else -move), 2)
+
+    # What the record has learned so far, said plainly. A line earns trust only with enough scored
+    # calls, more right than wrong, and pretend dollars above zero; otherwise it is still learning.
+    # Thresholds are fixed here, not tuned to the results.
+    MIN_SCORED = 10
+    for m, d in by_market.items():
+        enough = d["of"] >= MIN_SCORED
+        d["trust"] = ("earning" if enough and d["right"] * 2 > d["of"] and d["if_followed"] > 0
+                      else "not earned" if enough else "learning")
 
     today = now.date().isoformat()
     active = []
@@ -93,6 +104,8 @@ def write() -> dict:
                        for m, f in forecast.get("markets", {}).items()},
             "date": forecast.get("date"),
             "scored": {"right": sum(d["right"] for d in by_market.values()), "of": sum(d["of"] for d in by_market.values()),
+                       "if_followed": round(sum(d["if_followed"] for d in by_market.values()), 2),
+                       "stake_per_forecast": 100.0, "no_real_money": True,
                        "by_market": by_market},
             "log": [{"date": e["date"], "markets": e["markets"]} for e in log[-120:]],
         },

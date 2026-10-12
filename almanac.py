@@ -594,6 +594,12 @@ def forecast() -> dict:
     return out
 
 
+def followed(f: dict, stake: float = 100.0) -> float:
+    """What a pretend stake would have made following one scored forecast: long on up, short on down."""
+    move = f["outcome"]["move_pct"] / 100
+    return round(stake * (move if f["expects"] == "up" else -move), 2)
+
+
 def write_forecast_page(log: list, h: int) -> None:
     scored = [(e["date"], m, f) for e in log for m, f in e["markets"].items() if "outcome" in f]
     L = ["# Forecasts, written before the fact", "",
@@ -605,13 +611,21 @@ def write_forecast_page(log: list, h: int) -> None:
     if scored:
         right = sum(1 for _, _, f in scored if f["outcome"]["right"])
         L += [f"**Scored so far: {right} right of {len(scored)}.**", ""]
-        by_m: dict[str, list[bool]] = {}
+        by_m: dict[str, list] = {}
         for _, m, f in scored:
-            by_m.setdefault(m, []).append(f["outcome"]["right"])
-        L += ["| market | right | of |", "|---|---|---|"]
-        for m, rs in sorted(by_m.items()):
-            L.append(f"| {m} | {sum(rs)} | {len(rs)} |")
-        L.append("")
+            by_m.setdefault(m, []).append(f)
+        L += ["No real money follows these. The last column is what 100 pretend dollars would have made",
+              "following each forecast for five days, long on up and short on down, fees ignored.", "",
+              "| market | right | of | if followed, pretend dollars | standing |", "|---|---|---|---|---|"]
+        total = 0.0
+        for m, fs in sorted(by_m.items()):
+            made = sum(followed(f) for f in fs)
+            total += made
+            rt = sum(1 for f in fs if f['outcome']['right'])
+            trust = ("earning trust" if len(fs) >= 10 and rt * 2 > len(fs) and made > 0
+                     else "not earned" if len(fs) >= 10 else "still learning")
+            L.append(f"| {m} | {rt} | {len(fs)} | {made:+.2f} | {trust} |")
+        L += [f"| all | {right} | {len(scored)} | {total:+.2f} | |", ""]
     else:
         L += ["**Nothing scored yet.** The first entries mature five trading days after they were written.", ""]
     L += ["| written | market | expects | price then | five days on | move | right |", "|---|---|---|---|---|---|---|"]
