@@ -20,6 +20,12 @@ following each forecast for five days, long on up and short on down, fees ignore
 
 | written | market | expects | price then | five days on | move | right |
 |---|---|---|---|---|---|---|
+| 2026-10-14 | bitcoin | up (+0.00% vs usual) | 81,510.74 | pending | | |
+| 2026-10-14 | ethereum | up (+0.54% vs usual) | 2,428.76 | pending | | |
+| 2026-10-14 | sp500 | up (+0.03% vs usual) | 7,805.45 | pending | | |
+| 2026-10-14 | gold | up (+0.00% vs usual) | 4,180.2 | pending | | |
+| 2026-10-14 | oil | down (-0.14% vs usual) | 94.82 | pending | | |
+| 2026-10-14 | vix | up (+0.38% vs usual) | 15.27 | pending | | |
 | 2026-10-13 | bitcoin | down (-0.19% vs usual) | 83,657.6 | pending | | |
 | 2026-10-13 | ethereum | down (-0.86% vs usual) | 2,428.76 | pending | | |
 | 2026-10-13 | sp500 | down (-0.07% vs usual) | 7,807.24 | pending | | |
