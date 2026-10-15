@@ -7,19 +7,25 @@ favoured: the sky alone, or the sky plus the market's own birth chart.
 
 Until 2026-10-12 only Bitcoin and Ethereum were forecast. From that date all six are.
 
-**Scored so far: 19 right of 34.**
+**Scored so far: 20 right of 38.**
 
 No real money follows these. The last column is what 100 pretend dollars would have made
 following each forecast for five days, long on up and short on down, fees ignored.
 
 | market | right | of | if followed, pretend dollars | standing |
 |---|---|---|---|---|
-| bitcoin | 10 | 17 | +13.35 | earning trust |
-| ethereum | 9 | 17 | -32.31 | not earned |
-| all | 19 | 34 | -18.96 | |
+| bitcoin | 10 | 19 | +13.01 | earning trust |
+| ethereum | 10 | 19 | -32.31 | not earned |
+| all | 20 | 38 | -19.30 | |
 
 | written | market | expects | price then | five days on | move | right |
 |---|---|---|---|---|---|---|
+| 2026-10-15 | bitcoin | down (-0.01% vs usual) | 83,348.14 | pending | | |
+| 2026-10-15 | ethereum | up (+0.41% vs usual) | 2,504.5 | pending | | |
+| 2026-10-15 | sp500 | up (+0.07% vs usual) | 7,805.45 | pending | | |
+| 2026-10-15 | gold | up (+0.01% vs usual) | 4,180.2 | pending | | |
+| 2026-10-15 | oil | down (-0.12% vs usual) | 94.82 | pending | | |
+| 2026-10-15 | vix | up (+0.40% vs usual) | 15.27 | pending | | |
 | 2026-10-14 | bitcoin | up (+0.00% vs usual) | 81,510.74 | pending | | |
 | 2026-10-14 | ethereum | up (+0.54% vs usual) | 2,428.76 | pending | | |
 | 2026-10-14 | sp500 | up (+0.03% vs usual) | 7,805.45 | pending | | |
@@ -42,10 +48,10 @@ following each forecast for five days, long on up and short on down, fees ignore
 | 2026-10-11 | bitcoin | down (-0.27% vs usual) | 82,562.97 | pending | | |
 | 2026-10-10 | ethereum | down (-0.70% vs usual) | 2,486.81 | pending | | |
 | 2026-10-10 | bitcoin | down (-0.30% vs usual) | 82,562.97 | pending | | |
-| 2026-10-09 | ethereum | down (-0.55% vs usual) | 2,569.98 | pending | | |
-| 2026-10-09 | bitcoin | down (-0.29% vs usual) | 83,208.66 | pending | | |
-| 2026-10-08 | ethereum | up (+0.01% vs usual) | 2,569.98 | pending | | |
-| 2026-10-08 | bitcoin | down (-0.29% vs usual) | 83,208.66 | pending | | |
+| 2026-10-09 | ethereum | down (-0.55% vs usual) | 2,569.98 | 2,504.5 | -2.55% | yes |
+| 2026-10-09 | bitcoin | down (-0.29% vs usual) | 83,208.66 | 83,348.14 | +0.17% | no |
+| 2026-10-08 | ethereum | up (+0.01% vs usual) | 2,569.98 | 2,504.5 | -2.55% | no |
+| 2026-10-08 | bitcoin | down (-0.29% vs usual) | 83,208.66 | 83,348.14 | +0.17% | no |
 | 2026-10-07 | ethereum | up (+0.96% vs usual) | 2,712.81 | 2,535.56 | -6.53% | no |
 | 2026-10-07 | bitcoin | down (-0.26% vs usual) | 85,812.48 | 83,657.6 | -2.51% | yes |
 | 2026-10-06 | ethereum | up (+1.75% vs usual) | 2,712.81 | 2,535.56 | -6.53% | no |
