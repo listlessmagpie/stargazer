@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
-      "expects": "down",
-      "forecast_vs_usual_pct": -0.01,
-      "price_at_forecast": 83348.14,
-      "price_date": "2026-10-14",
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.01,
+      "price_at_forecast": 82262.33,
+      "price_date": "2026-10-16",
       "why": [
         {
           "factor": "venus_sq_pluto",
@@ -34,9 +34,9 @@
     "ethereum": {
       "reading": "sky",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.41,
-      "price_at_forecast": 2504.5,
-      "price_date": "2026-10-14",
+      "forecast_vs_usual_pct": 0.56,
+      "price_at_forecast": 2441.91,
+      "price_date": "2026-10-16",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -52,7 +52,7 @@
         },
         {
           "factor": "jupiter_in_leo",
-          "pull_pct": 0.37
+          "pull_pct": 0.36
         },
         {
           "factor": "mercury_in_scorpio",
@@ -63,29 +63,29 @@
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.07,
-      "price_at_forecast": 7805.45,
-      "price_date": "2026-10-13",
+      "forecast_vs_usual_pct": 0.03,
+      "price_at_forecast": 7718.94,
+      "price_date": "2026-10-14",
       "why": [
-        {
-          "factor": "t_sp500_venus_conj_anti_pluto",
-          "pull_pct": -0.05
-        },
-        {
-          "factor": "t_sp500_mars_biseptile_saturn",
-          "pull_pct": 0.04
-        },
         {
           "factor": "t_sp500_neptune_quadnovile_jupiter",
           "pull_pct": 0.03
         },
         {
-          "factor": "t_sp500_sun_biquintile_sun",
-          "pull_pct": 0.03
-        },
-        {
           "factor": "t_sp500_venus_opp_venus",
           "pull_pct": -0.03
+        },
+        {
+          "factor": "t_sp500_neptune_septile_mercury",
+          "pull_pct": 0.02
+        },
+        {
+          "factor": "t_sp500_neptune_triseptile_neptune",
+          "pull_pct": 0.02
+        },
+        {
+          "factor": "mars_tri_saturn",
+          "pull_pct": -0.02
         }
       ]
     },
@@ -93,8 +93,8 @@
       "reading": "sky",
       "expects": "up",
       "forecast_vs_usual_pct": 0.01,
-      "price_at_forecast": 4180.2,
-      "price_date": "2026-10-14",
+      "price_at_forecast": 4139.6,
+      "price_date": "2026-10-15",
       "why": [
         {
           "factor": "mars_tri_saturn",
@@ -122,8 +122,8 @@
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.12,
-      "price_at_forecast": 94.82,
-      "price_date": "2026-10-14",
+      "price_at_forecast": 95.94,
+      "price_date": "2026-10-16",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -151,8 +151,8 @@
       "reading": "sky",
       "expects": "up",
       "forecast_vs_usual_pct": 0.4,
-      "price_at_forecast": 15.27,
-      "price_date": "2026-10-13",
+      "price_at_forecast": 16.46,
+      "price_date": "2026-10-15",
       "why": [
         {
           "factor": "mars_tri_saturn",
@@ -204,13 +204,6 @@
       "factor": "venus_retrograde",
       "expects": "up",
       "record": "8 of 14",
-      "paper_eligible": false
-    },
-    {
-      "market": "bitcoin",
-      "factor": "t_musk_elon_moon_quintile_moon",
-      "expects": "down",
-      "record": "346 of 644",
       "paper_eligible": false
     }
   ]
