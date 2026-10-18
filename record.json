@@ -1,5 +1,5 @@
 {
- "written": "2026-10-17T00:15:16+00:00",
+ "written": "2026-10-18T00:15:23+00:00",
  "about": "Stargazer's record: forecasts dated before the fact and scored after, the sky factors that survived a luck test, what is active now, pretend money on the paper book, and the charts the study reads. Rules in registry/ were written before each test ran.",
  "forecasts": {
   "latest": {
@@ -7,8 +7,8 @@
     "reading": "sky",
     "expects": "up",
     "forecast_vs_usual_pct": 0.03,
-    "price_at_forecast": 82262.33,
-    "price_date": "2026-10-16",
+    "price_at_forecast": 81505.0,
+    "price_date": "2026-10-17",
     "why": [
      {
       "factor": "venus_sq_pluto",
@@ -27,9 +27,9 @@
    "ethereum": {
     "reading": "sky",
     "expects": "up",
-    "forecast_vs_usual_pct": 0.5,
-    "price_at_forecast": 2441.91,
-    "price_date": "2026-10-16",
+    "forecast_vs_usual_pct": 0.47,
+    "price_at_forecast": 2418.42,
+    "price_date": "2026-10-17",
     "why": [
      {
       "factor": "venus_retrograde",
@@ -37,7 +37,7 @@
      },
      {
       "factor": "venus_sq_pluto",
-      "pull_pct": 0.45
+      "pull_pct": 0.46
      },
      {
       "factor": "moon_in_capricorn",
@@ -49,8 +49,8 @@
     "reading": "sky_and_chart",
     "expects": "up",
     "forecast_vs_usual_pct": 0.02,
-    "price_at_forecast": 7744.06,
-    "price_date": "2026-10-15",
+    "price_at_forecast": 7659.44,
+    "price_date": "2026-10-16",
     "why": [
      {
       "factor": "t_sp500_neptune_quadnovile_jupiter",
@@ -70,7 +70,7 @@
     "reading": "sky",
     "expects": "up",
     "forecast_vs_usual_pct": 0.01,
-    "price_at_forecast": 4174.3,
+    "price_at_forecast": 4181.1,
     "price_date": "2026-10-16",
     "why": [
      {
@@ -78,11 +78,11 @@
       "pull_pct": 0.04
      },
      {
-      "factor": "uranus_tri_pluto",
-      "pull_pct": 0.02
+      "factor": "jupiter_in_leo",
+      "pull_pct": -0.02
      },
      {
-      "factor": "jupiter_in_leo",
+      "factor": "saturn_in_aries",
       "pull_pct": -0.02
      }
     ]
@@ -90,8 +90,8 @@
    "oil": {
     "reading": "sky",
     "expects": "down",
-    "forecast_vs_usual_pct": -0.17,
-    "price_at_forecast": 95.94,
+    "forecast_vs_usual_pct": -0.16,
+    "price_at_forecast": 101.41,
     "price_date": "2026-10-16",
     "why": [
      {
@@ -111,9 +111,9 @@
    "vix": {
     "reading": "sky",
     "expects": "up",
-    "forecast_vs_usual_pct": 0.48,
-    "price_at_forecast": 16.46,
-    "price_date": "2026-10-15",
+    "forecast_vs_usual_pct": 0.53,
+    "price_at_forecast": 19.99,
+    "price_date": "2026-10-16",
     "why": [
      {
       "factor": "mars_tri_saturn",
@@ -130,7 +130,7 @@
     ]
    }
   },
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "scored": {
    "right": 24,
    "of": 42,
@@ -1005,6 +1005,47 @@
       "forecast_vs_usual_pct": 0.48,
       "price_at_forecast": 16.46,
       "price_date": "2026-10-15"
+     }
+    }
+   },
+   {
+    "date": "2026-10-18",
+    "markets": {
+     "bitcoin": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.03,
+      "price_at_forecast": 81505.0,
+      "price_date": "2026-10-17"
+     },
+     "ethereum": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.47,
+      "price_at_forecast": 2418.42,
+      "price_date": "2026-10-17"
+     },
+     "sp500": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.02,
+      "price_at_forecast": 7659.44,
+      "price_date": "2026-10-16"
+     },
+     "gold": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.01,
+      "price_at_forecast": 4181.1,
+      "price_date": "2026-10-16"
+     },
+     "oil": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.16,
+      "price_at_forecast": 101.41,
+      "price_date": "2026-10-16"
+     },
+     "vix": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.53,
+      "price_at_forecast": 19.99,
+      "price_date": "2026-10-16"
      }
     }
    }
@@ -3800,7 +3841,7 @@
    "closed": 0,
    "right": 0,
    "pnl": 0,
-   "as_of": "2026-10-17"
+   "as_of": "2026-10-18"
   }
  },
  "library": {
