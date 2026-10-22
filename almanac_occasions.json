@@ -63,15 +63,15 @@
       },
       {
         "from": "2026-10-03",
-        "to": "2026-10-06",
-        "days": 4,
-        "avg_move_pct": -3.44,
+        "to": "2026-10-16",
+        "days": 14,
+        "avg_move_pct": -1.12,
         "as_predicted": true
       }
     ],
     "next": [
       {
-        "from": "2026-10-12",
+        "from": "2026-10-22",
         "to": "2026-11-13"
       }
     ]
@@ -4081,6 +4081,217 @@
     ]
   },
   {
+    "market": "bitcoin",
+    "factor": "venus_sq_pluto",
+    "block": "sky",
+    "horizon_days": 5,
+    "expects": "up",
+    "effect_pct": 1.856,
+    "occasions": 26,
+    "as_predicted": 19,
+    "as_predicted_since_split": 9,
+    "occasions_since_split": 13,
+    "paper_eligible": true,
+    "list": [
+      {
+        "from": "2014-10-06",
+        "to": "2014-10-10",
+        "days": 5,
+        "avg_move_pct": 10.4,
+        "as_predicted": true
+      },
+      {
+        "from": "2015-03-03",
+        "to": "2015-03-07",
+        "days": 5,
+        "avg_move_pct": 4.86,
+        "as_predicted": true
+      },
+      {
+        "from": "2015-11-18",
+        "to": "2015-11-23",
+        "days": 6,
+        "avg_move_pct": 4.24,
+        "as_predicted": true
+      },
+      {
+        "from": "2016-04-17",
+        "to": "2016-04-21",
+        "days": 5,
+        "avg_move_pct": 4.58,
+        "as_predicted": true
+      },
+      {
+        "from": "2016-09-09",
+        "to": "2016-09-13",
+        "days": 5,
+        "avg_move_pct": -0.96,
+        "as_predicted": false
+      },
+      {
+        "from": "2017-05-22",
+        "to": "2017-05-28",
+        "days": 7,
+        "avg_move_pct": 1.54,
+        "as_predicted": true
+      },
+      {
+        "from": "2017-10-26",
+        "to": "2017-10-30",
+        "days": 5,
+        "avg_move_pct": 17.43,
+        "as_predicted": true
+      },
+      {
+        "from": "2018-03-22",
+        "to": "2018-03-25",
+        "days": 4,
+        "avg_move_pct": -14.23,
+        "as_predicted": false
+      },
+      {
+        "from": "2018-08-24",
+        "to": "2018-08-29",
+        "days": 6,
+        "avg_move_pct": 3.83,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-05-07",
+        "to": "2019-05-11",
+        "days": 5,
+        "avg_move_pct": 23.56,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-09-29",
+        "to": "2019-10-03",
+        "days": 5,
+        "avg_move_pct": -1.37,
+        "as_predicted": false
+      },
+      {
+        "from": "2020-02-26",
+        "to": "2020-03-02",
+        "days": 6,
+        "avg_move_pct": 2.35,
+        "as_predicted": true
+      },
+      {
+        "from": "2020-11-13",
+        "to": "2020-11-17",
+        "days": 5,
+        "avg_move_pct": 10.47,
+        "as_predicted": true
+      },
+      {
+        "from": "2021-04-10",
+        "to": "2021-04-14",
+        "days": 5,
+        "avg_move_pct": -2.74,
+        "as_predicted": false
+      },
+      {
+        "from": "2021-09-04",
+        "to": "2021-09-08",
+        "days": 5,
+        "avg_move_pct": -7.71,
+        "as_predicted": false
+      },
+      {
+        "from": "2022-05-25",
+        "to": "2022-05-29",
+        "days": 5,
+        "avg_move_pct": 5.33,
+        "as_predicted": true
+      },
+      {
+        "from": "2022-10-18",
+        "to": "2022-10-22",
+        "days": 5,
+        "avg_move_pct": 4.34,
+        "as_predicted": true
+      },
+      {
+        "from": "2023-03-14",
+        "to": "2023-03-18",
+        "days": 5,
+        "avg_move_pct": 8.87,
+        "as_predicted": true
+      },
+      {
+        "from": "2023-12-01",
+        "to": "2023-12-05",
+        "days": 5,
+        "avg_move_pct": 7.34,
+        "as_predicted": true
+      },
+      {
+        "from": "2024-04-29",
+        "to": "2024-05-03",
+        "days": 5,
+        "avg_move_pct": 3.37,
+        "as_predicted": true
+      },
+      {
+        "from": "2024-09-20",
+        "to": "2024-09-24",
+        "days": 5,
+        "avg_move_pct": 2.44,
+        "as_predicted": true
+      },
+      {
+        "from": "2025-06-07",
+        "to": "2025-06-12",
+        "days": 6,
+        "avg_move_pct": -1.84,
+        "as_predicted": false
+      },
+      {
+        "from": "2025-11-06",
+        "to": "2025-11-10",
+        "days": 5,
+        "avg_move_pct": -4.44,
+        "as_predicted": false
+      },
+      {
+        "from": "2026-04-01",
+        "to": "2026-04-05",
+        "days": 5,
+        "avg_move_pct": 5.48,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-09-11",
+        "to": "2026-09-21",
+        "days": 11,
+        "avg_move_pct": 4.53,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-10-14",
+        "to": "2026-10-16",
+        "days": 3,
+        "avg_move_pct": 1.54,
+        "as_predicted": true
+      }
+    ],
+    "next": [
+      {
+        "from": "2026-10-22",
+        "to": "2026-10-24"
+      },
+      {
+        "from": "2026-12-05",
+        "to": "2026-12-13"
+      },
+      {
+        "from": "2027-05-18",
+        "to": "2027-05-22"
+      }
+    ]
+  },
+  {
     "market": "gold",
     "factor": "sun_in_capricorn",
     "block": "sky",
@@ -4350,210 +4561,6 @@
       {
         "from": "2027-03-14",
         "to": "2027-03-18"
-      }
-    ]
-  },
-  {
-    "market": "bitcoin",
-    "factor": "venus_sq_pluto",
-    "block": "sky",
-    "horizon_days": 5,
-    "expects": "up",
-    "effect_pct": 1.856,
-    "occasions": 25,
-    "as_predicted": 18,
-    "as_predicted_since_split": 8,
-    "occasions_since_split": 12,
-    "paper_eligible": true,
-    "list": [
-      {
-        "from": "2014-10-06",
-        "to": "2014-10-10",
-        "days": 5,
-        "avg_move_pct": 10.4,
-        "as_predicted": true
-      },
-      {
-        "from": "2015-03-03",
-        "to": "2015-03-07",
-        "days": 5,
-        "avg_move_pct": 4.86,
-        "as_predicted": true
-      },
-      {
-        "from": "2015-11-18",
-        "to": "2015-11-23",
-        "days": 6,
-        "avg_move_pct": 4.24,
-        "as_predicted": true
-      },
-      {
-        "from": "2016-04-17",
-        "to": "2016-04-21",
-        "days": 5,
-        "avg_move_pct": 4.58,
-        "as_predicted": true
-      },
-      {
-        "from": "2016-09-09",
-        "to": "2016-09-13",
-        "days": 5,
-        "avg_move_pct": -0.96,
-        "as_predicted": false
-      },
-      {
-        "from": "2017-05-22",
-        "to": "2017-05-28",
-        "days": 7,
-        "avg_move_pct": 1.54,
-        "as_predicted": true
-      },
-      {
-        "from": "2017-10-26",
-        "to": "2017-10-30",
-        "days": 5,
-        "avg_move_pct": 17.43,
-        "as_predicted": true
-      },
-      {
-        "from": "2018-03-22",
-        "to": "2018-03-25",
-        "days": 4,
-        "avg_move_pct": -14.23,
-        "as_predicted": false
-      },
-      {
-        "from": "2018-08-24",
-        "to": "2018-08-29",
-        "days": 6,
-        "avg_move_pct": 3.83,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-05-07",
-        "to": "2019-05-11",
-        "days": 5,
-        "avg_move_pct": 23.56,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-09-29",
-        "to": "2019-10-03",
-        "days": 5,
-        "avg_move_pct": -1.37,
-        "as_predicted": false
-      },
-      {
-        "from": "2020-02-26",
-        "to": "2020-03-02",
-        "days": 6,
-        "avg_move_pct": 2.35,
-        "as_predicted": true
-      },
-      {
-        "from": "2020-11-13",
-        "to": "2020-11-17",
-        "days": 5,
-        "avg_move_pct": 10.47,
-        "as_predicted": true
-      },
-      {
-        "from": "2021-04-10",
-        "to": "2021-04-14",
-        "days": 5,
-        "avg_move_pct": -2.74,
-        "as_predicted": false
-      },
-      {
-        "from": "2021-09-04",
-        "to": "2021-09-08",
-        "days": 5,
-        "avg_move_pct": -7.71,
-        "as_predicted": false
-      },
-      {
-        "from": "2022-05-25",
-        "to": "2022-05-29",
-        "days": 5,
-        "avg_move_pct": 5.33,
-        "as_predicted": true
-      },
-      {
-        "from": "2022-10-18",
-        "to": "2022-10-22",
-        "days": 5,
-        "avg_move_pct": 4.34,
-        "as_predicted": true
-      },
-      {
-        "from": "2023-03-14",
-        "to": "2023-03-18",
-        "days": 5,
-        "avg_move_pct": 8.87,
-        "as_predicted": true
-      },
-      {
-        "from": "2023-12-01",
-        "to": "2023-12-05",
-        "days": 5,
-        "avg_move_pct": 7.34,
-        "as_predicted": true
-      },
-      {
-        "from": "2024-04-29",
-        "to": "2024-05-03",
-        "days": 5,
-        "avg_move_pct": 3.37,
-        "as_predicted": true
-      },
-      {
-        "from": "2024-09-20",
-        "to": "2024-09-24",
-        "days": 5,
-        "avg_move_pct": 2.44,
-        "as_predicted": true
-      },
-      {
-        "from": "2025-06-07",
-        "to": "2025-06-12",
-        "days": 6,
-        "avg_move_pct": -1.84,
-        "as_predicted": false
-      },
-      {
-        "from": "2025-11-06",
-        "to": "2025-11-10",
-        "days": 5,
-        "avg_move_pct": -4.44,
-        "as_predicted": false
-      },
-      {
-        "from": "2026-04-01",
-        "to": "2026-04-05",
-        "days": 5,
-        "avg_move_pct": 5.48,
-        "as_predicted": true
-      },
-      {
-        "from": "2026-09-11",
-        "to": "2026-09-21",
-        "days": 11,
-        "avg_move_pct": 4.53,
-        "as_predicted": true
-      }
-    ],
-    "next": [
-      {
-        "from": "2026-10-14",
-        "to": "2026-10-24"
-      },
-      {
-        "from": "2026-12-05",
-        "to": "2026-12-13"
-      },
-      {
-        "from": "2027-05-18",
-        "to": "2027-05-22"
       }
     ]
   },
@@ -9412,6 +9419,125 @@
     "next": []
   },
   {
+    "market": "vix",
+    "factor": "venus_retrograde",
+    "block": "sky",
+    "horizon_days": 5,
+    "expects": "up",
+    "effect_pct": 5.503,
+    "occasions": 14,
+    "as_predicted": 9,
+    "as_predicted_since_split": 3,
+    "occasions_since_split": 4,
+    "paper_eligible": false,
+    "list": [
+      {
+        "from": "2005-12-27",
+        "to": "2006-02-02",
+        "days": 26,
+        "avg_move_pct": 2.92,
+        "as_predicted": true
+      },
+      {
+        "from": "2007-07-30",
+        "to": "2007-09-07",
+        "days": 29,
+        "avg_move_pct": 3.16,
+        "as_predicted": true
+      },
+      {
+        "from": "2009-03-09",
+        "to": "2009-04-17",
+        "days": 29,
+        "avg_move_pct": -2.46,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-10-08",
+        "to": "2010-11-18",
+        "days": 30,
+        "avg_move_pct": 0.68,
+        "as_predicted": false
+      },
+      {
+        "from": "2012-05-16",
+        "to": "2012-06-27",
+        "days": 30,
+        "avg_move_pct": -3.73,
+        "as_predicted": false
+      },
+      {
+        "from": "2013-12-23",
+        "to": "2014-01-31",
+        "days": 27,
+        "avg_move_pct": 8.17,
+        "as_predicted": true
+      },
+      {
+        "from": "2015-07-27",
+        "to": "2015-09-04",
+        "days": 30,
+        "avg_move_pct": 19.29,
+        "as_predicted": true
+      },
+      {
+        "from": "2017-03-06",
+        "to": "2017-04-13",
+        "days": 29,
+        "avg_move_pct": 4.41,
+        "as_predicted": true
+      },
+      {
+        "from": "2018-10-08",
+        "to": "2018-11-15",
+        "days": 29,
+        "avg_move_pct": 2.33,
+        "as_predicted": true
+      },
+      {
+        "from": "2020-05-13",
+        "to": "2020-06-24",
+        "days": 30,
+        "avg_move_pct": 1.15,
+        "as_predicted": false
+      },
+      {
+        "from": "2021-12-20",
+        "to": "2022-01-28",
+        "days": 28,
+        "avg_move_pct": 5.65,
+        "as_predicted": true
+      },
+      {
+        "from": "2023-07-24",
+        "to": "2023-09-01",
+        "days": 30,
+        "avg_move_pct": 1.13,
+        "as_predicted": false
+      },
+      {
+        "from": "2025-03-03",
+        "to": "2025-04-11",
+        "days": 30,
+        "avg_move_pct": 11.96,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-10-05",
+        "to": "2026-10-14",
+        "days": 8,
+        "avg_move_pct": 10.82,
+        "as_predicted": true
+      }
+    ],
+    "next": [
+      {
+        "from": "2026-10-22",
+        "to": "2026-11-13"
+      }
+    ]
+  },
+  {
     "market": "bitcoin",
     "factor": "t_coinbase_venus_tri_uranus",
     "block": "coinbase",
@@ -10393,6 +10519,10 @@
       {
         "from": "2027-09-25",
         "to": "2027-09-26"
+      },
+      {
+        "from": "2027-10-17",
+        "to": "2027-10-17"
       }
     ]
   },
@@ -12166,7 +12296,7 @@
     ],
     "next": [
       {
-        "from": "2026-10-20",
+        "from": "2026-10-22",
         "to": "2026-10-27"
       },
       {
@@ -15964,6 +16094,10 @@
       {
         "from": "2027-09-22",
         "to": "2027-09-25"
+      },
+      {
+        "from": "2027-10-17",
+        "to": "2027-10-20"
       }
     ]
   },
@@ -16213,6 +16347,10 @@
       {
         "from": "2027-09-19",
         "to": "2027-09-21"
+      },
+      {
+        "from": "2027-10-20",
+        "to": "2027-10-22"
       }
     ]
   },
@@ -16979,6 +17117,371 @@
   },
   {
     "market": "sp500",
+    "factor": "t_federal_reserve_venus_sq_uranus",
+    "block": "federal_reserve",
+    "horizon_days": 5,
+    "expects": "down",
+    "effect_pct": -0.89,
+    "occasions": 48,
+    "as_predicted": 28,
+    "as_predicted_since_split": 8,
+    "occasions_since_split": 12,
+    "paper_eligible": false,
+    "list": [
+      {
+        "from": "2005-04-19",
+        "to": "2005-04-21",
+        "days": 3,
+        "avg_move_pct": 0.05,
+        "as_predicted": true
+      },
+      {
+        "from": "2005-09-15",
+        "to": "2005-09-16",
+        "days": 2,
+        "avg_move_pct": -1.45,
+        "as_predicted": true
+      },
+      {
+        "from": "2006-06-02",
+        "to": "2006-06-02",
+        "days": 1,
+        "avg_move_pct": -2.79,
+        "as_predicted": true
+      },
+      {
+        "from": "2006-10-27",
+        "to": "2006-10-27",
+        "days": 1,
+        "avg_move_pct": -0.95,
+        "as_predicted": true
+      },
+      {
+        "from": "2007-03-21",
+        "to": "2007-03-23",
+        "days": 3,
+        "avg_move_pct": -1.05,
+        "as_predicted": true
+      },
+      {
+        "from": "2007-12-10",
+        "to": "2007-12-11",
+        "days": 2,
+        "avg_move_pct": -3.08,
+        "as_predicted": true
+      },
+      {
+        "from": "2008-05-05",
+        "to": "2008-05-06",
+        "days": 2,
+        "avg_move_pct": -0.68,
+        "as_predicted": true
+      },
+      {
+        "from": "2008-09-29",
+        "to": "2008-09-29",
+        "days": 1,
+        "avg_move_pct": -4.48,
+        "as_predicted": true
+      },
+      {
+        "from": "2009-06-10",
+        "to": "2009-06-12",
+        "days": 3,
+        "avg_move_pct": -2.82,
+        "as_predicted": true
+      },
+      {
+        "from": "2009-11-11",
+        "to": "2009-11-13",
+        "days": 3,
+        "avg_move_pct": 0.51,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-04-05",
+        "to": "2010-04-06",
+        "days": 2,
+        "avg_move_pct": 0.71,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-09-14",
+        "to": "2010-09-17",
+        "days": 4,
+        "avg_move_pct": 1.14,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-10-26",
+        "to": "2010-10-29",
+        "days": 4,
+        "avg_move_pct": 2.18,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-12-07",
+        "to": "2010-12-10",
+        "days": 4,
+        "avg_move_pct": 0.78,
+        "as_predicted": false
+      },
+      {
+        "from": "2011-05-19",
+        "to": "2011-05-20",
+        "days": 2,
+        "avg_move_pct": -0.75,
+        "as_predicted": true
+      },
+      {
+        "from": "2011-10-12",
+        "to": "2011-10-14",
+        "days": 3,
+        "avg_move_pct": 0.77,
+        "as_predicted": false
+      },
+      {
+        "from": "2012-03-09",
+        "to": "2012-03-09",
+        "days": 1,
+        "avg_move_pct": 2.43,
+        "as_predicted": false
+      },
+      {
+        "from": "2012-11-26",
+        "to": "2012-11-27",
+        "days": 2,
+        "avg_move_pct": 0.4,
+        "as_predicted": false
+      },
+      {
+        "from": "2013-04-18",
+        "to": "2013-04-19",
+        "days": 2,
+        "avg_move_pct": 2.28,
+        "as_predicted": false
+      },
+      {
+        "from": "2013-09-16",
+        "to": "2013-09-17",
+        "days": 2,
+        "avg_move_pct": -0.09,
+        "as_predicted": true
+      },
+      {
+        "from": "2014-06-02",
+        "to": "2014-06-04",
+        "days": 3,
+        "avg_move_pct": 1.19,
+        "as_predicted": false
+      },
+      {
+        "from": "2014-10-27",
+        "to": "2014-10-29",
+        "days": 3,
+        "avg_move_pct": 2.1,
+        "as_predicted": false
+      },
+      {
+        "from": "2015-03-20",
+        "to": "2015-03-23",
+        "days": 2,
+        "avg_move_pct": -1.55,
+        "as_predicted": true
+      },
+      {
+        "from": "2015-12-08",
+        "to": "2015-12-11",
+        "days": 4,
+        "avg_move_pct": -0.14,
+        "as_predicted": true
+      },
+      {
+        "from": "2016-05-03",
+        "to": "2016-05-05",
+        "days": 3,
+        "avg_move_pct": 0.78,
+        "as_predicted": false
+      },
+      {
+        "from": "2016-09-27",
+        "to": "2016-09-29",
+        "days": 3,
+        "avg_move_pct": -0.17,
+        "as_predicted": true
+      },
+      {
+        "from": "2017-06-12",
+        "to": "2017-06-13",
+        "days": 2,
+        "avg_move_pct": 0.43,
+        "as_predicted": false
+      },
+      {
+        "from": "2017-11-10",
+        "to": "2017-11-13",
+        "days": 2,
+        "avg_move_pct": -0.12,
+        "as_predicted": true
+      },
+      {
+        "from": "2018-04-03",
+        "to": "2018-04-05",
+        "days": 3,
+        "avg_move_pct": 0.52,
+        "as_predicted": false
+      },
+      {
+        "from": "2018-09-17",
+        "to": "2018-09-21",
+        "days": 5,
+        "avg_move_pct": 0.05,
+        "as_predicted": true
+      },
+      {
+        "from": "2018-10-19",
+        "to": "2018-10-25",
+        "days": 5,
+        "avg_move_pct": -1.37,
+        "as_predicted": true
+      },
+      {
+        "from": "2018-12-10",
+        "to": "2018-12-13",
+        "days": 4,
+        "avg_move_pct": -4.82,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-05-20",
+        "to": "2019-05-21",
+        "days": 2,
+        "avg_move_pct": -2.09,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-10-14",
+        "to": "2019-10-14",
+        "days": 1,
+        "avg_move_pct": 1.37,
+        "as_predicted": false
+      },
+      {
+        "from": "2020-03-09",
+        "to": "2020-03-11",
+        "days": 3,
+        "avg_move_pct": -12.63,
+        "as_predicted": true
+      },
+      {
+        "from": "2020-11-24",
+        "to": "2020-11-27",
+        "days": 3,
+        "avg_move_pct": 1.21,
+        "as_predicted": false
+      },
+      {
+        "from": "2021-04-19",
+        "to": "2021-04-20",
+        "days": 2,
+        "avg_move_pct": 0.92,
+        "as_predicted": false
+      },
+      {
+        "from": "2021-09-14",
+        "to": "2021-09-16",
+        "days": 3,
+        "avg_move_pct": -1.48,
+        "as_predicted": true
+      },
+      {
+        "from": "2022-06-01",
+        "to": "2022-06-03",
+        "days": 3,
+        "avg_move_pct": -2.84,
+        "as_predicted": true
+      },
+      {
+        "from": "2022-10-26",
+        "to": "2022-10-28",
+        "days": 3,
+        "avg_move_pct": -2.5,
+        "as_predicted": true
+      },
+      {
+        "from": "2023-03-20",
+        "to": "2023-03-22",
+        "days": 3,
+        "avg_move_pct": 0.72,
+        "as_predicted": false
+      },
+      {
+        "from": "2023-12-08",
+        "to": "2023-12-08",
+        "days": 1,
+        "avg_move_pct": 2.49,
+        "as_predicted": false
+      },
+      {
+        "from": "2024-05-02",
+        "to": "2024-05-03",
+        "days": 2,
+        "avg_move_pct": 2.41,
+        "as_predicted": false
+      },
+      {
+        "from": "2024-09-26",
+        "to": "2024-09-27",
+        "days": 2,
+        "avg_move_pct": -0.28,
+        "as_predicted": true
+      },
+      {
+        "from": "2025-06-10",
+        "to": "2025-06-13",
+        "days": 4,
+        "avg_move_pct": -0.52,
+        "as_predicted": true
+      },
+      {
+        "from": "2025-11-10",
+        "to": "2025-11-12",
+        "days": 3,
+        "avg_move_pct": -2.91,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-09-16",
+        "to": "2026-09-25",
+        "days": 8,
+        "avg_move_pct": 0.05,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-10-12",
+        "to": "2026-10-14",
+        "days": 3,
+        "avg_move_pct": -0.73,
+        "as_predicted": true
+      }
+    ],
+    "next": [
+      {
+        "from": "2026-12-10",
+        "to": "2026-12-14"
+      },
+      {
+        "from": "2027-05-18",
+        "to": "2027-05-20"
+      },
+      {
+        "from": "2027-10-11",
+        "to": "2027-10-13"
+      }
+    ]
+  },
+  {
+    "market": "sp500",
     "factor": "t_dalio_ray_sun_sq_mercury",
     "block": "dalio_ray",
     "horizon_days": 5,
@@ -17661,364 +18164,6 @@
   },
   {
     "market": "sp500",
-    "factor": "t_federal_reserve_venus_sq_uranus",
-    "block": "federal_reserve",
-    "horizon_days": 5,
-    "expects": "down",
-    "effect_pct": -0.89,
-    "occasions": 47,
-    "as_predicted": 27,
-    "as_predicted_since_split": 7,
-    "occasions_since_split": 11,
-    "paper_eligible": false,
-    "list": [
-      {
-        "from": "2005-04-19",
-        "to": "2005-04-21",
-        "days": 3,
-        "avg_move_pct": 0.05,
-        "as_predicted": true
-      },
-      {
-        "from": "2005-09-15",
-        "to": "2005-09-16",
-        "days": 2,
-        "avg_move_pct": -1.45,
-        "as_predicted": true
-      },
-      {
-        "from": "2006-06-02",
-        "to": "2006-06-02",
-        "days": 1,
-        "avg_move_pct": -2.79,
-        "as_predicted": true
-      },
-      {
-        "from": "2006-10-27",
-        "to": "2006-10-27",
-        "days": 1,
-        "avg_move_pct": -0.95,
-        "as_predicted": true
-      },
-      {
-        "from": "2007-03-21",
-        "to": "2007-03-23",
-        "days": 3,
-        "avg_move_pct": -1.05,
-        "as_predicted": true
-      },
-      {
-        "from": "2007-12-10",
-        "to": "2007-12-11",
-        "days": 2,
-        "avg_move_pct": -3.08,
-        "as_predicted": true
-      },
-      {
-        "from": "2008-05-05",
-        "to": "2008-05-06",
-        "days": 2,
-        "avg_move_pct": -0.68,
-        "as_predicted": true
-      },
-      {
-        "from": "2008-09-29",
-        "to": "2008-09-29",
-        "days": 1,
-        "avg_move_pct": -4.48,
-        "as_predicted": true
-      },
-      {
-        "from": "2009-06-10",
-        "to": "2009-06-12",
-        "days": 3,
-        "avg_move_pct": -2.82,
-        "as_predicted": true
-      },
-      {
-        "from": "2009-11-11",
-        "to": "2009-11-13",
-        "days": 3,
-        "avg_move_pct": 0.51,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-04-05",
-        "to": "2010-04-06",
-        "days": 2,
-        "avg_move_pct": 0.71,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-09-14",
-        "to": "2010-09-17",
-        "days": 4,
-        "avg_move_pct": 1.14,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-10-26",
-        "to": "2010-10-29",
-        "days": 4,
-        "avg_move_pct": 2.18,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-12-07",
-        "to": "2010-12-10",
-        "days": 4,
-        "avg_move_pct": 0.78,
-        "as_predicted": false
-      },
-      {
-        "from": "2011-05-19",
-        "to": "2011-05-20",
-        "days": 2,
-        "avg_move_pct": -0.75,
-        "as_predicted": true
-      },
-      {
-        "from": "2011-10-12",
-        "to": "2011-10-14",
-        "days": 3,
-        "avg_move_pct": 0.77,
-        "as_predicted": false
-      },
-      {
-        "from": "2012-03-09",
-        "to": "2012-03-09",
-        "days": 1,
-        "avg_move_pct": 2.43,
-        "as_predicted": false
-      },
-      {
-        "from": "2012-11-26",
-        "to": "2012-11-27",
-        "days": 2,
-        "avg_move_pct": 0.4,
-        "as_predicted": false
-      },
-      {
-        "from": "2013-04-18",
-        "to": "2013-04-19",
-        "days": 2,
-        "avg_move_pct": 2.28,
-        "as_predicted": false
-      },
-      {
-        "from": "2013-09-16",
-        "to": "2013-09-17",
-        "days": 2,
-        "avg_move_pct": -0.09,
-        "as_predicted": true
-      },
-      {
-        "from": "2014-06-02",
-        "to": "2014-06-04",
-        "days": 3,
-        "avg_move_pct": 1.19,
-        "as_predicted": false
-      },
-      {
-        "from": "2014-10-27",
-        "to": "2014-10-29",
-        "days": 3,
-        "avg_move_pct": 2.1,
-        "as_predicted": false
-      },
-      {
-        "from": "2015-03-20",
-        "to": "2015-03-23",
-        "days": 2,
-        "avg_move_pct": -1.55,
-        "as_predicted": true
-      },
-      {
-        "from": "2015-12-08",
-        "to": "2015-12-11",
-        "days": 4,
-        "avg_move_pct": -0.14,
-        "as_predicted": true
-      },
-      {
-        "from": "2016-05-03",
-        "to": "2016-05-05",
-        "days": 3,
-        "avg_move_pct": 0.78,
-        "as_predicted": false
-      },
-      {
-        "from": "2016-09-27",
-        "to": "2016-09-29",
-        "days": 3,
-        "avg_move_pct": -0.17,
-        "as_predicted": true
-      },
-      {
-        "from": "2017-06-12",
-        "to": "2017-06-13",
-        "days": 2,
-        "avg_move_pct": 0.43,
-        "as_predicted": false
-      },
-      {
-        "from": "2017-11-10",
-        "to": "2017-11-13",
-        "days": 2,
-        "avg_move_pct": -0.12,
-        "as_predicted": true
-      },
-      {
-        "from": "2018-04-03",
-        "to": "2018-04-05",
-        "days": 3,
-        "avg_move_pct": 0.52,
-        "as_predicted": false
-      },
-      {
-        "from": "2018-09-17",
-        "to": "2018-09-21",
-        "days": 5,
-        "avg_move_pct": 0.05,
-        "as_predicted": true
-      },
-      {
-        "from": "2018-10-19",
-        "to": "2018-10-25",
-        "days": 5,
-        "avg_move_pct": -1.37,
-        "as_predicted": true
-      },
-      {
-        "from": "2018-12-10",
-        "to": "2018-12-13",
-        "days": 4,
-        "avg_move_pct": -4.82,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-05-20",
-        "to": "2019-05-21",
-        "days": 2,
-        "avg_move_pct": -2.09,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-10-14",
-        "to": "2019-10-14",
-        "days": 1,
-        "avg_move_pct": 1.37,
-        "as_predicted": false
-      },
-      {
-        "from": "2020-03-09",
-        "to": "2020-03-11",
-        "days": 3,
-        "avg_move_pct": -12.63,
-        "as_predicted": true
-      },
-      {
-        "from": "2020-11-24",
-        "to": "2020-11-27",
-        "days": 3,
-        "avg_move_pct": 1.21,
-        "as_predicted": false
-      },
-      {
-        "from": "2021-04-19",
-        "to": "2021-04-20",
-        "days": 2,
-        "avg_move_pct": 0.92,
-        "as_predicted": false
-      },
-      {
-        "from": "2021-09-14",
-        "to": "2021-09-16",
-        "days": 3,
-        "avg_move_pct": -1.48,
-        "as_predicted": true
-      },
-      {
-        "from": "2022-06-01",
-        "to": "2022-06-03",
-        "days": 3,
-        "avg_move_pct": -2.84,
-        "as_predicted": true
-      },
-      {
-        "from": "2022-10-26",
-        "to": "2022-10-28",
-        "days": 3,
-        "avg_move_pct": -2.5,
-        "as_predicted": true
-      },
-      {
-        "from": "2023-03-20",
-        "to": "2023-03-22",
-        "days": 3,
-        "avg_move_pct": 0.72,
-        "as_predicted": false
-      },
-      {
-        "from": "2023-12-08",
-        "to": "2023-12-08",
-        "days": 1,
-        "avg_move_pct": 2.49,
-        "as_predicted": false
-      },
-      {
-        "from": "2024-05-02",
-        "to": "2024-05-03",
-        "days": 2,
-        "avg_move_pct": 2.41,
-        "as_predicted": false
-      },
-      {
-        "from": "2024-09-26",
-        "to": "2024-09-27",
-        "days": 2,
-        "avg_move_pct": -0.28,
-        "as_predicted": true
-      },
-      {
-        "from": "2025-06-10",
-        "to": "2025-06-13",
-        "days": 4,
-        "avg_move_pct": -0.52,
-        "as_predicted": true
-      },
-      {
-        "from": "2025-11-10",
-        "to": "2025-11-12",
-        "days": 3,
-        "avg_move_pct": -2.91,
-        "as_predicted": true
-      },
-      {
-        "from": "2026-09-16",
-        "to": "2026-09-25",
-        "days": 8,
-        "avg_move_pct": 0.05,
-        "as_predicted": true
-      }
-    ],
-    "next": [
-      {
-        "from": "2026-10-12",
-        "to": "2026-10-18"
-      },
-      {
-        "from": "2026-12-10",
-        "to": "2026-12-14"
-      },
-      {
-        "from": "2027-05-18",
-        "to": "2027-05-20"
-      }
-    ]
-  },
-  {
-    "market": "sp500",
     "factor": "t_dimon_jamie_venus_sq_mars",
     "block": "dimon_jamie",
     "horizon_days": 5,
@@ -18607,125 +18752,6 @@
     ]
   },
   {
-    "market": "vix",
-    "factor": "venus_retrograde",
-    "block": "sky",
-    "horizon_days": 5,
-    "expects": "up",
-    "effect_pct": 5.503,
-    "occasions": 14,
-    "as_predicted": 8,
-    "as_predicted_since_split": 2,
-    "occasions_since_split": 4,
-    "paper_eligible": false,
-    "list": [
-      {
-        "from": "2005-12-27",
-        "to": "2006-02-02",
-        "days": 26,
-        "avg_move_pct": 2.92,
-        "as_predicted": true
-      },
-      {
-        "from": "2007-07-30",
-        "to": "2007-09-07",
-        "days": 29,
-        "avg_move_pct": 3.16,
-        "as_predicted": true
-      },
-      {
-        "from": "2009-03-09",
-        "to": "2009-04-17",
-        "days": 29,
-        "avg_move_pct": -2.46,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-10-08",
-        "to": "2010-11-18",
-        "days": 30,
-        "avg_move_pct": 0.68,
-        "as_predicted": false
-      },
-      {
-        "from": "2012-05-16",
-        "to": "2012-06-27",
-        "days": 30,
-        "avg_move_pct": -3.73,
-        "as_predicted": false
-      },
-      {
-        "from": "2013-12-23",
-        "to": "2014-01-31",
-        "days": 27,
-        "avg_move_pct": 8.17,
-        "as_predicted": true
-      },
-      {
-        "from": "2015-07-27",
-        "to": "2015-09-04",
-        "days": 30,
-        "avg_move_pct": 19.29,
-        "as_predicted": true
-      },
-      {
-        "from": "2017-03-06",
-        "to": "2017-04-13",
-        "days": 29,
-        "avg_move_pct": 4.41,
-        "as_predicted": true
-      },
-      {
-        "from": "2018-10-08",
-        "to": "2018-11-15",
-        "days": 29,
-        "avg_move_pct": 2.33,
-        "as_predicted": true
-      },
-      {
-        "from": "2020-05-13",
-        "to": "2020-06-24",
-        "days": 30,
-        "avg_move_pct": 1.15,
-        "as_predicted": false
-      },
-      {
-        "from": "2021-12-20",
-        "to": "2022-01-28",
-        "days": 28,
-        "avg_move_pct": 5.65,
-        "as_predicted": true
-      },
-      {
-        "from": "2023-07-24",
-        "to": "2023-09-01",
-        "days": 30,
-        "avg_move_pct": 1.13,
-        "as_predicted": false
-      },
-      {
-        "from": "2025-03-03",
-        "to": "2025-04-11",
-        "days": 30,
-        "avg_move_pct": 11.96,
-        "as_predicted": true
-      },
-      {
-        "from": "2026-10-05",
-        "to": "2026-10-05",
-        "days": 1,
-        "avg_move_pct": -2.0,
-        "as_predicted": false
-      }
-    ],
-    "next": [
-      {
-        "from": "2026-10-12",
-        "to": "2026-11-13"
-      }
-    ]
-  },
-  {
     "market": "bitcoin",
     "factor": "t_coinbase_mercury_biquintile_neptune",
     "block": "coinbase",
@@ -18971,6 +18997,10 @@
       {
         "from": "2027-09-24",
         "to": "2027-09-25"
+      },
+      {
+        "from": "2027-10-17",
+        "to": "2027-10-18"
       }
     ]
   },
@@ -19220,6 +19250,10 @@
       {
         "from": "2027-09-22",
         "to": "2027-09-25"
+      },
+      {
+        "from": "2027-10-17",
+        "to": "2027-10-19"
       }
     ]
   },
@@ -19979,6 +20013,10 @@
       {
         "from": "2027-09-19",
         "to": "2027-09-22"
+      },
+      {
+        "from": "2027-10-20",
+        "to": "2027-10-22"
       }
     ]
   },
@@ -20221,6 +20259,10 @@
       {
         "from": "2027-09-21",
         "to": "2027-09-24"
+      },
+      {
+        "from": "2027-10-18",
+        "to": "2027-10-21"
       }
     ]
   },
@@ -20863,10 +20905,10 @@
     "horizon_days": 1,
     "expects": "down",
     "effect_pct": -0.303,
-    "occasions": 644,
-    "as_predicted": 346,
-    "as_predicted_since_split": 172,
-    "occasions_since_split": 308,
+    "occasions": 646,
+    "as_predicted": 347,
+    "as_predicted_since_split": 173,
+    "occasions_since_split": 310,
     "paper_eligible": false,
     "list": [
       {
@@ -25376,20 +25418,34 @@
         "days": 1,
         "avg_move_pct": 0.32,
         "as_predicted": false
+      },
+      {
+        "from": "2026-10-12",
+        "to": "2026-10-12",
+        "days": 1,
+        "avg_move_pct": 1.63,
+        "as_predicted": false
+      },
+      {
+        "from": "2026-10-15",
+        "to": "2026-10-15",
+        "days": 1,
+        "avg_move_pct": -0.78,
+        "as_predicted": true
       }
     ],
     "next": [
       {
-        "from": "2026-10-12",
-        "to": "2026-10-12"
-      },
-      {
-        "from": "2026-10-15",
-        "to": "2026-10-15"
-      },
-      {
         "from": "2026-10-26",
         "to": "2026-10-26"
+      },
+      {
+        "from": "2026-10-29",
+        "to": "2026-10-29"
+      },
+      {
+        "from": "2026-11-09",
+        "to": "2026-11-09"
       }
     ]
   },
@@ -28828,15 +28884,408 @@
   },
   {
     "market": "sp500",
+    "factor": "mercury_conj_venus",
+    "block": "sky",
+    "horizon_days": 5,
+    "expects": "down",
+    "effect_pct": -0.448,
+    "occasions": 52,
+    "as_predicted": 27,
+    "as_predicted_since_split": 10,
+    "occasions_since_split": 17,
+    "paper_eligible": false,
+    "list": [
+      {
+        "from": "2005-01-03",
+        "to": "2005-01-25",
+        "days": 16,
+        "avg_move_pct": -0.3,
+        "as_predicted": true
+      },
+      {
+        "from": "2005-03-28",
+        "to": "2005-03-30",
+        "days": 3,
+        "avg_move_pct": 0.59,
+        "as_predicted": false
+      },
+      {
+        "from": "2005-06-20",
+        "to": "2005-07-15",
+        "days": 19,
+        "avg_move_pct": 0.49,
+        "as_predicted": false
+      },
+      {
+        "from": "2006-01-17",
+        "to": "2006-01-18",
+        "days": 2,
+        "avg_move_pct": -1.14,
+        "as_predicted": true
+      },
+      {
+        "from": "2006-08-07",
+        "to": "2006-08-14",
+        "days": 6,
+        "avg_move_pct": 1.66,
+        "as_predicted": false
+      },
+      {
+        "from": "2006-11-07",
+        "to": "2006-11-08",
+        "days": 2,
+        "avg_move_pct": 0.77,
+        "as_predicted": false
+      },
+      {
+        "from": "2007-08-16",
+        "to": "2007-08-17",
+        "days": 2,
+        "avg_move_pct": 2.97,
+        "as_predicted": false
+      },
+      {
+        "from": "2008-02-22",
+        "to": "2008-03-28",
+        "days": 25,
+        "avg_move_pct": -0.12,
+        "as_predicted": true
+      },
+      {
+        "from": "2008-06-06",
+        "to": "2008-06-09",
+        "days": 2,
+        "avg_move_pct": -0.08,
+        "as_predicted": true
+      },
+      {
+        "from": "2008-08-14",
+        "to": "2008-09-19",
+        "days": 26,
+        "avg_move_pct": -1.23,
+        "as_predicted": true
+      },
+      {
+        "from": "2010-01-04",
+        "to": "2010-01-06",
+        "days": 3,
+        "avg_move_pct": 0.65,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-04-01",
+        "to": "2010-04-09",
+        "days": 6,
+        "avg_move_pct": 1.19,
+        "as_predicted": false
+      },
+      {
+        "from": "2010-10-25",
+        "to": "2010-10-26",
+        "days": 2,
+        "avg_move_pct": 0.28,
+        "as_predicted": false
+      },
+      {
+        "from": "2011-05-02",
+        "to": "2011-05-25",
+        "days": 18,
+        "avg_move_pct": -0.46,
+        "as_predicted": true
+      },
+      {
+        "from": "2011-08-16",
+        "to": "2011-08-17",
+        "days": 2,
+        "avg_move_pct": -1.96,
+        "as_predicted": true
+      },
+      {
+        "from": "2011-10-21",
+        "to": "2011-11-18",
+        "days": 21,
+        "avg_move_pct": -1.34,
+        "as_predicted": true
+      },
+      {
+        "from": "2012-06-01",
+        "to": "2012-06-01",
+        "days": 1,
+        "avg_move_pct": 3.73,
+        "as_predicted": false
+      },
+      {
+        "from": "2013-03-06",
+        "to": "2013-03-08",
+        "days": 3,
+        "avg_move_pct": 0.9,
+        "as_predicted": false
+      },
+      {
+        "from": "2013-05-21",
+        "to": "2013-05-29",
+        "days": 6,
+        "avg_move_pct": -1.2,
+        "as_predicted": true
+      },
+      {
+        "from": "2013-06-17",
+        "to": "2013-06-21",
+        "days": 5,
+        "avg_move_pct": -1.4,
+        "as_predicted": true
+      },
+      {
+        "from": "2014-01-07",
+        "to": "2014-01-08",
+        "days": 2,
+        "avg_move_pct": 0.32,
+        "as_predicted": false
+      },
+      {
+        "from": "2014-10-17",
+        "to": "2014-10-17",
+        "days": 1,
+        "avg_move_pct": 4.12,
+        "as_predicted": false
+      },
+      {
+        "from": "2015-01-02",
+        "to": "2015-01-16",
+        "days": 11,
+        "avg_move_pct": 0.27,
+        "as_predicted": false
+      },
+      {
+        "from": "2015-08-05",
+        "to": "2015-08-07",
+        "days": 3,
+        "avg_move_pct": 0.0,
+        "as_predicted": true
+      },
+      {
+        "from": "2016-05-12",
+        "to": "2016-05-13",
+        "days": 2,
+        "avg_move_pct": -0.44,
+        "as_predicted": true
+      },
+      {
+        "from": "2016-07-13",
+        "to": "2016-07-20",
+        "days": 6,
+        "avg_move_pct": 0.28,
+        "as_predicted": false
+      },
+      {
+        "from": "2016-08-26",
+        "to": "2016-08-31",
+        "days": 4,
+        "avg_move_pct": 0.43,
+        "as_predicted": false
+      },
+      {
+        "from": "2017-03-17",
+        "to": "2017-03-17",
+        "days": 1,
+        "avg_move_pct": -1.44,
+        "as_predicted": true
+      },
+      {
+        "from": "2017-12-14",
+        "to": "2017-12-15",
+        "days": 2,
+        "avg_move_pct": 0.75,
+        "as_predicted": false
+      },
+      {
+        "from": "2018-02-28",
+        "to": "2018-03-22",
+        "days": 17,
+        "avg_move_pct": -0.91,
+        "as_predicted": true
+      },
+      {
+        "from": "2018-10-15",
+        "to": "2018-10-16",
+        "days": 2,
+        "avg_move_pct": -1.14,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-07-23",
+        "to": "2019-07-26",
+        "days": 4,
+        "avg_move_pct": -1.45,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-09-09",
+        "to": "2019-09-19",
+        "days": 9,
+        "avg_move_pct": -0.23,
+        "as_predicted": true
+      },
+      {
+        "from": "2019-10-28",
+        "to": "2019-11-01",
+        "days": 5,
+        "avg_move_pct": 1.19,
+        "as_predicted": false
+      },
+      {
+        "from": "2020-05-21",
+        "to": "2020-05-22",
+        "days": 2,
+        "avg_move_pct": 3.32,
+        "as_predicted": false
+      },
+      {
+        "from": "2021-02-12",
+        "to": "2021-02-12",
+        "days": 1,
+        "avg_move_pct": -1.48,
+        "as_predicted": true
+      },
+      {
+        "from": "2021-04-23",
+        "to": "2021-04-29",
+        "days": 5,
+        "avg_move_pct": -0.2,
+        "as_predicted": true
+      },
+      {
+        "from": "2021-05-26",
+        "to": "2021-05-28",
+        "days": 3,
+        "avg_move_pct": 0.38,
+        "as_predicted": false
+      },
+      {
+        "from": "2021-12-28",
+        "to": "2021-12-30",
+        "days": 3,
+        "avg_move_pct": -1.17,
+        "as_predicted": true
+      },
+      {
+        "from": "2022-09-26",
+        "to": "2022-09-27",
+        "days": 2,
+        "avg_move_pct": 2.29,
+        "as_predicted": false
+      },
+      {
+        "from": "2022-11-14",
+        "to": "2022-12-02",
+        "days": 14,
+        "avg_move_pct": -0.07,
+        "as_predicted": true
+      },
+      {
+        "from": "2022-12-27",
+        "to": "2022-12-30",
+        "days": 4,
+        "avg_move_pct": 0.96,
+        "as_predicted": false
+      },
+      {
+        "from": "2023-07-26",
+        "to": "2023-07-28",
+        "days": 3,
+        "avg_move_pct": -1.41,
+        "as_predicted": true
+      },
+      {
+        "from": "2024-04-18",
+        "to": "2024-04-19",
+        "days": 2,
+        "avg_move_pct": 1.71,
+        "as_predicted": false
+      },
+      {
+        "from": "2024-06-14",
+        "to": "2024-06-20",
+        "days": 4,
+        "avg_move_pct": 0.06,
+        "as_predicted": true
+      },
+      {
+        "from": "2024-08-06",
+        "to": "2024-08-09",
+        "days": 4,
+        "avg_move_pct": 4.19,
+        "as_predicted": false
+      },
+      {
+        "from": "2025-03-10",
+        "to": "2025-03-14",
+        "days": 5,
+        "avg_move_pct": 1.25,
+        "as_predicted": false
+      },
+      {
+        "from": "2025-03-24",
+        "to": "2025-04-11",
+        "days": 15,
+        "avg_move_pct": -2.25,
+        "as_predicted": true
+      },
+      {
+        "from": "2025-11-24",
+        "to": "2025-11-26",
+        "days": 3,
+        "avg_move_pct": 1.25,
+        "as_predicted": false
+      },
+      {
+        "from": "2026-01-23",
+        "to": "2026-02-03",
+        "days": 8,
+        "avg_move_pct": -0.49,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-02-26",
+        "to": "2026-02-27",
+        "days": 2,
+        "avg_move_pct": -1.57,
+        "as_predicted": true
+      },
+      {
+        "from": "2026-10-05",
+        "to": "2026-10-08",
+        "days": 4,
+        "avg_move_pct": -0.27,
+        "as_predicted": true
+      }
+    ],
+    "next": [
+      {
+        "from": "2027-06-29",
+        "to": "2027-07-03"
+      },
+      {
+        "from": "2027-08-08",
+        "to": "2027-08-14"
+      },
+      {
+        "from": "2027-10-10",
+        "to": "2027-10-12"
+      }
+    ]
+  },
+  {
+    "market": "sp500",
     "factor": "moon_new_moon",
     "block": "sky",
     "horizon_days": 5,
     "expects": "down",
     "effect_pct": -0.318,
-    "occasions": 268,
-    "as_predicted": 134,
-    "as_predicted_since_split": 34,
-    "occasions_since_split": 71,
+    "occasions": 269,
+    "as_predicted": 135,
+    "as_predicted_since_split": 35,
+    "occasions_since_split": 72,
     "paper_eligible": false,
     "list": [
       {
@@ -30714,13 +31163,16 @@
         "days": 2,
         "avg_move_pct": 0.91,
         "as_predicted": false
+      },
+      {
+        "from": "2026-10-12",
+        "to": "2026-10-14",
+        "days": 3,
+        "avg_move_pct": -0.73,
+        "as_predicted": true
       }
     ],
     "next": [
-      {
-        "from": "2026-10-12",
-        "to": "2026-10-14"
-      },
       {
         "from": "2026-11-09",
         "to": "2026-11-12"
@@ -30728,399 +31180,10 @@
       {
         "from": "2026-12-09",
         "to": "2026-12-12"
-      }
-    ]
-  },
-  {
-    "market": "sp500",
-    "factor": "mercury_conj_venus",
-    "block": "sky",
-    "horizon_days": 5,
-    "expects": "down",
-    "effect_pct": -0.448,
-    "occasions": 52,
-    "as_predicted": 26,
-    "as_predicted_since_split": 9,
-    "occasions_since_split": 17,
-    "paper_eligible": false,
-    "list": [
-      {
-        "from": "2005-01-03",
-        "to": "2005-01-25",
-        "days": 16,
-        "avg_move_pct": -0.3,
-        "as_predicted": true
       },
       {
-        "from": "2005-03-28",
-        "to": "2005-03-30",
-        "days": 3,
-        "avg_move_pct": 0.59,
-        "as_predicted": false
-      },
-      {
-        "from": "2005-06-20",
-        "to": "2005-07-15",
-        "days": 19,
-        "avg_move_pct": 0.49,
-        "as_predicted": false
-      },
-      {
-        "from": "2006-01-17",
-        "to": "2006-01-18",
-        "days": 2,
-        "avg_move_pct": -1.14,
-        "as_predicted": true
-      },
-      {
-        "from": "2006-08-07",
-        "to": "2006-08-14",
-        "days": 6,
-        "avg_move_pct": 1.66,
-        "as_predicted": false
-      },
-      {
-        "from": "2006-11-07",
-        "to": "2006-11-08",
-        "days": 2,
-        "avg_move_pct": 0.77,
-        "as_predicted": false
-      },
-      {
-        "from": "2007-08-16",
-        "to": "2007-08-17",
-        "days": 2,
-        "avg_move_pct": 2.97,
-        "as_predicted": false
-      },
-      {
-        "from": "2008-02-22",
-        "to": "2008-03-28",
-        "days": 25,
-        "avg_move_pct": -0.12,
-        "as_predicted": true
-      },
-      {
-        "from": "2008-06-06",
-        "to": "2008-06-09",
-        "days": 2,
-        "avg_move_pct": -0.08,
-        "as_predicted": true
-      },
-      {
-        "from": "2008-08-14",
-        "to": "2008-09-19",
-        "days": 26,
-        "avg_move_pct": -1.23,
-        "as_predicted": true
-      },
-      {
-        "from": "2010-01-04",
-        "to": "2010-01-06",
-        "days": 3,
-        "avg_move_pct": 0.65,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-04-01",
-        "to": "2010-04-09",
-        "days": 6,
-        "avg_move_pct": 1.19,
-        "as_predicted": false
-      },
-      {
-        "from": "2010-10-25",
-        "to": "2010-10-26",
-        "days": 2,
-        "avg_move_pct": 0.28,
-        "as_predicted": false
-      },
-      {
-        "from": "2011-05-02",
-        "to": "2011-05-25",
-        "days": 18,
-        "avg_move_pct": -0.46,
-        "as_predicted": true
-      },
-      {
-        "from": "2011-08-16",
-        "to": "2011-08-17",
-        "days": 2,
-        "avg_move_pct": -1.96,
-        "as_predicted": true
-      },
-      {
-        "from": "2011-10-21",
-        "to": "2011-11-18",
-        "days": 21,
-        "avg_move_pct": -1.34,
-        "as_predicted": true
-      },
-      {
-        "from": "2012-06-01",
-        "to": "2012-06-01",
-        "days": 1,
-        "avg_move_pct": 3.73,
-        "as_predicted": false
-      },
-      {
-        "from": "2013-03-06",
-        "to": "2013-03-08",
-        "days": 3,
-        "avg_move_pct": 0.9,
-        "as_predicted": false
-      },
-      {
-        "from": "2013-05-21",
-        "to": "2013-05-29",
-        "days": 6,
-        "avg_move_pct": -1.2,
-        "as_predicted": true
-      },
-      {
-        "from": "2013-06-17",
-        "to": "2013-06-21",
-        "days": 5,
-        "avg_move_pct": -1.4,
-        "as_predicted": true
-      },
-      {
-        "from": "2014-01-07",
-        "to": "2014-01-08",
-        "days": 2,
-        "avg_move_pct": 0.32,
-        "as_predicted": false
-      },
-      {
-        "from": "2014-10-17",
-        "to": "2014-10-17",
-        "days": 1,
-        "avg_move_pct": 4.12,
-        "as_predicted": false
-      },
-      {
-        "from": "2015-01-02",
-        "to": "2015-01-16",
-        "days": 11,
-        "avg_move_pct": 0.27,
-        "as_predicted": false
-      },
-      {
-        "from": "2015-08-05",
-        "to": "2015-08-07",
-        "days": 3,
-        "avg_move_pct": 0.0,
-        "as_predicted": true
-      },
-      {
-        "from": "2016-05-12",
-        "to": "2016-05-13",
-        "days": 2,
-        "avg_move_pct": -0.44,
-        "as_predicted": true
-      },
-      {
-        "from": "2016-07-13",
-        "to": "2016-07-20",
-        "days": 6,
-        "avg_move_pct": 0.28,
-        "as_predicted": false
-      },
-      {
-        "from": "2016-08-26",
-        "to": "2016-08-31",
-        "days": 4,
-        "avg_move_pct": 0.43,
-        "as_predicted": false
-      },
-      {
-        "from": "2017-03-17",
-        "to": "2017-03-17",
-        "days": 1,
-        "avg_move_pct": -1.44,
-        "as_predicted": true
-      },
-      {
-        "from": "2017-12-14",
-        "to": "2017-12-15",
-        "days": 2,
-        "avg_move_pct": 0.75,
-        "as_predicted": false
-      },
-      {
-        "from": "2018-02-28",
-        "to": "2018-03-22",
-        "days": 17,
-        "avg_move_pct": -0.91,
-        "as_predicted": true
-      },
-      {
-        "from": "2018-10-15",
-        "to": "2018-10-16",
-        "days": 2,
-        "avg_move_pct": -1.14,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-07-23",
-        "to": "2019-07-26",
-        "days": 4,
-        "avg_move_pct": -1.45,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-09-09",
-        "to": "2019-09-19",
-        "days": 9,
-        "avg_move_pct": -0.23,
-        "as_predicted": true
-      },
-      {
-        "from": "2019-10-28",
-        "to": "2019-11-01",
-        "days": 5,
-        "avg_move_pct": 1.19,
-        "as_predicted": false
-      },
-      {
-        "from": "2020-05-21",
-        "to": "2020-05-22",
-        "days": 2,
-        "avg_move_pct": 3.32,
-        "as_predicted": false
-      },
-      {
-        "from": "2021-02-12",
-        "to": "2021-02-12",
-        "days": 1,
-        "avg_move_pct": -1.48,
-        "as_predicted": true
-      },
-      {
-        "from": "2021-04-23",
-        "to": "2021-04-29",
-        "days": 5,
-        "avg_move_pct": -0.2,
-        "as_predicted": true
-      },
-      {
-        "from": "2021-05-26",
-        "to": "2021-05-28",
-        "days": 3,
-        "avg_move_pct": 0.38,
-        "as_predicted": false
-      },
-      {
-        "from": "2021-12-28",
-        "to": "2021-12-30",
-        "days": 3,
-        "avg_move_pct": -1.17,
-        "as_predicted": true
-      },
-      {
-        "from": "2022-09-26",
-        "to": "2022-09-27",
-        "days": 2,
-        "avg_move_pct": 2.29,
-        "as_predicted": false
-      },
-      {
-        "from": "2022-11-14",
-        "to": "2022-12-02",
-        "days": 14,
-        "avg_move_pct": -0.07,
-        "as_predicted": true
-      },
-      {
-        "from": "2022-12-27",
-        "to": "2022-12-30",
-        "days": 4,
-        "avg_move_pct": 0.96,
-        "as_predicted": false
-      },
-      {
-        "from": "2023-07-26",
-        "to": "2023-07-28",
-        "days": 3,
-        "avg_move_pct": -1.41,
-        "as_predicted": true
-      },
-      {
-        "from": "2024-04-18",
-        "to": "2024-04-19",
-        "days": 2,
-        "avg_move_pct": 1.71,
-        "as_predicted": false
-      },
-      {
-        "from": "2024-06-14",
-        "to": "2024-06-20",
-        "days": 4,
-        "avg_move_pct": 0.06,
-        "as_predicted": true
-      },
-      {
-        "from": "2024-08-06",
-        "to": "2024-08-09",
-        "days": 4,
-        "avg_move_pct": 4.19,
-        "as_predicted": false
-      },
-      {
-        "from": "2025-03-10",
-        "to": "2025-03-14",
-        "days": 5,
-        "avg_move_pct": 1.25,
-        "as_predicted": false
-      },
-      {
-        "from": "2025-03-24",
-        "to": "2025-04-11",
-        "days": 15,
-        "avg_move_pct": -2.25,
-        "as_predicted": true
-      },
-      {
-        "from": "2025-11-24",
-        "to": "2025-11-26",
-        "days": 3,
-        "avg_move_pct": 1.25,
-        "as_predicted": false
-      },
-      {
-        "from": "2026-01-23",
-        "to": "2026-02-03",
-        "days": 8,
-        "avg_move_pct": -0.49,
-        "as_predicted": true
-      },
-      {
-        "from": "2026-02-26",
-        "to": "2026-02-27",
-        "days": 2,
-        "avg_move_pct": -1.57,
-        "as_predicted": true
-      },
-      {
-        "from": "2026-10-05",
-        "to": "2026-10-05",
-        "days": 1,
-        "avg_move_pct": 0.43,
-        "as_predicted": false
-      }
-    ],
-    "next": [
-      {
-        "from": "2027-06-29",
-        "to": "2027-07-03"
-      },
-      {
-        "from": "2027-08-08",
-        "to": "2027-08-14"
-      },
-      {
-        "from": "2027-10-10",
-        "to": "2027-10-12"
+        "from": "2027-01-08",
+        "to": "2027-01-11"
       }
     ]
   },
@@ -31994,6 +32057,10 @@
       {
         "from": "2027-04-10",
         "to": "2027-04-12"
+      },
+      {
+        "from": "2027-10-22",
+        "to": "2027-10-22"
       }
     ]
   },

@@ -5,7 +5,7 @@ happened, and whether the market went the way the pattern says. Days inside one 
 move together, so the occurrence is the honest unit. Then the dates each one comes round
 again, written down before they happen.
 
-Written 2026-10-12 by `almanac.py --occasions`. The paper book rule is registered in
+Written 2026-10-22 by `almanac.py --occasions`. The paper book rule is registered in
 `registry/2026-10-12-family-2-occasions.md`: at least 7 occurrences, 70% as expected, half of
 those since 2021. Patterns meeting it are marked.
 
@@ -13,7 +13,7 @@ those since 2021. Patterns meeting it are marked.
 
 | market | factor | expects | times it happened | went as expected | of those since 2021 | paper book | next |
 |---|---|---|---|---|---|---|---|
-| bitcoin | venus retrograde | down 5d | 8 | 8 (100%) | 4 of 4 | yes | 2026-10-12 |
+| bitcoin | venus retrograde | down 5d | 8 | 8 (100%) | 4 of 4 | yes | 2026-10-22 |
 | bitcoin | t federal reserve jupiter binovile neptune | up 5d | 6 | 6 (100%) | 3 of 3 | no | not within a year |
 | bitcoin | t bitcoin jupiter tri uranus | down 5d | 6 | 6 (100%) | 3 of 3 | no | not within a year |
 | ethereum | t coinbase jupiter tri neptune | down 5d | 5 | 5 (100%) | 3 of 3 | no | not within a year |
@@ -46,9 +46,9 @@ those since 2021. Patterns meeting it are marked.
 | gold | t federal reserve jupiter quintile jupiter | down 5d | 8 | 6 (75%) | 3 of 3 | yes | not within a year |
 | gold | t federal reserve mars tri pluto | up 5d | 23 | 17 (74%) | 4 of 6 | yes | 2027-08-30 |
 | vix | t federal reserve mars tri sun | down 5d | 23 | 17 (74%) | 6 of 7 | yes | 2026-11-24 |
+| bitcoin | venus sq pluto | up 5d | 26 | 19 (73%) | 9 of 13 | yes | 2026-10-22 |
 | gold | sun in capricorn | up 5d | 22 | 16 (73%) | 4 of 5 | yes | 2026-12-22 |
 | bitcoin | venus opp jupiter | up 1d | 11 | 8 (73%) | 3 of 5 | yes | 2027-03-14 |
-| bitcoin | venus sq pluto | up 5d | 25 | 18 (72%) | 8 of 12 | yes | 2026-10-14 |
 | gold | t federal reserve mars sq mercury | down 1d | 25 | 18 (72%) | 2 of 6 | no | 2027-06-11 |
 | oil | t trump donald mars sext saturn | down 5d | 25 | 18 (72%) | 5 of 7 | yes | 2027-06-30 |
 | gold | mercury in capricorn | up 5d | 28 | 20 (71%) | 7 of 7 | yes | 2026-12-26 |
@@ -74,6 +74,7 @@ those since 2021. Patterns meeting it are marked.
 | bitcoin | t bitcoin mercury opp neptune | down 5d | 14 | 9 (64%) | 3 of 7 | no | 2027-08-12 |
 | gold | t federal reserve mars opp sun | up 5d | 14 | 9 (64%) | 3 of 4 | no | not within a year |
 | gold | t federal reserve mars conj pluto | up 5d | 14 | 9 (64%) | 3 of 4 | no | not within a year |
+| vix | venus retrograde | up 5d | 14 | 9 (64%) | 3 of 4 | no | 2026-10-22 |
 | bitcoin | t coinbase venus tri uranus | up 5d | 25 | 16 (64%) | 7 of 13 | no | 2027-02-10 |
 | gold | t federal reserve mars sq saturn | down 1d | 25 | 16 (64%) | 1 of 6 | no | 2027-06-10 |
 | sp500 | t trump donald sun sext venus | down 5d | 44 | 28 (64%) | 8 of 12 | no | 2027-05-15 |
@@ -84,7 +85,7 @@ those since 2021. Patterns meeting it are marked.
 | sp500 | t trump donald sun sq asc | up 5d | 43 | 27 (63%) | 8 of 11 | no | 2026-11-20 |
 | gold | t federal reserve mercury sesq uranus | down 5d | 40 | 25 (62%) | 7 of 13 | no | 2027-05-20 |
 | sp500 | t dalio ray mercury tri neptune | down 5d | 45 | 28 (62%) | 6 of 10 | no | 2027-01-20 |
-| bitcoin | t coinbase mercury tri neptune | up 5d | 29 | 18 (62%) | 8 of 14 | no | 2026-10-20 |
+| bitcoin | t coinbase mercury tri neptune | up 5d | 29 | 18 (62%) | 8 of 14 | no | 2026-10-22 |
 | gold | t federal reserve venus sext saturn | down 5d | 47 | 29 (62%) | 7 of 13 | no | 2027-04-30 |
 | bitcoin | t federal reserve mars tri saturn | up 5d | 13 | 8 (62%) | 3 of 6 | no | 2027-08-04 |
 | bitcoin | t federal reserve mars sext mercury | up 5d | 13 | 8 (62%) | 3 of 6 | no | 2027-08-04 |
@@ -105,13 +106,12 @@ those since 2021. Patterns meeting it are marked.
 | gold | mercury sext uranus | up 5d | 54 | 32 (59%) | 9 of 13 | no | 2027-04-09 |
 | bitcoin | t strategy venus sext mercury | up 5d | 27 | 16 (59%) | 6 of 12 | no | 2027-06-18 |
 | ethereum | sun tri saturn | up 5d | 17 | 10 (59%) | 5 of 11 | no | 2026-11-27 |
+| sp500 | t federal reserve venus sq uranus | down 5d | 48 | 28 (58%) | 8 of 12 | no | 2026-12-10 |
 | sp500 | t dalio ray sun sq mercury | up 5d | 43 | 25 (58%) | 7 of 11 | no | 2026-11-19 |
 | ethereum | venus sext saturn | up 5d | 19 | 11 (58%) | 7 of 11 | no | 2027-03-11 |
 | gold | t federal reserve mars semisext pluto | down 5d | 26 | 15 (58%) | 6 of 9 | no | not within a year |
-| sp500 | t federal reserve venus sq uranus | down 5d | 47 | 27 (57%) | 7 of 11 | no | 2026-10-12 |
 | sp500 | t dimon jamie venus sq mars | down 5d | 49 | 28 (57%) | 6 of 13 | no | 2027-04-26 |
 | bitcoin | t musk elon mercury binovile uranus | up 5d | 28 | 16 (57%) | 8 of 14 | no | 2026-12-25 |
-| vix | venus retrograde | up 5d | 14 | 8 (57%) | 2 of 4 | no | 2026-10-12 |
 | bitcoin | t coinbase mercury biquintile neptune | up 5d | 32 | 18 (56%) | 8 of 13 | no | 2027-08-10 |
 | bitcoin | t strategy mercury sq saturn | up 5d | 32 | 18 (56%) | 7 of 14 | no | 2027-04-23 |
 | sp500 | t trump donald mars sq jupiter | down 5d | 25 | 14 (56%) | 4 of 8 | no | not within a year |
@@ -121,15 +121,15 @@ those since 2021. Patterns meeting it are marked.
 | bitcoin | t trump donald mercury triseptile venus | up 5d | 31 | 17 (55%) | 8 of 15 | no | 2026-12-25 |
 | sp500 | sun in pisces | down 5d | 22 | 12 (55%) | 4 of 6 | no | 2027-02-19 |
 | bitcoin | t strategy venus quintile mercury | down 5d | 26 | 14 (54%) | 8 of 12 | no | 2026-11-01 |
-| bitcoin | t musk elon moon quintile moon | down 1d | 644 | 346 (54%) | 172 of 308 | no | 2026-10-12 |
+| bitcoin | t musk elon moon quintile moon | down 1d | 646 | 347 (54%) | 173 of 310 | no | 2026-10-26 |
 | sp500 | mercury in aquarius | down 5d | 28 | 15 (54%) | 4 of 7 | no | 2027-01-13 |
 | vix | moon in cancer | up 1d | 254 | 135 (53%) | 34 of 68 | no | 2026-10-30 |
 | sp500 | t dalio ray venus sq mars | down 5d | 49 | 26 (53%) | 8 of 13 | no | 2027-04-28 |
 | sp500 | t trump donald venus sq mercury | down 5d | 49 | 26 (53%) | 5 of 13 | no | 2027-04-26 |
 | sp500 | mercury sext venus | down 5d | 49 | 26 (53%) | 7 of 14 | no | 2027-01-19 |
 | oil | sun sq jupiter | down 1d | 40 | 21 (52%) | 5 of 10 | no | 2026-11-15 |
-| sp500 | moon new moon | down 5d | 268 | 134 (50%) | 34 of 71 | no | 2026-10-12 |
-| sp500 | mercury conj venus | down 5d | 52 | 26 (50%) | 9 of 17 | no | 2027-06-29 |
+| sp500 | mercury conj venus | down 5d | 52 | 27 (52%) | 10 of 17 | no | 2027-06-29 |
+| sp500 | moon new moon | down 5d | 269 | 135 (50%) | 35 of 72 | no | 2026-11-09 |
 | sp500 | t buffett warren mercury triseptile sun | down 5d | 46 | 23 (50%) | 7 of 14 | no | 2027-01-19 |
 | sp500 | t trump donald mercury tri neptune | down 5d | 44 | 22 (50%) | 8 of 14 | no | 2027-01-16 |
 | bitcoin | t federal reserve venus tri mars | up 5d | 24 | 12 (50%) | 5 of 11 | no | 2026-12-26 |
@@ -147,22 +147,20 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 
 | from | to | market | factor | expects | record |
 |---|---|---|---|---|---|
-| 2026-10-12 | 2026-11-13 | bitcoin | venus retrograde | down over 5d | 8 of 8 |
-| 2026-10-12 | 2026-10-18 | sp500 | t federal reserve venus sq uranus | down over 5d | 27 of 47 |
-| 2026-10-12 | 2026-11-13 | vix | venus retrograde | up over 5d | 8 of 14 |
-| 2026-10-12 | 2026-10-12 | bitcoin | t musk elon moon quintile moon | down over 1d | 346 of 644 |
-| 2026-10-12 | 2026-10-14 | sp500 | moon new moon | down over 5d | 134 of 268 |
-| 2026-10-14 | 2026-10-24 | bitcoin | venus sq pluto | up over 5d | 18 of 25 |
-| 2026-10-15 | 2026-10-15 | bitcoin | t musk elon moon quintile moon | down over 1d | 346 of 644 |
-| 2026-10-20 | 2026-10-27 | bitcoin | t coinbase mercury tri neptune | up over 5d | 18 of 29 |
+| 2026-10-22 | 2026-11-13 | bitcoin | venus retrograde | down over 5d | 8 of 8 |
+| 2026-10-22 | 2026-10-24 | bitcoin | venus sq pluto | up over 5d | 19 of 26 |
+| 2026-10-22 | 2026-11-13 | vix | venus retrograde | up over 5d | 9 of 14 |
+| 2026-10-22 | 2026-10-27 | bitcoin | t coinbase mercury tri neptune | up over 5d | 18 of 29 |
 | 2026-10-23 | 2026-11-21 | vix | sun in scorpio | down over 5d | 16 of 21 |
 | 2026-10-23 | 2026-10-29 | oil | sun sq pluto | down over 5d | 24 of 43 |
-| 2026-10-26 | 2026-10-26 | bitcoin | t musk elon moon quintile moon | down over 1d | 346 of 644 |
+| 2026-10-26 | 2026-10-26 | bitcoin | t musk elon moon quintile moon | down over 1d | 347 of 646 |
+| 2026-10-29 | 2026-10-29 | bitcoin | t musk elon moon quintile moon | down over 1d | 347 of 646 |
 | 2026-10-30 | 2026-10-31 | vix | moon in cancer | up over 1d | 135 of 254 |
 | 2026-11-01 | 2026-11-05 | bitcoin | t strategy venus quintile mercury | down over 5d | 14 of 26 |
 | 2026-11-02 | 2026-11-26 | sp500 | t trump donald venus sq saturn | up over 5d | 27 of 44 |
 | 2026-11-03 | 2026-11-24 | sp500 | t federal reserve venus sq jupiter | up over 5d | 27 of 45 |
-| 2026-11-09 | 2026-11-12 | sp500 | moon new moon | down over 5d | 134 of 268 |
+| 2026-11-09 | 2026-11-09 | bitcoin | t musk elon moon quintile moon | down over 1d | 347 of 646 |
+| 2026-11-09 | 2026-11-12 | sp500 | moon new moon | down over 5d | 135 of 269 |
 | 2026-11-15 | 2026-11-21 | oil | sun sq jupiter | down over 1d | 21 of 40 |
 | 2026-11-15 | 2026-11-21 | oil | sun sq jupiter | down over 5d | 18 of 40 |
 | 2026-11-19 | 2026-11-22 | sp500 | t dalio ray sun sq mercury | up over 5d | 25 of 43 |
@@ -178,9 +176,9 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2026-12-03 | 2026-12-03 | sp500 | t dalio ray mercury sesq mars | up over 5d | 29 of 45 |
 | 2026-12-05 | 2026-12-05 | bitcoin | t musk elon mercury binovile moon | down over 5d | 24 of 28 |
 | 2026-12-05 | 2026-12-05 | bitcoin | t musk elon mercury sesq mercury | down over 1d | 22 of 29 |
-| 2026-12-05 | 2026-12-13 | bitcoin | venus sq pluto | up over 5d | 18 of 25 |
-| 2026-12-09 | 2026-12-12 | sp500 | moon new moon | down over 5d | 134 of 268 |
-| 2026-12-10 | 2026-12-14 | sp500 | t federal reserve venus sq uranus | down over 5d | 27 of 47 |
+| 2026-12-05 | 2026-12-13 | bitcoin | venus sq pluto | up over 5d | 19 of 26 |
+| 2026-12-09 | 2026-12-12 | sp500 | moon new moon | down over 5d | 135 of 269 |
+| 2026-12-10 | 2026-12-14 | sp500 | t federal reserve venus sq uranus | down over 5d | 28 of 48 |
 | 2026-12-11 | 2026-12-11 | gold | t federal reserve mercury semisq jupiter | down over 5d | 27 of 44 |
 | 2026-12-16 | 2026-12-18 | bitcoin | t trump donald mercury sext jupiter | up over 5d | 15 of 31 |
 | 2026-12-19 | 2026-12-19 | bitcoin | t trump donald mercury triseptile mc | up over 5d | 21 of 33 |
@@ -192,6 +190,14 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2026-12-26 | 2026-12-29 | bitcoin | t federal reserve venus tri mars | up over 5d | 12 of 24 |
 | 2027-01-06 | 2027-01-11 | ethereum | venus tri neptune | up over 5d | 11 of 18 |
 | 2027-01-08 | 2027-01-09 | gold | t federal reserve mercury conj jupiter | up over 5d | 20 of 26 |
+| 2027-01-08 | 2027-01-11 | sp500 | moon new moon | down over 5d | 135 of 269 |
+| 2027-01-11 | 2027-01-12 | bitcoin | t musk elon mercury sq mc | down over 5d | 19 of 30 |
+| 2027-01-12 | 2027-01-13 | bitcoin | t coinbase mercury sq venus | down over 5d | 20 of 30 |
+| 2027-01-13 | 2027-01-31 | sp500 | mercury in aquarius | down over 5d | 15 of 28 |
+| 2027-01-16 | 2027-01-17 | sp500 | t trump donald mercury tri neptune | down over 5d | 22 of 44 |
+| 2027-01-19 | 2027-02-10 | sp500 | mercury sext venus | down over 5d | 26 of 49 |
+| 2027-01-19 | 2027-01-19 | sp500 | t buffett warren mercury triseptile sun | down over 5d | 23 of 46 |
+| 2027-01-20 | 2027-01-21 | sp500 | t dalio ray mercury tri neptune | down over 5d | 28 of 45 |
 
 ## Every occasion
 
@@ -206,7 +212,7 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2021-12-19 | 2022-01-28 | 41 | -2.65% | yes |
 | 2023-07-23 | 2023-09-03 | 43 | -1.39% | yes |
 | 2025-03-02 | 2025-04-12 | 42 | -0.61% | yes |
-| 2026-10-03 | 2026-10-06 | 4 | -3.44% | yes |
+| 2026-10-03 | 2026-10-16 | 14 | -1.12% | yes |
 
 </details>
 
@@ -916,6 +922,39 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 
 </details>
 
+<details><summary>bitcoin: venus sq pluto, expects up (19 of 26)</summary>
+
+| from | to | days | average move | as expected |
+|---|---|---|---|---|
+| 2014-10-06 | 2014-10-10 | 5 | +10.40% | yes |
+| 2015-03-03 | 2015-03-07 | 5 | +4.86% | yes |
+| 2015-11-18 | 2015-11-23 | 6 | +4.24% | yes |
+| 2016-04-17 | 2016-04-21 | 5 | +4.58% | yes |
+| 2016-09-09 | 2016-09-13 | 5 | -0.96% | no |
+| 2017-05-22 | 2017-05-28 | 7 | +1.54% | yes |
+| 2017-10-26 | 2017-10-30 | 5 | +17.43% | yes |
+| 2018-03-22 | 2018-03-25 | 4 | -14.23% | no |
+| 2018-08-24 | 2018-08-29 | 6 | +3.83% | yes |
+| 2019-05-07 | 2019-05-11 | 5 | +23.56% | yes |
+| 2019-09-29 | 2019-10-03 | 5 | -1.37% | no |
+| 2020-02-26 | 2020-03-02 | 6 | +2.35% | yes |
+| 2020-11-13 | 2020-11-17 | 5 | +10.47% | yes |
+| 2021-04-10 | 2021-04-14 | 5 | -2.74% | no |
+| 2021-09-04 | 2021-09-08 | 5 | -7.71% | no |
+| 2022-05-25 | 2022-05-29 | 5 | +5.33% | yes |
+| 2022-10-18 | 2022-10-22 | 5 | +4.34% | yes |
+| 2023-03-14 | 2023-03-18 | 5 | +8.87% | yes |
+| 2023-12-01 | 2023-12-05 | 5 | +7.34% | yes |
+| 2024-04-29 | 2024-05-03 | 5 | +3.37% | yes |
+| 2024-09-20 | 2024-09-24 | 5 | +2.44% | yes |
+| 2025-06-07 | 2025-06-12 | 6 | -1.84% | no |
+| 2025-11-06 | 2025-11-10 | 5 | -4.44% | no |
+| 2026-04-01 | 2026-04-05 | 5 | +5.48% | yes |
+| 2026-09-11 | 2026-09-21 | 11 | +4.53% | yes |
+| 2026-10-14 | 2026-10-16 | 3 | +1.54% | yes |
+
+</details>
+
 <details><summary>gold: sun in capricorn, expects up (16 of 22)</summary>
 
 | from | to | days | average move | as expected |
@@ -960,38 +999,6 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2023-12-08 | 2023-12-12 | 5 | -0.54% | no |
 | 2024-11-01 | 2024-11-05 | 5 | +1.78% | yes |
 | 2026-01-08 | 2026-01-11 | 4 | +0.05% | no |
-
-</details>
-
-<details><summary>bitcoin: venus sq pluto, expects up (18 of 25)</summary>
-
-| from | to | days | average move | as expected |
-|---|---|---|---|---|
-| 2014-10-06 | 2014-10-10 | 5 | +10.40% | yes |
-| 2015-03-03 | 2015-03-07 | 5 | +4.86% | yes |
-| 2015-11-18 | 2015-11-23 | 6 | +4.24% | yes |
-| 2016-04-17 | 2016-04-21 | 5 | +4.58% | yes |
-| 2016-09-09 | 2016-09-13 | 5 | -0.96% | no |
-| 2017-05-22 | 2017-05-28 | 7 | +1.54% | yes |
-| 2017-10-26 | 2017-10-30 | 5 | +17.43% | yes |
-| 2018-03-22 | 2018-03-25 | 4 | -14.23% | no |
-| 2018-08-24 | 2018-08-29 | 6 | +3.83% | yes |
-| 2019-05-07 | 2019-05-11 | 5 | +23.56% | yes |
-| 2019-09-29 | 2019-10-03 | 5 | -1.37% | no |
-| 2020-02-26 | 2020-03-02 | 6 | +2.35% | yes |
-| 2020-11-13 | 2020-11-17 | 5 | +10.47% | yes |
-| 2021-04-10 | 2021-04-14 | 5 | -2.74% | no |
-| 2021-09-04 | 2021-09-08 | 5 | -7.71% | no |
-| 2022-05-25 | 2022-05-29 | 5 | +5.33% | yes |
-| 2022-10-18 | 2022-10-22 | 5 | +4.34% | yes |
-| 2023-03-14 | 2023-03-18 | 5 | +8.87% | yes |
-| 2023-12-01 | 2023-12-05 | 5 | +7.34% | yes |
-| 2024-04-29 | 2024-05-03 | 5 | +3.37% | yes |
-| 2024-09-20 | 2024-09-24 | 5 | +2.44% | yes |
-| 2025-06-07 | 2025-06-12 | 6 | -1.84% | no |
-| 2025-11-06 | 2025-11-10 | 5 | -4.44% | no |
-| 2026-04-01 | 2026-04-05 | 5 | +5.48% | yes |
-| 2026-09-11 | 2026-09-21 | 11 | +4.53% | yes |
 
 </details>
 
@@ -1783,6 +1790,27 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2023-03-21 | 2023-03-29 | 7 | +1.46% | yes |
 | 2024-09-03 | 2024-09-06 | 4 | +1.58% | yes |
 | 2026-08-10 | 2026-08-14 | 5 | +2.28% | yes |
+
+</details>
+
+<details><summary>vix: venus retrograde, expects up (9 of 14)</summary>
+
+| from | to | days | average move | as expected |
+|---|---|---|---|---|
+| 2005-12-27 | 2006-02-02 | 26 | +2.92% | yes |
+| 2007-07-30 | 2007-09-07 | 29 | +3.16% | yes |
+| 2009-03-09 | 2009-04-17 | 29 | -2.46% | no |
+| 2010-10-08 | 2010-11-18 | 30 | +0.68% | no |
+| 2012-05-16 | 2012-06-27 | 30 | -3.73% | no |
+| 2013-12-23 | 2014-01-31 | 27 | +8.17% | yes |
+| 2015-07-27 | 2015-09-04 | 30 | +19.29% | yes |
+| 2017-03-06 | 2017-04-13 | 29 | +4.41% | yes |
+| 2018-10-08 | 2018-11-15 | 29 | +2.33% | yes |
+| 2020-05-13 | 2020-06-24 | 30 | +1.15% | no |
+| 2021-12-20 | 2022-01-28 | 28 | +5.65% | yes |
+| 2023-07-24 | 2023-09-01 | 30 | +1.13% | no |
+| 2025-03-03 | 2025-04-11 | 30 | +11.96% | yes |
+| 2026-10-05 | 2026-10-14 | 8 | +10.82% | yes |
 
 </details>
 
@@ -2978,6 +3006,61 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 
 </details>
 
+<details><summary>sp500: t federal reserve venus sq uranus, expects down (28 of 48)</summary>
+
+| from | to | days | average move | as expected |
+|---|---|---|---|---|
+| 2005-04-19 | 2005-04-21 | 3 | +0.05% | yes |
+| 2005-09-15 | 2005-09-16 | 2 | -1.45% | yes |
+| 2006-06-02 | 2006-06-02 | 1 | -2.79% | yes |
+| 2006-10-27 | 2006-10-27 | 1 | -0.95% | yes |
+| 2007-03-21 | 2007-03-23 | 3 | -1.05% | yes |
+| 2007-12-10 | 2007-12-11 | 2 | -3.08% | yes |
+| 2008-05-05 | 2008-05-06 | 2 | -0.68% | yes |
+| 2008-09-29 | 2008-09-29 | 1 | -4.48% | yes |
+| 2009-06-10 | 2009-06-12 | 3 | -2.82% | yes |
+| 2009-11-11 | 2009-11-13 | 3 | +0.51% | no |
+| 2010-04-05 | 2010-04-06 | 2 | +0.71% | no |
+| 2010-09-14 | 2010-09-17 | 4 | +1.14% | no |
+| 2010-10-26 | 2010-10-29 | 4 | +2.18% | no |
+| 2010-12-07 | 2010-12-10 | 4 | +0.78% | no |
+| 2011-05-19 | 2011-05-20 | 2 | -0.75% | yes |
+| 2011-10-12 | 2011-10-14 | 3 | +0.77% | no |
+| 2012-03-09 | 2012-03-09 | 1 | +2.43% | no |
+| 2012-11-26 | 2012-11-27 | 2 | +0.40% | no |
+| 2013-04-18 | 2013-04-19 | 2 | +2.28% | no |
+| 2013-09-16 | 2013-09-17 | 2 | -0.09% | yes |
+| 2014-06-02 | 2014-06-04 | 3 | +1.19% | no |
+| 2014-10-27 | 2014-10-29 | 3 | +2.10% | no |
+| 2015-03-20 | 2015-03-23 | 2 | -1.55% | yes |
+| 2015-12-08 | 2015-12-11 | 4 | -0.14% | yes |
+| 2016-05-03 | 2016-05-05 | 3 | +0.78% | no |
+| 2016-09-27 | 2016-09-29 | 3 | -0.17% | yes |
+| 2017-06-12 | 2017-06-13 | 2 | +0.43% | no |
+| 2017-11-10 | 2017-11-13 | 2 | -0.12% | yes |
+| 2018-04-03 | 2018-04-05 | 3 | +0.52% | no |
+| 2018-09-17 | 2018-09-21 | 5 | +0.05% | yes |
+| 2018-10-19 | 2018-10-25 | 5 | -1.37% | yes |
+| 2018-12-10 | 2018-12-13 | 4 | -4.82% | yes |
+| 2019-05-20 | 2019-05-21 | 2 | -2.09% | yes |
+| 2019-10-14 | 2019-10-14 | 1 | +1.37% | no |
+| 2020-03-09 | 2020-03-11 | 3 | -12.63% | yes |
+| 2020-11-24 | 2020-11-27 | 3 | +1.21% | no |
+| 2021-04-19 | 2021-04-20 | 2 | +0.92% | no |
+| 2021-09-14 | 2021-09-16 | 3 | -1.48% | yes |
+| 2022-06-01 | 2022-06-03 | 3 | -2.84% | yes |
+| 2022-10-26 | 2022-10-28 | 3 | -2.50% | yes |
+| 2023-03-20 | 2023-03-22 | 3 | +0.72% | no |
+| 2023-12-08 | 2023-12-08 | 1 | +2.49% | no |
+| 2024-05-02 | 2024-05-03 | 2 | +2.41% | no |
+| 2024-09-26 | 2024-09-27 | 2 | -0.28% | yes |
+| 2025-06-10 | 2025-06-13 | 4 | -0.52% | yes |
+| 2025-11-10 | 2025-11-12 | 3 | -2.91% | yes |
+| 2026-09-16 | 2026-09-25 | 8 | +0.05% | yes |
+| 2026-10-12 | 2026-10-14 | 3 | -0.73% | yes |
+
+</details>
+
 <details><summary>sp500: t dalio ray sun sq mercury, expects up (25 of 43)</summary>
 
 | from | to | days | average move | as expected |
@@ -3087,60 +3170,6 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 
 </details>
 
-<details><summary>sp500: t federal reserve venus sq uranus, expects down (27 of 47)</summary>
-
-| from | to | days | average move | as expected |
-|---|---|---|---|---|
-| 2005-04-19 | 2005-04-21 | 3 | +0.05% | yes |
-| 2005-09-15 | 2005-09-16 | 2 | -1.45% | yes |
-| 2006-06-02 | 2006-06-02 | 1 | -2.79% | yes |
-| 2006-10-27 | 2006-10-27 | 1 | -0.95% | yes |
-| 2007-03-21 | 2007-03-23 | 3 | -1.05% | yes |
-| 2007-12-10 | 2007-12-11 | 2 | -3.08% | yes |
-| 2008-05-05 | 2008-05-06 | 2 | -0.68% | yes |
-| 2008-09-29 | 2008-09-29 | 1 | -4.48% | yes |
-| 2009-06-10 | 2009-06-12 | 3 | -2.82% | yes |
-| 2009-11-11 | 2009-11-13 | 3 | +0.51% | no |
-| 2010-04-05 | 2010-04-06 | 2 | +0.71% | no |
-| 2010-09-14 | 2010-09-17 | 4 | +1.14% | no |
-| 2010-10-26 | 2010-10-29 | 4 | +2.18% | no |
-| 2010-12-07 | 2010-12-10 | 4 | +0.78% | no |
-| 2011-05-19 | 2011-05-20 | 2 | -0.75% | yes |
-| 2011-10-12 | 2011-10-14 | 3 | +0.77% | no |
-| 2012-03-09 | 2012-03-09 | 1 | +2.43% | no |
-| 2012-11-26 | 2012-11-27 | 2 | +0.40% | no |
-| 2013-04-18 | 2013-04-19 | 2 | +2.28% | no |
-| 2013-09-16 | 2013-09-17 | 2 | -0.09% | yes |
-| 2014-06-02 | 2014-06-04 | 3 | +1.19% | no |
-| 2014-10-27 | 2014-10-29 | 3 | +2.10% | no |
-| 2015-03-20 | 2015-03-23 | 2 | -1.55% | yes |
-| 2015-12-08 | 2015-12-11 | 4 | -0.14% | yes |
-| 2016-05-03 | 2016-05-05 | 3 | +0.78% | no |
-| 2016-09-27 | 2016-09-29 | 3 | -0.17% | yes |
-| 2017-06-12 | 2017-06-13 | 2 | +0.43% | no |
-| 2017-11-10 | 2017-11-13 | 2 | -0.12% | yes |
-| 2018-04-03 | 2018-04-05 | 3 | +0.52% | no |
-| 2018-09-17 | 2018-09-21 | 5 | +0.05% | yes |
-| 2018-10-19 | 2018-10-25 | 5 | -1.37% | yes |
-| 2018-12-10 | 2018-12-13 | 4 | -4.82% | yes |
-| 2019-05-20 | 2019-05-21 | 2 | -2.09% | yes |
-| 2019-10-14 | 2019-10-14 | 1 | +1.37% | no |
-| 2020-03-09 | 2020-03-11 | 3 | -12.63% | yes |
-| 2020-11-24 | 2020-11-27 | 3 | +1.21% | no |
-| 2021-04-19 | 2021-04-20 | 2 | +0.92% | no |
-| 2021-09-14 | 2021-09-16 | 3 | -1.48% | yes |
-| 2022-06-01 | 2022-06-03 | 3 | -2.84% | yes |
-| 2022-10-26 | 2022-10-28 | 3 | -2.50% | yes |
-| 2023-03-20 | 2023-03-22 | 3 | +0.72% | no |
-| 2023-12-08 | 2023-12-08 | 1 | +2.49% | no |
-| 2024-05-02 | 2024-05-03 | 2 | +2.41% | no |
-| 2024-09-26 | 2024-09-27 | 2 | -0.28% | yes |
-| 2025-06-10 | 2025-06-13 | 4 | -0.52% | yes |
-| 2025-11-10 | 2025-11-12 | 3 | -2.91% | yes |
-| 2026-09-16 | 2026-09-25 | 8 | +0.05% | yes |
-
-</details>
-
 <details><summary>sp500: t dimon jamie venus sq mars, expects down (28 of 49)</summary>
 
 | from | to | days | average move | as expected |
@@ -3229,27 +3258,6 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2026-06-15 | 2026-06-16 | 2 | -3.35% | no |
 | 2026-07-13 | 2026-07-16 | 4 | +2.19% | yes |
 | 2026-07-31 | 2026-08-01 | 2 | +2.61% | yes |
-
-</details>
-
-<details><summary>vix: venus retrograde, expects up (8 of 14)</summary>
-
-| from | to | days | average move | as expected |
-|---|---|---|---|---|
-| 2005-12-27 | 2006-02-02 | 26 | +2.92% | yes |
-| 2007-07-30 | 2007-09-07 | 29 | +3.16% | yes |
-| 2009-03-09 | 2009-04-17 | 29 | -2.46% | no |
-| 2010-10-08 | 2010-11-18 | 30 | +0.68% | no |
-| 2012-05-16 | 2012-06-27 | 30 | -3.73% | no |
-| 2013-12-23 | 2014-01-31 | 27 | +8.17% | yes |
-| 2015-07-27 | 2015-09-04 | 30 | +19.29% | yes |
-| 2017-03-06 | 2017-04-13 | 29 | +4.41% | yes |
-| 2018-10-08 | 2018-11-15 | 29 | +2.33% | yes |
-| 2020-05-13 | 2020-06-24 | 30 | +1.15% | no |
-| 2021-12-20 | 2022-01-28 | 28 | +5.65% | yes |
-| 2023-07-24 | 2023-09-01 | 30 | +1.13% | no |
-| 2025-03-03 | 2025-04-11 | 30 | +11.96% | yes |
-| 2026-10-05 | 2026-10-05 | 1 | -2.00% | no |
 
 </details>
 
@@ -3589,7 +3597,7 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 
 </details>
 
-<details><summary>bitcoin: t musk elon moon quintile moon, expects down (346 of 644)</summary>
+<details><summary>bitcoin: t musk elon moon quintile moon, expects down (347 of 646)</summary>
 
 | from | to | days | average move | as expected |
 |---|---|---|---|---|
@@ -4237,6 +4245,8 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2026-09-18 | 2026-09-18 | 1 | +0.41% | no |
 | 2026-09-29 | 2026-09-29 | 1 | -0.08% | yes |
 | 2026-10-02 | 2026-10-02 | 1 | +0.32% | no |
+| 2026-10-12 | 2026-10-12 | 1 | +1.63% | no |
+| 2026-10-15 | 2026-10-15 | 1 | -0.78% | yes |
 
 </details>
 
@@ -4751,7 +4761,66 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 
 </details>
 
-<details><summary>sp500: moon new moon, expects down (134 of 268)</summary>
+<details><summary>sp500: mercury conj venus, expects down (27 of 52)</summary>
+
+| from | to | days | average move | as expected |
+|---|---|---|---|---|
+| 2005-01-03 | 2005-01-25 | 16 | -0.30% | yes |
+| 2005-03-28 | 2005-03-30 | 3 | +0.59% | no |
+| 2005-06-20 | 2005-07-15 | 19 | +0.49% | no |
+| 2006-01-17 | 2006-01-18 | 2 | -1.14% | yes |
+| 2006-08-07 | 2006-08-14 | 6 | +1.66% | no |
+| 2006-11-07 | 2006-11-08 | 2 | +0.77% | no |
+| 2007-08-16 | 2007-08-17 | 2 | +2.97% | no |
+| 2008-02-22 | 2008-03-28 | 25 | -0.12% | yes |
+| 2008-06-06 | 2008-06-09 | 2 | -0.08% | yes |
+| 2008-08-14 | 2008-09-19 | 26 | -1.23% | yes |
+| 2010-01-04 | 2010-01-06 | 3 | +0.65% | no |
+| 2010-04-01 | 2010-04-09 | 6 | +1.19% | no |
+| 2010-10-25 | 2010-10-26 | 2 | +0.28% | no |
+| 2011-05-02 | 2011-05-25 | 18 | -0.46% | yes |
+| 2011-08-16 | 2011-08-17 | 2 | -1.96% | yes |
+| 2011-10-21 | 2011-11-18 | 21 | -1.34% | yes |
+| 2012-06-01 | 2012-06-01 | 1 | +3.73% | no |
+| 2013-03-06 | 2013-03-08 | 3 | +0.90% | no |
+| 2013-05-21 | 2013-05-29 | 6 | -1.20% | yes |
+| 2013-06-17 | 2013-06-21 | 5 | -1.40% | yes |
+| 2014-01-07 | 2014-01-08 | 2 | +0.32% | no |
+| 2014-10-17 | 2014-10-17 | 1 | +4.12% | no |
+| 2015-01-02 | 2015-01-16 | 11 | +0.27% | no |
+| 2015-08-05 | 2015-08-07 | 3 | +0.00% | yes |
+| 2016-05-12 | 2016-05-13 | 2 | -0.44% | yes |
+| 2016-07-13 | 2016-07-20 | 6 | +0.28% | no |
+| 2016-08-26 | 2016-08-31 | 4 | +0.43% | no |
+| 2017-03-17 | 2017-03-17 | 1 | -1.44% | yes |
+| 2017-12-14 | 2017-12-15 | 2 | +0.75% | no |
+| 2018-02-28 | 2018-03-22 | 17 | -0.91% | yes |
+| 2018-10-15 | 2018-10-16 | 2 | -1.14% | yes |
+| 2019-07-23 | 2019-07-26 | 4 | -1.45% | yes |
+| 2019-09-09 | 2019-09-19 | 9 | -0.23% | yes |
+| 2019-10-28 | 2019-11-01 | 5 | +1.19% | no |
+| 2020-05-21 | 2020-05-22 | 2 | +3.32% | no |
+| 2021-02-12 | 2021-02-12 | 1 | -1.48% | yes |
+| 2021-04-23 | 2021-04-29 | 5 | -0.20% | yes |
+| 2021-05-26 | 2021-05-28 | 3 | +0.38% | no |
+| 2021-12-28 | 2021-12-30 | 3 | -1.17% | yes |
+| 2022-09-26 | 2022-09-27 | 2 | +2.29% | no |
+| 2022-11-14 | 2022-12-02 | 14 | -0.07% | yes |
+| 2022-12-27 | 2022-12-30 | 4 | +0.96% | no |
+| 2023-07-26 | 2023-07-28 | 3 | -1.41% | yes |
+| 2024-04-18 | 2024-04-19 | 2 | +1.71% | no |
+| 2024-06-14 | 2024-06-20 | 4 | +0.06% | yes |
+| 2024-08-06 | 2024-08-09 | 4 | +4.19% | no |
+| 2025-03-10 | 2025-03-14 | 5 | +1.25% | no |
+| 2025-03-24 | 2025-04-11 | 15 | -2.25% | yes |
+| 2025-11-24 | 2025-11-26 | 3 | +1.25% | no |
+| 2026-01-23 | 2026-02-03 | 8 | -0.49% | yes |
+| 2026-02-26 | 2026-02-27 | 2 | -1.57% | yes |
+| 2026-10-05 | 2026-10-08 | 4 | -0.27% | yes |
+
+</details>
+
+<details><summary>sp500: moon new moon, expects down (135 of 269)</summary>
 
 | from | to | days | average move | as expected |
 |---|---|---|---|---|
@@ -5023,65 +5092,7 @@ What the surviving patterns expect, dated in advance. Scored after the fact, in 
 | 2026-07-14 | 2026-07-17 | 4 | -0.93% | yes |
 | 2026-08-13 | 2026-08-14 | 2 | -1.73% | yes |
 | 2026-09-11 | 2026-09-14 | 2 | +0.91% | no |
-
-</details>
-
-<details><summary>sp500: mercury conj venus, expects down (26 of 52)</summary>
-
-| from | to | days | average move | as expected |
-|---|---|---|---|---|
-| 2005-01-03 | 2005-01-25 | 16 | -0.30% | yes |
-| 2005-03-28 | 2005-03-30 | 3 | +0.59% | no |
-| 2005-06-20 | 2005-07-15 | 19 | +0.49% | no |
-| 2006-01-17 | 2006-01-18 | 2 | -1.14% | yes |
-| 2006-08-07 | 2006-08-14 | 6 | +1.66% | no |
-| 2006-11-07 | 2006-11-08 | 2 | +0.77% | no |
-| 2007-08-16 | 2007-08-17 | 2 | +2.97% | no |
-| 2008-02-22 | 2008-03-28 | 25 | -0.12% | yes |
-| 2008-06-06 | 2008-06-09 | 2 | -0.08% | yes |
-| 2008-08-14 | 2008-09-19 | 26 | -1.23% | yes |
-| 2010-01-04 | 2010-01-06 | 3 | +0.65% | no |
-| 2010-04-01 | 2010-04-09 | 6 | +1.19% | no |
-| 2010-10-25 | 2010-10-26 | 2 | +0.28% | no |
-| 2011-05-02 | 2011-05-25 | 18 | -0.46% | yes |
-| 2011-08-16 | 2011-08-17 | 2 | -1.96% | yes |
-| 2011-10-21 | 2011-11-18 | 21 | -1.34% | yes |
-| 2012-06-01 | 2012-06-01 | 1 | +3.73% | no |
-| 2013-03-06 | 2013-03-08 | 3 | +0.90% | no |
-| 2013-05-21 | 2013-05-29 | 6 | -1.20% | yes |
-| 2013-06-17 | 2013-06-21 | 5 | -1.40% | yes |
-| 2014-01-07 | 2014-01-08 | 2 | +0.32% | no |
-| 2014-10-17 | 2014-10-17 | 1 | +4.12% | no |
-| 2015-01-02 | 2015-01-16 | 11 | +0.27% | no |
-| 2015-08-05 | 2015-08-07 | 3 | +0.00% | yes |
-| 2016-05-12 | 2016-05-13 | 2 | -0.44% | yes |
-| 2016-07-13 | 2016-07-20 | 6 | +0.28% | no |
-| 2016-08-26 | 2016-08-31 | 4 | +0.43% | no |
-| 2017-03-17 | 2017-03-17 | 1 | -1.44% | yes |
-| 2017-12-14 | 2017-12-15 | 2 | +0.75% | no |
-| 2018-02-28 | 2018-03-22 | 17 | -0.91% | yes |
-| 2018-10-15 | 2018-10-16 | 2 | -1.14% | yes |
-| 2019-07-23 | 2019-07-26 | 4 | -1.45% | yes |
-| 2019-09-09 | 2019-09-19 | 9 | -0.23% | yes |
-| 2019-10-28 | 2019-11-01 | 5 | +1.19% | no |
-| 2020-05-21 | 2020-05-22 | 2 | +3.32% | no |
-| 2021-02-12 | 2021-02-12 | 1 | -1.48% | yes |
-| 2021-04-23 | 2021-04-29 | 5 | -0.20% | yes |
-| 2021-05-26 | 2021-05-28 | 3 | +0.38% | no |
-| 2021-12-28 | 2021-12-30 | 3 | -1.17% | yes |
-| 2022-09-26 | 2022-09-27 | 2 | +2.29% | no |
-| 2022-11-14 | 2022-12-02 | 14 | -0.07% | yes |
-| 2022-12-27 | 2022-12-30 | 4 | +0.96% | no |
-| 2023-07-26 | 2023-07-28 | 3 | -1.41% | yes |
-| 2024-04-18 | 2024-04-19 | 2 | +1.71% | no |
-| 2024-06-14 | 2024-06-20 | 4 | +0.06% | yes |
-| 2024-08-06 | 2024-08-09 | 4 | +4.19% | no |
-| 2025-03-10 | 2025-03-14 | 5 | +1.25% | no |
-| 2025-03-24 | 2025-04-11 | 15 | -2.25% | yes |
-| 2025-11-24 | 2025-11-26 | 3 | +1.25% | no |
-| 2026-01-23 | 2026-02-03 | 8 | -0.49% | yes |
-| 2026-02-26 | 2026-02-27 | 2 | -1.57% | yes |
-| 2026-10-05 | 2026-10-05 | 1 | +0.43% | no |
+| 2026-10-12 | 2026-10-14 | 3 | -0.73% | yes |
 
 </details>
 
