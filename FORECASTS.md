@@ -7,7 +7,7 @@ favoured: the sky alone, or the sky plus the market's own birth chart.
 
 Until 2026-10-12 only Bitcoin and Ethereum were forecast. From that date all six are.
 
-**Scored so far: 44 right of 90.**
+**Scored so far: 44 right of 91.**
 
 No real money follows these. The last column is what 100 pretend dollars would have made
 following each forecast for five days, long on up and short on down, fees ignored.
@@ -15,15 +15,21 @@ following each forecast for five days, long on up and short on down, fees ignore
 | market | right | of | if followed, pretend dollars | standing |
 |---|---|---|---|---|
 | bitcoin | 18 | 29 | +25.57 | earning trust |
-| ethereum | 16 | 28 | -25.94 | not earned |
+| ethereum | 16 | 29 | -26.81 | not earned |
 | gold | 1 | 8 | -15.95 | still learning |
 | oil | 0 | 8 | -35.60 | still learning |
 | sp500 | 3 | 9 | -1.35 | still learning |
 | vix | 6 | 8 | +95.02 | still learning |
-| all | 44 | 90 | +41.75 | |
+| all | 44 | 91 | +40.88 | |
 
 | written | market | expects | price then | five days on | move | right |
 |---|---|---|---|---|---|---|
+| 2026-10-25 | bitcoin | down (-0.25% vs usual) | 80,827.1 | pending | | |
+| 2026-10-25 | ethereum | down (-1.27% vs usual) | 2,379.15 | pending | | |
+| 2026-10-25 | sp500 | up (+0.03% vs usual) | 7,623.68 | pending | | |
+| 2026-10-25 | gold | down (-0.03% vs usual) | 4,010.0 | pending | | |
+| 2026-10-25 | oil | down (-0.19% vs usual) | 103.44 | pending | | |
+| 2026-10-25 | vix | up (+0.33% vs usual) | 19.45 | pending | | |
 | 2026-10-24 | bitcoin | down (-0.10% vs usual) | 80,827.1 | pending | | |
 | 2026-10-24 | ethereum | down (-0.49% vs usual) | 2,385.29 | pending | | |
 | 2026-10-24 | sp500 | down (-0.01% vs usual) | 7,623.68 | pending | | |
@@ -55,7 +61,7 @@ following each forecast for five days, long on up and short on down, fees ignore
 | 2026-10-20 | oil | down (-0.12% vs usual) | 97.58 | pending | | |
 | 2026-10-20 | vix | up (+0.55% vs usual) | 18.44 | pending | | |
 | 2026-10-19 | bitcoin | up (+0.02% vs usual) | 81,384.45 | 80,827.1 | -0.68% | no |
-| 2026-10-19 | ethereum | up (+0.33% vs usual) | 2,400.0 | pending | | |
+| 2026-10-19 | ethereum | up (+0.33% vs usual) | 2,400.0 | 2,379.15 | -0.87% | no |
 | 2026-10-19 | sp500 | up (+0.07% vs usual) | 7,659.44 | 7,623.68 | -0.47% | no |
 | 2026-10-19 | gold | up (+0.03% vs usual) | 4,181.1 | 4,010.0 | -4.09% | no |
 | 2026-10-19 | oil | down (-0.12% vs usual) | 101.41 | 103.44 | +2.00% | no |

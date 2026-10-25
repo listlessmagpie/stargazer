@@ -28,7 +28,13 @@
    "entry_date": "2026-10-14",
    "entry_price": 83348.140625,
    "stake": 100.0,
-   "opened_at": "2026-10-14T00:15:19+00:00"
+   "opened_at": "2026-10-14T00:15:19+00:00",
+   "exit_date": "2026-10-25",
+   "exit_price": 80664.21875,
+   "move_pct": -3.22,
+   "pnl": -3.22,
+   "right": false,
+   "closed_at": "2026-10-25T00:15:15+00:00"
   },
   {
    "market": "bitcoin",
@@ -74,10 +80,10 @@
   }
  ],
  "summary": {
-  "open": 5,
-  "closed": 0,
+  "open": 4,
+  "closed": 1,
   "right": 0,
-  "pnl": 0,
-  "as_of": "2026-10-24"
+  "pnl": -3.22,
+  "as_of": "2026-10-25"
  }
 }
