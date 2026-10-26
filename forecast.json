@@ -1,69 +1,69 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.25,
-      "price_at_forecast": 80827.1,
-      "price_date": "2026-10-24",
+      "forecast_vs_usual_pct": -0.19,
+      "price_at_forecast": 80664.22,
+      "price_date": "2026-10-25",
       "why": [
         {
           "factor": "venus_retrograde",
           "pull_pct": -0.09
         },
         {
-          "factor": "sun_conj_venus",
-          "pull_pct": -0.04
-        },
-        {
-          "factor": "moon_in_aries",
-          "pull_pct": -0.04
-        },
-        {
           "factor": "mercury_sq_jupiter",
           "pull_pct": 0.04
         },
         {
+          "factor": "moon_in_taurus",
+          "pull_pct": -0.04
+        },
+        {
           "factor": "mercury_in_scorpio",
           "pull_pct": -0.04
+        },
+        {
+          "factor": "jupiter_in_leo",
+          "pull_pct": -0.03
         }
       ]
     },
     "ethereum": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -1.27,
-      "price_at_forecast": 2379.15,
-      "price_date": "2026-10-24",
+      "forecast_vs_usual_pct": -1.35,
+      "price_at_forecast": 2327.22,
+      "price_date": "2026-10-26",
       "why": [
         {
           "factor": "venus_retrograde",
-          "pull_pct": -0.67
+          "pull_pct": -0.68
         },
         {
           "factor": "sun_sq_pluto",
-          "pull_pct": 0.39
+          "pull_pct": 0.4
         },
         {
           "factor": "mercury_station",
-          "pull_pct": -0.36
+          "pull_pct": -0.35
         },
         {
           "factor": "mercury_in_scorpio",
           "pull_pct": -0.32
         },
         {
-          "factor": "jupiter_in_leo",
-          "pull_pct": 0.31
+          "factor": "moon_in_taurus",
+          "pull_pct": -0.3
         }
       ]
     },
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.03,
+      "forecast_vs_usual_pct": 0.01,
       "price_at_forecast": 7623.68,
       "price_date": "2026-10-23",
       "why": [
@@ -92,9 +92,9 @@
     "gold": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.03,
-      "price_at_forecast": 4010.0,
-      "price_date": "2026-10-23",
+      "forecast_vs_usual_pct": -0.05,
+      "price_at_forecast": 4000.0,
+      "price_date": "2026-10-26",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -114,7 +114,7 @@
         },
         {
           "factor": "venus_retrograde",
-          "pull_pct": 0.02
+          "pull_pct": 0.01
         }
       ]
     },
@@ -122,8 +122,8 @@
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.19,
-      "price_at_forecast": 103.44,
-      "price_date": "2026-10-23",
+      "price_at_forecast": 102.09,
+      "price_date": "2026-10-26",
       "why": [
         {
           "factor": "sun_sq_pluto",
@@ -150,7 +150,7 @@
     "vix": {
       "reading": "sky",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.33,
+      "forecast_vs_usual_pct": 0.46,
       "price_at_forecast": 19.45,
       "price_date": "2026-10-23",
       "why": [
@@ -163,16 +163,16 @@
           "pull_pct": -0.13
         },
         {
+          "factor": "moon_in_taurus",
+          "pull_pct": 0.12
+        },
+        {
           "factor": "mercury_station",
           "pull_pct": 0.11
         },
         {
           "factor": "mercury_sq_jupiter",
           "pull_pct": 0.11
-        },
-        {
-          "factor": "mars_in_leo",
-          "pull_pct": 0.07
         }
       ]
     }
@@ -211,6 +211,13 @@
       "factor": "sun_sq_pluto",
       "expects": "down",
       "record": "24 of 43",
+      "paper_eligible": false
+    },
+    {
+      "market": "bitcoin",
+      "factor": "t_musk_elon_moon_quintile_moon",
+      "expects": "down",
+      "record": "347 of 646",
       "paper_eligible": false
     }
   ]
