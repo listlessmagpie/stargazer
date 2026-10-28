@@ -62,7 +62,13 @@
    "entry_date": "2026-10-22",
    "entry_price": 84193.21875,
    "stake": 100.0,
-   "opened_at": "2026-10-22T00:16:46+00:00"
+   "opened_at": "2026-10-22T00:16:46+00:00",
+   "exit_date": "2026-10-28",
+   "exit_price": 80698.4375,
+   "move_pct": -4.15,
+   "pnl": -4.15,
+   "right": false,
+   "closed_at": "2026-10-28T00:15:24+00:00"
   },
   {
    "market": "vix",
@@ -80,10 +86,10 @@
   }
  ],
  "summary": {
-  "open": 4,
-  "closed": 1,
+  "open": 3,
+  "closed": 2,
   "right": 0,
-  "pnl": -3.22,
-  "as_of": "2026-10-27"
+  "pnl": -7.37,
+  "as_of": "2026-10-28"
  }
 }
