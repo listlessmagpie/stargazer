@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
@@ -34,9 +34,9 @@
     "ethereum": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.9,
-      "price_at_forecast": 2322.94,
-      "price_date": "2026-10-27",
+      "forecast_vs_usual_pct": -0.81,
+      "price_at_forecast": 2344.95,
+      "price_date": "2026-10-28",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -63,7 +63,7 @@
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.11,
+      "forecast_vs_usual_pct": 0.17,
       "price_at_forecast": 7722.6,
       "price_date": "2026-10-27",
       "why": [
@@ -84,15 +84,15 @@
           "pull_pct": 0.03
         },
         {
-          "factor": "t_sp500_mars_conj_uranus",
-          "pull_pct": -0.03
+          "factor": "t_sp500_saturn_semisq_pluto",
+          "pull_pct": -0.02
         }
       ]
     },
     "gold": {
       "reading": "sky",
-      "expects": "down",
-      "forecast_vs_usual_pct": -0.01,
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.0,
       "price_at_forecast": 4078.7,
       "price_date": "2026-10-28",
       "why": [
@@ -121,7 +121,7 @@
     "oil": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.16,
+      "forecast_vs_usual_pct": -0.17,
       "price_at_forecast": 100.29,
       "price_date": "2026-10-28",
       "why": [
@@ -150,7 +150,7 @@
     "vix": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.03,
+      "forecast_vs_usual_pct": -0.1,
       "price_at_forecast": 17.52,
       "price_date": "2026-10-27",
       "why": [
@@ -167,12 +167,12 @@
           "pull_pct": -0.1
         },
         {
-          "factor": "mars_in_leo",
-          "pull_pct": 0.07
+          "factor": "moon_waning_gibbous",
+          "pull_pct": -0.09
         },
         {
-          "factor": "mercury_retrograde",
-          "pull_pct": 0.05
+          "factor": "mars_in_leo",
+          "pull_pct": 0.07
         }
       ]
     }
@@ -204,6 +204,13 @@
       "factor": "sun_sq_pluto",
       "expects": "down",
       "record": "24 of 43",
+      "paper_eligible": false
+    },
+    {
+      "market": "bitcoin",
+      "factor": "t_musk_elon_moon_quintile_moon",
+      "expects": "down",
+      "record": "347 of 646",
       "paper_eligible": false
     }
   ]

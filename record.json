@@ -1,5 +1,5 @@
 {
- "written": "2026-10-28T00:15:24+00:00",
+ "written": "2026-10-29T00:15:18+00:00",
  "about": "Stargazer's record: forecasts dated before the fact and scored after, the sky factors that survived a luck test, what is active now, pretend money on the paper book, and the charts the study reads. Rules in registry/ were written before each test ran.",
  "forecasts": {
   "latest": {
@@ -27,9 +27,9 @@
    "ethereum": {
     "reading": "sky",
     "expects": "down",
-    "forecast_vs_usual_pct": -0.9,
-    "price_at_forecast": 2322.94,
-    "price_date": "2026-10-27",
+    "forecast_vs_usual_pct": -0.81,
+    "price_at_forecast": 2344.95,
+    "price_date": "2026-10-28",
     "why": [
      {
       "factor": "venus_retrograde",
@@ -48,7 +48,7 @@
    "sp500": {
     "reading": "sky_and_chart",
     "expects": "up",
-    "forecast_vs_usual_pct": 0.11,
+    "forecast_vs_usual_pct": 0.17,
     "price_at_forecast": 7722.6,
     "price_date": "2026-10-27",
     "why": [
@@ -68,8 +68,8 @@
    },
    "gold": {
     "reading": "sky",
-    "expects": "down",
-    "forecast_vs_usual_pct": -0.01,
+    "expects": "up",
+    "forecast_vs_usual_pct": 0.0,
     "price_at_forecast": 4078.7,
     "price_date": "2026-10-28",
     "why": [
@@ -90,7 +90,7 @@
    "oil": {
     "reading": "sky",
     "expects": "down",
-    "forecast_vs_usual_pct": -0.16,
+    "forecast_vs_usual_pct": -0.17,
     "price_at_forecast": 100.29,
     "price_date": "2026-10-28",
     "why": [
@@ -111,7 +111,7 @@
    "vix": {
     "reading": "sky",
     "expects": "down",
-    "forecast_vs_usual_pct": -0.03,
+    "forecast_vs_usual_pct": -0.1,
     "price_at_forecast": 17.52,
     "price_date": "2026-10-27",
     "why": [
@@ -130,18 +130,18 @@
     ]
    }
   },
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "scored": {
    "right": 48,
-   "of": 103,
-   "if_followed": 28.88,
+   "of": 105,
+   "if_followed": 18.12,
    "stake_per_forecast": 100.0,
    "no_real_money": true,
    "by_market": {
     "ethereum": {
      "right": 16,
-     "of": 31,
-     "if_followed": -32.79,
+     "of": 33,
+     "if_followed": -43.55,
      "trust": "not earned"
     },
     "bitcoin": {
@@ -1563,7 +1563,13 @@
       "expects": "up",
       "forecast_vs_usual_pct": 0.05,
       "price_at_forecast": 2478.21,
-      "price_date": "2026-10-22"
+      "price_date": "2026-10-22",
+      "outcome": {
+       "date": "2026-10-28",
+       "price": 2344.95,
+       "move_pct": -5.38,
+       "right": false
+      }
      },
      "sp500": {
       "expects": "up",
@@ -1616,7 +1622,13 @@
       "expects": "up",
       "forecast_vs_usual_pct": 0.02,
       "price_at_forecast": 2478.21,
-      "price_date": "2026-10-22"
+      "price_date": "2026-10-22",
+      "outcome": {
+       "date": "2026-10-28",
+       "price": 2344.95,
+       "move_pct": -5.38,
+       "right": false
+      }
      },
      "sp500": {
       "expects": "up",
@@ -1844,6 +1856,47 @@
      "vix": {
       "expects": "down",
       "forecast_vs_usual_pct": -0.03,
+      "price_at_forecast": 17.52,
+      "price_date": "2026-10-27"
+     }
+    }
+   },
+   {
+    "date": "2026-10-29",
+    "markets": {
+     "bitcoin": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.25,
+      "price_at_forecast": 80698.44,
+      "price_date": "2026-10-28"
+     },
+     "ethereum": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.81,
+      "price_at_forecast": 2344.95,
+      "price_date": "2026-10-28"
+     },
+     "sp500": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.17,
+      "price_at_forecast": 7722.6,
+      "price_date": "2026-10-27"
+     },
+     "gold": {
+      "expects": "up",
+      "forecast_vs_usual_pct": 0.0,
+      "price_at_forecast": 4078.7,
+      "price_date": "2026-10-28"
+     },
+     "oil": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.17,
+      "price_at_forecast": 100.29,
+      "price_date": "2026-10-28"
+     },
+     "vix": {
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.1,
       "price_at_forecast": 17.52,
       "price_date": "2026-10-27"
      }
@@ -2799,9 +2852,7 @@
     "paper_eligible": false,
     "from": "2026-10-23",
     "to": "2026-10-29"
-   }
-  ],
-  "upcoming": [
+   },
    {
     "market": "bitcoin",
     "factor": "t_musk_elon_moon_quintile_moon",
@@ -2811,7 +2862,9 @@
     "paper_eligible": false,
     "from": "2026-10-29",
     "to": "2026-10-29"
-   },
+   }
+  ],
+  "upcoming": [
    {
     "market": "vix",
     "factor": "moon_in_cancer",
@@ -3201,6 +3254,16 @@
     "paper_eligible": false,
     "from": "2027-01-13",
     "to": "2027-01-31"
+   },
+   {
+    "market": "sp500",
+    "factor": "t_trump_donald_mercury_tri_neptune",
+    "expects": "down",
+    "horizon_days": 5,
+    "record": "22 of 44",
+    "paper_eligible": false,
+    "from": "2027-01-16",
+    "to": "2027-01-17"
    }
   ],
   "table": [
@@ -4695,7 +4758,7 @@
    "closed": 2,
    "right": 0,
    "pnl": -7.37,
-   "as_of": "2026-10-28"
+   "as_of": "2026-10-29"
   }
  },
  "library": {
