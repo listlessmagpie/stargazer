@@ -83,13 +83,27 @@
    "entry_price": 19.450000762939453,
    "stake": 100.0,
    "opened_at": "2026-10-24T00:15:21+00:00"
+  },
+  {
+   "market": "bitcoin",
+   "alpaca_symbol": "BTC/USD",
+   "factor": "venus_retrograde",
+   "horizon_days": 5,
+   "side": "short",
+   "from": "2026-10-30",
+   "to": "2026-11-13",
+   "record_at_entry": "8 of 8",
+   "entry_date": "2026-10-30",
+   "entry_price": 76867.46875,
+   "stake": 100.0,
+   "opened_at": "2026-10-30T00:50:55+00:00"
   }
  ],
  "summary": {
-  "open": 3,
+  "open": 4,
   "closed": 2,
   "right": 0,
   "pnl": -7.37,
-  "as_of": "2026-10-29"
+  "as_of": "2026-10-30"
  }
 }
