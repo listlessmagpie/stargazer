@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.24,
-      "price_at_forecast": 81207.55,
-      "price_date": "2026-10-29",
+      "price_at_forecast": 76867.47,
+      "price_date": "2026-10-30",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -63,17 +63,13 @@
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.16,
+      "forecast_vs_usual_pct": 0.14,
       "price_at_forecast": 7720.39,
       "price_date": "2026-10-29",
       "why": [
         {
-          "factor": "t_sp500_sun_opp_venus",
-          "pull_pct": 0.05
-        },
-        {
-          "factor": "t_sp500_mars_binovile_sun",
-          "pull_pct": -0.03
+          "factor": "t_sp500_uranus_biquintile_neptune",
+          "pull_pct": -0.04
         },
         {
           "factor": "t_sp500_venus_quintile_uranus",
@@ -86,6 +82,10 @@
         {
           "factor": "t_sp500_saturn_semisq_pluto",
           "pull_pct": -0.02
+        },
+        {
+          "factor": "t_sp500_neptune_septile_mercury",
+          "pull_pct": 0.02
         }
       ]
     },
