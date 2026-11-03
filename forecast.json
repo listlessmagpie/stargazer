@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.24,
-      "price_at_forecast": 77388.66,
-      "price_date": "2026-11-01",
+      "forecast_vs_usual_pct": -0.26,
+      "price_at_forecast": 78029.85,
+      "price_date": "2026-11-02",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -34,9 +34,9 @@
     "ethereum": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.76,
-      "price_at_forecast": 2252.31,
-      "price_date": "2026-11-01",
+      "forecast_vs_usual_pct": -1.02,
+      "price_at_forecast": 2268.24,
+      "price_date": "2026-11-02",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -52,7 +52,7 @@
         },
         {
           "factor": "jupiter_in_leo",
-          "pull_pct": 0.25
+          "pull_pct": 0.24
         },
         {
           "factor": "venus_sext_jupiter",
@@ -63,7 +63,7 @@
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.08,
+      "forecast_vs_usual_pct": 0.11,
       "price_at_forecast": 7580.07,
       "price_date": "2026-10-30",
       "why": [
@@ -80,21 +80,21 @@
           "pull_pct": -0.02
         },
         {
-          "factor": "t_sp500_sun_biseptile_pluto",
+          "factor": "t_sp500_venus_tri_pluto",
           "pull_pct": 0.02
         },
         {
-          "factor": "t_sp500_neptune_septile_mercury",
+          "factor": "t_sp500_sun_biseptile_pluto",
           "pull_pct": 0.02
         }
       ]
     },
     "gold": {
       "reading": "sky",
-      "expects": "up",
-      "forecast_vs_usual_pct": 0.0,
-      "price_at_forecast": 3898.9,
-      "price_date": "2026-10-30",
+      "expects": "down",
+      "forecast_vs_usual_pct": -0.0,
+      "price_at_forecast": 3958.9,
+      "price_date": "2026-11-03",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -113,7 +113,7 @@
           "pull_pct": 0.01
         },
         {
-          "factor": "uranus_sext_neptune",
+          "factor": "moon_in_virgo",
           "pull_pct": 0.01
         }
       ]
@@ -121,9 +121,9 @@
     "oil": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.04,
-      "price_at_forecast": 104.12,
-      "price_date": "2026-10-30",
+      "forecast_vs_usual_pct": -0.03,
+      "price_at_forecast": 96.46,
+      "price_date": "2026-11-03",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -131,28 +131,28 @@
         },
         {
           "factor": "sun_in_scorpio",
-          "pull_pct": -0.04
+          "pull_pct": -0.05
         },
         {
           "factor": "jupiter_in_leo",
-          "pull_pct": -0.03
+          "pull_pct": -0.04
+        },
+        {
+          "factor": "moon_in_virgo",
+          "pull_pct": 0.03
         },
         {
           "factor": "mercury_in_scorpio",
           "pull_pct": -0.03
-        },
-        {
-          "factor": "neptune_sext_pluto",
-          "pull_pct": -0.02
         }
       ]
     },
     "vix": {
       "reading": "sky",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.05,
-      "price_at_forecast": 19.42,
-      "price_date": "2026-10-30",
+      "forecast_vs_usual_pct": 0.12,
+      "price_at_forecast": 21.15,
+      "price_date": "2026-11-02",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -167,11 +167,11 @@
           "pull_pct": 0.1
         },
         {
-          "factor": "mars_in_leo",
-          "pull_pct": 0.07
+          "factor": "moon_in_virgo",
+          "pull_pct": 0.08
         },
         {
-          "factor": "moon_last_quarter",
+          "factor": "sun_conj_mercury",
           "pull_pct": -0.07
         }
       ]
@@ -204,6 +204,13 @@
       "factor": "t_trump_donald_venus_sq_saturn",
       "expects": "up",
       "record": "27 of 44",
+      "paper_eligible": false
+    },
+    {
+      "market": "sp500",
+      "factor": "t_federal_reserve_venus_sq_jupiter",
+      "expects": "up",
+      "record": "27 of 45",
       "paper_eligible": false
     },
     {
