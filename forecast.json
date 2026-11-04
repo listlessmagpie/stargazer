@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.26,
-      "price_at_forecast": 78029.85,
-      "price_date": "2026-11-02",
+      "price_at_forecast": 76682.71,
+      "price_date": "2026-11-03",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -27,16 +27,16 @@
         },
         {
           "factor": "uranus_tri_pluto",
-          "pull_pct": -0.02
+          "pull_pct": -0.03
         }
       ]
     },
     "ethereum": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -1.02,
-      "price_at_forecast": 2268.24,
-      "price_date": "2026-11-02",
+      "forecast_vs_usual_pct": -1.05,
+      "price_at_forecast": 2249.13,
+      "price_date": "2026-11-03",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -52,7 +52,7 @@
         },
         {
           "factor": "jupiter_in_leo",
-          "pull_pct": 0.24
+          "pull_pct": 0.23
         },
         {
           "factor": "venus_sext_jupiter",
@@ -63,10 +63,18 @@
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.11,
-      "price_at_forecast": 7580.07,
-      "price_date": "2026-10-30",
+      "forecast_vs_usual_pct": 0.18,
+      "price_at_forecast": 7541.4,
+      "price_date": "2026-11-02",
       "why": [
+        {
+          "factor": "t_sp500_venus_conj_jupiter",
+          "pull_pct": 0.06
+        },
+        {
+          "factor": "t_sp500_venus_quincunx_mercury",
+          "pull_pct": 0.04
+        },
         {
           "factor": "t_sp500_uranus_biquintile_neptune",
           "pull_pct": -0.04
@@ -78,14 +86,6 @@
         {
           "factor": "t_sp500_saturn_semisq_pluto",
           "pull_pct": -0.02
-        },
-        {
-          "factor": "t_sp500_venus_tri_pluto",
-          "pull_pct": 0.02
-        },
-        {
-          "factor": "t_sp500_sun_biseptile_pluto",
-          "pull_pct": 0.02
         }
       ]
     },
