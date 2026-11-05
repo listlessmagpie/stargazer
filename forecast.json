@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.26,
-      "price_at_forecast": 76682.71,
-      "price_date": "2026-11-03",
+      "forecast_vs_usual_pct": -0.28,
+      "price_at_forecast": 80610.42,
+      "price_date": "2026-11-05",
       "why": [
         {
           "factor": "venus_retrograde",
-          "pull_pct": -0.1
+          "pull_pct": -0.09
         },
         {
           "factor": "mercury_in_scorpio",
@@ -34,17 +34,21 @@
     "ethereum": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -1.05,
-      "price_at_forecast": 2249.13,
-      "price_date": "2026-11-03",
+      "forecast_vs_usual_pct": -1.19,
+      "price_at_forecast": 2425.43,
+      "price_date": "2026-11-05",
       "why": [
         {
           "factor": "venus_retrograde",
-          "pull_pct": -0.68
+          "pull_pct": -0.67
         },
         {
           "factor": "mercury_in_scorpio",
-          "pull_pct": -0.33
+          "pull_pct": -0.32
+        },
+        {
+          "factor": "moon_waning_crescent",
+          "pull_pct": -0.26
         },
         {
           "factor": "mercury_retrograde",
@@ -52,20 +56,16 @@
         },
         {
           "factor": "jupiter_in_leo",
-          "pull_pct": 0.23
-        },
-        {
-          "factor": "venus_sext_jupiter",
-          "pull_pct": 0.21
+          "pull_pct": 0.25
         }
       ]
     },
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.18,
-      "price_at_forecast": 7541.4,
-      "price_date": "2026-11-02",
+      "forecast_vs_usual_pct": 0.15,
+      "price_at_forecast": 7688.62,
+      "price_date": "2026-11-04",
       "why": [
         {
           "factor": "t_sp500_venus_conj_jupiter",
@@ -84,17 +84,17 @@
           "pull_pct": 0.03
         },
         {
-          "factor": "t_sp500_saturn_semisq_pluto",
-          "pull_pct": -0.02
+          "factor": "t_sp500_mercury_septile_mars",
+          "pull_pct": 0.02
         }
       ]
     },
     "gold": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.0,
-      "price_at_forecast": 3958.9,
-      "price_date": "2026-11-03",
+      "forecast_vs_usual_pct": -0.02,
+      "price_at_forecast": 3948.0,
+      "price_date": "2026-11-04",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -106,7 +106,7 @@
         },
         {
           "factor": "uranus_tri_pluto",
-          "pull_pct": 0.02
+          "pull_pct": 0.01
         },
         {
           "factor": "venus_retrograde",
@@ -122,8 +122,8 @@
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.03,
-      "price_at_forecast": 96.46,
-      "price_date": "2026-11-03",
+      "price_at_forecast": 96.64,
+      "price_date": "2026-11-04",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -150,9 +150,9 @@
     "vix": {
       "reading": "sky",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.12,
-      "price_at_forecast": 21.15,
-      "price_date": "2026-11-02",
+      "forecast_vs_usual_pct": 0.28,
+      "price_at_forecast": 16.61,
+      "price_date": "2026-11-04",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -171,8 +171,8 @@
           "pull_pct": 0.08
         },
         {
-          "factor": "sun_conj_mercury",
-          "pull_pct": -0.07
+          "factor": "mars_in_leo",
+          "pull_pct": 0.07
         }
       ]
     }
