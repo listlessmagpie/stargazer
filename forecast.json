@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.32,
-      "price_at_forecast": 80610.42,
-      "price_date": "2026-11-05",
+      "price_at_forecast": 76009.44,
+      "price_date": "2026-11-06",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -34,9 +34,9 @@
     "ethereum": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -1.09,
-      "price_at_forecast": 2425.43,
-      "price_date": "2026-11-05",
+      "forecast_vs_usual_pct": -1.1,
+      "price_at_forecast": 2232.88,
+      "price_date": "2026-11-06",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -56,16 +56,16 @@
         },
         {
           "factor": "jupiter_in_leo",
-          "pull_pct": 0.25
+          "pull_pct": 0.24
         }
       ]
     },
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.1,
-      "price_at_forecast": 7688.62,
-      "price_date": "2026-11-04",
+      "forecast_vs_usual_pct": 0.06,
+      "price_at_forecast": 7353.73,
+      "price_date": "2026-11-05",
       "why": [
         {
           "factor": "t_sp500_venus_conj_jupiter",
@@ -80,11 +80,11 @@
           "pull_pct": -0.04
         },
         {
-          "factor": "t_sp500_neptune_quadnovile_jupiter",
-          "pull_pct": 0.03
+          "factor": "t_sp500_saturn_semisq_pluto",
+          "pull_pct": -0.03
         },
         {
-          "factor": "t_sp500_mercury_septile_mars",
+          "factor": "t_sp500_neptune_quadnovile_jupiter",
           "pull_pct": 0.02
         }
       ]
@@ -92,9 +92,9 @@
     "gold": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.01,
-      "price_at_forecast": 4072.4,
-      "price_date": "2026-11-05",
+      "forecast_vs_usual_pct": -0.0,
+      "price_at_forecast": 4079.5,
+      "price_date": "2026-11-06",
       "why": [
         {
           "factor": "saturn_in_aries",
@@ -106,7 +106,7 @@
         },
         {
           "factor": "uranus_tri_pluto",
-          "pull_pct": 0.01
+          "pull_pct": 0.02
         },
         {
           "factor": "venus_retrograde",
@@ -121,17 +121,17 @@
     "oil": {
       "reading": "sky",
       "expects": "down",
-      "forecast_vs_usual_pct": -0.09,
-      "price_at_forecast": 88.34,
-      "price_date": "2026-11-05",
+      "forecast_vs_usual_pct": -0.13,
+      "price_at_forecast": 90.34,
+      "price_date": "2026-11-06",
       "why": [
-        {
-          "factor": "saturn_in_aries",
-          "pull_pct": 0.05
-        },
         {
           "factor": "sun_in_scorpio",
           "pull_pct": -0.05
+        },
+        {
+          "factor": "saturn_in_aries",
+          "pull_pct": 0.05
         },
         {
           "factor": "jupiter_in_leo",
@@ -139,7 +139,7 @@
         },
         {
           "factor": "mercury_in_scorpio",
-          "pull_pct": -0.03
+          "pull_pct": -0.04
         },
         {
           "factor": "neptune_sext_pluto",
@@ -150,28 +150,28 @@
     "vix": {
       "reading": "sky",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.2,
-      "price_at_forecast": 16.61,
-      "price_date": "2026-11-04",
+      "forecast_vs_usual_pct": 0.32,
+      "price_at_forecast": 25.64,
+      "price_date": "2026-11-06",
       "why": [
         {
           "factor": "venus_retrograde",
-          "pull_pct": 0.16
+          "pull_pct": 0.17
         },
         {
           "factor": "sun_in_scorpio",
-          "pull_pct": -0.13
+          "pull_pct": -0.12
         },
         {
           "factor": "venus_sext_jupiter",
-          "pull_pct": 0.1
+          "pull_pct": 0.11
         },
         {
           "factor": "mars_in_leo",
-          "pull_pct": 0.07
+          "pull_pct": 0.08
         },
         {
-          "factor": "moon_waning_crescent",
+          "factor": "mercury_retrograde",
           "pull_pct": 0.06
         }
       ]
