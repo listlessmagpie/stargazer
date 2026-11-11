@@ -125,13 +125,27 @@
    "entry_price": 75851.4921875,
    "stake": 100.0,
    "opened_at": "2026-11-07T00:16:10+00:00"
+  },
+  {
+   "market": "vix",
+   "alpaca_symbol": "VIXY",
+   "factor": "sun_in_scorpio",
+   "horizon_days": 5,
+   "side": "short",
+   "from": "2026-11-07",
+   "to": "2026-11-21",
+   "record_at_entry": "16 of 22",
+   "entry_date": "2026-11-09",
+   "entry_price": 19.920000076293945,
+   "stake": 100.0,
+   "opened_at": "2026-11-11T00:15:23+00:00"
   }
  ],
  "summary": {
-  "open": 6,
+  "open": 7,
   "closed": 2,
   "right": 0,
   "pnl": -7.37,
-  "as_of": "2026-11-10"
+  "as_of": "2026-11-11"
  }
 }
