@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "horizon_trading_days": 5,
   "markets": {
     "bitcoin": {
       "reading": "sky",
       "expects": "down",
       "forecast_vs_usual_pct": -0.14,
-      "price_at_forecast": 75188.65,
-      "price_date": "2026-11-10",
+      "price_at_forecast": 73580.28,
+      "price_date": "2026-11-11",
       "why": [
         {
           "factor": "venus_retrograde",
@@ -22,11 +22,11 @@
           "pull_pct": 0.05
         },
         {
-          "factor": "venus_sext_mars",
+          "factor": "mercury_in_scorpio",
           "pull_pct": -0.04
         },
         {
-          "factor": "mercury_in_scorpio",
+          "factor": "venus_sext_mars",
           "pull_pct": -0.04
         }
       ]
@@ -34,9 +34,9 @@
     "ethereum": {
       "reading": "sky",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.92,
-      "price_at_forecast": 2130.31,
-      "price_date": "2026-11-10",
+      "forecast_vs_usual_pct": 0.85,
+      "price_at_forecast": 2049.54,
+      "price_date": "2026-11-11",
       "why": [
         {
           "factor": "mars_conj_jupiter",
@@ -52,7 +52,7 @@
         },
         {
           "factor": "mercury_in_scorpio",
-          "pull_pct": -0.33
+          "pull_pct": -0.34
         },
         {
           "factor": "mercury_sq_pluto",
@@ -63,9 +63,9 @@
     "sp500": {
       "reading": "sky_and_chart",
       "expects": "up",
-      "forecast_vs_usual_pct": 0.03,
-      "price_at_forecast": 7549.94,
-      "price_date": "2026-11-09",
+      "forecast_vs_usual_pct": 0.05,
+      "price_at_forecast": 7520.93,
+      "price_date": "2026-11-10",
       "why": [
         {
           "factor": "t_sp500_venus_conj_jupiter",
@@ -211,6 +211,13 @@
       "factor": "t_federal_reserve_venus_sq_jupiter",
       "expects": "up",
       "record": "27 of 45",
+      "paper_eligible": false
+    },
+    {
+      "market": "bitcoin",
+      "factor": "t_musk_elon_moon_quintile_moon",
+      "expects": "down",
+      "record": "348 of 648",
       "paper_eligible": false
     },
     {
