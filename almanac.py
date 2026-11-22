@@ -38,7 +38,7 @@ from pathlib import Path
 import httpx
 import numpy as np
 
-sys.path.insert(0, "D:/git/paradox-box")
+sys.path.append("D:/git/paradox-box")  # after our own modules: paradox-box has its own almanac
 import orrery.moment  # noqa: F401,E402  (sets the ephemeris path)
 import swisseph as swe  # noqa: E402
 
